@@ -1,0 +1,184 @@
+> Explain JSBox view system
+
+# type: "view"
+
+`view` is the base component of all views:
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "view",
+      props: {
+        bgcolor: $color("#FF0000")
+      },
+      layout: function(make, view) {
+        make.center.equalTo(view.super)
+        make.size.equalTo($size(100, 100))
+      },
+      events: {
+        tapped: function(sender) {
+
+        }
+      }
+    }
+  ]
+})
+```
+
+Render a red rectangle on the screen.
+
+# props
+
+Prop | Type | Read/Write | Description
+---|---|---|---
+alpha | number | rw | alpha
+bgcolor | $color | rw | background color
+radius | number | w | corner radius
+smoothRadius | number | w | smooth corner radius
+frame | $rect | rw | frame
+userInteractionEnabled | boolean | rw | user interaction enable
+multipleTouchEnabled | boolean | rw | multiple touch support
+super | view | r | super view
+prev | view | r | previous view
+next | view | r | next view
+views | array | r | subviews
+clipsToBounds | boolean | rw | clip subviews
+opaque | boolean | rw | opaque
+hidden | boolean | rw | hidden
+contentMode | $contentMode | rw | [Refer](https://developer.apple.com/documentation/uikit/uiview/1622619-contentmode)
+tintColor | $color | rw | tint color
+borderWidth | number | rw | border width
+borderColor | $color | rw | border color
+circular | bool | rw | whether a circular shape
+animator | object | r | animator
+snapshot | object | r | create snapshot
+info | object | rw | bind extra info
+accessibilityLabel | string | rw | accessibility label
+accessibilityHint | string | rw | accessibility hint
+accessibilityValue | string | rw | accessibility value
+
+Note: you can't use `prev` or `next in layout functions, because the view hierarchy hasn't been generated.
+
+# navButtons
+
+Create custom navigation buttons:
+
+```js
+$ui.render({
+  props: {
+    navButtons: [
+      {
+        title: "Title",
+        image: image, // Optional
+        icon: "024", // Or you can use icon name
+        symbol: "checkmark.seal", // SF symbols are supported
+        handler: function() {
+          $ui.alert("Tapped!")
+        }
+      }
+    ]
+  }
+})
+```
+
+You can create 2 buttons at most, on debug mode there will be only 1 button.
+
+# updateLayout(function)
+
+Update a view's layout:
+
+```js
+$("label").updateLayout(function(make) {
+  make.size.equalTo($size(200, 200))
+})
+```
+
+# remakeLayout(function)
+
+Similar to updateLayout, but remake costs more performance, try to use update as much as you can.
+
+# add(object)
+
+Add a view to another view's hierarchy, refer `$ui.render(object)` to see how to create a view.
+
+# get(id)
+
+Get a subview with specific identifier.
+
+# remove()
+
+Remove a view from its super view's hierarchy.
+
+# relayout()
+
+Trigger layouting of a view, you can use this during animations.
+
+# scale(number)
+
+Scale a view (0.0 ~ 1.0):
+
+```js
+view.scale(0.5)
+```
+
+# snapshotWithScale(scale)
+
+Create snapshot with scale:
+
+```js
+const image = view.snapshotWithScale(1)
+```
+
+# rotate(number)
+
+Rotate a view:
+
+```js
+view.rotate(Math.PI)
+```
+
+# events: ready
+
+`ready` event is supported for all views, it will be called when view is ready:
+
+```js
+ready: function(sender) {
+  
+}
+```
+
+# events: tapped
+
+Observe tap gesture:
+
+```js
+tapped: function(sender) {
+
+}
+```
+
+The sender is the source of event, usually means the view itself.
+
+You can also use this syntax:
+
+```js
+tapped(sender) {
+
+}
+```
+
+This has same effect.
+
+# events: pencilTapped
+
+Detect tap events from Apple Pencil:
+
+```js
+pencilTapped: function(info) {
+  var action = info.action; // 0: Ignore, 1: Switch Eraser, 2: Switch Previous, 3: Show Color Palette
+  var enabled = info.enabled; // whether the system reports double taps on Apple Pencil to your app
+}
+```
+
+Refer [Component](en/component/label.md) to see how to use other controls.
