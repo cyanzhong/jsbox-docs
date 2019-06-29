@@ -21,3 +21,17 @@ By default, the view height is 320, you can change it by:
 ```js
 $intents.height = 180;
 ```
+
+# Parameters
+
+If you are using Shortcuts app on iOS 13 or above, you can specify two arguments: `Name` and `Parameters`.
+
+In the Shortcuts app, you will see `Parameters` is a Text, but please fill it with a Shortcuts Dictionary.
+
+JSBox will decode the Dictionary to a JSON, and you can get it with `$context.query`:
+
+```js
+const query = $context.query;
+```
+
+Also, the result in `$intents.finish(result)` will be passed to the next Shortcuts action.

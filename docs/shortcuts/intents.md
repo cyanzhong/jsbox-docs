@@ -21,3 +21,15 @@ $intents.finish(result.data);
 ```js
 $intents.height = 180;
 ```
+
+# 设置参数
+
+在 iOS 13 的捷径应用上，你可以为 JSBox 的捷径模块指定两个参数：`脚本名`和`输入参数`。
+
+输入参数在捷径应用中显示类型为字符串类型，但请填写一个捷径中的字典类型，JSBox 在获取到之后会解析成一个 JSON 数据，你可以通过 `$context.query` 获取：
+
+```js
+const query = $context.query;
+```
+
+同时，`$intents.finish(result)` 会将 result 作为结果输出给下一个捷径动作。
