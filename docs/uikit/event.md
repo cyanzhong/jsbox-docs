@@ -24,7 +24,7 @@ button.whenDoubleTapped(() => {
 
 # view.whenTouched(args)
 
-指定视图按下需要的触电个数和按下次数：
+指定视图按下需要的触点个数和按下次数：
 
 ```js
 button.whenTouched({
