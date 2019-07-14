@@ -59,5 +59,6 @@ to | receiver
 cc | cc
 bcc | bcc
 body | body
+isHTML | is body an HTML
 attachments | attachments (files)
 result | 0: cancelled 1: succeeded 2: failed

@@ -59,5 +59,6 @@ to | 接受者
 cc | 抄送
 bcc | 密送
 body | 内容
+isHTML | 内容是否为 HTML
 attachments | 附件(图片或文件)
 result | 0: 取消 1: 保存 2: 成功 3: 失败

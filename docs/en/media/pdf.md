@@ -38,3 +38,19 @@ $pdf.make({
 ```
 
 To understand how `$pageSize` works, please refer to: http://en.wikipedia.org/wiki/Paper_size.
+
+# $pdf.toImages(data)
+
+Render PDF as an image array:
+
+```js
+const images = $pdf.toImages(pdf);
+```
+
+# $pdf.toImage(data)
+
+Render PDF as a single image:
+
+```js
+const image = $pdf.toImage(pdf);
+```

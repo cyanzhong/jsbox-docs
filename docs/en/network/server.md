@@ -16,6 +16,20 @@ var options = {
 server.start(options);
 ```
 
+# $server.start(object)
+
+Start a simple HTTP server:
+
+```js
+const server = $server.start({
+  port: 6060,
+  path: "assets/website",
+  handler: () => {
+    $app.openURL("http://localhost:6060/index.html");
+  }
+});
+```
+
 # server.stop()
 
 Stop the web server.

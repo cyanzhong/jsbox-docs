@@ -38,3 +38,19 @@ $pdf.make({
 ```
 
 `$pageSize` 支持 A0 ~ A10, B0 ~ B10, C0 ~ C10 等取值，请参考：http://en.wikipedia.org/wiki/Paper_size
+
+# $pdf.toImages(data)
+
+将 PDF 文档渲染成一个 image 数组：
+
+```js
+const images = $pdf.toImages(pdf);
+```
+
+# $pdf.toImage(data)
+
+将 PDF 文档渲染成一个 image 对象：
+
+```js
+const image = $pdf.toImage(pdf);
+```

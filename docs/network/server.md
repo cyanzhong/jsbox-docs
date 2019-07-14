@@ -14,6 +14,20 @@ var options = {
 server.start(options);
 ```
 
+# $server.start(object)
+
+使用简单的参数快速启动一个 HTTP 服务器：
+
+```js
+const server = $server.start({
+  port: 6060,
+  path: "assets/website",
+  handler: () => {
+    $app.openURL("http://localhost:6060/index.html");
+  }
+});
+```
+
 # server.stop()
 
 停止 Web 服务器。
