@@ -205,7 +205,7 @@ $objc_retain(manager)
 
 这将在整个脚本运行期间保持 manger 不被释放。
 
-# $objc_relase(object)
+# $objc_release(object)
 
 与 retain 相对应的函数，目的是手动释放掉对象：
 
