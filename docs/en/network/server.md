@@ -83,6 +83,22 @@ handler.response = request => {
     }
   };
 }
+
+// Handler async response
+handler.asyncResponse = (request, completion) => {
+var method = request.method;
+  var url = request.url;
+  completion({
+    type: "data", // default, data, file, error
+    props: {
+      html: "<html><body style='font-size: 300px'>Hello!</body></html>"
+      // json: {
+      //   "status": 1,
+      //   "values": ["a", "b", "c"]
+      // }
+    }
+  });
+}
 ```
 
  # handler.filter

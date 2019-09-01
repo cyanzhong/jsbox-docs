@@ -151,6 +151,7 @@ It creates some static cells, instead of reuse them dynamically.
 
 Prop | Type | Read/Write | Description
 ---|---|---|---
+style | number | w | style 0 ~ 2
 data | object | rw | data source
 separatorInset | $insets | rw | separator inset
 separatorHidden | boolean | rw | hide separator

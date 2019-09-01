@@ -147,6 +147,7 @@ data: [
 
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
+style | number | 只写 | 样式 0 ~ 2
 data | object | 读写 | 数据源
 separatorInset | $insets | 读写 | 分割线边距
 separatorHidden | boolean | 读写 | 隐藏分割线
