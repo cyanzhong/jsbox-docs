@@ -1,3 +1,5 @@
+*This website is based on [Docsify](https://docsify.js.org), hosted on the [GitHub](https://github.com/cyanzhong/jsbox-docs), pull requests are welcome.*
+
 # JSBox APIs
 
 > Create powerful addins for JSBox with JavaScript, ES6 is supported, and we provide tons of APIs to interact with iOS directly

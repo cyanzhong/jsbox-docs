@@ -1,3 +1,5 @@
+*本文档基于 [Docsify](https://docsify.js.org) 部署在 [GitHub](https://github.com/cyanzhong/jsbox-docs)，欢迎一起改进*
+
 # JSBox APIs
 
 > 通过 JavaScript 来为 JSBox 提供强大的扩展，支持 ES6 标准语法，并提供了丰富的 API 来与 Native 代码进行交互。
