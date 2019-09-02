@@ -7,6 +7,7 @@
   - [前言](foundation/intro.md)
   - [设备](foundation/device.md)
   - [应用](foundation/app.md)
+  - [配置](foundation/prefs.md)
   - [系统](foundation/system.md)
   - [网络](foundation/network.md)
   - [缓存](foundation/cache.md)

@@ -1,3 +1,7 @@
+# 2019.09.02
+
+- Add app preferences related API: [Refer](en/foundation/prefs.md)
+
 # 2018.12.23
 
 - Add editor plugins related API: [Refer](en/extend/editor.md)

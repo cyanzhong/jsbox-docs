@@ -7,6 +7,7 @@
   - [Intro](en/foundation/intro.md)
   - [Device](en/foundation/device.md)
   - [App](en/foundation/app.md)
+  - [Prefs](en/foundation/prefs.md)
   - [System](en/foundation/system.md)
   - [Network](en/foundation/network.md)
   - [Cache](en/foundation/cache.md)
