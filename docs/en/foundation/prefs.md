@@ -74,7 +74,7 @@ A setting item contains the following attributes:
 - `title`: title
 - `type`: value type, such as "string" or "boolean"
 - `key`: the key that will be used to persistent settings
-- `value`: default value for the current setting
+- `value`: default value for the current setting, can be null
 
 # title
 
@@ -166,4 +166,4 @@ In most cases, settings should be changed by users, but just in case you want so
 $prefs.set("user.name", "cyan");
 ```
 
-Obviously, `$prefs` cannot cover all scenarios, but for most common used ones, it's good enough, and easy to use.
+Obviously, `$prefs` cannot cover all scenarios, but for most common used ones, it's good enough, and easy to use. Here is an example: https://github.com/cyanzhong/xTeko/tree/master/extension-demos/prefs
