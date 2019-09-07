@@ -37,6 +37,7 @@ bgcolor | $color | rw | background color
 radius | number | w | corner radius
 smoothRadius | number | w | smooth corner radius
 frame | $rect | rw | frame
+size | $size | rw | size
 userInteractionEnabled | boolean | rw | user interaction enable
 multipleTouchEnabled | boolean | rw | multiple touch support
 super | view | r | super view

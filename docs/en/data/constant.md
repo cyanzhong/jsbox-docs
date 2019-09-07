@@ -284,3 +284,39 @@ var $UIEvent = {
   allEvents: 0xFFFFFFFF,
 }
 ```
+
+# StackView axis
+
+```js
+var $stackViewAxis = {
+  horizontal: 0,
+  vertical: 1,
+}
+```
+
+# StackView distribution
+
+```js
+var $stackViewDistribution = {
+  fill: 0,
+  fillEqually: 1,
+  fillProportionally: 2,
+  equalSpacing: 3,
+  equalCentering: 4,
+}
+```
+
+# StackView alignment
+
+```js
+var $stackViewAlignment = {
+  fill: 0,
+  leading: 1,
+  top: 1,
+  firstBaseline: 2,
+  center: 3,
+  trailing: 4,
+  bottom: 4,
+  lastBaseline: 5,
+}
+```

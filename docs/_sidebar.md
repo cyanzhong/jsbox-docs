@@ -49,6 +49,7 @@
   - [图片](component/image.md)
   - [视频](component/video.md)
   - [滚动视图](component/scroll.md)
+  - [堆栈视图](component/stack.md)
   - [菜单](component/menu.md)
   - [地图](component/map.md)
   - [网页](component/web.md)

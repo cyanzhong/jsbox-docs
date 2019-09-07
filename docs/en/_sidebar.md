@@ -49,6 +49,7 @@
   - [Image](en/component/image.md)
   - [Video](en/component/video.md)
   - [Scroll](en/component/scroll.md)
+  - [Stack](en/component/stack.md)
   - [Menu](en/component/menu.md)
   - [Map](en/component/map.md)
   - [Web](en/component/web.md)
