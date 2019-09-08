@@ -285,7 +285,9 @@ var $UIEvent = {
 }
 ```
 
-# StackView axis
+# $stackViewAxis
+
+Stack view 的 axis 常量：
 
 ```js
 var $stackViewAxis = {
@@ -294,7 +296,9 @@ var $stackViewAxis = {
 }
 ```
 
-# StackView distribution
+# $stackViewDistribution
+
+Stack view 的 distribution 常量：
 
 ```js
 var $stackViewDistribution = {
@@ -306,7 +310,9 @@ var $stackViewDistribution = {
 }
 ```
 
-# StackView alignment
+# $stackViewAlignment
+
+Stack view 的 alignment 常量：
 
 ```js
 var $stackViewAlignment = {
@@ -318,5 +324,16 @@ var $stackViewAlignment = {
   trailing: 4,
   bottom: 4,
   lastBaseline: 5,
+}
+```
+
+# $stackViewSpacing
+
+Stack view 的 spacing 常量：
+
+```js
+var $stackViewSpacing = {
+  useDefault: UIStackViewSpacingUseDefault,
+  useSystem: UIStackViewSpacingUseSystem,
 }
 ```

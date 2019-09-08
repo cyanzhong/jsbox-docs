@@ -285,7 +285,9 @@ var $UIEvent = {
 }
 ```
 
-# StackView axis
+# $stackViewAxis
+
+Axis values for stack view:
 
 ```js
 var $stackViewAxis = {
@@ -294,7 +296,9 @@ var $stackViewAxis = {
 }
 ```
 
-# StackView distribution
+# $stackViewDistribution
+
+Distribution values for stack view:
 
 ```js
 var $stackViewDistribution = {
@@ -306,7 +310,9 @@ var $stackViewDistribution = {
 }
 ```
 
-# StackView alignment
+# $stackViewAlignment
+
+Alignment values for stack view:
 
 ```js
 var $stackViewAlignment = {
@@ -318,5 +324,16 @@ var $stackViewAlignment = {
   trailing: 4,
   bottom: 4,
   lastBaseline: 5,
+}
+```
+
+# $stackViewSpacing
+
+Spacing values for stack view:
+
+```js
+var $stackViewSpacing = {
+  useDefault: UIStackViewSpacingUseDefault,
+  useSystem: UIStackViewSpacingUseSystem,
 }
 ```
