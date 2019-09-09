@@ -121,6 +121,19 @@ var method = request.method;
 
 Types include: `default`, `data`, `file`, `multipart`, `urlencoded`.
 
+Starting from v1.51.0, you can also return an object that overrides the original rules:
+
+```js
+handler.filter = rules => {
+  return {
+    "type": "data",
+    "method": "GET"
+  }
+}
+```
+
+You probably need this if you want to redirect a request, or change a `POST` method to `GET`, etc.
+
 # handler.response
 
 Response function passes request as the parameter, you should return a response for it:

@@ -119,6 +119,19 @@ var method = request.method;
 
 request 类型包括：`default`, `data`, `file`, `multipart`, `urlencoded`。
 
+从 v1.51.0 开始，你可以返回一个字典，用来覆盖之前的规则，例如：
+
+```js
+handler.filter = rules => {
+  return {
+    "type": "data",
+    "method": "GET"
+  }
+}
+```
+
+当你需要重定向一个请求，或是将 `POST` 改写为 `GET` 等需求时，可能会用得上。
+
 # handler.response
 
 这个函数传入一个 request，根据需要返回一个 response 用于完成对这个请求的响应，例如这是一种最简单的 response：
