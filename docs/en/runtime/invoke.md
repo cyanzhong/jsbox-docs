@@ -13,6 +13,15 @@ It creates a label, and sets the text to `Runtime`.
 
 Methods are chainable, so `invoke("alloc.init")` equals to `invoke("alloc").invoke("init")`.
 
+If you want to import many Objective-C classes in one go, here is the solution:
+
+```js
+$objc("UIColor, UIApplication, NSIndexPath");
+
+const color = UIColor.$redColor();
+const application = UIApplication.$sharedApplication();
+```
+
 # selector
 
 Invoke a method that has multiple parameters (Objective-C):

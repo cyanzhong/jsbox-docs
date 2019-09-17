@@ -13,6 +13,15 @@ label.invoke("setText", "Runtime")
 
 `invoke("alloc.init")` 也等价于 `invoke("alloc").invoke("init")`。
 
+如果你希望一次性导入多个 Objective-C 类，可以这么做：
+
+```js
+$objc("UIColor, UIApplication, NSIndexPath");
+
+const color = UIColor.$redColor();
+const application = UIApplication.$sharedApplication();
+```
+
 # selector
 
 以 `NSIndexPath` 为例，Objective-C 中：
