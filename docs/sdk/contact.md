@@ -17,6 +17,8 @@ $contact.pick({
 
 # $contact.fetch(object)
 
+> 注：在 iOS 13 上，搜索联系人需要向 Apple 申请权限，我们暂不支持这个权限
+
 通过关键字查找某些联系人：
 
 ```js

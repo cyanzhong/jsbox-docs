@@ -17,6 +17,8 @@ Please set `multi` to `true` if you want to pick up multiple items.
 
 # $contact.fetch(object)
 
+> Note: In iOS 13, search contact requires permission from Apple, we don't support it for now
+
 Fetch contacts with keywords:
 
 ```js
