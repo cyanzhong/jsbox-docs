@@ -41,12 +41,28 @@ src 还支持以 `shared://` 或 `drive://` 开头的文件。
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
 src | string | 只写 | 图片地址
+source | object | 读写 | 图片加载信息
 symbol | string | 读写 | SF symbols 名称
 data | $data | 只写 | 二进制数据
 size | $size | 只读 | 图片大小
 orientation | number | 只读 | 图片方向
 info | object | 只读 | 图片信息
 scale | number | 只读 | 图片比例
+
+# props: source
+
+从 v1.55.0 开始，可以通过 `source` 对图片进行更详细的设定，例如：
+
+```js
+props: {
+  url: url,
+  placeholder: image,
+  header: {
+    "key1": "value1",
+    "key2": "value2",
+  }
+}
+```
 
 # resized($size)
 

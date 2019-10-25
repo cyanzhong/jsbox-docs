@@ -28,6 +28,7 @@ title | string | 读写 | 标题
 titleColor | $color | 读写 | 标题颜色
 font | $font | 读写 | 字体
 src | string | 读写 | 图片地址
+source | object | 读写 | 图片加载信息
 symbol | string | 读写 | SF symbols 名称
 image | image | 读写 | 图片对象
 icon | $icon | 只写 | 内置图标
@@ -35,6 +36,21 @@ type | $btnType | 只读 | 类型
 contentEdgeInsets | $insets | 读写 | 内容边距
 titleEdgeInsets | $insets | 读写 | 标题边距
 imageEdgeInsets | $insets | 读写 | 图片边距
+
+# props: source
+
+从 v1.55.0 开始，可以通过 `source` 对图片进行更详细的设定，例如：
+
+```js
+props: {
+  url: url,
+  placeholder: image,
+  header: {
+    "key1": "value1",
+    "key2": "value2",
+  }
+}
+```
 
 # events: tapped
 

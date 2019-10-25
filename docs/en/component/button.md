@@ -28,6 +28,7 @@ title | string | rw | title
 titleColor | $color | rw | title color
 font | $font | rw | font
 src | string | rw | image url
+source | object | rw | image loading info
 symbol | string | rw | SF symbols id
 image | image | rw | icon image
 icon | $icon | w | builtin icon
@@ -35,6 +36,21 @@ type | $btnType | r | button type
 contentEdgeInsets | $insets | rw | content edge insets
 titleEdgeInsets | $insets | rw | title edge insets
 imageEdgeInsets | $insets | rw | image edge insets
+
+# props: source
+
+After v1.55.0, the image can be specified with `source` for more detailed information:
+
+```js
+props: {
+  url: url,
+  placeholder: image,
+  header: {
+    "key1": "value1",
+    "key2": "value2",
+  }
+}
+```
 
 # events: tapped
 

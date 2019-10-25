@@ -41,12 +41,28 @@ Finally, JSBox icon set is also supported by image, [refer](en/data/method.md?id
 Prop | Type | Read/Write | Description
 ---|---|---|---
 src | string | w | source url
+source | object | rw | image loading info
 symbol | string | rw | SF symbols id
 data | $data | w | binary file
 size | $size | r | image size
 orientation | number | r | image orientation
 info | object | r | information, metadata
 scale | number | r | image scale
+
+# props: source
+
+After v1.55.0, the image can be specified with `source` for more detailed information:
+
+```js
+props: {
+  url: url,
+  placeholder: image,
+  header: {
+    "key1": "value1",
+    "key2": "value2",
+  }
+}
+```
 
 # resized($size)
 
