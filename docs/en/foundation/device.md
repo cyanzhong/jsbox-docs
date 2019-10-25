@@ -37,6 +37,8 @@ Example:
 }
 ```
 
+Note: In iOS 13 and above, this API needs location access, you can use `$location` APIs to request the access.
+
 # $device.networkType
 
 Returns the network type:

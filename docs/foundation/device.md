@@ -37,6 +37,8 @@ var ssid = $device.ssid
 }
 ```
 
+注：在 iOS 13 上，使用此接口需要应用具备地理位置权限，你可以通过 `$location` 相关接口获得权限。
+
 # $device.networkType
 
 获取当前设备的网络类型：
