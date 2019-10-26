@@ -12,17 +12,27 @@ $share.sheet(["https://apple.com", "apple"])
 
 目前支持的数据类型：`文本`、`链接`、`图片`和`二进制数据`（data）。
 
-当分享二进制数据的时候，支持（建议）指定文件名：
+当分享二进制数据的时候，可以指定文件名：
 
 ```js
-$share.sheet(["sample.mp4", data])
+$share.sheet([
+  {
+    "name": "sample.mp4",
+    "data": data
+  }
+])
 ```
 
 从 Build 80 开始，支持指定回调：
 
 ```js
 $share.sheet({
-  items: ["sample.mp4", data], // 也支持 item
+  items: [
+    {
+      "name": "sample.mp4",
+      "data": data
+    }
+  ], // 也支持 item
   handler: function(success) {
 
   }
