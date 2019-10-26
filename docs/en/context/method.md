@@ -93,6 +93,14 @@ Returns all items, ignores the type.
 
 Basically, if we want to get external parameters, use `$context` APIs.
 
+# $context.clear()
+
+Clear all data in the context object, including query and Action Extension objects:
+
+```js
+$context.clear();
+```
+
 # $context.close()
 
 Close current action extension, the script stops running.

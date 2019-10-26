@@ -96,6 +96,14 @@ var data = $context.data
 
 就目前而言，`$context` 仅对从 Action Extension 运行这种场景有效。
 
+# $context.clear()
+
+清除 context 内的所有数据，包括传递进来的参数和 Action Extension 的数据：
+
+```js
+$context.clear();
+```
+
 # $context.close()
 
 在 Action Extension 中运行时，通过这个方法可以关闭 Extension，请注意如果先调用了 `$app.close()`，这条语句将不会生效，因为 $app.close() 之后的代码都不会生效。
