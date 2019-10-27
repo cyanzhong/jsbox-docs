@@ -1,3 +1,7 @@
+# 2019.10.27
+
+- Add voice settings for $text.speech: [Refer](en/extend/text.md)
+
 # 2019.09.02
 
 - Add app preferences related API: [Refer](en/foundation/prefs.md)

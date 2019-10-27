@@ -1,3 +1,7 @@
+# 2019.10.27
+
+- $text.speech 增加语音设置：[详情](extend/text.md)
+
 # 2019.09.02
 
 - 增加应用配置相关：[详情](foundation/prefs.md)

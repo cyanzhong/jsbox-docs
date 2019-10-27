@@ -104,6 +104,31 @@ zh-HK
 zh-TW
 ```
 
+# $text.ttsVoices
+
+获取当前设备支持的语音列表，可以选择一个用于指定 $text.speech 语音：
+
+```js
+const voices = $text.ttsVoices;
+console.log(voices);
+
+$text.speech({
+  text: "Hello, World!",
+  voice: voices[0]
+});
+```
+
+Voice 对象结构
+
+属性 | 类型 | 读写 | 说明
+---|---|---|---
+language | string | 只读 | 语言
+identifier | string | 只读 | 标识符
+name | string | 只读 | 名称
+quality | number | 只读 | 语音质量
+gender | number | 只读 | 声音性别
+audioFileSettings | object | 只读 | 音频文件设置
+
 # $text.base64Encode(string)
 
 Base64 encode.

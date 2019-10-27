@@ -104,6 +104,31 @@ zh-HK
 zh-TW
 ```
 
+# $text.ttsVoices
+
+Returns supported voices, you can use one of them to specify the voice in $text.speech:
+
+```js
+const voices = $text.ttsVoices;
+console.log(voices);
+
+$text.speech({
+  text: "Hello, World!",
+  voice: voices[0]
+});
+```
+
+Voice Object:
+
+Prop | Type | Read/Write | Description
+---|---|---|---
+language | string | r | language
+identifier | string | r | identifier
+name | string | r | name
+quality | number | r | quality
+gender | number | r | gender
+audioFileSettings | object | r | audio file settings
+
 # $text.base64Encode(string)
 
 Base64 encode.
