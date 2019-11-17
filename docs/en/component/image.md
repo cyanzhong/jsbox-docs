@@ -54,7 +54,7 @@ scale | number | r | image scale
 After v1.55.0, the image can be specified with `source` for more detailed information:
 
 ```js
-props: {
+source: {
   url: url,
   placeholder: image,
   header: {

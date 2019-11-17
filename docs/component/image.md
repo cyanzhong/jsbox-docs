@@ -54,7 +54,7 @@ scale | number | 只读 | 图片比例
 从 v1.55.0 开始，可以通过 `source` 对图片进行更详细的设定，例如：
 
 ```js
-props: {
+source: {
   url: url,
   placeholder: image,
   header: {

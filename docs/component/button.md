@@ -42,7 +42,7 @@ imageEdgeInsets | $insets | 读写 | 图片边距
 从 v1.55.0 开始，可以通过 `source` 对图片进行更详细的设定，例如：
 
 ```js
-props: {
+source: {
   url: url,
   placeholder: image,
   header: {
