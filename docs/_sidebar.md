@@ -33,6 +33,7 @@
   - [手势](uikit/gesture.md)
   - [事件处理](uikit/event.md)
   - [动画](uikit/animation.md)
+  - [长按菜单](uikit/context-menu.md)
   - [接口](uikit/method.md)
 
 - 控件列表

@@ -1,3 +1,7 @@
+# 2019.11.21
+
+- 增加 context menu 支持：[详情](uikit/context-menu.md)
+
 # 2019.10.27
 
 - $text.speech 增加语音设置：[详情](extend/text.md)

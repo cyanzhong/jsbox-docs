@@ -33,6 +33,7 @@
   - [Gesture](en/uikit/gesture.md)
   - [UI Event](en/uikit/event.md)
   - [Animation](en/uikit/animation.md)
+  - [Context Menu](en/uikit/context-menu.md)
   - [Method](en/uikit/method.md)
 
 - Components
