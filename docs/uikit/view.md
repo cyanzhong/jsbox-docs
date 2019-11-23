@@ -119,7 +119,7 @@ view.rotate(Math.PI)
 
 # events: ready
 
-所有的 view 都支持 ready 事件，将会在 view 初始化完成之后调用：
+所有的 view 都支持 `ready` 事件，将会在 view 初始化完成之后调用：
 
 ```js
 ready: function(sender) {
