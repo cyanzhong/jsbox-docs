@@ -10,6 +10,26 @@ info | object | r | metadata
 scale | number | r | scale
 png | data | r | png format data
 
+# alwaysTemplate
+
+Returns a new image with the `template` rendering image, it can be used with `tintColor` to change the image color:
+
+```js
+{
+  type: "image",
+  props: {
+    tintColor: $color("red"),
+    image: rawImage.alwaysTemplate
+  }
+}
+```
+
+The ahove `rawImage` is the original image you have.
+
+# alwaysOriginal
+
+It's similar to `alwaysTemplate`, but it returns an image with the `original` rendering mode, `tintColor` will be ignored.
+
 # resized($size)
 
 Returns a resized image:

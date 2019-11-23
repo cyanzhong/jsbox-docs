@@ -10,6 +10,26 @@ info | object | 只读 | metadata
 scale | number | 只读 | scale
 png | data | 只读 | png 表示的二进制数据
 
+# alwaysTemplate
+
+返回一个使用 `template` 模式渲染的图片，结合 `tintColor` 可以用于对模板图片进行着色：
+
+```js
+{
+  type: "image",
+  props: {
+    tintColor: $color("red"),
+    image: rawImage.alwaysTemplate
+  }
+}
+```
+
+上述 `rawImage` 是原始的图片。
+
+# alwaysOriginal
+
+与 `alwaysTemplate` 相对于，此属性返回的图片总是渲染自身的颜色，而非 `tintColor`。
+
 # resized($size)
 
 返回调整尺寸的图片：
