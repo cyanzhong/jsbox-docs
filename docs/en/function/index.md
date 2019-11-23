@@ -170,6 +170,30 @@ var data = $data({
 })
 ```
 
+# $image(object)
+
+Returns an image object, supports the following types:
+
+```js
+// file path
+const image = $image("assets/icon.png");
+```
+
+```js
+// sf symbols
+const image = $image("sunrise");
+```
+
+```js
+// url
+const image = $image("https://images.apple.com/v/ios/what-is/b/images/performance_large.jpg");
+```
+
+```js
+// base64
+const image = $image("data:image/png;base64,...");
+```
+
 # $icon(code, color, size)
 
 Get an icon provided by JSBox, refer: https://github.com/cyanzhong/xTeko/tree/master/extension-icons

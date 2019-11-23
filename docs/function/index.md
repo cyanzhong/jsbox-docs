@@ -166,6 +166,30 @@ var data = $data({
 })
 ```
 
+# $image(object)
+
+创建一个 image 对象，支持多种参数类型：
+
+```js
+// file path
+const image = $image("assets/icon.png");
+```
+
+```js
+// sf symbols
+const image = $image("sunrise");
+```
+
+```js
+// url
+const image = $image("https://images.apple.com/v/ios/what-is/b/images/performance_large.jpg");
+```
+
+```js
+// base64
+const image = $image("data:image/png;base64,...");
+```
+
 # $icon(code, color, size)
 
 获得一个 JSBox 内置的图标，图标编号请参考：https://github.com/cyanzhong/xTeko/tree/master/extension-icons
