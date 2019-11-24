@@ -78,6 +78,8 @@ tracking | boolean | r | is tracking
 dragging | boolean | r | is dragging
 decelerating | boolean | r | is decelerating
 keyboardDismissMode | number | rw | keyboard dismiss mode
+zoomable | bool | rw | zoom images with 2-finger pinch
+maxZoomScale | number | rw | max zoom scale for images
 
 # beginRefreshing()
 

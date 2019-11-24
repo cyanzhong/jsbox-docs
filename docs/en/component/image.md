@@ -64,6 +64,36 @@ source: {
 }
 ```
 
+# Zoomable
+
+Since `v1.56.0`, you can create zoomable images easily:
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "scroll",
+      props: {
+        zoomable: true,
+        maxZoomScale: 3 // Optional, default is 2
+      },
+      layout: $layout.fill,
+      views: [
+        {
+          type: "image",
+          props: {
+            src: "https://..."
+          },
+          layout: $layout.fill
+        }
+      ]
+    }
+  ]
+});
+```
+
+All you need to do is just wrapping the image view with a `scroll` view, and set it as `zoomable`.
+
 # alwaysTemplate
 
 Returns a new image with the `template` rendering image, it can be used with `tintColor` to change the image color:

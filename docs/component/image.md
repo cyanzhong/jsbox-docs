@@ -64,6 +64,36 @@ source: {
 }
 ```
 
+# 双指缩放
+
+从 `v1.56.0` 开始，可以很轻松地创建支持双指缩放的图片：
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "scroll",
+      props: {
+        zoomable: true,
+        maxZoomScale: 3 // Optional, default is 2
+      },
+      layout: $layout.fill,
+      views: [
+        {
+          type: "image",
+          props: {
+            src: "https://..."
+          },
+          layout: $layout.fill
+        }
+      ]
+    }
+  ]
+});
+```
+
+只需要用 `scroll` 组件作为容器，并设置为 `zoomable` 即可。
+
 # alwaysTemplate
 
 返回一个使用 `template` 模式渲染的图片，结合 `tintColor` 可以用于对模板图片进行着色：
