@@ -74,7 +74,7 @@ $ui.render({
     {
       type: "scroll",
       props: {
-        zoomable: true,
+        zoomEnabled: true,
         maxZoomScale: 3 // Optional, default is 2
       },
       layout: $layout.fill,
@@ -92,7 +92,7 @@ $ui.render({
 });
 ```
 
-只需要用 `scroll` 组件作为容器，并设置为 `zoomable` 即可。
+只需要用 `scroll` 组件作为容器，并设置为 `zoomEnabled` 即可。
 
 # alwaysTemplate
 

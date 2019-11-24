@@ -74,7 +74,7 @@ $ui.render({
     {
       type: "scroll",
       props: {
-        zoomable: true,
+        zoomEnabled: true,
         maxZoomScale: 3 // Optional, default is 2
       },
       layout: $layout.fill,
@@ -92,7 +92,7 @@ $ui.render({
 });
 ```
 
-All you need to do is just wrapping the image view with a `scroll` view, and set it as `zoomable`.
+All you need to do is just wrapping the image view with a `scroll` view, and set it as `zoomEnabled`.
 
 # alwaysTemplate
 

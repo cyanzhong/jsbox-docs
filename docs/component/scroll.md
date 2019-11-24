@@ -76,7 +76,7 @@ tracking | boolean | 只读 | 用户是否在触摸
 dragging | boolean | 只读 | 用户是否在拖动
 decelerating | boolean | 只读 | 是否正在减速
 keyboardDismissMode | number | 读写 | 键盘收起模式
-zoomable | bool | 读写 | 内置图片是否可以缩放
+zoomEnabled | bool | 读写 | 内置图片是否可以缩放
 maxZoomScale | number | 读写 | 图片缩放最大比例
 
 # beginRefreshing()
