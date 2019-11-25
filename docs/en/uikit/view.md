@@ -111,6 +111,46 @@ Get a subview with specific identifier.
 
 Remove a view from its super view's hierarchy.
 
+# insertBelow(view, other)
+
+Insert a new view below an existing view:
+
+```js
+view.insertBelow(newView, existingView);
+```
+
+# insertAbove(view, other)
+
+Insert a new view above an existing view:
+
+```js
+view.insertAbove(newView, existingView);
+```
+
+# insertAtIndex(view, index)
+
+Insert a new view at a specific index:
+
+```js
+view.insertAtIndex(newView, 4);
+```
+
+# moveToFront(view)
+
+Move an existing view to the front:
+
+```js
+view.moveToFront(existingView);
+```
+
+# moveToBack(view)
+
+Move an existing view to the back:
+
+```js
+view.moveToBack(existingView);
+```
+
 # relayout()
 
 Trigger layouting of a view, you can use this during animations.

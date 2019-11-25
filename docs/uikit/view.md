@@ -89,6 +89,46 @@ $("label").updateLayout(function(make) {
 
 将此 view 从父视图中移除。
 
+# insertBelow(view, other)
+
+将一个新的视图插入到一个已存在视图的下方：
+
+```js
+view.insertBelow(newView, existingView);
+```
+
+# insertAbove(view, other)
+
+将一个新的视图插入到一个已存在视图的上方：
+
+```js
+view.insertAbove(newView, existingView);
+```
+
+# insertAtIndex(view, index)
+
+将一个新的视图插入到一个指定的位置：
+
+```js
+view.insertAtIndex(newView, 4);
+```
+
+# moveToFront(view)
+
+将一个已存在的子视图移动到顶部：
+
+```js
+view.moveToFront(existingView);
+```
+
+# moveToBack(view)
+
+将一个已存在的子视图移动到底部：
+
+```js
+view.moveToBack(existingView);
+```
+
 # relayout()
 
 更新 layout，此方法可能在动画中调用。
