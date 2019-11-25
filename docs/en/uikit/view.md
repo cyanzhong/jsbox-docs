@@ -135,20 +135,20 @@ Insert a new view at a specific index:
 view.insertAtIndex(newView, 4);
 ```
 
-# moveToFront(view)
+# moveToFront()
 
-Move an existing view to the front:
+Move self to super's front:
 
 ```js
-view.moveToFront(existingView);
+existingView.moveToFront();
 ```
 
-# moveToBack(view)
+# moveToBack()
 
-Move an existing view to the back:
+Move self to super's back:
 
 ```js
-view.moveToBack(existingView);
+existingView.moveToBack();
 ```
 
 # relayout()

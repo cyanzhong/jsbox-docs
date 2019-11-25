@@ -113,20 +113,20 @@ view.insertAbove(newView, existingView);
 view.insertAtIndex(newView, 4);
 ```
 
-# moveToFront(view)
+# moveToFront()
 
-将一个已存在的子视图移动到顶部：
+将自己移动到父视图的顶部：
 
 ```js
-view.moveToFront(existingView);
+existingView.moveToFront();
 ```
 
-# moveToBack(view)
+# moveToBack()
 
-将一个已存在的子视图移动到底部：
+将自己移动到父视图的底部：
 
 ```js
-view.moveToBack(existingView);
+existingView.moveToBack();
 ```
 
 # relayout()
