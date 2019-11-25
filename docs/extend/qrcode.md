@@ -31,6 +31,7 @@ $qrcode.scan(function(text) {
 ```js
 $qrcode.scan({
   useFrontCamera: false, // Optional
+  turnOnFlash: false, // Optional
   handler(string) {
     $ui.toast(string)
   },

@@ -31,6 +31,7 @@ We could provide `cancelled` callback:
 ```js
 $qrcode.scan({
   useFrontCamera: false, // Optional
+  turnOnFlash: false, // Optional
   handler(string) {
     $ui.toast(string)
   },
