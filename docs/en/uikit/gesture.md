@@ -43,7 +43,7 @@ doubleTapped: function(sender) {
 When touch event is triggered:
 
 ```js
-touchesBegan: function(sender, location) {
+touchesBegan: function(sender, location, locations) {
 
 }
 ```
@@ -53,7 +53,7 @@ touchesBegan: function(sender, location) {
 When touch is moving:
 
 ```js
-touchesMoved: function(sender, location) {
+touchesMoved: function(sender, location, locations) {
 
 }
 ```
@@ -63,7 +63,7 @@ touchesMoved: function(sender, location) {
 When touch event finished:
 
 ```js
-touchesEnded: function(sender, location) {
+touchesEnded: function(sender, location, locations) {
 
 }
 ```

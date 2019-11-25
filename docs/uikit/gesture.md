@@ -40,7 +40,7 @@ doubleTapped: function(sender) {
 当点击事件触发时调用：
 
 ```js
-touchesBegan: function(sender, location) {
+touchesBegan: function(sender, location, locations) {
 
 }
 ```
@@ -50,7 +50,7 @@ touchesBegan: function(sender, location) {
 当点击发生移动时调用：
 
 ```js
-touchesMoved: function(sender, location) {
+touchesMoved: function(sender, location, locations) {
 
 }
 ```
@@ -60,7 +60,7 @@ touchesMoved: function(sender, location) {
 当点击事件结束时调用
 
 ```js
-touchesEnded: function(sender, location) {
+touchesEnded: function(sender, location, locations) {
 
 }
 ```
