@@ -112,6 +112,7 @@ $http.post({
 $http.download({
   url: "https://images.apple.com/v/ios/what-is/b/images/performance_large.jpg",
   showsProgress: true, // Optional, default is true
+  backgroundFetch: true, // Optional, default is false
   progress: function(bytesWritten, totalBytes) {
     var percentage = bytesWritten * 1.0 / totalBytes
   },
