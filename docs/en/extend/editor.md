@@ -14,6 +14,15 @@ var text = $editor.text;
 $editor.text = "Hey!";
 ```
 
+# $editor.view
+
+Returns the text view of the current running editor:
+
+```js
+const editorView = $editor.view;
+editorView.alpha = 0.5;
+```
+
 # $editor.selectedRange
 
 Get or set selected range in the code editor:

@@ -14,6 +14,15 @@ var text = $editor.text;
 $editor.text = "Hey!";
 ```
 
+# $editor.view
+
+获取当前编辑器正在使用的视图：
+
+```js
+const editorView = $editor.view;
+editorView.alpha = 0.5;
+```
+
 # $editor.selectedRange
 
 获取或设置编辑器内选中的范围：
