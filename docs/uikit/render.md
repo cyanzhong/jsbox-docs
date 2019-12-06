@@ -44,32 +44,6 @@ homeIndicatorHidden | bool | 是否为 iPhone X 系列隐藏 Home Indicator
 clipsToSafeArea | bool | 是否以 Safe Area 为边界裁剪视图
 keyCommands | array | 快捷键
 
-从 v1.36.0 版本开始，可以通过 $ui.render("main.ux") 来渲染一个通过可视化界面编辑器生成的页面。
-
-# navButtons
-
-我们可以在界面右上角自定义按钮，例如：
-
-```js
-$ui.render({
-  props: {
-    navButtons: [
-      {
-        title: "Title",
-        image: image, // Optional
-        icon: "024", // Or you can use icon name
-        symbol: "checkmark.seal", // SF symbols are supported
-        handler: function() {
-          $ui.alert("Tapped!")
-        }
-      }
-    ]
-  }
-})
-```
-
-最多可以配置两个按钮，并且在调试模式下只会显示一个。
-
 # $ui.push(object)
 
 基本上与 `$ui.render` 完全一致，只不过 render 直接绘制在画布上，而 `push` 则会滑进来一个新的画布（可以滑动返回），让整个界面变成一个视图栈，可以多次 push 用于表达查看详情等场景。

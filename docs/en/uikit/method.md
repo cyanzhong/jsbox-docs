@@ -152,6 +152,18 @@ var canvas = $ui.create({
 })
 ```
 
+Note that, since there's no super view yet, you cannot use `layout` method at that moment.
+
+Instead, you should do it after the view is added to its super:
+
+```js
+const subview = $ui.create(...);
+superview.add(subview);
+subview.layout((make, view) => {
+
+});
+```
+
 # $ui.window
 
 Get current window of $ui.render.

@@ -63,6 +63,43 @@ accessibilityValue | string | 读写 | accessibility value
 
 注意：你不能在 layout 函数里面使用 `prev` 和 `next`，因为这个时候视图结构还没有被生成。
 
+从 v1.36.0 版本开始，可以通过 $ui.render("main.ux") 来渲染一个通过可视化界面编辑器生成的页面。
+
+# navButtons
+
+我们可以在界面右上角自定义按钮，例如：
+
+```js
+$ui.render({
+  props: {
+    navButtons: [
+      {
+        title: "Title",
+        image: image, // Optional
+        icon: "024", // Or you can use icon name
+        symbol: "checkmark.seal", // SF symbols are supported
+        handler: function() {
+          $ui.alert("Tapped!")
+        }
+      }
+    ]
+  }
+})
+```
+
+最多可以配置两个按钮，并且在调试模式下只会显示一个。
+
+# layout(function)
+
+手动触发 view 的 layout 方法，参数和 view 定义时的 `layout` 函数完全相同：
+
+```js
+view.layout((make, view) => {
+  make.left.top.right.equalTo(0);
+  make.height.equalTo(100);
+});
+```
+
 # updateLayout(function)
 
 `updateLayout` 方法可以更新一个控件的 layout：
@@ -79,7 +116,7 @@ $("label").updateLayout(function(make) {
 
 # add(object)
 
-动态添加一个子 view，object 的结构定义和 `$ui.render(object)` 中 view 的完全一致。
+动态添加一个子 view，object 的结构定义和 `$ui.render(object)` 中 view 的完全一致，也可以是通过 `$ui.create(...)` 创建出来的 view 实例。
 
 # get(id)
 

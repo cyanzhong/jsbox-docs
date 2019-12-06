@@ -152,6 +152,18 @@ var canvas = $ui.create({
 })
 ```
 
+请注意，这个时候 view 还没有父 view，所以在这个时候不能使用他的 `layout` 方法。
+
+取而代之的是，应该在把它添加到父 view 之后，手动进行 layout:
+
+```js
+const subview = $ui.create(...);
+superview.add(subview);
+subview.layout((make, view) => {
+
+});
+```
+
 # $ui.window
 
 获得 $ui.push 页面的 window 对象。

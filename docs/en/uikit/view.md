@@ -85,6 +85,17 @@ $ui.render({
 
 You can create 2 buttons at most, on debug mode there will be only 1 button.
 
+# layout(function)
+
+Trigger layout method manually, arguments are exactly the same as the `layout` function in its view definition:
+
+```js
+view.layout((make, view) => {
+  make.left.top.right.equalTo(0);
+  make.height.equalTo(100);
+});
+```
+
 # updateLayout(function)
 
 Update a view's layout:
@@ -101,7 +112,7 @@ Similar to updateLayout, but remake costs more performance, try to use update as
 
 # add(object)
 
-Add a view to another view's hierarchy, refer `$ui.render(object)` to see how to create a view.
+Add a view to another view's hierarchy, refer `$ui.render(object)` to see how to create a view, it can also be a view instance that is created with `$ui.create(...)`.
 
 # get(id)
 
