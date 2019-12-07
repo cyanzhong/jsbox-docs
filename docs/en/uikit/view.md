@@ -166,6 +166,10 @@ existingView.moveToBack();
 
 Trigger layouting of a view, you can use this during animations.
 
+# sizeToFit()
+
+Resize the view to its best size based on the current bounds.
+
 # scale(number)
 
 Scale a view (0.0 ~ 1.0):

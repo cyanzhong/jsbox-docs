@@ -170,6 +170,10 @@ existingView.moveToBack();
 
 更新 layout，此方法可能在动画中调用。
 
+# sizeToFit()
+
+将 view 调整到当前 bounds 下最合适的大小。
+
 # scale(number)
 
 将控件缩放到一个比例，例如：
