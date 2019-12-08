@@ -80,6 +80,7 @@ decelerating | boolean | r | is decelerating
 keyboardDismissMode | number | rw | keyboard dismiss mode
 zoomEnabled | bool | rw | zoom images with 2-finger pinch
 maxZoomScale | number | rw | max zoom scale for images
+doubleTapToZoom | number | rw | enables double tap to zoom
 
 # beginRefreshing()
 

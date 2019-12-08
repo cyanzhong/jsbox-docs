@@ -78,6 +78,7 @@ decelerating | boolean | 只读 | 是否正在减速
 keyboardDismissMode | number | 读写 | 键盘收起模式
 zoomEnabled | bool | 读写 | 内置图片是否可以缩放
 maxZoomScale | number | 读写 | 图片缩放最大比例
+doubleTapToZoom | number | 读写 | 是否双指点击缩放
 
 # beginRefreshing()
 

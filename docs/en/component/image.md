@@ -75,7 +75,8 @@ $ui.render({
       type: "scroll",
       props: {
         zoomEnabled: true,
-        maxZoomScale: 3 // Optional, default is 2
+        maxZoomScale: 3, // Optional, default is 2,
+        doubleTapToZoom: false // Optional, default is true
       },
       layout: $layout.fill,
       views: [
