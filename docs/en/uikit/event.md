@@ -67,7 +67,7 @@ textField.addEventHandler({
 });
 ```
 
-Full list of UI events can be found here: [$UIEvent](data/constant.md?id=uievent)
+Note that: this only available on components like `button`, `text`, `input`, since they are UI controls, but it won't work on `image` like components. Full list of UI events can be found here: [$UIEvent](data/constant.md?id=uievent)
 
 # view.removeEventHandlers(events)
 

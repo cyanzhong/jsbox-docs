@@ -32,7 +32,7 @@ priority | number | 读写 | 优先级(1 ~ 9)
 
 # $reminder.create(object)
 
-用于创建一个日历事项：
+用于创建一个提醒事项：
 
 ```js
 $reminder.create({

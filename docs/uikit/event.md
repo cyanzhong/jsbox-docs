@@ -67,7 +67,7 @@ textField.addEventHandler({
 });
 ```
 
-完整的事件类型请查看：[$UIEvent](data/constant.md?id=uievent)
+注意：此方法只能用于 `button`, `text`, `input` 等本身就支持事件响应的 UI controls，而对于 `image` 一类的视图则不支持。完整的事件类型请查看：[$UIEvent](data/constant.md?id=uievent)
 
 # view.removeEventHandlers(events)
 
