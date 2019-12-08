@@ -43,6 +43,7 @@ multipleTouchEnabled | boolean | rw | multiple touch support
 super | view | r | super view
 prev | view | r | previous view
 next | view | r | next view
+window | view | r | window
 views | array | r | subviews
 clipsToBounds | boolean | rw | clip subviews
 opaque | boolean | rw | opaque

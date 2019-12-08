@@ -45,6 +45,7 @@ multipleTouchEnabled | boolean | 读写 | 是否支持多点触摸
 super | view | 只读 | 父视图
 prev | view | 只读 | 前一个视图
 next | view | 只读 | 后一个视图
+window | view | 只读 | 所属的 window
 views | array | 只读 | 子视图
 clipsToBounds | boolean | 读写 | 是否裁剪子 view
 opaque | boolean | 读写 | 是否不透明
