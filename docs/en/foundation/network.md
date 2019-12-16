@@ -56,6 +56,7 @@ For `form` and `files`, refer `$http.upload` to see details.
 Param | Type | Description
 ---|---|---
 data | string | json object will be parsed automatically
+rawData | data | raw response binary data
 response | response | [Refer](en/object/response.md)
 error | error | [Refer](en/object/error.md)
 

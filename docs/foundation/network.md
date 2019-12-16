@@ -56,6 +56,7 @@ handler | function | 回调函数
 参数 | 类型 | 说明
 ---|---|---
 data | string | json 数据会自动 parse
+rawData | data | 原始返回的二进制数据
 response | response | [请参考](object/response.md)
 error | error | [请参考](object/error.md)
 
