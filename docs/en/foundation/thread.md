@@ -31,6 +31,14 @@ Param | Type | Description
 delay | number | delay (seconds)
 handler | function | handler
 
+It can be simplifies as below if no delay is needed:
+
+```js
+$thread.main(() => {
+  
+});
+```
+
 # $delay(number, function)
 
 Run after delay easily:

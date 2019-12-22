@@ -31,6 +31,14 @@ $thread.main({
 delay | number | 延迟执行的时间，可选
 handler | function | 回调
 
+如果不需要延迟执行，也可以简单地写为：
+
+```js
+$thread.main(() => {
+  
+});
+```
+
 # $delay(number, function)
 
 一种更简单的执行延时任务的方法：
