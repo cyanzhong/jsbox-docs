@@ -2,7 +2,11 @@
 
 # JSBox APIs
 
-> 通过 JavaScript 来为 JSBox 提供强大的扩展，支持 ES6 标准语法，并提供了丰富的 API 来与 Native 代码进行交互。
+通过 JavaScript 来为 JSBox 提供强大的扩展，支持 ES6 标准语法，并提供了丰富的 API 来与 Native 代码进行交互。
+
+# JSBox Node.js
+
+JSBox 从 2.0 开始，提供了对 Node.js 运行时的支持。关于这一部分的内容，请参考专门的文档：https://cyanzhong.github.io/jsbox-nodejs/#/
 
 # 如何在 JSBox 里运行代码
 

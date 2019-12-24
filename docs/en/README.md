@@ -2,7 +2,11 @@
 
 # JSBox APIs
 
-> Create powerful addins for JSBox with JavaScript, ES6 is supported, and we provide tons of APIs to interact with iOS directly
+Create powerful addins for JSBox with JavaScript, ES6 is supported, and we provide tons of APIs to interact with iOS directly
+
+# JSBox Node.js
+
+JSBox 2.0 provides Node.js runtime, you can also use Node APIs. For details, please refer to: https://cyanzhong.github.io/jsbox-nodejs/#/en/
 
 # How to run code in JSBox
 
