@@ -64,7 +64,7 @@
   - [Markdown](component/markdown.md)
   - [Lottie](component/lottie.md)
   - [图表控件](component/chart.md)
-  - [代码编辑器](component/code.md)
+  - [代码视图](component/code.md)
   - [Runtime](component/runtime.md)
 
 - Today 小组件
