@@ -64,6 +64,7 @@
   - [Markdown](en/component/markdown.md)
   - [Lottie](en/component/lottie.md)
   - [Chart](en/component/chart.md)
+  - [Code View](en/component/code.md)
   - [Runtime](en/component/runtime.md)
 
 - Today Widget
