@@ -3,14 +3,12 @@
 `ResultSet` is returned from a SQLite query:
 
 ```js
-var rs = db.query("SELECT * FROM USER").result;
+db.query("SELECT * FROM USER", (rs, err) => {
+  while (rs.next()) {
 
-while (rs.next()) {
-
-}
-
-//...
-rs.close();
+  }
+  rs.close();
+});
 ```
 
 Prop | Type | Read/Write | Description

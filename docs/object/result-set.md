@@ -3,14 +3,12 @@
 `ResultSet` 是 SQLite 返回的查询结果：
 
 ```js
-var rs = db.query("SELECT * FROM USER").result;
+db.query("SELECT * FROM USER", (rs, err) => {
+  while (rs.next()) {
 
-while (rs.next()) {
-
-}
-
-//...
-rs.close();
+  }
+  rs.close();
+});
 ```
 
 属性 | 类型 | 读写 | 说明

@@ -42,25 +42,22 @@ PS: never concatenate strings as sql, use placeholders and values forever.
 Let's see how to execute query:
 
 ```js
-var object = db.query("SELECT * FROM User");
-var result = object.result;
-var error = object.error;
-
-while (result.next()) {
-  var values = result.values;
-  var name = result.get("name"); // Or result.get(0);
-}
-
-result.close();
+db.query("SELECT * FROM User", (rs, err) => {
+  while (rs.next()) {
+    const values = rs.values;
+    const name = rs.get("name"); // Or rs.get(0);
+  }
+  rs.close();
+});
 ```
 
 Result set supports functions as below:
 
 ```js
-var columnCount = result.columnCount; // Column count
-var columnName = result.nameForIndex(0); // Column name
-var columnIndex = result.indexForName("age"); // Column index
-var query = result.query; // SQL Query
+const columnCount = rs.columnCount; // Column count
+const columnName = rs.nameForIndex(0); // Column name
+const columnIndex = rs.indexForName("age"); // Column index
+const query = rs.query; // SQL Query
 ```
 
 Please take a look at [Result Set](en/object/result-set.md) for details.
@@ -68,8 +65,10 @@ Please take a look at [Result Set](en/object/result-set.md) for details.
 It's similar to update when you have arguments:
 
 ```js
-var rs = db.query({
+db.query({
   sql: "SELECT * FROM User where age = ?",
   args: [28]
+}, (rs, err) => {
+
 });
 ```

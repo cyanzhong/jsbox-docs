@@ -42,25 +42,22 @@ db.update({
 SQLite 实例支持通过 query 进行查询操作：
 
 ```js
-var object = db.query("SELECT * FROM User");
-var result = object.result;
-var error = object.error;
-
-while (result.next()) {
-  var values = result.values;
-  var name = result.get("name"); // Or result.get(0);
-}
-
-result.close();
+db.query("SELECT * FROM User", (rs, err) => {
+  while (rs.next()) {
+    const values = rs.values;
+    const name = rs.get("name"); // Or rs.get(0);
+  }
+  rs.close();
+});
 ```
 
 Result set 还支持如下操作：
 
 ```js
-var columnCount = result.columnCount; // Column count
-var columnName = result.nameForIndex(0); // Column name
-var columnIndex = result.indexForName("age"); // Column index
-var query = result.query; // SQL Query
+const columnCount = rs.columnCount; // Column count
+const columnName = rs.nameForIndex(0); // Column name
+const columnIndex = rs.indexForName("age"); // Column index
+const query = rs.query; // SQL Query
 ```
 
 请参考 [Result Set 文档](object/result-set.md)了解更多内容。
@@ -68,8 +65,10 @@ var query = result.query; // SQL Query
 同样的，当查询有占位符和参数时，使用方法和 update 类似：
 
 ```js
-var rs = db.query({
+db.query({
   sql: "SELECT * FROM User where age = ?",
   args: [28]
+}, (rs, err) => {
+
 });
 ```
