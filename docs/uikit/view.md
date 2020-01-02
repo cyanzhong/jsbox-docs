@@ -90,6 +90,32 @@ $ui.render({
 
 最多可以配置两个按钮，并且在调试模式下只会显示一个。
 
+# titleView
+
+除了通过 `title` 来指定标题，还可以通过 `titleView` 来指定 navBar 顶部展示的视图：
+
+```js
+$ui.render({
+  props: {
+    titleView: {
+      type: "tab",
+      props: {
+        bgcolor: $rgb(240, 240, 240),
+        items: ["A", "B", "C"]
+      },
+      events: {
+        changed: sender => {
+          console.log(sender.index);
+        }
+      }
+    }
+  },
+  views: [
+
+  ]
+});
+```
+
 # layout(function)
 
 手动触发 view 的 layout 方法，参数和 view 定义时的 `layout` 函数完全相同：

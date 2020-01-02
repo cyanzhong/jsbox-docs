@@ -86,6 +86,32 @@ $ui.render({
 
 You can create 2 buttons at most, on debug mode there will be only 1 button.
 
+# titleView
+
+Other than setting title with `title`, you can also change the title view with `titleView`:
+
+```js
+$ui.render({
+  props: {
+    titleView: {
+      type: "tab",
+      props: {
+        bgcolor: $rgb(240, 240, 240),
+        items: ["A", "B", "C"]
+      },
+      events: {
+        changed: sender => {
+          console.log(sender.index);
+        }
+      }
+    }
+  },
+  views: [
+
+  ]
+});
+```
+
 # layout(function)
 
 Trigger layout method manually, arguments are exactly the same as the `layout` function in its view definition:
