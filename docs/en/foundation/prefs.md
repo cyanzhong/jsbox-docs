@@ -44,7 +44,9 @@ Here is an example:
 In your script, the settings view can be opened with the following code:
 
 ```js
-$prefs.open();
+$prefs.open(() => {
+  // Done
+});
 ```
 
 # Definition
