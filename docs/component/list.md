@@ -159,6 +159,7 @@ selectable | bool | 只写 | 行是否可被选中
 stickyHeader | boolean | 只写 | section header 是否固定
 reorder | boolean | 读写 | 是否可以长按排序
 crossSections | boolean | 读写 | 长按排序时是否可以跨 section
+hasActiveAction | boolean | 只读 | 是否正在使用 action
 
 # props: actions
 

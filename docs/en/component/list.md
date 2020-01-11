@@ -163,6 +163,7 @@ selectable | bool | w | is row selectable
 stickyHeader | boolean | w | section/header are sticky
 reorder | boolean | rw | whether can be reordered
 crossSections | boolean | rw | whether recorder can cross sections
+hasActiveAction | boolean | r | whether an action is being used
 
 # props: actions
 
