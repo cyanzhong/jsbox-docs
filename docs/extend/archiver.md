@@ -52,3 +52,12 @@ $archiver.unzip({
 ```
 
 file 是一个 zip 的 data 对象，dest 所指向的目录需要存在，否则将会失败。
+
+从 2.0 开始，你也可以使用 `path` 来指定需要解压的 zip 文件位置，这种方式使用更少的内存：
+
+```js
+const success = await $archiver.unzip({
+  path: "archive.zip",
+  dest: "folder"
+});
+```

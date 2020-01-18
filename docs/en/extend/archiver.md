@@ -52,3 +52,12 @@ $archiver.unzip({
 ```
 
 File has to be a zip document, dest is the destination folder, it has to be existed.
+
+Starts from 2.0, you can also use `path` property which points to the zip file, it uses less memory:
+
+```js
+const success = await $archiver.unzip({
+  path: "archive.zip",
+  dest: "folder"
+});
+```
