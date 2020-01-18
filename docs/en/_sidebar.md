@@ -1,5 +1,6 @@
 - Quick Start
   - [README](en/README.md)
+  - [Privacy Policy](en/privacy.md)
   - [Intro](en/quickstart/intro.md)
   - [Sample](en/quickstart/sample.md)
 

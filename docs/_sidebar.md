@@ -1,5 +1,6 @@
 - 快速开始
   - [README](README.md)
+  - [隐私政策](privacy.md)
   - [开始之前](quickstart/intro.md)
   - [简单样例](quickstart/sample.md)
 
