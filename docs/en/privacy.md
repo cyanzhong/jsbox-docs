@@ -4,7 +4,7 @@ JSBox is an IDE for learning JavaScript on iOS, it aims to provide a safe sandbo
 
 This privacy policy applies to the iOS main app itself, its embedded frameworks and app extensions, and official examples we provided, but obviously not to scripts that you, the user, write yourself. Especially when using networking APIs, please be aware that other terms (of the API service provider) may apply.
 
-Note that, you should never execute scripts in JSBox that you either not written by yourself, or that are from someone you don't fully trust. In order to prevent malicious scripts, you are strongly encouraged to always check the code before running.
+JSBox is **not** designed to be a "platform" that allows you run arbitrary code, but rather as a learning environment for **your own** programs. In order to prevent malicious scripts, you are strongly encouraged to always check the code before running.
 
 **Data Collected by JSBox**
 
