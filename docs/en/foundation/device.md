@@ -144,3 +144,11 @@ Check whether Face ID is supported:
 ```js
 const hasFaceID = $device.hasFaceID;
 ```
+
+# $device.isJailbroken
+
+Check whether device is jailbroken:
+
+```js
+const isJailbroken = $device.isJailbroken;
+```

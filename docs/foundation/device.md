@@ -144,3 +144,11 @@ const hasTouchID = $device.hasTouchID;
 ```js
 const hasFaceID = $device.hasFaceID;
 ```
+
+# $device.isJailbroken
+
+检查设备是否越狱：
+
+```js
+const isJailbroken = $device.isJailbroken;
+```
