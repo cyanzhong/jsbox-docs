@@ -56,3 +56,12 @@ changed: function(sender) {
   
 }
 ```
+
+# Retrieve subviews
+
+You can retrieve subviews with methods as below:
+
+```js
+const views = $("gallery").itemViews; // All views
+const view = $("gallery").viewWithIndex(0); // The first view
+```

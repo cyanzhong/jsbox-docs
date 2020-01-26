@@ -56,3 +56,12 @@ changed: function(sender) {
   
 }
 ```
+
+# 获取子 view
+
+在 gallery 里面获取子 view 请使用以下方法：
+
+```js
+const views = $("gallery").itemViews; // All views
+const view = $("gallery").viewWithIndex(0); // The first view
+```
