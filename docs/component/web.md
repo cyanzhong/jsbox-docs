@@ -57,6 +57,7 @@ $ui.render({
 
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
+title | string | 只读 | 网页标题
 url | string | 只写 | 地址
 toolbar | bool | 只写 | 显示工具栏
 html | string | 只写 | html
@@ -73,6 +74,8 @@ showsProgress | bool | 只写 | 是否显示进度条
 inlineMedia | bool | 只写 | 是否允许 inline video
 airPlay | bool | 只写 | 是否允许 AirPlay
 pictureInPicture | bool | 只写 | 是否允许画中画
+allowsNavigation | bool | 读写 | 是否允许滑动返回
+allowsLinkPreview | bool | 读写 | 是否允许链接预览
 
 # goBack()
 

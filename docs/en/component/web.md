@@ -57,6 +57,7 @@ Local files will be loaded from bundle, `shared://` and `drive://` are supported
 
 Prop | Type | Read/Write | Description
 ---|---|---|---
+title | string | r | web page title
 url | string | w | address
 toolbar | bool | w | shows a toolbar
 html | string | w | html content
@@ -73,6 +74,8 @@ showsProgress | bool | w | whethe shows progress bar
 inlineMedia | bool | w | allows inline video
 airPlay | bool | w | allows AirPlay
 pictureInPicture | bool | w | allows picture in picture
+allowsNavigation | bool | rw | allows back gestures
+allowsLinkPreview | bool | rw | allows link preview
 
 # goBack()
 
