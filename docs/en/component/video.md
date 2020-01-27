@@ -17,6 +17,25 @@
 }
 ```
 
+Since video component is implemented with WebView internally, you can also load local videos with `local://` protocol:
+
+```js
+{
+  type: "video",
+  props: {
+    src: "local://assets/video.mp4",
+    poster: "local://assets/poster.jpg"
+  },
+  layout: function(make, view) {
+    make.left.right.equalTo(0)
+    make.centerY.equalTo(view.super)
+    make.height.equalTo(256)
+  }
+}
+```
+
+Besides, there is a demo that uses `AVPlayerViewController` for video playing: https://gist.github.com/cyanzhong/c3992af39043c8e0f25424536c379595
+
 # video.pause()
 
 Pause the video:

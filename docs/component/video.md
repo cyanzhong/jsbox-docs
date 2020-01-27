@@ -17,6 +17,25 @@
 }
 ```
 
+由于 video 组件目前使用 WebView 实现，你也可以用 `local://` 协议来加载本地文件：
+
+```js
+{
+  type: "video",
+  props: {
+    src: "local://assets/video.mp4",
+    poster: "local://assets/poster.jpg"
+  },
+  layout: function(make, view) {
+    make.left.right.equalTo(0)
+    make.centerY.equalTo(view.super)
+    make.height.equalTo(256)
+  }
+}
+```
+
+另外，你还可以像这个 demo 一样使用 `AVPlayerViewController` 来播放视频：https://gist.github.com/cyanzhong/c3992af39043c8e0f25424536c379595
+
 # video.pause()
 
 停止播放视频：
