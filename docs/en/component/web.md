@@ -110,6 +110,14 @@ webView.eval({
 })
 ```
 
+# exec(script)
+
+Similar to `eval`, but this one is an async function:
+
+```js
+const {result, error} = await webView.exec("1 + 1");
+```
+
 # events: didClose
 
 `didClose` will be called after closed:
