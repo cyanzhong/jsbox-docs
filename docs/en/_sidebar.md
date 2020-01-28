@@ -161,6 +161,7 @@
 - Package
   - [Intro](en/package/intro.md)
   - [Module](en/package/module.md)
+  - [Built-in Modules](en/package/builtin.md)
   - [File Path](en/package/path.md)
   - [VSCode](en/package/vscode.md)
   - [Install](en/package/install.md)

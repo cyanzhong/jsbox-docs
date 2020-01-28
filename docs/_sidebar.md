@@ -161,6 +161,7 @@
 - 安装包格式
   - [前言](package/intro.md)
   - [模块化](package/module.md)
+  - [内置模块](package/builtin.md)
   - [文件路径](package/path.md)
   - [VSCode](package/vscode.md)
   - [安装说明](package/install.md)
