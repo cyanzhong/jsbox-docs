@@ -100,6 +100,7 @@
   - [Photo](en/media/photo.md)
   - [Audio](en/media/audio.md)
   - [PDF](en/media/pdf.md)
+  - [Image Processing](en/media/imagekit.md)
 
 - Native SDK
   - [Intro](en/sdk/intro.md)

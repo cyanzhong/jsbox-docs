@@ -100,6 +100,7 @@
   - [图片](media/photo.md)
   - [音频](media/audio.md)
   - [PDF](media/pdf.md)
+  - [图像处理](media/imagekit.md)
 
 - 原生 SDK
   - [前言](sdk/intro.md)
