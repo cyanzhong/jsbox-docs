@@ -281,7 +281,7 @@ const data = await $imagekit.makeGIF(images, {
 
 若使用 `duration` 替代 `durations`，则每张图片时长一致。
 
-# $imagekit.makeVideo(source, options)
+# $imagekit.makeVideo(source, options) -> Promise
 
 将 image 数组或 GIF 文件合成为视频文件：
 

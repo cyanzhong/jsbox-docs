@@ -281,7 +281,7 @@ const data = await $imagekit.makeGIF(images, {
 
 You can also use `duration` instead of `durations`, it makes the duration of each frame are the same.
 
-# $imagekit.makeVideo(source, options)
+# $imagekit.makeVideo(source, options) -> Promise
 
 Make video with image array or GIF data:
 
