@@ -159,6 +159,7 @@ separatorColor | $color | rw | separator color
 header | object | rw | header view
 footer | object | rw | footer view
 rowHeight | number | w | row height
+sectionTitleHeight | number | w | section title height
 selectable | bool | w | is row selectable
 stickyHeader | boolean | w | section/header are sticky
 reorder | boolean | rw | whether can be reordered
@@ -238,7 +239,7 @@ var cell = tableView.cell($indexPath(0, 0))
 
 # events: rowHeight
 
-We could specify row height dynamically by make the `rowHeight` a function:
+We could specify row height dynamically by making the `rowHeight` a function:
 
 ```js
 rowHeight: function(sender, indexPath) {
@@ -246,6 +247,20 @@ rowHeight: function(sender, indexPath) {
     return 88.0
   } else {
     return 44.0
+  }
+}
+```
+
+# events: sectionTitleHeight
+
+We could specify section title height dynamically by making the `sectionTitleHeight` a function:
+
+```js
+sectionTitleHeight: (sender, section) => {
+  if (section == 0) {
+    return 30;
+  } else {
+    return 40;
   }
 }
 ```

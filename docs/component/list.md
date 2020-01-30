@@ -155,6 +155,7 @@ separatorColor | $color | 读写 | 分割线颜色
 header | object | 读写 | header
 footer | object | 读写 | footer
 rowHeight | number | 只写 | 行高
+sectionTitleHeight | number | 只写 | section 标题高度
 selectable | bool | 只写 | 行是否可被选中
 stickyHeader | boolean | 只写 | section header 是否固定
 reorder | boolean | 读写 | 是否可以长按排序
@@ -234,7 +235,7 @@ var cell = tableView.cell($indexPath(0, 0))
 
 # events: rowHeight
 
-`rowHeight` 可以动态的为每一行指定行高，会覆盖 props 里面那个静态值：
+`rowHeight` 可以动态地为每一行指定行高，会覆盖 props 里面那个静态值：
 
 ```js
 rowHeight: function(sender, indexPath) {
@@ -242,6 +243,20 @@ rowHeight: function(sender, indexPath) {
     return 88.0
   } else {
     return 44.0
+  }
+}
+```
+
+# events: sectionTitleHeight
+
+`sectionTitleHeight` 可以动态地为每个 section 指定标题高度，会覆盖 props 里面那个静态值：
+
+```js
+sectionTitleHeight: (sender, section) => {
+  if (section == 0) {
+    return 30;
+  } else {
+    return 40;
   }
 }
 ```
