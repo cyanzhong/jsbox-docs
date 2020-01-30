@@ -307,6 +307,14 @@ const output = $imagekit.combine(image1, image2, mode);
 const output = $imagekit.rounded(source, 10);
 ```
 
+# $imagekit.circular(image)
+
+获取正圆形图片，如果原图不是正方形则会居中并从来裁剪：
+
+```js
+const output = $imagekit.circular(source);
+```
+
 # $imagekit.extractGIF(data) -> Promise
 
 将 GIF 文件分解成单帧：
