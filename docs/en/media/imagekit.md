@@ -251,12 +251,23 @@ const output = $imagekit.concatenate(images, 10, 0);
 //   - 1: horizontally
 ```
 
-# $imagekit.combine(image, mask)
+# $imagekit.combine(image, mask, mode)
 
 Add `mask` directly on `image`:
 
 ```js
-const output = $imagekit.combine(image1, image2);
+const output = $imagekit.combine(image1, image2, mode);
+// mode:
+//   - 0: top-left
+//   - 1: top-center
+//   - 2: top-right
+//   - 3: bottom-left
+//   - 4: bottom-center
+//   - 5: bottom-right
+//   - 6: left-center
+//   - 7: right-center
+//   - 8: center (default)
+//   - $point(x, y): absolute position
 ```
 
 # $imagekit.rounded(image, radius)
