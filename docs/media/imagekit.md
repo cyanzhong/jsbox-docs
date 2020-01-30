@@ -10,6 +10,35 @@ JSBox 2.1.0 增加了图像处理模块 `$imagekit`，通过这个模块你可�
 
 为了更直观的介绍，我们构建了一个使用了所有接口的样例项目：https://github.com/cyanzhong/jsbox-imagekit
 
+# $imagekit.render(options, handler)
+
+创建一张图片，并可以使用 canvas 进行绘制：
+
+```js
+const options = {
+  size: $size(100, 100),
+  color: $color("#00FF00"),
+  // scale: default to screen scale
+  // opaque: default to false
+}
+
+const image = $imagekit.render(options, ctx => {
+  const centerX = 50;
+  const centerY = 50;
+  const radius = 25;
+  ctx.fillColor = $color("#FF0000");
+  ctx.moveToPoint(centerX, centerY - radius);
+  for (let i = 1; i < 5; ++i) {
+    const x = radius * Math.sin(i * Math.PI * 0.8);
+    const y = radius * Math.cos(i * Math.PI * 0.8);
+    ctx.addLineToPoint(x + centerX, centerY - y);
+  }
+  ctx.fillPath();
+});
+```
+
+`ctx` 与 `canvas` 组件中的一样，请参考 [canvas](component/canvas.md) 文档。
+
 # $imagekit.info(image)
 
 获取图片信息：

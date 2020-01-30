@@ -10,6 +10,35 @@ JSBox 2.1.0 brings `$imagekit` module for image processing, you can achieve many
 
 In order to make it easier to understand, we created a demo project that uses all APIs: https://github.com/cyanzhong/jsbox-imagekit
 
+# $imagekit.render(options, handler)
+
+Create an image with options and drawing actions callback:
+
+```js
+const options = {
+  size: $size(100, 100),
+  color: $color("#00FF00"),
+  // scale: default to screen scale
+  // opaque: default to false
+}
+
+const image = $imagekit.render(options, ctx => {
+  const centerX = 50;
+  const centerY = 50;
+  const radius = 25;
+  ctx.fillColor = $color("#FF0000");
+  ctx.moveToPoint(centerX, centerY - radius);
+  for (let i = 1; i < 5; ++i) {
+    const x = radius * Math.sin(i * Math.PI * 0.8);
+    const y = radius * Math.cos(i * Math.PI * 0.8);
+    ctx.addLineToPoint(x + centerX, centerY - y);
+  }
+  ctx.fillPath();
+});
+```
+
+`ctx` works exactly the same as `canvas`, refer to [canvas](en/component/canvas.md) documentation.
+
 # $imagekit.info(image)
 
 Get image information:
