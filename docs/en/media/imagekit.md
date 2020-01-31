@@ -331,9 +331,11 @@ Make GIF with image array or video data:
 
 ```js
 const images = [image1, image2];
-const data = await $imagekit.makeGIF(images, {
-  durations: [0.5, 0.5]
-});
+const options = {
+  durations: [0.5, 0.5],
+  // size: 16, 12, 8, 4, 2
+}
+const data = await $imagekit.makeGIF(images, options);
 ```
 
 You can also use `duration` instead of `durations`, it makes the duration of each frame are the same.
