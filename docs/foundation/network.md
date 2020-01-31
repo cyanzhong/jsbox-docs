@@ -33,7 +33,7 @@ form | object | form-data 参数
 files | array | 文件列表
 proxy | json | 代理设置
 progress | function | upload/download 中进度回调
-showsProgress | bool | 是否显示进度条（默认显示）
+showsProgress | bool | 是否显示进度条
 message | string | upload/download 中的提示语
 handler | function | 回调函数
 

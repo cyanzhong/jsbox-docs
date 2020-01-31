@@ -33,7 +33,7 @@ form | object | form-data
 files | array | file list
 proxy | json | proxy configuration
 progress | function | upload/download callback
-showsProgress | bool | shows progress (default to true)
+showsProgress | bool | shows progress
 message | string | upload/download message
 handler | function | finished callback
 
