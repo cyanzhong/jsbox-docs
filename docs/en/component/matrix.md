@@ -47,6 +47,7 @@ spacing | number | w | spacing between items
 itemSize | $size | w | item size of each item
 columns | number | w | column numbers
 square | boolean | w | is square
+direction | number | w | 0: vertically scroll 1: horizontally scroll
 selectable | boolean | rw | is selectable
 waterfall | boolean | w | whether a waterfall layout (Pinterest-like)
 

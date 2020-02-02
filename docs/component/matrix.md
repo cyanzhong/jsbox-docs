@@ -49,6 +49,7 @@ spacing | number | 只写 | 方块边距
 itemSize | $size | 只写 | 方块大小
 columns | number | 只写 | 列数
 square | boolean | 只写 | 是否正方形
+direction | number | 只写 | 0: 纵向滚动 1: 横向滚动
 selectable | boolean | 读写 | 是否可被选中
 waterfall | boolean | 只写 | 是否瀑布流布局
 
