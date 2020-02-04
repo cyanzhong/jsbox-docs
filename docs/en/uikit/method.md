@@ -117,7 +117,7 @@ Create custom UI with `views` property, it doesn't return a value.
 
 The `sourceView` and `sourceRect` specifies where to present the popover, and `sourceRect` default to sourceView.bounds, `directions` defines the permitted arrow directions.
 
-Please refer to the demo project we provided for more information: https://github.com/cyanzhong/jsbox-popover
+Please refer to the demo project we provided for more information: https://gist.github.com/cyanzhong/313b2c8d138691233658f1b8a52f02c6
 
 # $ui.toast(message)
 

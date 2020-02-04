@@ -115,7 +115,7 @@ $ui.popover({
 
 其中 `sourceView` 为弹出 popover 所必需的来源，它通常是一个 button，或是 navButtons 回调中的 sender。`sourceRect` 则为 popover 箭头所指向的位置（默认为 sourceView.bounds），`directions` 表示箭头允许的方向。
 
-请参考我们提供的 demo 项目了解更多：https://github.com/cyanzhong/jsbox-popover
+请参考我们提供的 demo 项目了解更多：https://gist.github.com/cyanzhong/313b2c8d138691233658f1b8a52f02c6
 
 # $ui.toast(message)
 
