@@ -75,7 +75,7 @@ $ui.render({
         image: image, // Optional
         icon: "024", // Or you can use icon name
         symbol: "checkmark.seal", // SF symbols are supported
-        handler: function() {
+        handler: sender => {
           $ui.alert("Tapped!")
         }
       }
