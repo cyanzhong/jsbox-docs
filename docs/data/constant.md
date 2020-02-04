@@ -337,3 +337,17 @@ var $stackViewSpacing = {
   useSystem: UIStackViewSpacingUseSystem,
 }
 ```
+
+# $popoverDirection
+
+使用 `$ui.popover(...)` 时指定箭头方向的常量：
+
+```js
+var $popoverDirection = {
+  up: 1 << 0,
+  down: 1 << 1,
+  left: 1 << 2,
+  right: 1 << 3,
+  any: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3),
+}
+```

@@ -72,6 +72,53 @@ $ui.menu({
 })
 ```
 
+# $ui.popover(object)
+
+Present a popover, provides two different styles.
+
+Style 1, it can be filled with some simple options (string array):
+
+```js
+const {index, title} = $ui.popover({
+  sourceView: sender,
+  sourceRect: sender.bounds, // default
+  directions: $popoverDirection.up, // default
+  size: $size(320, 200), // fits content by default
+  items: ["Option A", "Option B"]
+});
+```
+
+In this way, fill options with `items` property, it returns a Promise.
+
+Style 2, it can be filled with custom `views`:
+
+```js
+$ui.popover({
+  sourceView: sender,
+  sourceRect: sender.bounds, // default
+  directions: $popoverDirection.any, // default
+  size: $size(320, 200), // fits screen width by default
+  views: [
+    {
+      type: "button",
+      props: {
+        title: "Button"
+      },
+      layout: (make, view) => {
+        make.center.equalTo(view.super);
+        make.size.equalTo($size(100, 36));
+      }
+    }
+  ]
+});
+```
+
+Create custom UI with `views` property, it doesn't return a value.
+
+The `sourceView` and `sourceRect` specifies where to present the popover, and `sourceRect` default to sourceView.bounds, `directions` defines the permitted arrow directions.
+
+Please refer to the demo project we provided for more information: https://github.com/cyanzhong/jsbox-popover
+
 # $ui.toast(message)
 
 Show a toast message at top of the root view.

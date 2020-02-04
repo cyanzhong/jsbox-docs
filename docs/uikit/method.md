@@ -70,6 +70,53 @@ $ui.menu({
 })
 ```
 
+# $ui.popover(object)
+
+使用 Popover 的样式弹出一个浮窗，该接口提供两种使用方式。
+
+方式一，构建一个简单的列表选择浮窗：
+
+```js
+const {index, title} = $ui.popover({
+  sourceView: sender,
+  sourceRect: sender.bounds, // default
+  directions: $popoverDirection.up, // default
+  size: $size(320, 200), // fits content by default
+  items: ["Option A", "Option B"]
+});
+```
+
+此方式通过 `items` 指定每个选项的标题，返回一个 Promise。
+
+方式二，使用自定义的 `views` 构建一个浮窗：
+
+```js
+$ui.popover({
+  sourceView: sender,
+  sourceRect: sender.bounds, // default
+  directions: $popoverDirection.any, // default
+  size: $size(320, 200), // fits screen width by default
+  views: [
+    {
+      type: "button",
+      props: {
+        title: "Button"
+      },
+      layout: (make, view) => {
+        make.center.equalTo(view.super);
+        make.size.equalTo($size(100, 36));
+      }
+    }
+  ]
+});
+```
+
+此方式通过 `views` 来绘制自定义的界面，没有返回值。
+
+其中 `sourceView` 为弹出 popover 所必需的来源，它通常是一个 button，或是 navButtons 回调中的 sender。`sourceRect` 则为 popover 箭头所指向的位置（默认为 sourceView.bounds），`directions` 表示箭头允许的方向。
+
+请参考我们提供的 demo 项目了解更多：https://github.com/cyanzhong/jsbox-popover
+
 # $ui.toast(message)
 
 显示一个悬浮的提示信息，几秒后自动消失：

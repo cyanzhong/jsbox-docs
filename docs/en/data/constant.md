@@ -337,3 +337,17 @@ var $stackViewSpacing = {
   useSystem: UIStackViewSpacingUseSystem,
 }
 ```
+
+# $popoverDirection
+
+popover arrow directions for `$ui.popover(...)` method:
+
+```js
+var $popoverDirection = {
+  up: 1 << 0,
+  down: 1 << 1,
+  left: 1 << 2,
+  right: 1 << 3,
+  any: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3),
+}
+```
