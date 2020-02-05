@@ -351,3 +351,14 @@ var $popoverDirection = {
   any: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3),
 }
 ```
+
+# $scrollDirection
+
+使用 `matrix` 时的视图滚动方向：
+
+```js
+var $scrollDirection = {
+  vertical: 0,
+  horizontal: 1,
+}
+```

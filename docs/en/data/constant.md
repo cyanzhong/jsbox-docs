@@ -351,3 +351,14 @@ var $popoverDirection = {
   any: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3),
 }
 ```
+
+# $scrollDirection
+
+Scroll directions for `matrix` views:
+
+```js
+var $scrollDirection = {
+  vertical: 0,
+  horizontal: 1,
+}
+```
