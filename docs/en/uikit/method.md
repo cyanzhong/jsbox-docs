@@ -93,7 +93,7 @@ In this way, fill options with `items` property, it returns a Promise.
 Style 2, it can be filled with custom `views`:
 
 ```js
-$ui.popover({
+const popover = $ui.popover({
   sourceView: sender,
   sourceRect: sender.bounds, // default
   directions: $popoverDirection.any, // default
@@ -107,13 +107,18 @@ $ui.popover({
       layout: (make, view) => {
         make.center.equalTo(view.super);
         make.size.equalTo($size(100, 36));
+      },
+      events: {
+        tapped: () => {
+          popover.dismiss();
+        }
       }
     }
   ]
 });
 ```
 
-Create custom UI with `views` property, it doesn't return a value.
+Create custom UI with `views` property, returns the popover itself, you can close it by calling its `dismiss` method.
 
 The `sourceView` and `sourceRect` specifies where to present the popover, and `sourceRect` default to sourceView.bounds, `directions` defines the permitted arrow directions.
 

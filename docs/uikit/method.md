@@ -91,7 +91,7 @@ const {index, title} = await $ui.popover({
 方式二，使用自定义的 `views` 构建一个浮窗：
 
 ```js
-$ui.popover({
+const popover = $ui.popover({
   sourceView: sender,
   sourceRect: sender.bounds, // default
   directions: $popoverDirection.any, // default
@@ -105,13 +105,18 @@ $ui.popover({
       layout: (make, view) => {
         make.center.equalTo(view.super);
         make.size.equalTo($size(100, 36));
+      },
+      events: {
+        tapped: () => {
+          popover.dismiss();
+        }
       }
     }
   ]
 });
 ```
 
-此方式通过 `views` 来绘制自定义的界面，没有返回值。
+此方式通过 `views` 来绘制自定义的界面，返回 popover 本身，可以调用 `dismiss` 方法将其关闭。
 
 其中 `sourceView` 为弹出 popover 所必需的来源，它通常是一个 button，或是 navButtons 回调中的 sender。`sourceRect` 则为 popover 箭头所指向的位置（默认为 sourceView.bounds），`directions` 表示箭头允许的方向。
 
