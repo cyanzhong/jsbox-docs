@@ -79,7 +79,7 @@ Present a popover, provides two different styles.
 Style 1, it can be filled with some simple options (string array):
 
 ```js
-const {index, title} = $ui.popover({
+const {index, title} = await $ui.popover({
   sourceView: sender,
   sourceRect: sender.bounds, // default
   directions: $popoverDirection.up, // default

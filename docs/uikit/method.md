@@ -77,7 +77,7 @@ $ui.menu({
 方式一，构建一个简单的列表选择浮窗：
 
 ```js
-const {index, title} = $ui.popover({
+const {index, title} = await $ui.popover({
   sourceView: sender,
   sourceRect: sender.bounds, // default
   directions: $popoverDirection.up, // default
