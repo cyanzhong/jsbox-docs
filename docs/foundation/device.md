@@ -152,3 +152,11 @@ const hasFaceID = $device.hasFaceID;
 ```js
 const isJailbroken = $device.isJailbroken;
 ```
+
+# $device.isVoiceOverOn
+
+检查是否在使用 VoiceOver:
+
+```js
+const isVoiceOverOn = $device.isVoiceOverOn;
+```

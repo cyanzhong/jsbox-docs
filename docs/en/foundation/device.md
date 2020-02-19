@@ -152,3 +152,11 @@ Check whether device is jailbroken:
 ```js
 const isJailbroken = $device.isJailbroken;
 ```
+
+# $device.isVoiceOverOn
+
+Check whether VoiceOver is running:
+
+```js
+const isVoiceOverOn = $device.isVoiceOverOn;
+```
