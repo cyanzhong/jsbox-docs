@@ -82,7 +82,8 @@ const {index, title} = await $ui.popover({
   sourceRect: sender.bounds, // default
   directions: $popoverDirection.up, // default
   size: $size(320, 200), // fits content by default
-  items: ["Option A", "Option B"]
+  items: ["Option A", "Option B"],
+  dismissed: () => {},
 });
 ```
 
