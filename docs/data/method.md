@@ -144,6 +144,13 @@ var data = $data({
 })
 ```
 
+```js
+// byte array
+const data = $data({
+  byteArray: [116, 101, 115, 116]
+})
+```
+
 # $image(object)
 
 创建一个 image 对象，支持多种参数类型：

@@ -148,6 +148,13 @@ var data = $data({
 })
 ```
 
+```js
+// byte array
+const data = $data({
+  byteArray: [116, 101, 115, 116]
+})
+```
+
 # $image(object)
 
 Returns an image object, supports the following types:
