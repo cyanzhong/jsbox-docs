@@ -57,9 +57,9 @@ PS: If you're using `strings` files and `$app.strings` at the same time, the lat
 
 # config.json
 
-Currently this file including 2 parts, the `info` node represents metadata of the app, refer: [$addin](en/addin/method?id=addinlist).
+Currently this file including 2 parts, the `info` node represents metadata of the app, refer: [$addin](en/addin/method.md?id=addinlist).
 
-The `settings` node provides some settings like `$app` provided formerly: [$app](en/foundation/app?id=appminsdkver)
+The `settings` node provides some settings like `$app` provided formerly: [$app](en/foundation/app.md?id=appminsdkver)
 
 We will add more settings here in near future.
 

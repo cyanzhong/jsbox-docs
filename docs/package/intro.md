@@ -55,9 +55,9 @@ PS: 如果你同时使用了 strings 文件和 $app.strings，将以后者为准
 
 # config.json
 
-此文件目前包含两个部分，一个是安装文件的元信息，位于 `info` 节点下面，请参考：[$addin](addin/method?id=addinlist)。
+此文件目前包含两个部分，一个是安装文件的元信息，位于 `info` 节点下面，请参考：[$addin](addin/method.md?id=addinlist)。
 
-另一部分是 `settings` 节点，这部分设置与 `$app` 接口相关的一些设置相同，请参考：[$app](foundation/app?id=appminsdkver)。
+另一部分是 `settings` 节点，这部分设置与 `$app` 接口相关的一些设置相同，请参考：[$app](foundation/app.md?id=appminsdkver)。
 
 使用 config.json 能更好的组织你的设置项，以后新增的设置项也会被放到这里。
 
