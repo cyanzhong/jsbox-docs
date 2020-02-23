@@ -62,6 +62,22 @@ var hasText = $keyboard.hasText
 var selectedText = $keyboard.selectedText
 ```
 
+# $keyboard.textBeforeInput
+
+输入前的文字：
+
+```js
+const textBeforeInput = $keyboard.textBeforeInput;
+```
+
+# $keyboard.textAfterInput
+
+输入后的文字：
+
+```js
+const textAfterInput = $keyboard.textAfterInput;
+```
+
 # $keyboard.getAllText(handler)
 
 获取当前的全部文字（iOS 11 以上）：

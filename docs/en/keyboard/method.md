@@ -62,6 +62,22 @@ Get current selected text (iOS 11 only):
 var selectedText = $keyboard.selectedText
 ```
 
+# $keyboard.textBeforeInput
+
+Get text before input:
+
+```js
+const textBeforeInput = $keyboard.textBeforeInput;
+```
+
+# $keyboard.textAfterInput
+
+Get text after input:
+
+```js
+const textAfterInput = $keyboard.textAfterInput;
+```
+
 # $keyboard.getAllText(handler)
 
 Get all text (iOS 11 only):
