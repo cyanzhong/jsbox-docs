@@ -168,4 +168,12 @@ const name = $prefs.get("user.name");
 $prefs.set("user.name", "cyan");
 ```
 
+# $prefs.all()
+
+返回所有的键值对：
+
+```js
+const prefs = $prefs.all();
+```
+
 `$prefs` 显然并不能够应对任何设置项，但对于大部分的需求来说以及完全能够满足，并且使用极为简单。这里有一个完整的例子：https://github.com/cyanzhong/xTeko/tree/master/extension-demos/prefs

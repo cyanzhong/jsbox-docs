@@ -168,4 +168,12 @@ In most cases, settings should be changed by users, but just in case you want so
 $prefs.set("user.name", "cyan");
 ```
 
+# $prefs.all()
+
+Returns all key values:
+
+```js
+const prefs = $prefs.all();
+```
+
 Obviously, `$prefs` cannot cover all scenarios, but for most common used ones, it's good enough, and easy to use. Here is an example: https://github.com/cyanzhong/xTeko/tree/master/extension-demos/prefs
