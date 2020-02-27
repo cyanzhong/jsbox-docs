@@ -114,7 +114,8 @@ data: [
       {
         type: "button",
         props: {
-          title: "Button"
+          title: "Button",
+          selectable: false
         },
         layout: function(make, view) {
           make.center.equalTo(view.super)
@@ -142,6 +143,8 @@ data: [
   }
 ]
 ```
+
+其中 `selectable` 表示该行是否可以被选中，默认为 false。
 
 # props
 

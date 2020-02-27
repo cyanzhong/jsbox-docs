@@ -116,7 +116,8 @@ data: [
       {
         type: "button",
         props: {
-          title: "Button"
+          title: "Button",
+          selectable: false
         },
         layout: function(make, view) {
           make.center.equalTo(view.super)
@@ -146,6 +147,8 @@ data: [
 ```
 
 It creates some static cells, instead of reuse them dynamically.
+
+`selectable` indicates whether the cell is selectable, default to false.
 
 # props
 
