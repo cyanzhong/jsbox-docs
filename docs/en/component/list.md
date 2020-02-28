@@ -148,7 +148,7 @@ data: [
 
 It creates some static cells, instead of reuse them dynamically.
 
-`selectable` indicates whether the cell is selectable, default to false.
+The `selectable` property indicates whether the cell is selectable, default to false.
 
 # props
 

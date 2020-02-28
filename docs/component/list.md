@@ -144,7 +144,7 @@ data: [
 ]
 ```
 
-其中 `selectable` 表示该行是否可以被选中，默认为 false。
+其中 `selectable` 属性表示该行是否可以被选中，默认为 false。
 
 # props
 
