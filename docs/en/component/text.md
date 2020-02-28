@@ -21,6 +21,7 @@ Prop | Type | Read/Write | Description
 type | $kbType | rw | keyboard type
 darkKeyboard | boolean | rw | dark mode
 text | string | rw | text content
+styledText | object | w | styled text
 html | string | w | html content
 font | $font | rw | font
 textColor | $color | rw | text color
@@ -80,6 +81,50 @@ didChangeSelection: function(sender) {
 ```
 
 `text` is a subclass of `scroll`, it works like a scroll view.
+
+# styledText
+
+Styled text based on markdown syntax, supports bold, italic and links, styles can be nested:
+
+```js
+const text = `**Bold** *Italic* or __Bold__ _Italic_
+
+[Inline Link](https://docs.xteko.com) <https://docs.xteko.com>
+
+_Nested **styles**_`
+
+$ui.render({
+  views: [
+    {
+      type: "text",
+      props: {
+        styledText: text
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
+
+This uses the default font and color, for using custom values:
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "text",
+      props: {
+        styledText: {
+          text: "",
+          font: $font(15),
+          color: $color("black")
+        }
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
 
 # Customize keyboard toolbar
 

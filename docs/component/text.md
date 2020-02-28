@@ -21,6 +21,7 @@
 type | $kbType | 读写 | 键盘类型
 darkKeyboard | boolean | 读写 | 是否黑色键盘
 text | string | 读写 | 文本内容
+styledText | object | 只写 | 带格式的文本
 html | string | 只写 | 通过 html 渲染富文本
 font | $font | 读写 | 字体
 textColor | $color | 读写 | 文本颜色
@@ -80,6 +81,50 @@ didChangeSelection: function(sender) {
 ```
 
 同时，`text` 继承自 `scroll`，所以 scroll 支持的全部事件和属性 text 也一样支持。
+
+# styledText
+
+用于设置带格式的文本，使用 Markdown 语法，支持粗体、斜体和链接，支持格式的嵌套：
+
+```js
+const text = `**Bold** *Italic* or __Bold__ _Italic_
+
+[Inline Link](https://docs.xteko.com) <https://docs.xteko.com>
+
+_Nested **styles**_`
+
+$ui.render({
+  views: [
+    {
+      type: "text",
+      props: {
+        styledText: text
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
+
+这将使用默认的字体和颜色进行渲染，也可以进行自定义：
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "text",
+      props: {
+        styledText: {
+          text: "",
+          font: $font(15),
+          color: $color("black")
+        }
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
 
 # 自定义键盘工具栏
 

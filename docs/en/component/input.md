@@ -25,6 +25,7 @@ Prop | Type | Read/Write | Description
 type | $kbType | rw | type
 darkKeyboard | boolean | rw | dark mode
 text | string | rw | text content
+styledText | object | w | styled text, [refer](en/component/text.md?id=styledtext)
 textColor | $color | rw | text color
 font | $font | rw | font
 align | $align | rw | alignment

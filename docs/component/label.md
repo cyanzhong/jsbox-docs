@@ -22,6 +22,7 @@
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
 text | string | 读写 | 文字内容
+styledText | object | 只写 | 带格式的文本，[参考](component/text.md?id=styledtext)
 font | $font | 读写 | 字体
 textColor | $color | 读写 | 文字颜色
 shadowColor | $color | 读写 | 阴影颜色
