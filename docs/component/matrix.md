@@ -47,6 +47,8 @@
 data | object | 读写 | 数据源
 spacing | number | 只写 | 方块边距
 itemSize | $size | 只写 | 方块大小
+autoItemSize | boolean | 只写 | 是否自动大小
+estimatedItemSize | $size | 只写 | 估算的大小
 columns | number | 只写 | 列数
 square | boolean | 只写 | 是否正方形
 direction | $scrollDirection | 只写 | .vertical: 纵向 .horizontal: 横向
@@ -173,6 +175,67 @@ $("matrix").scrollTo({
   indexPath: $indexPath(0, 0),
   animated: true // 默认为 true
 })
+```
+
+# 自动大小
+
+从 v2.5.0 开始，matrix view 支持自动大小，只需指定 `autoItemSize` 和 `estimatedItemSize`，并设置好相关约束：
+
+```js
+const sentences = [
+  "Although moreover mistaken kindness me feelings do be marianne.",
+  "Effects present letters inquiry no an removed or friends. Desire behind latter me though in.",
+  "He went such dare good mr fact.",
+];
+
+$ui.render({
+  views: [
+    {
+      type: "matrix",
+      props: {
+        autoItemSize: true,
+        estimatedItemSize: $size(120, 0),
+        spacing: 10,
+        template: {
+          props: {
+            bgcolor: $color("#F0F0F0")
+          },
+          views: [
+            {
+              type: "image",
+              props: {
+                symbol: "sun.dust"
+              },
+              layout: (make, view) => {
+                make.centerX.equalTo(view.super);
+                make.size.equalTo($size(24, 24));
+                make.top.equalTo(10);
+              }
+            },
+            {
+              type: "label",
+              props: {
+                id: "label",
+                lines: 0
+              },
+              layout: (make, view) => {
+                make.left.bottom.inset(10);
+                make.top.equalTo(44);
+                make.width.equalTo(100);
+              }
+            }
+          ]
+        },
+        data: sentences.map(text => {
+          return {
+            "label": {text}
+          }
+        })
+      },
+      layout: $layout.fill
+    }
+  ]
+});
 ```
 
 # 长按排序

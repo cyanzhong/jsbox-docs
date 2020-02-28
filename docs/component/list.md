@@ -158,6 +158,8 @@ separatorColor | $color | 读写 | 分割线颜色
 header | object | 读写 | header
 footer | object | 读写 | footer
 rowHeight | number | 只写 | 行高
+autoRowHeight | boolean | 只写 | 是否自动行高
+estimatedRowHeight | number | 只写 | 估算的行高
 sectionTitleHeight | number | 只写 | section 标题高度
 selectable | bool | 只写 | 行是否可被选中
 stickyHeader | boolean | 只写 | section header 是否固定
@@ -292,6 +294,63 @@ didLongPress: function(sender, indexPath, data) {
 forEachItem: function(view, indexPath) {
   
 }
+```
+
+# 自动高度
+
+很多时候我们需要动态计算行高，例如每行的文本可能不一样，但我们希望全部展示出来。
+
+从 v2.5.0 开始，list view 支持自动高度，只需指定 `autoRowHeight` 和 `estimatedRowHeight`，并设置好相关约束：
+
+```js
+const sentences = [
+  "Although moreover mistaken kindness me feelings do be marianne.",
+  "Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.",
+  "He went such dare good mr fact. The small own seven saved man age ﻿no offer. Suspicion did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and consisted are pronounce distrusts.",
+];
+
+$ui.render({
+  views: [
+    {
+      type: "list",
+      props: {
+        autoRowHeight: true,
+        estimatedRowHeight: 44,
+        template: [
+          {
+            type: "image",
+            props: {
+              id: "icon",
+              symbol: "text.bubble"
+            },
+            layout: (make, view) => {
+              make.left.equalTo(10);
+              make.size.equalTo($size(24, 24));
+              make.centerY.equalTo(view.super);
+            }
+          },
+          {
+            type: "label",
+            props: {
+              id: "label",
+              lines: 0
+            },
+            layout: (make, view) => {
+              const insets = $insets(10, 44, 10, 10);
+              make.edges.equalTo(view.super).insets(insets);
+            }
+          }
+        ],
+        data: sentences.map(text => {
+          return {
+            "label": {text}
+          }
+        })
+      },
+      layout: $layout.fill
+    }
+  ]
+});
 ```
 
 # 长按排序

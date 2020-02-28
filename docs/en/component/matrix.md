@@ -45,6 +45,8 @@ Prop | Type | Read/Write | Description
 data | object | rw | data source
 spacing | number | w | spacing between items
 itemSize | $size | w | item size of each item
+autoItemSize | boolean | w | whether auto sizing
+estimatedItemSize | $size | w | estimated item size
 columns | number | w | column numbers
 square | boolean | w | is square
 direction | $scrollDirection | w | .vertical: vertically .horizontal: horizontally
@@ -171,6 +173,67 @@ $("matrix").scrollTo({
   indexPath: $indexPath(0, 0),
   animated: true // Default to true
 })
+```
+
+# Auto sizing cells
+
+Starting from v2.5.0, matrix view supports auto sizing, just set `autoItemSize` and `estimatedItemSize`, then provide proper layout constraints:
+
+```js
+const sentences = [
+  "Although moreover mistaken kindness me feelings do be marianne.",
+  "Effects present letters inquiry no an removed or friends. Desire behind latter me though in.",
+  "He went such dare good mr fact.",
+];
+
+$ui.render({
+  views: [
+    {
+      type: "matrix",
+      props: {
+        autoItemSize: true,
+        estimatedItemSize: $size(120, 0),
+        spacing: 10,
+        template: {
+          props: {
+            bgcolor: $color("#F0F0F0")
+          },
+          views: [
+            {
+              type: "image",
+              props: {
+                symbol: "sun.dust"
+              },
+              layout: (make, view) => {
+                make.centerX.equalTo(view.super);
+                make.size.equalTo($size(24, 24));
+                make.top.equalTo(10);
+              }
+            },
+            {
+              type: "label",
+              props: {
+                id: "label",
+                lines: 0
+              },
+              layout: (make, view) => {
+                make.left.bottom.inset(10);
+                make.top.equalTo(44);
+                make.width.equalTo(100);
+              }
+            }
+          ]
+        },
+        data: sentences.map(text => {
+          return {
+            "label": {text}
+          }
+        })
+      },
+      layout: $layout.fill
+    }
+  ]
+});
 ```
 
 # Long press rows

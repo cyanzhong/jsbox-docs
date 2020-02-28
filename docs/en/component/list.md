@@ -162,6 +162,8 @@ separatorColor | $color | rw | separator color
 header | object | rw | header view
 footer | object | rw | footer view
 rowHeight | number | w | row height
+autoRowHeight | boolean | w | whether auto sizing
+estimatedRowHeight | number | w | estimated row height
 sectionTitleHeight | number | w | section title height
 selectable | bool | w | is row selectable
 stickyHeader | boolean | w | section/header are sticky
@@ -296,6 +298,63 @@ Iterate all items:
 forEachItem: function(view, indexPath) {
   
 }
+```
+
+# Auto sizing cells
+
+In many cases, we want to calculate row height manually. For example, we want to display sentences that have different length.
+
+Starting from v2.5.0, list view supports auto sizing, just set `autoRowHeight` and `estimatedRowHeight`, then provide proper layout constraints:
+
+```js
+const sentences = [
+  "Although moreover mistaken kindness me feelings do be marianne.",
+  "Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.",
+  "He went such dare good mr fact. The small own seven saved man age ﻿no offer. Suspicion did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and consisted are pronounce distrusts.",
+];
+
+$ui.render({
+  views: [
+    {
+      type: "list",
+      props: {
+        autoRowHeight: true,
+        estimatedRowHeight: 44,
+        template: [
+          {
+            type: "image",
+            props: {
+              id: "icon",
+              symbol: "text.bubble"
+            },
+            layout: (make, view) => {
+              make.left.equalTo(10);
+              make.size.equalTo($size(24, 24));
+              make.centerY.equalTo(view.super);
+            }
+          },
+          {
+            type: "label",
+            props: {
+              id: "label",
+              lines: 0
+            },
+            layout: (make, view) => {
+              const insets = $insets(10, 44, 10, 10);
+              make.edges.equalTo(view.super).insets(insets);
+            }
+          }
+        ],
+        data: sentences.map(text => {
+          return {
+            "label": {text}
+          }
+        })
+      },
+      layout: $layout.fill
+    }
+  ]
+});
 ```
 
 # Long press rows
