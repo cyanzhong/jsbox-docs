@@ -155,7 +155,7 @@ const data = $data({
 })
 ```
 
-# $image(object)
+# $image(object, scale)
 
 Returns an image object, supports the following types:
 
@@ -178,6 +178,8 @@ const image = $image("https://images.apple.com/v/ios/what-is/b/images/performanc
 // base64
 const image = $image("data:image/png;base64,...");
 ```
+
+The `scale` argument indicates its scale, default to 1, 0 means using screen scale.
 
 # $icon(code, color, size)
 

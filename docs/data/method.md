@@ -151,7 +151,7 @@ const data = $data({
 })
 ```
 
-# $image(object)
+# $image(object, scale)
 
 创建一个 image 对象，支持多种参数类型：
 
@@ -174,6 +174,8 @@ const image = $image("https://images.apple.com/v/ios/what-is/b/images/performanc
 // base64
 const image = $image("data:image/png;base64,...");
 ```
+
+其中 `scale` 为可选参数，用于设置比例，默认为 1，设置成 0 的时候表示屏幕比例。
 
 # $icon(code, color, size)
 
