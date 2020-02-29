@@ -353,6 +353,29 @@ $ui.render({
 });
 ```
 
+简单的用来显示文本的列表，也支持自动高度：
+
+```js
+const sentences = [
+  "Although moreover mistaken kindness me feelings do be marianne.",
+  "Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.",
+  "He went such dare good mr fact. The small own seven saved man age ﻿no offer. Suspicion did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and consisted are pronounce distrusts.",
+];
+
+$ui.render({
+  views: [
+    {
+      type: "list",
+      props: {
+        autoRowHeight: true,
+        data: sentences
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
+
 # 长按排序
 
 list 组件支持让用户通过长按来进行排序，需要实现以下内容：

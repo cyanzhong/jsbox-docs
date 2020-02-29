@@ -357,6 +357,29 @@ $ui.render({
 });
 ```
 
+For simple list that shows strings, also supports auto-sizing:
+
+```js
+const sentences = [
+  "Although moreover mistaken kindness me feelings do be marianne.",
+  "Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.",
+  "He went such dare good mr fact. The small own seven saved man age ﻿no offer. Suspicion did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and consisted are pronounce distrusts.",
+];
+
+$ui.render({
+  views: [
+    {
+      type: "list",
+      props: {
+        autoRowHeight: true,
+        data: sentences
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
+
 # Long press rows
 
 List view supports long press to reorder items, we need to turn on this feature:
