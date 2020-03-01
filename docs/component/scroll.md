@@ -189,3 +189,45 @@ didScrollToTop: function(sender) {
 
 }
 ```
+
+# Auto Layout
+
+要让 Auto Layout 对 scrollView 正常工作有些困难，我们推荐通过 `layoutSubviews` 来解决某些问题：
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "scroll",
+      layout: $layout.fill,
+      events: {
+        layoutSubviews: sender => {
+          $("container").frame = sender.frame;
+        }
+      },
+      views: [
+        {
+          type: "view",
+          props: {
+            id: "container"
+          },
+          views: [
+            {
+              type: "view",
+              props: {
+                bgcolor: $color("red")
+              },
+              layout: (make, view) => {
+                make.left.top.right.equalTo(0);
+                make.height.equalTo(300);
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+});
+```
+
+也即，像 scrollView 添加一个用于布局的子 view，该子 view 通过 layoutSubviews 设置 frame，然后在上面添加的 view 就可以使用 Auto Layout 了。
