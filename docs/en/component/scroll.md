@@ -197,6 +197,7 @@ didScrollToTop: function(sender) {
 It is hard to make Auto Layout work for scrollViews, we suggest using `layoutSubviews` to work around some issues:
 
 ```js
+const contentHeight = 1000;
 $ui.render({
   views: [
     {
@@ -204,7 +205,7 @@ $ui.render({
       layout: $layout.fill,
       events: {
         layoutSubviews: sender => {
-          $("container").frame = sender.frame;
+          $("container").frame = $rect(0, 0, sender.frame.width, contentHeight);
         }
       },
       views: [
@@ -232,4 +233,4 @@ $ui.render({
 });
 ```
 
-In short, instead of using Auto Layout for scrollView's subviews, we can add a container view to the scrollView, and set its frame with `layoutSubviews`, then subviews that belong to the container view can work with Auto Layout correctly.
+In short, instead of using Auto Layout for scrollView's subviews, we can add a container view to the scrollView, and set its frame with `layoutSubviews`, then subviews that belong to the container view can work with Auto Layout correctly. Learn more: https://developer.apple.com/library/archive/technotes/tn2154/_index.html

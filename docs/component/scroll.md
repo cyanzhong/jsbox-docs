@@ -195,6 +195,7 @@ didScrollToTop: function(sender) {
 要让 Auto Layout 对 scrollView 正常工作有些困难，我们推荐通过 `layoutSubviews` 来解决某些问题：
 
 ```js
+const contentHeight = 1000;
 $ui.render({
   views: [
     {
@@ -202,7 +203,7 @@ $ui.render({
       layout: $layout.fill,
       events: {
         layoutSubviews: sender => {
-          $("container").frame = sender.frame;
+          $("container").frame = $rect(0, 0, sender.frame.width, contentHeight);
         }
       },
       views: [
@@ -230,4 +231,4 @@ $ui.render({
 });
 ```
 
-也即，像 scrollView 添加一个用于布局的子 view，该子 view 通过 layoutSubviews 设置 frame，然后在上面添加的 view 就可以使用 Auto Layout 了。
+也即，向 scrollView 添加一个用于布局的子 view，该子 view 通过 layoutSubviews 设置 frame，然后在上面添加的 view 就可以使用 Auto Layout 了。了解更多：https://developer.apple.com/library/archive/technotes/tn2154/_index.html
