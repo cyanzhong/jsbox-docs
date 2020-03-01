@@ -199,9 +199,7 @@ $ui.render({
   views: [
     {
       type: "scroll",
-      props: {
-        id: "scrollView"
-      },
+      layout: $layout.fill,
       events: {
         layoutSubviews: sender => {
           $("container").frame = sender.frame;
@@ -228,12 +226,7 @@ $ui.render({
         }
       ]
     }
-  ],
-  events: {
-    layoutSubviews: sender => {
-      $("scrollView").frame = sender.bounds;
-    }
-  }
+  ]
 });
 ```
 
