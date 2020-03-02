@@ -45,7 +45,7 @@ SQLite 实例支持通过 query 进行查询操作：
 db.query("SELECT * FROM User", (rs, err) => {
   while (rs.next()) {
     const values = rs.values;
-    const name = rs.get("name"); // Or rs.get(0);
+    const name = values.get("name"); // Or rs.get(0);
   }
   rs.close();
 });
