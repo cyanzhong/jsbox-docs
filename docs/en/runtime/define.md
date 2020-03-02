@@ -32,8 +32,8 @@ There are basically 3 parts:
 Now you can use it this way:
 
 ```js
-$objc("Helper").invoke("alloc.init").invoke("instanceMethod")
-$objc("Helper").invoke("classMethod")
+$objc("MyHelper").invoke("alloc.init").invoke("instanceMethod")
+$objc("MyHelper").invoke("classMethod")
 ```
 
 It works like a native class.

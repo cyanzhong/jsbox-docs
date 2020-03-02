@@ -32,8 +32,8 @@ $define({
 定义之后可以这样使用这个类：
 
 ```js
-$objc("Helper").invoke("alloc.init").invoke("instanceMethod")
-$objc("Helper").invoke("classMethod")
+$objc("MyHelper").invoke("alloc.init").invoke("instanceMethod")
+$objc("MyHelper").invoke("classMethod")
 ```
 
 分别会弹出 `instance` 和 `class` 两个提示。

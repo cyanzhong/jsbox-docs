@@ -35,7 +35,7 @@
 
 ```js
 $define({
-  type: "Helper",
+  type: "MyHelper",
   classEvents: {
     open: function(scheme) {
       var url = $objc("NSURL").invoke("URLWithString", scheme)
@@ -59,7 +59,7 @@ $ui.render({
       },
       events: {
         tapped: function(sender) {
-          $objc("Helper").invoke("open", "weixin://")
+          $objc("MyHelper").invoke("open", "weixin://")
         }
       }
     }
