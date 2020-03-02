@@ -38,6 +38,8 @@ radius | number | w | corner radius
 smoothRadius | number | w | smooth corner radius
 frame | $rect | rw | frame
 size | $size | rw | size
+center | $point | rw | center
+flex | string | rw | auto resizing flexible mask
 userInteractionEnabled | boolean | rw | user interaction enable
 multipleTouchEnabled | boolean | rw | multiple touch support
 super | view | r | super view

@@ -135,3 +135,33 @@ However, understand concept above is enough to handle most cases, please check d
 [Masonry](https://github.com/SnapKit/Masonry) [Apple](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/index.html).
 
 This document is still under construction, we will provide more examples soon.
+
+# Flex
+
+Sometimes, auto resizing is enough for you, you can use view's `flex` property:
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "view",
+      props: {
+        bgcolor: $color("red"),
+        frame: $rect(0, 0, 0, 100),
+        flex: "W"
+      }
+    }
+  ]
+});
+```
+
+This creates a view which has the same width as its parent, and the height is 100. The `flex` property is a string, acceptable characters are:
+
+- `L`: [UIViewAutoresizingFlexibleLeftMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexibleleftmargin?language=objc)
+- `W`: [UIViewAutoresizingFlexibleWidth](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexiblewidth?language=objc)
+- `R`: [UIViewAutoresizingFlexibleRightMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexiblerightmargin?language=objc)
+- `T`: [UIViewAutoresizingFlexibleTopMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexibletopmargin?language=objc)
+- `H`: [UIViewAutoresizingFlexibleHeight](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexibleheight?language=objc)
+- `B`: [UIViewAutoresizingFlexibleBottomMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexiblebottommargin?language=objc)
+
+For example, using "LRTB" to describe `UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin`.

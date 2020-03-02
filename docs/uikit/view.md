@@ -40,6 +40,8 @@ radius | number | 只写 | 圆角半径
 smoothRadius | number | 只写 | 平滑圆角半径
 frame | $rect | 读写 | 位置和大小
 size | $size | 读写 | 大小
+center | $point | 读写 | 中心位置
+flex | string | 读写 | 自动缩放规则
 userInteractionEnabled | boolean | 读写 | 是否响应触摸事件
 multipleTouchEnabled | boolean | 读写 | 是否支持多点触摸
 super | view | 只读 | 父视图

@@ -127,3 +127,33 @@ layout: function(make) {
 [Masonry 文档](https://github.com/SnapKit/Masonry) [Apple 文档](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)
 
 这份文档还比较潦草，可以在后续的例子和 demo 扩展里面看到更多的用法。
+
+# Flex
+
+有时候你可能只需要简单的自动缩放，你可以使用视图的 `flex` 属性：
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "view",
+      props: {
+        bgcolor: $color("red"),
+        frame: $rect(0, 0, 0, 100),
+        flex: "W"
+      }
+    }
+  ]
+});
+```
+
+这将创建一个宽度等于父 view，高度为 100 的矩形。其中 flex 是一个字符串，可选字符为：
+
+- `L`: [UIViewAutoresizingFlexibleLeftMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexibleleftmargin?language=objc)
+- `W`: [UIViewAutoresizingFlexibleWidth](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexiblewidth?language=objc)
+- `R`: [UIViewAutoresizingFlexibleRightMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexiblerightmargin?language=objc)
+- `T`: [UIViewAutoresizingFlexibleTopMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexibletopmargin?language=objc)
+- `H`: [UIViewAutoresizingFlexibleHeight](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexibleheight?language=objc)
+- `B`: [UIViewAutoresizingFlexibleBottomMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexiblebottommargin?language=objc)
+
+例如，使用 "LRTB" 表示 `UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin`。
