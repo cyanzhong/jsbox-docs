@@ -22,7 +22,7 @@ It shows `Hello, World!` on the screen.
 Prop | Type | Read/Write | Description
 ---|---|---|---
 text | string | rw | text content
-styledText | object | w | styled text, [refer](en/component/text.md?id=styledtext)
+styledText | object | rw | styled text, [refer](en/component/text.md?id=styledtext)
 font | $font | rw | font
 textColor | $color | rw | text color
 shadowColor | $color | rw | shadow color

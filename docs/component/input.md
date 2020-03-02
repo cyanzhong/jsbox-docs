@@ -25,7 +25,7 @@
 type | $kbType | 读写 | 类型
 darkKeyboard | boolean | 读写 | 黑色主题
 text | string | 读写 | 文本内容
-styledText | object | 只写 | 带格式的文本，[参考](component/text.md?id=styledtext)
+styledText | object | 读写 | 带格式的文本，[参考](component/text.md?id=styledtext)
 textColor | $color | 读写 | 文本颜色
 font | $font | 读写 | 字体
 align | $align | 读写 | 对齐方式

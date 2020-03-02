@@ -21,7 +21,7 @@
 type | $kbType | 读写 | 键盘类型
 darkKeyboard | boolean | 读写 | 是否黑色键盘
 text | string | 读写 | 文本内容
-styledText | object | 只写 | 带格式的文本
+styledText | object | 读写 | 带格式的文本
 html | string | 只写 | 通过 html 渲染富文本
 font | $font | 读写 | 字体
 textColor | $color | 读写 | 文本颜色

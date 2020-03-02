@@ -21,7 +21,7 @@ Prop | Type | Read/Write | Description
 type | $kbType | rw | keyboard type
 darkKeyboard | boolean | rw | dark mode
 text | string | rw | text content
-styledText | object | w | styled text
+styledText | object | rw | styled text
 html | string | w | html content
 font | $font | rw | font
 textColor | $color | rw | text color
