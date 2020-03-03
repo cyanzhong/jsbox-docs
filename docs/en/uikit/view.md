@@ -195,6 +195,19 @@ existingView.moveToBack();
 
 Trigger layouting of a view, you can use this during animations.
 
+# setNeedsLayout()
+
+Mark a view as needs layout, it will be applied in the next drawing cycle.
+
+# layoutIfNeeded()
+
+Forces layout early before next drawing cycle, can be used with `setNeedsLayout`:
+
+```js
+view.setNeedsLayout();
+view.layoutIfNeeded();
+```
+
 # sizeToFit()
 
 Resize the view to its best size based on the current bounds.

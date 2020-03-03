@@ -199,6 +199,19 @@ existingView.moveToBack();
 
 更新 layout，此方法可能在动画中调用。
 
+# setNeedsLayout()
+
+将此 view 标记为需要 layout，会在下一个绘制循环中被 layout。
+
+# layoutIfNeeded()
+
+强制触发下一个绘制循环，可以配合 `setNeedsLayout` 使用：
+
+```js
+view.setNeedsLayout();
+view.layoutIfNeeded();
+```
+
 # sizeToFit()
 
 将 view 调整到当前 bounds 下最合适的大小。
