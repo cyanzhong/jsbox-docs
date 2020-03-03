@@ -6,7 +6,7 @@ Here is an example:
 
 ```js
 $define({
-  type: "Helper: NSObject",
+  type: "MyHelper: NSObject",
   events: {
     instanceMethod: function() {
       $ui.alert("instance")
