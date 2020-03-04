@@ -219,7 +219,7 @@ $ui.render({
 ```
 
 Attribute | Type | Description
----|---|---|---
+---|---|---
 range | $range | text range
 font | $font | font
 color | $color | foreground color

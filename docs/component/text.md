@@ -219,7 +219,7 @@ $ui.render({
 ```
 
 属性 | 类型 | 说明
----|---|---|---
+---|---|---
 range | $range | 文字范围
 font | $font | 字体
 color | $color | 前景色
