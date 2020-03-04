@@ -126,6 +126,115 @@ $ui.render({
 });
 ```
 
+如果需要对格式进行更精细的控制，可以通过 `styles` 为文字的不同位置指定样式：
+
+```js
+const text = `
+AmericanTypewriter Cochin-Italic
+
+Text Color Background Color
+
+Kern
+
+Strikethrough Underline
+
+Stroke
+
+Link
+
+Baseline Offset
+
+Obliqueness
+`;
+
+const _range = keyword => {
+  return $range(text.indexOf(keyword), keyword.length);
+}
+
+$ui.render({
+  views: [
+    {
+      type: "text",
+      props: {
+        styledText: {
+          text: text,
+          font: $font(17),
+          color: $color("black"),
+          styles: [
+            {
+              range: _range("AmericanTypewriter"),
+              font: $font("AmericanTypewriter", 17)
+            },
+            {
+              range: _range("Cochin-Italic"),
+              font: $font("Cochin-Italic", 17)
+            },
+            {
+              range: _range("Text Color"),
+              color: $color("red")
+            },
+            {
+              range: _range("Background Color"),
+              color: $color("white"),
+              bgcolor: $color("blue")
+            },
+            {
+              range: _range("Kern"),
+              kern: 10
+            },
+            {
+              range: _range("Strikethrough"),
+              strikethroughStyle: 2,
+              strikethroughColor: $color("red")
+            },
+            {
+              range: _range("Underline"),
+              underlineStyle: 9,
+              underlineColor: $color("green")
+            },
+            {
+              range: _range("Stroke"),
+              strokeWidth: 3,
+              strokeColor: $color("black")
+            },
+            {
+              range: _range("Link"),
+              link: "https://xteko.com"
+            },
+            {
+              range: _range("Baseline Offset"),
+              baselineOffset: 10
+            },
+            {
+              range: _range("Obliqueness"),
+              obliqueness: 1
+            }
+          ]
+        }
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
+
+属性 | 类型 | 说明
+---|---|---|---
+range | $range | 文字范围
+font | $font | 字体
+color | $color | 前景色
+bgcolor | $color | 背景色
+kern | number | 字距
+strikethroughStyle | number | 删除线样式（0: 无 1: 细线 2: 细线 9: 双线）
+strikethroughColor | $color | 删除线颜色
+underlineStyle | number | 下划线样式（0: 无 1: 细线 2: 细线 9: 双线）
+underlineColor | $color | 下划线颜色
+strokeWidth | number | 描边宽度
+strokeColor | $color | 描边颜色
+link | string | 链接 URL
+baselineOffset | number | 基线偏移
+obliqueness | number | 字体倾斜
+
 # 自定义键盘工具栏
 
 通过这样的方式自定义键盘工具栏：

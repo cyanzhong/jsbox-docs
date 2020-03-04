@@ -1,3 +1,7 @@
+# 2020.03.04
+
+- Add styled text related: [Refer](en/component/text.md)
+
 # 2020.01.29
 
 - Add image processing related: [Refer](en/media/imagekit.md)

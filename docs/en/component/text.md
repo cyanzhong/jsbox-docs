@@ -126,6 +126,115 @@ $ui.render({
 });
 ```
 
+如果需要对格式进行更精细的控制，可以通过 `styles` 为文字的不同位置指定样式：
+
+```js
+const text = `
+AmericanTypewriter Cochin-Italic
+
+Text Color Background Color
+
+Kern
+
+Strikethrough Underline
+
+Stroke
+
+Link
+
+Baseline Offset
+
+Obliqueness
+`;
+
+const _range = keyword => {
+  return $range(text.indexOf(keyword), keyword.length);
+}
+
+$ui.render({
+  views: [
+    {
+      type: "text",
+      props: {
+        styledText: {
+          text: text,
+          font: $font(17),
+          color: $color("black"),
+          styles: [
+            {
+              range: _range("AmericanTypewriter"),
+              font: $font("AmericanTypewriter", 17)
+            },
+            {
+              range: _range("Cochin-Italic"),
+              font: $font("Cochin-Italic", 17)
+            },
+            {
+              range: _range("Text Color"),
+              color: $color("red")
+            },
+            {
+              range: _range("Background Color"),
+              color: $color("white"),
+              bgcolor: $color("blue")
+            },
+            {
+              range: _range("Kern"),
+              kern: 10
+            },
+            {
+              range: _range("Strikethrough"),
+              strikethroughStyle: 2,
+              strikethroughColor: $color("red")
+            },
+            {
+              range: _range("Underline"),
+              underlineStyle: 9,
+              underlineColor: $color("green")
+            },
+            {
+              range: _range("Stroke"),
+              strokeWidth: 3,
+              strokeColor: $color("black")
+            },
+            {
+              range: _range("Link"),
+              link: "https://xteko.com"
+            },
+            {
+              range: _range("Baseline Offset"),
+              baselineOffset: 10
+            },
+            {
+              range: _range("Obliqueness"),
+              obliqueness: 1
+            }
+          ]
+        }
+      },
+      layout: $layout.fill
+    }
+  ]
+});
+```
+
+Attribute | Type | Description
+---|---|---|---
+range | $range | text range
+font | $font | font
+color | $color | foreground color
+bgcolor | $color | background color
+kern | number | font kerning
+strikethroughStyle | number | strikethrough style (0: none 1: single 2: thick 9: double)
+strikethroughColor | $color | strikethrough color
+underlineStyle | number | underline style (0: none 1: single 2: thick 9: double)
+underlineColor | $color | underline color
+strokeWidth | number | stroke width
+strokeColor | $color | stroke color
+link | string | link URL
+baselineOffset | number | baseline offset
+obliqueness | number | font obliqueness
+
 # Customize keyboard toolbar
 
 You can customize toolbar as below:
