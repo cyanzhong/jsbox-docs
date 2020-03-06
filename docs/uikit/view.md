@@ -199,6 +199,8 @@ existingView.moveToBack();
 
 更新 layout，此方法可能在动画中调用。
 
+view 添加之后并不会立即 layout，此方法可以让新的约束立即执行，并可以在之后获取诸如frame或者size之类的信息
+
 # setNeedsLayout()
 
 将此 view 标记为需要 layout，会在下一个绘制循环中被 layout。
