@@ -55,6 +55,8 @@ direction | $scrollDirection | 只写 | .vertical: 纵向 .horizontal: 横向
 selectable | boolean | 读写 | 是否可被选中
 waterfall | boolean | 只写 | 是否瀑布流布局
 
+`itemSize`尽量不要和`columns`、`spacing`一起用，否则一旦出现布局冲突会导致 JSBox 崩溃，使用`waterfall`必须指定`columns`，否则 JSBox 将会崩溃。
+
 # header & footer
 
 `header` 和 `footer` 是放在头部和尾部的自定义 view，是可选项（在 props 里）：
