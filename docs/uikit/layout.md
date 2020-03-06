@@ -157,3 +157,5 @@ $ui.render({
 - `B`: [UIViewAutoresizingFlexibleBottomMargin](https://developer.apple.com/documentation/uikit/uiviewautoresizing/uiviewautoresizingflexiblebottommargin?language=objc)
 
 例如，使用 "LRTB" 表示 `UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin`。
+
+使用此方法创建的 view，尤其是指定`L`或`T`的 view，必须在其父 view 布局完成之后再添加。如果不等到父 view 布局完成就添加，或者直接在父 view 的定义中直接作为子 view 包含，那么布局将出现错误。
