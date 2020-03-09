@@ -8,7 +8,7 @@
   <meta name="description" content="JSBox Docs">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" id="light-theme">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" id="dark-theme">
+  <link rel="stylesheet" href="_asset/darkly.css" id="dark-theme">
 </head>
 <body>
   <div id="app"></div>
@@ -56,6 +56,19 @@
   function toggleDarkMode(enabled) {
     document.getElementById("light-theme").disabled = enabled;
     document.getElementById("dark-theme").disabled = !enabled;
+    searchBarStyleWorkaround();
+  }
+
+  function searchBarStyleWorkaround() {
+    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const searchBar = document.querySelector(".search");
+    if (searchBar) {
+      if (isDarkMode) {
+        searchBar.style.borderBottom = "1px solid #191919";
+      } else {
+        searchBar.style.borderBottom = "";
+      }
+    }
   }
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -64,4 +77,7 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+<script>
+  searchBarStyleWorkaround();
+</script>
 </html>
