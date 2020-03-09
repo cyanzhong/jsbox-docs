@@ -139,6 +139,8 @@ $("label").updateLayout(function(make) {
 })
 ```
 
+请注意，`updateLayout` 只能对**已存在**的约束进行更新，否则的话将没有效果。
+
 # remakeLayout(function)
 
 和 updateLayout 类似，但是重新设置 layout 会导致更多性能消耗，在可能时应该使用 updateLayout。

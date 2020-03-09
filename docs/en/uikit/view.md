@@ -135,6 +135,8 @@ $("label").updateLayout(function(make) {
 })
 ```
 
+Note that, `updateLayout` can only be used for existing constraints, or it won't work.
+
 # remakeLayout(function)
 
 Similar to updateLayout, but remake costs more performance, try to use update as much as you can.
