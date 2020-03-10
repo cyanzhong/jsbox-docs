@@ -61,7 +61,9 @@
 
   window.matchMedia("(prefers-color-scheme: dark)").addListener(e => e.matches && applyStyleChanges());
   window.matchMedia("(prefers-color-scheme: light)").addListener(e => e.matches && applyStyleChanges());
+
   window.onload = applyStyleChanges;
+  setTimeout(applyStyleChanges, 1000);
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
