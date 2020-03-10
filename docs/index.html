@@ -7,8 +7,8 @@
   <meta name="keywords" content="jsbox,javascript,extension,doc,document,documentation">
   <meta name="description" content="JSBox Docs">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" id="light-theme">
-  <link rel="stylesheet" href="_asset/darkly.css" id="dark-theme">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="_asset/darkly.css" media="(prefers-color-scheme: dark)">
 </head>
 <body>
   <div id="app"></div>
@@ -47,19 +47,7 @@
     ]
   }
 
-  const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  toggleDarkMode(isDarkMode);
-
-  window.matchMedia("(prefers-color-scheme: dark)").addListener(e => e.matches && toggleDarkMode(true));
-  window.matchMedia("(prefers-color-scheme: light)").addListener(e => e.matches && toggleDarkMode(false));
-
-  function toggleDarkMode(enabled) {
-    document.getElementById("light-theme").disabled = enabled;
-    document.getElementById("dark-theme").disabled = !enabled;
-    searchBarStyleWorkaround();
-  }
-
-  function searchBarStyleWorkaround() {
+  function applyStyleChanges() {
     const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const searchBar = document.querySelector(".search");
     if (searchBar) {
@@ -70,6 +58,9 @@
       }
     }
   }
+
+  window.matchMedia("(prefers-color-scheme: dark)").addListener(e => e.matches && applyStyleChanges());
+  window.matchMedia("(prefers-color-scheme: light)").addListener(e => e.matches && applyStyleChanges());
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
@@ -77,7 +68,5 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
-<script>
-  searchBarStyleWorkaround();
-</script>
+<script>applyStyleChanges();</script>
 </html>
