@@ -1,10 +1,10 @@
 > Offers APIs that relate to the application and addin itself
 
-# $app.appearance
+# $app.theme
 
-Specify `appearance` for the script, used for [Dark Mode](en/uikit/dark-mode.md) related stuff, possible values are `light` / `dark` / `auto`.
+Specify `theme` for the script, used for [Dark Mode](en/uikit/dark-mode.md) related stuff, possible values are `light` / `dark` / `auto`.
 
-It will be overridden if a screen has its own `appearance` value.
+It will be overridden if a screen has its own `theme` value.
 
 # $app.minSDKVer
 

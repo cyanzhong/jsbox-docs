@@ -36,6 +36,7 @@
   - [Animation](en/uikit/animation.md)
   - [Context Menu](en/uikit/context-menu.md)
   - [Method](en/uikit/method.md)
+  - [Dark Mode](en/uikit/dark-mode.md)
 
 - Components
   - [Label](en/component/label.md)

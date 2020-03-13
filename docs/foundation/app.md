@@ -1,10 +1,10 @@
 > 和 JSBox 本身相关或和正在运行的脚本相关的接口
 
-# $app.appearance
+# $app.theme
 
-为脚本指定 `appearance`，用于 [Dark Mode](uikit/dark-mode.md) 相关，可选值为 `light` / `dark` / `auto`。
+为脚本指定 `theme`，用于 [Dark Mode](uikit/dark-mode.md) 相关，可选值为 `light` / `dark` / `auto`。
 
-如果某个页面指定了 `appearance`，则这个全局的值会被覆盖。
+如果某个页面指定了 `theme`，则这个全局的值会被覆盖。
 
 # $app.minSDKVer
 

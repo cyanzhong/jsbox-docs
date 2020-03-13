@@ -36,6 +36,7 @@
   - [动画](uikit/animation.md)
   - [长按菜单](uikit/context-menu.md)
   - [接口](uikit/method.md)
+  - [Dark Mode](uikit/dark-mode.md)
 
 - 控件列表
   - [标签](component/label.md)

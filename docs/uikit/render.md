@@ -30,7 +30,7 @@ views 表示画布中的所有子 view，其中每个 view 也可以嵌套的包
 
 属性 | 类型 | 说明
 ---|---|---
-appearance | string | 外观：light/dark/auto
+theme | string | 外观：light/dark/auto
 title | string | 标题
 titleColor | $color | 标题颜色
 barColor | $color | bar 背景色

@@ -69,7 +69,7 @@ purple | purple color
 brown | brown color
 clear | clear color
 
-The following colors are semantic colors, used for dynamic appearance, it will be different in light or dark mode:
+The following colors are semantic colors, used for dynamic theme, it will be different in light or dark mode:
 
 Name | Color
 ---|---
