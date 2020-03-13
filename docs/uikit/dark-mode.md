@@ -63,7 +63,7 @@ const dynamicColor = $color($rgba(0, 0, 0, 1), $rgba(255, 255, 255, 1));
 
 动态颜色会在 Light 和 Dark 模式下分别呈现不同的颜色，而无需通过监听 Dark Mode 变化之后进行重新设置。
 
-同时，`$color(...)` 接口也支持了几个[语义化颜色](function/index.md?id=colorstring)，让你可以更方便的调用。
+同时，`$color(...)` 接口也支持了几个[语义化颜色](function/index.md?id=colorstring)，让你可以更方便地调用。
 
 # events: themeChanged
 
