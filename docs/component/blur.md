@@ -6,13 +6,13 @@
 {
   type: "blur",
   props: {
-    style: 1 // 0 ~ 5
+    style: 1 // 0 ~ 20
   },
   layout: $layout.fill
 }
 ```
 
-`style` 0 ~ 5 表示了不同的模糊效果。
+`style` 0 ~ 20 表示了不同的模糊效果，参考：https://developer.apple.com/documentation/uikit/uiblureffectstyle
 
 # props
 

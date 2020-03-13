@@ -6,11 +6,13 @@
 {
   type: "blur",
   props: {
-    style: 1 // 0 ~ 5
+    style: 1 // 0 ~ 20
   },
   layout: $layout.fill
 }
 ```
+
+`style` 0 ~ 20 stands for different blur styles, refer to: https://developer.apple.com/documentation/uikit/uiblureffectstyle
 
 # props
 
