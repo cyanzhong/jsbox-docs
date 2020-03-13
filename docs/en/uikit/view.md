@@ -282,3 +282,13 @@ pencilTapped: function(info) {
 ```
 
 Refer [Component](en/component/label.md) to see how to use other controls.
+
+# events: themeChanged
+
+Detect [dark mode](en/uikit/dark-mode.md) changes:
+
+```js
+themeChanged: (sender, isDarkMode) => {
+  
+}
+```

@@ -286,3 +286,13 @@ pencilTapped: function(info) {
 ```
 
 更多控件如何使用请参考 [控件列表](component/label.md) 一章。
+
+# events: themeChanged
+
+用于监听 [Dark Mode](uikit/dark-mode.md) 的改变：
+
+```js
+themeChanged: (sender, isDarkMode) => {
+  
+}
+```
