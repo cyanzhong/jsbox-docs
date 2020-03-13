@@ -96,6 +96,39 @@ purple | 紫色
 brown | 棕色
 clear | 透明
 
+以下颜色为语义化颜色，方便用于 Dark Mode 的适配，他们会在 Dark 和 Light 时展示不同的颜色：
+
+名称 | 颜色
+---|---
+primarySurface | 一级背景
+secondarySurface | 二级背景
+tertiarySurface | 三级背景
+primaryText | 一级文字
+secondaryText | 二级文字
+backgroundColor | 背景颜色
+separatorColor | 分割线颜色
+
+同时，`$color(...)` 接口也可用于返回适配 Dark Mode 需要的动态颜色，像是这样：
+
+```js
+const dynamicColor = $color({
+  light: "#FFFFFF",
+  dark: "#000000"
+});
+```
+
+该颜色在两种模式下分别为黑色和白色，自动切换，也可以简写为：
+
+```js
+const dynamicColor = $color("#FFFFFF", "#000000");
+```
+
+写法支持嵌套，你可以用 `$rgba(...)` 接口生成颜色后，用 `$color(...)` 接口生成动态颜色：
+
+```js
+const dynamicColor = $color($rgba(0, 0, 0, 1), $rgba(255, 255, 255, 1));
+```
+
 # $rgb(red, green, blue)
 
 同样是生成颜色，但这里用的是十进制 `0 ~ 255` 的数值：
