@@ -1,5 +1,11 @@
 > Offers APIs that relate to the application and addin itself
 
+# $app.appearance
+
+Specify `appearance` for the script, used for [Dark Mode](en/uikit/dark-mode.md) related stuff, possible values are `light` / `dark` / `auto`.
+
+It will be overridden if a screen has its own `appearance` value.
+
 # $app.minSDKVer
 
 Set the minimal available version of JSBox:
