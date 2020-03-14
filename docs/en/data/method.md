@@ -84,6 +84,12 @@ separatorColor | separator color
 
 These colors behave differently for light or dark mode. For example, `$color("tintColor")` returns theme color for the light mode, and light blue for the dark mode.
 
+You can retrieve all available colors in the color palette with `$color("availableColors")`, it returns a dictionary:
+
+```js
+const colors = $color("availableColors");
+```
+
 Also, `$color(...)` supports dynamic colors, it returns color for light and dark mode dynamically:
 
 ```js

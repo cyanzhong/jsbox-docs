@@ -111,6 +111,12 @@ separatorColor | 分割线颜色
 
 这些颜色在分别在 Light 和 Dark 模式下使用不同的颜色，例如 `$color("tintColor")` 会在 Light 模式下使用主题色，在 Dark 模式下使用比较亮的蓝色。
 
+可以使用 `$color("availableColors")` 来获取颜色盘里面所有可用的颜色，返回一个字典：
+
+```js
+const colors = $color("availableColors");
+```
+
 同时，`$color(...)` 接口也可用于返回适配 Dark Mode 需要的动态颜色，像是这样：
 
 ```js
