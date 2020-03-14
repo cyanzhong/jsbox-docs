@@ -102,6 +102,7 @@ The following colors are semantic colors, used for dynamic theme, it will be dif
 
 Name | Color
 ---|---
+tintColor | tint color
 primarySurface | primary surface
 secondarySurface | secondary surface
 tertiarySurface | tertiary surface
@@ -109,6 +110,8 @@ primaryText | primary text
 secondaryText | secondary text
 backgroundColor | background color
 separatorColor | separator color
+
+These colors behave differently for light or dark mode. For example, `$color("tintColor")` returns theme color for the light mode, and light blue for the dark mode.
 
 Also, `$color(...)` supports dynamic colors, it returns color for light and dark mode dynamically:
 

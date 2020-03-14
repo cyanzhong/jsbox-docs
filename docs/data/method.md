@@ -71,6 +71,7 @@ clear | 透明
 
 名称 | 颜色
 ---|---
+tintColor | 主题色
 primarySurface | 一级背景
 secondarySurface | 二级背景
 tertiarySurface | 三级背景
@@ -78,6 +79,8 @@ primaryText | 一级文字
 secondaryText | 二级文字
 backgroundColor | 背景颜色
 separatorColor | 分割线颜色
+
+这些颜色在分别在 Light 和 Dark 模式下使用不同的颜色，例如 `$color("tintColor")` 会在 Light 模式下使用主题色，在 Dark 模式下使用比较亮的蓝色。
 
 同时，`$color(...)` 接口也可用于返回适配 Dark Mode 需要的动态颜色，像是这样：
 
