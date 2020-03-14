@@ -234,6 +234,29 @@ const image = $image("data:image/png;base64,...");
 
 其中 `scale` 为可选参数，用于设置比例，默认为 1，设置成 0 的时候表示屏幕比例。
 
+在最新版里面，可以使用 `$image(...)` 函数来创建适用于 Dark Mode 的动态图片，例如：
+
+```js
+const dynamicImage = $image({
+  light: "light-image.png",
+  dark: "dark-image.png"
+});
+```
+
+该图片会分别在 Light 模式和 Dark 模式下使用不同的资源，自动完成切换，也可以简写成：
+
+```js
+const dynamicImage = $image("light-image.png", "dark-image.png");
+```
+
+除此之外，此接口还支持将图片嵌套，像是这样：
+
+```js
+const lightImage = $image("light-image.png");
+const darkImage = $image("dark-image.png");
+const dynamicImage = $image(lightImage, darkImage);
+```
+
 # $icon(code, color, size)
 
 获得一个 JSBox 内置的图标，图标编号请参考：https://github.com/cyanzhong/xTeko/tree/master/extension-icons

@@ -223,6 +223,29 @@ const image = $image("data:image/png;base64,...");
 
 The `scale` argument indicates its scale, default to 1, 0 means using screen scale.
 
+In the latest version, you can use `$image(...)` to create dynamic images for dark mode, like this:
+
+```js
+const dynamicImage = $image({
+  light: "light-image.png",
+  dark: "dark-image.png"
+});
+```
+
+This image chooses different resources for light and dark mode, it switches automatically, can be simplified as:
+
+```js
+const dynamicImage = $image("light-image.png", "dark-image.png");
+```
+
+Besides, images can also be nested, such as:
+
+```js
+const lightImage = $image("light-image.png");
+const darkImage = $image("dark-image.png");
+const dynamicImage = $image(lightImage, darkImage);
+```
+
 # $icon(code, color, size)
 
 Get an icon provided by JSBox, refer: https://github.com/cyanzhong/xTeko/tree/master/extension-icons
