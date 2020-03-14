@@ -122,4 +122,6 @@ In general, there are three things you should do:
 - Use `$color(light, dark)` and `$image(light, dark)` to create dynamic assets
 - Leverage `themeChanged` to update UI details
 
+In order to demonstrate how it works clearly, we prepared an example project for you: https://github.com/cyanzhong/jsbox-dark-mode
+
 As the mechanism continues to improve, we may provide more APIs in the future, which should make your life easier. Besides, the default value of `theme` is just a temporary solution for the transition period, it might be `auto` in the future, to make scripts that only use default controls support dark mode by default.

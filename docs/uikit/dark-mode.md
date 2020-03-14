@@ -122,4 +122,6 @@ $ui.render({
 - 使用 `$color(light, dark)` 和 `$image(light, dark)` 提供动态资源
 - 使用 `themeChanged` 来完善一些需要动态改变的元素
 
+为了更好地展示这套机制如何工作，我们准备了一个样例项目以供参考：https://github.com/cyanzhong/jsbox-dark-mode
+
 随着机制不断完善，之后可能会增加其他接口，让适配工作变得更简单。同时，`theme` 默认为 `light` 是过渡期的一个设置，之后可能会改为默认为 `auto`，方便仅使用默认控件的脚本直接完美支持 Dark Mode。
