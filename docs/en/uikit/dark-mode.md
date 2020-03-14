@@ -65,6 +65,33 @@ Dynamic colors show different colors in light mode or dark mode, no need to obse
 
 Also, there are some [semantic colors](en/function/index.md?id=colorstring), you can use them directly.
 
+# Dynamic Images
+
+Similarly, you may need to provide dynamic images for light or dark mode, like this:
+
+```js
+const dynamicImage = $image({
+  light: "light-image.png",
+  dark: "dark-image.png"
+});
+```
+
+This image chooses different resources for light and dark mode, it switches automatically, can be simplified as:
+
+```js
+const dynamicImage = $image("light-image.png", "dark-image.png");
+```
+
+Besides, images can also be nested, such as:
+
+```js
+const lightImage = $image("light-image.png");
+const darkImage = $image("dark-image.png");
+const dynamicImage = $image(lightImage, darkImage);
+```
+
+> Note, this doesn't work for SF Symbols and remote resources. For SF Symbols, please provide dynamic color for `tintColor` to achieve that
+
 # events: themeChanged
 
 Theme changes will emit a `themeChanged` event for all views:
@@ -85,14 +112,14 @@ $ui.render({
 });
 ```
 
-This provides a chance to change some UI details dynamically, such as using different images, or changing its alpha value.
+This provides a chance to change some UI details dynamically, such as changing its alpha value.
 
 # Embrace Dark Mode
 
 In general, there are three things you should do:
 
 - Set `theme` to `auto`
-- Use `$color(light, dark)` to create dynamic colors
+- Use `$color(light, dark)` and `$image(light, dark)` to create dynamic assets
 - Leverage `themeChanged` to update UI details
 
-As the mechanism continues to improve, we may provide support for dynamic images in the future, which should make your life easier. Besides, the default value of `theme` is just a temporary solution for the transition period, it might be `auto` in the future, to make scripts that only use default controls support dark mode by default.
+As the mechanism continues to improve, we may provide more APIs in the future, which should make your life easier. Besides, the default value of `theme` is just a temporary solution for the transition period, it might be `auto` in the future, to make scripts that only use default controls support dark mode by default.
