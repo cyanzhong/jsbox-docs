@@ -40,3 +40,5 @@ $("label").animator.makeBackground($color("red")).easeIn.animate(0.5)
 We could do same effect with a much cleaner syntax, just use an animator.
 
 For more details, please refer to the official docs of [JHChainableAnimations](https://github.com/jhurray/JHChainableAnimations).
+
+> It is no longer recommended, because that project is not being maintained actively
