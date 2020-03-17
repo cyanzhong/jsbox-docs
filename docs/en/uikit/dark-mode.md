@@ -122,7 +122,7 @@ $ui.render({
 });
 ```
 
-This provides a chance to change some UI details dynamically, such as changing its alpha value.
+This provides a chance to change some UI details dynamically, such as changing its `alpha` value, or changing its `borderColor` (it doesn't support dynamic colors).
 
 # Blur Effect
 

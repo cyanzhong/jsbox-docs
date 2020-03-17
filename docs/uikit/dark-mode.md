@@ -122,7 +122,7 @@ $ui.render({
 });
 ```
 
-这提供了需要动态改变一些元素的机会，例如根据是否 Dark Mode 来决定控件的 alpha 值。
+这提供了需要动态改变一些元素的机会，例如根据是否 Dark Mode 来决定控件的 `alpha` 值，或者改变其 `borderColor`（borderColor 不支持动态颜色）。
 
 # Blur Effect
 
