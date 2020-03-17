@@ -108,6 +108,36 @@ primaryText | 一级文字
 secondaryText | 二级文字
 backgroundColor | 背景颜色
 separatorColor | 分割线颜色
+groupedBackground | grouped 列表背景色
+insetGroupedBackground | insetGrouped 列表背景色
+
+以下颜色为系统默认颜色，参考 [UI Element Colors](https://developer.apple.com/documentation/uikit/uicolor/ui_element_colors)
+
+名称 | 颜色
+---|---
+systemGray2 | UIColor.systemGray2Color
+systemGray3 | UIColor.systemGray3Color
+systemGray4 | UIColor.systemGray4Color
+systemGray5 | UIColor.systemGray5Color
+systemGray6 | UIColor.systemGray6Color
+systemLabel | UIColor.labelColor
+systemSecondaryLabel | UIColor.secondaryLabelColor
+systemTertiaryLabel | UIColor.tertiaryLabelColor
+systemQuaternaryLabel | UIColor.quaternaryLabelColor
+systemLink | UIColor.linkColor
+systemPlaceholderText | UIColor.placeholderTextColor
+systemSeparator | UIColor.separatorColor
+systemOpaqueSeparator | UIColor.opaqueSeparatorColor
+systemBackground | UIColor.systemBackgroundColor
+systemSecondaryBackground | UIColor.secondarySystemBackgroundColor
+systemTertiaryBackground | UIColor.tertiarySystemBackgroundColor
+systemGroupedBackground | UIColor.systemGroupedBackgroundColor
+systemSecondaryGroupedBackground | UIColor.secondarySystemGroupedBackgroundColor
+systemTertiaryGroupedBackground | UIColor.tertiarySystemGroupedBackgroundColor
+systemFill | UIColor.systemFillColor
+systemSecondaryFill | UIColor.secondarySystemFillColor
+systemTertiaryFill | UIColor.tertiarySystemFillColor
+systemQuaternaryFill | UIColor.quaternarySystemFillColor
 
 这些颜色在分别在 Light 和 Dark 模式下使用不同的颜色，例如 `$color("tintColor")` 会在 Light 模式下使用主题色，在 Dark 模式下使用比较亮的蓝色。
 

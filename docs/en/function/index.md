@@ -110,6 +110,36 @@ primaryText | primary text
 secondaryText | secondary text
 backgroundColor | background color
 separatorColor | separator color
+groupedBackground | grouped background
+insetGroupedBackground | insetGrouped background
+
+Below are system default colors, they are implemented based on [UI Element Colors](https://developer.apple.com/documentation/uikit/uicolor/ui_element_colors)
+
+Name | Color
+---|---
+systemGray2 | UIColor.systemGray2Color
+systemGray3 | UIColor.systemGray3Color
+systemGray4 | UIColor.systemGray4Color
+systemGray5 | UIColor.systemGray5Color
+systemGray6 | UIColor.systemGray6Color
+systemLabel | UIColor.labelColor
+systemSecondaryLabel | UIColor.secondaryLabelColor
+systemTertiaryLabel | UIColor.tertiaryLabelColor
+systemQuaternaryLabel | UIColor.quaternaryLabelColor
+systemLink | UIColor.linkColor
+systemPlaceholderText | UIColor.placeholderTextColor
+systemSeparator | UIColor.separatorColor
+systemOpaqueSeparator | UIColor.opaqueSeparatorColor
+systemBackground | UIColor.systemBackgroundColor
+systemSecondaryBackground | UIColor.secondarySystemBackgroundColor
+systemTertiaryBackground | UIColor.tertiarySystemBackgroundColor
+systemGroupedBackground | UIColor.systemGroupedBackgroundColor
+systemSecondaryGroupedBackground | UIColor.secondarySystemGroupedBackgroundColor
+systemTertiaryGroupedBackground | UIColor.tertiarySystemGroupedBackgroundColor
+systemFill | UIColor.systemFillColor
+systemSecondaryFill | UIColor.secondarySystemFillColor
+systemTertiaryFill | UIColor.tertiarySystemFillColor
+systemQuaternaryFill | UIColor.quaternarySystemFillColor
 
 These colors behave differently for light or dark mode. For example, `$color("tintColor")` returns theme color for the light mode, and light blue for the dark mode.
 
