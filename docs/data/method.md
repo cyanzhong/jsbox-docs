@@ -139,6 +139,16 @@ const dynamicColor = $color("#FFFFFF", "#000000");
 const dynamicColor = $color($rgba(0, 0, 0, 1), $rgba(255, 255, 255, 1));
 ```
 
+另外，JSBox 的 Dark Mode 支持深灰或纯黑两种模式，如果需要对三种状态使用不同的颜色，可以使用：
+
+```js
+const dynamicColor = $color({
+  light: "#FFFFFF",
+  dark: "#141414",
+  black: "#000000"
+});
+```
+
 # $rgb(red, green, blue)
 
 同样是生成颜色，但这里用的是十进制 `0 ~ 255` 的数值：
