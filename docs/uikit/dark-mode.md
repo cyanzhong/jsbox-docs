@@ -114,6 +114,12 @@ $ui.render({
 
 这提供了需要动态改变一些元素的机会，例如根据是否 Dark Mode 来决定控件的 alpha 值。
 
+# Blur Effect
+
+在 iOS 13 及以上，[type: "blur"](component/blur.md) 可以使用更多模糊效果，数值是 0 ~ 20。部分模糊效果可以根据 Light 或 Dark 自动切换，`style` 范围为 6 ~ 10。
+
+请参考 Apple [相关文档](https://developer.apple.com/documentation/uikit/uiblureffectstyle)以了解更多。
+
 # 如何适配 Dark Mode
 
 大体上来说，让脚本支持 Dark Mode 有三个步骤：

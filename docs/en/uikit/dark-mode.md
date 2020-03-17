@@ -114,6 +114,12 @@ $ui.render({
 
 This provides a chance to change some UI details dynamically, such as changing its alpha value.
 
+# Blur Effect
+
+In iOS 13 and above, [type: "blur"](en/component/blur.md) supports more styles, available range is 0 ~ 20. Some of those styles are designed for both light mode and dark mode, `style` range is 6 ~ 10.
+
+Please refer to Apple's [documentation](https://developer.apple.com/documentation/uikit/uiblureffectstyle) for more information.
+
 # Embrace Dark Mode
 
 In general, there are three things you should do:
