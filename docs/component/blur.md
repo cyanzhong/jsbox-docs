@@ -12,10 +12,10 @@
 }
 ```
 
-`style` 0 ~ 20 表示了不同的模糊效果，参考：https://developer.apple.com/documentation/uikit/uiblureffectstyle
+`style` 0 ~ 20 表示了不同的模糊效果，[参考](data/constant.md?id=blurstyle)。
 
 # props
 
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
-style | number | w | 效果类型
+style | $blurStyle | w | 效果类型

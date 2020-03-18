@@ -126,7 +126,7 @@ This provides a chance to change some UI details dynamically, such as changing i
 
 # Blur Effect
 
-In iOS 13 and above, [type: "blur"](en/component/blur.md) supports more styles, available range is 0 ~ 20. Some of those styles are designed for both light mode and dark mode, `style` range is 6 ~ 10.
+In iOS 13 and above, [type: "blur"](en/component/blur.md) supports more styles. Some of those styles are designed for both light mode and dark mode, you can use [$blurStyle](en/data/constant.md?id=blurstyle) for that.
 
 Please refer to Apple's [documentation](https://developer.apple.com/documentation/uikit/uiblureffectstyle) for more information.
 

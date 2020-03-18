@@ -362,3 +362,39 @@ var $scrollDirection = {
   horizontal: 1,
 }
 ```
+
+# $blurStyle
+
+Style constants for `blur` views:
+
+```js
+var $blurStyle = {
+  // Additional Styles
+  extraLight: 0,
+  light: 1,
+  dark: 2,
+  extraDark: 3,
+  regular: 4,
+  prominent: 5,
+  // Adaptable Styles (iOS 13)
+  ultraThinMaterial: 6,
+  thinMaterial: 7,
+  material: 8,
+  thickMaterial: 9,
+  chromeMaterial: 10,
+  // Light Styles (iOS 13)
+  ultraThinMaterialLight: 11,
+  thinMaterialLight: 12,
+  materialLight: 13,
+  thickMaterialLight: 14,
+  chromeMaterialLight: 15,
+  // Dark Styles (iOS 13)
+  ultraThinMaterialDark: 16,
+  thinMaterialDark: 17,
+  materialDark: 18,
+  thickMaterialDark: 19,
+  chromeMaterialDark: 20,
+}
+```
+
+Please refer to Apple's documentation for details: https://developer.apple.com/documentation/uikit/uiblureffectstyle

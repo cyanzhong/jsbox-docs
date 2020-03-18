@@ -12,10 +12,10 @@
 }
 ```
 
-`style` 0 ~ 20 stands for different blur styles, refer to: https://developer.apple.com/documentation/uikit/uiblureffectstyle
+`style` 0 ~ 20 stands for different blur styles, [reference](en/data/constant.md?id=blurstyle).
 
 # props
 
 Prop | Type | Read/Write | Description
 ---|---|---|---
-style | number | w | effect style
+style | $blurStyle | w | effect style

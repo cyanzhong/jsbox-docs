@@ -126,7 +126,7 @@ $ui.render({
 
 # Blur Effect
 
-在 iOS 13 及以上，[type: "blur"](component/blur.md) 可以使用更多模糊效果，数值是 0 ~ 20。部分模糊效果可以根据 Light 或 Dark 自动切换，`style` 范围为 6 ~ 10。
+在 iOS 13 及以上，[type: "blur"](component/blur.md) 可以使用更多模糊效果。部分模糊效果可以根据 Light 或 Dark 自动切换，请使用 [$blurStyle](data/constant.md?id=blurstyle) 来实现。
 
 请参考 Apple [相关文档](https://developer.apple.com/documentation/uikit/uiblureffectstyle)以了解更多。
 
