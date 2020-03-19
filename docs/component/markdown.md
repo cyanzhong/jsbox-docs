@@ -8,7 +8,13 @@ $ui.render({
     {
       type: "markdown",
       props: {
-        content: "# Hello, *World!*"
+        content: "# Hello, *World!*",
+        style: // optional, custom style sheet
+        `
+        body {
+          background: #f0f0f0;
+        }
+        `
       },
       layout: $layout.fill
     }
@@ -21,3 +27,4 @@ $ui.render({
 webView | $view | r | webView
 content | string | rw | 内容
 scrollEnabled | bool | rw | 是否滚动
+style | string | rw | 自定义样式
