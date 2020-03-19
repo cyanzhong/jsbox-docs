@@ -130,6 +130,12 @@ In iOS 13 and above, [type: "blur"](en/component/blur.md) supports more styles. 
 
 Please refer to Apple's [documentation](https://developer.apple.com/documentation/uikit/uiblureffectstyle) for more information.
 
+# WebView
+
+WebView has its own mechanism for Dark Mode, please refer to [WebKit docs](https://webkit.org/blog/8840/dark-mode-support-in-webkit/) for more information.
+
+Just a tip: for WebViews in JSBox, you need to set `props: opaque` to `false`, this can avoid the whitescreen for the initial loading.
+
 # Embrace Dark Mode
 
 In general, there are three things you should do:

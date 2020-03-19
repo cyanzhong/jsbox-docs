@@ -130,6 +130,12 @@ $ui.render({
 
 请参考 Apple [相关文档](https://developer.apple.com/documentation/uikit/uiblureffectstyle)以了解更多。
 
+# WebView
+
+WebView 对 Dark Mode 的适配属于比较独立的话题，请参考 [WebKit 官方文档](https://webkit.org/blog/8840/dark-mode-support-in-webkit/)以了解如何适配网页内容。
+
+需要指出的是：对于 JSBox 内置的 WebView，你需要将 `props: opaque` 设置为 `false` 以避免初次打开页面时的白屏问题。
+
 # 如何适配 Dark Mode
 
 大体上来说，让脚本支持 Dark Mode 有三个步骤：
