@@ -160,6 +160,7 @@ $ui.render({
           text: text,
           font: $font(17),
           color: $color("black"),
+          markdown: false, // whether to use markdown syntax
           styles: [
             {
               range: _range("AmericanTypewriter"),
@@ -234,6 +235,8 @@ strokeColor | $color | stroke color
 link | string | link URL
 baselineOffset | number | baseline offset
 obliqueness | number | font obliqueness
+
+Markdown syntax is disable when `styles` is used, it can be turned on by specifying `markdown: true`.
 
 # Customize keyboard toolbar
 

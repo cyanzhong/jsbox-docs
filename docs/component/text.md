@@ -160,6 +160,7 @@ $ui.render({
           text: text,
           font: $font(17),
           color: $color("black"),
+          markdown: false, // whether to use markdown syntax
           styles: [
             {
               range: _range("AmericanTypewriter"),
@@ -234,6 +235,8 @@ strokeColor | $color | 描边颜色
 link | string | 链接 URL
 baselineOffset | number | 基线偏移
 obliqueness | number | 字体倾斜
+
+使用 `styles` 默认不使用 markdown 语法，也可以通过 `markdown: true` 开启。
 
 # 自定义键盘工具栏
 
