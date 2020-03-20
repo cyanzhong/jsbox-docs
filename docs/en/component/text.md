@@ -126,7 +126,9 @@ $ui.render({
 });
 ```
 
-如果需要对格式进行更精细的控制，可以通过 `styles` 为文字的不同位置指定样式：
+For literals like `*`, `_`, escape them with `\\`.
+
+If you want to control formats precisely, you can set `styles` for each range:
 
 ```js
 const text = `
