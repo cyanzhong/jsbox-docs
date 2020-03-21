@@ -70,7 +70,23 @@ footer: {
 }
 ```
 
-Note: please specify the `height` manually in props.
+For fixed height, please specify the `height` manually in `props`. For dynamic height, provide a `height` function in its `events`:
+
+```js
+footer: {
+  type: "label",
+  props: {
+    text: "Write the Code. Change the world."
+  },
+  events: {
+    height: sender => {
+      return _height;
+    }
+  }
+}
+```
+
+When you want to change the height, update the `_height` value in the above example, then call `matrix.reload()` to trigger the update.
 
 # object($indexPath)
 

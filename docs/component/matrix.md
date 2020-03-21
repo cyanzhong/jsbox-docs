@@ -72,7 +72,23 @@ footer: {
 }
 ```
 
-请在 props 里面指定他的高度 `height`。
+如果高度是固定的，请在 `props` 里面指定他的高度 `height`。如需动态改变高度，可在 `events` 里指定一个 `height` 函数：
+
+```js
+footer: {
+  type: "label",
+  props: {
+    text: "Write the Code. Change the world."
+  },
+  events: {
+    height: sender => {
+      return _height;
+    }
+  }
+}
+```
+
+需要改变高度时，修改上述 `_height` 值，然后调用 `matrix.reload()` 进行更新。
 
 # object($indexPath)
 
