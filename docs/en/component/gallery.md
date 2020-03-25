@@ -65,3 +65,11 @@ You can retrieve subviews with methods as below:
 const views = $("gallery").itemViews; // All views
 const view = $("gallery").viewWithIndex(0); // The first view
 ```
+
+# Scroll to a page
+
+If you want to scroll to a page with animation, do this:
+
+```js
+$("gallery").scrollToPage(index);
+```

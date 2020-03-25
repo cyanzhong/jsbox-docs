@@ -65,3 +65,11 @@ changed: function(sender) {
 const views = $("gallery").itemViews; // All views
 const view = $("gallery").viewWithIndex(0); // The first view
 ```
+
+# 滚动到某一页
+
+设置 `page` 将直接切换到某一页，如果需要带着动画滚动过去，请使用：
+
+```js
+$("gallery").scrollToPage(index);
+```
