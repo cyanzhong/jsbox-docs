@@ -34,6 +34,21 @@ $ui.push({
 });
 ```
 
+We can also override theme for a certain view like this:
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "view",
+      props: {
+        "theme": "light"
+      }
+    }
+  ]
+});
+```
+
 > Note, to avoid breaking your existing scripts, the default value of `theme` would be `light`. If you'd like to adapt dark mode, turn it to `auto`, then adjust your colors.
 
 Default controls have different colors under different themes, please refer to the latest [UIKit-Catalog](https://github.com/cyanzhong/xTeko/blob/master/extension-scripts/uikit-catalog.js) demo for more information.

@@ -34,6 +34,21 @@ $ui.push({
 });
 ```
 
+也可以对某个特定的 view 指定他的外观偏好：
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "view",
+      props: {
+        "theme": "light"
+      }
+    }
+  ]
+});
+```
+
 > 请注意，为了避免对现有的脚本造成破坏性的改动，目前脚本默认的 `theme` 是 `light`，也既浅色模式。如果需要适配 Dark Mode，请将其设置为 `auto` 后，再进行颜色的适配工作。
 
 在不同的 theme 下，控件的默认颜色会有所不同，请参考更新后的 [UIKit-Catalog](https://github.com/cyanzhong/xTeko/blob/master/extension-scripts/uikit-catalog.js) 样例以了解更多。

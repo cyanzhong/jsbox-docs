@@ -32,6 +32,7 @@ Render a red rectangle on the screen.
 
 Prop | Type | Read/Write | Description
 ---|---|---|---
+theme | string | rw | light, dark, auto
 alpha | number | rw | alpha
 bgcolor | $color | rw | background color
 cornerRadius | number | rw | corner radius

@@ -34,6 +34,7 @@ PS: 关于各种属性的类型转换请参考：[数据转换](data/intro.md)
 
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
+theme | string | 读写 | light, dark, auto
 alpha | number | 读写 | 透明度
 bgcolor | $color | 读写 | 背景色
 cornerRadius | number | 读写 | 圆角半径
