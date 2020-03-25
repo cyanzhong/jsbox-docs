@@ -36,8 +36,10 @@ PS: 关于各种属性的类型转换请参考：[数据转换](data/intro.md)
 ---|---|---|---
 alpha | number | 读写 | 透明度
 bgcolor | $color | 读写 | 背景色
-radius | number | 只写 | 圆角半径
-smoothRadius | number | 只写 | 平滑圆角半径
+cornerRadius | number | 读写 | 圆角半径
+smoothCorners | boolean | 读写 | 圆角是否使用平滑曲线
+radius | number | 只写 | 圆角半径（过时，请使用 `cornerRadius`）
+smoothRadius | number | 只写 | 平滑圆角半径（过时，请使用 `smoothCorners`）
 frame | $rect | 读写 | 位置和大小
 size | $size | 读写 | 大小
 center | $point | 读写 | 中心位置

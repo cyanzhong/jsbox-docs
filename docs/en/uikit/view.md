@@ -34,8 +34,10 @@ Prop | Type | Read/Write | Description
 ---|---|---|---
 alpha | number | rw | alpha
 bgcolor | $color | rw | background color
-radius | number | w | corner radius
-smoothRadius | number | w | smooth corner radius
+cornerRadius | number | rw | corner radius
+smoothCorners | boolean | rw | use continuous curve for corners
+radius | number | w | corner radius (deprecated, use `cornerRadius`)
+smoothRadius | number | w | smooth corner radius (deprecated, use `smoothCorners`)
 frame | $rect | rw | frame
 size | $size | rw | size
 center | $point | rw | center
