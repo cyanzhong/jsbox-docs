@@ -284,7 +284,25 @@ pencilTapped: function(info) {
 }
 ```
 
-Refer [Component](en/component/label.md) to see how to use other controls.
+# events: hoverEntered
+
+For iPadOS 13.4 (and above) with trackpad, this is called when pointer enters the view:
+
+```js
+hoverEntered: sender => {
+  sender.alpha = 0.5;
+}
+```
+
+# events: hoverExited
+
+For iPadOS 13.4 (and above) with trackpad, this is called when pointer exits the view:
+
+```js
+hoverExited: sender => {
+  sender.alpha = 1.0;
+}
+```
 
 # events: themeChanged
 
@@ -295,3 +313,5 @@ themeChanged: (sender, isDarkMode) => {
   
 }
 ```
+
+Refer [Component](en/component/label.md) to see how to use other controls.

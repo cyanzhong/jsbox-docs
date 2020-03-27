@@ -288,7 +288,25 @@ pencilTapped: function(info) {
 }
 ```
 
-更多控件如何使用请参考 [控件列表](component/label.md) 一章。
+# events: hoverEntered
+
+在 iPadOS 13.4 及以上使用 Trackpad，指针进入时调用：
+
+```js
+hoverEntered: sender => {
+  sender.alpha = 0.5;
+}
+```
+
+# events: hoverExited
+
+在 iPadOS 13.4 及以上使用 Trackpad，指针移出时调用：
+
+```js
+hoverExited: sender => {
+  sender.alpha = 1.0;
+}
+```
 
 # events: themeChanged
 
@@ -299,3 +317,5 @@ themeChanged: (sender, isDarkMode) => {
   
 }
 ```
+
+更多控件如何使用请参考 [控件列表](component/label.md) 一章。
