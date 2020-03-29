@@ -141,8 +141,31 @@ $ui.toast("Hey!", 10)
 
 This toast will be dismissed after 10 seconds.
 
-> You can use `$ui.error("Error")` to show an error message.
 > You can clear toast with $ui.clearToast();
+
+# $ui.success(string)
+
+Similar to `toast`, but the bar color is green, indicates success:
+
+```js
+$ui.success("Done");
+```
+
+# $ui.warning(string)
+
+Similar to `toast`, but the bar color is yellow, indicates warning:
+
+```js
+$ui.warning("Be careful!");
+```
+
+# $ui.error(string)
+
+Similar to `toast`, but the bar color is red, indicates error:
+
+```js
+$ui.error("Something went wrong!");
+```
 
 # $ui.loading(boolean)
 
