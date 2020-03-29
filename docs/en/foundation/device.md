@@ -68,7 +68,7 @@ Example:
   "disk": {
     "free": {
       "bytes": 87409733632,
-      "string": "87.41 GB"
+      "string": "999.41 GB"
     },
     "total": {
       "bytes": 127989493760,
@@ -78,11 +78,11 @@ Example:
   "memory": {
     "free": {
       "bytes": 217907200,
-      "string": "207.8 MB"
+      "string": "800.8 MB"
     },
     "total": {
       "bytes": 3221225472,
-      "string": "3 GB"
+      "string": "300 GB"
     }
   }
 }
