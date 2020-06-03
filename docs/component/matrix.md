@@ -88,7 +88,7 @@ footer: {
 }
 ```
 
-需要改变高度时，修改上述 `_height` 值，然后调用 `matrix.reload()` 进行更新。
+需要改变高度时，修改上述 `_height` 值，然后调用 `matrix.reload()` 进行更新。若创建的视图为横向滚动，则使用 `width` 代替上述 `height` 来指定宽度。
 
 # object($indexPath)
 

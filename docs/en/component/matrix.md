@@ -86,7 +86,7 @@ footer: {
 }
 ```
 
-When you want to change the height, update the `_height` value in the above example, then call `matrix.reload()` to trigger the update.
+When you want to change the height, update the `_height` value in the above example, then call `matrix.reload()` to trigger the update. For horizontal views, use `width` instead of `height` to specify its width.
 
 # object($indexPath)
 
