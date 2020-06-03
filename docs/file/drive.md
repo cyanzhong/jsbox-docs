@@ -61,6 +61,7 @@ var file = $file.read("drive://demo.txt")
 同样的，`$drive` 也提供了类似 `$file` 的其他方法：
 
 - `$drive.read` vs [$file.read](file/method.md?id=filereadpath)
+- `$drive.download` vs [$file.download](file/method.md?id=filedownloadpath)
 - `$drive.write` vs [$file.write](file/method.md?id=filewriteobject)
 - `$drive.delete` vs [$file.delete](file/method.md?id=filedeletepath)
 - `$drive.list` vs [$file.list](file/method.md?id=filelistpath)

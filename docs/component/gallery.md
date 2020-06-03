@@ -46,6 +46,7 @@
 items | object | 只写 | 每个分页项
 page | number | 读写 | 当前页数
 interval | number | 读写 | 自动播放间隔，为 0 表示不播放
+pageControl | $view | 只读 | 页面控制组件
 
 # events
 

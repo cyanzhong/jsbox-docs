@@ -61,6 +61,7 @@ var file = $file.read("drive://demo.txt")
 Besides, every `$file` API has an equivalent `$drive` API:
 
 - `$drive.read` vs [$file.read](en/file/method.md?id=filereadpath)
+- `$drive.download` vs [$file.download](en/file/method.md?id=filedownloadpath)
 - `$drive.write` vs [$file.write](en/file/method.md?id=filewriteobject)
 - `$drive.delete` vs [$file.delete](en/file/method.md?id=filedeletepath)
 - `$drive.list` vs [$file.list](en/file/method.md?id=filelistpath)

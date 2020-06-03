@@ -46,6 +46,7 @@ Prop | Type | Read/Write | Description
 items | object | w | all items
 page | number | rw | current page index
 interval | number | rw | autoplay interval, 0 means off
+pageControl | $view | r | page control component
 
 # events
 
