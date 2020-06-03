@@ -228,9 +228,9 @@ font | $font | font
 color | $color | foreground color
 bgcolor | $color | background color
 kern | number | font kerning
-strikethroughStyle | number | strikethrough style (0: none 1: single 2: thick 9: double)
+strikethroughStyle | number | strikethrough style [Refer](https://developer.apple.com/documentation/uikit/nsunderlinestyle?language=objc)
 strikethroughColor | $color | strikethrough color
-underlineStyle | number | underline style (0: none 1: single 2: thick 9: double)
+underlineStyle | number | underline style [Refer](https://developer.apple.com/documentation/uikit/nsunderlinestyle?language=objc)
 underlineColor | $color | underline color
 strokeWidth | number | stroke width
 strokeColor | $color | stroke color
@@ -239,6 +239,27 @@ baselineOffset | number | baseline offset
 obliqueness | number | font obliqueness
 
 Markdown syntax is disable when `styles` is used, it can be turned on by specifying `markdown: true`.
+
+For underline and strikethrough, please refer to Apple's documentation, here is an example:
+
+```js
+NSUnderlineStyleNone = 0x00,
+NSUnderlineStyleSingle = 0x01,
+NSUnderlineStyleThick = 0x02,
+NSUnderlineStyleDouble = 0x09,
+NSUnderlineStylePatternSolid = 0x0000,
+NSUnderlineStylePatternDot = 0x0100,
+NSUnderlineStylePatternDash = 0x0200,
+NSUnderlineStylePatternDashDot = 0x0300,
+NSUnderlineStylePatternDashDotDot = 0x0400,
+NSUnderlineStyleByWord = 0x8000,
+```
+
+If you want a single line with dots, you can combine `NSUnderlineStyleSingle` and `NSUnderlineStylePatternDot`:
+
+```js
+underlineStyle: 0x01 | 0x0100
+```
 
 # Customize keyboard toolbar
 

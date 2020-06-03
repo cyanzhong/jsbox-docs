@@ -228,9 +228,9 @@ font | $font | 字体
 color | $color | 前景色
 bgcolor | $color | 背景色
 kern | number | 字距
-strikethroughStyle | number | 删除线样式（0: 无 1: 细线 2: 细线 9: 双线）
+strikethroughStyle | number | 删除线样式 [Refer](https://developer.apple.com/documentation/uikit/nsunderlinestyle?language=objc)
 strikethroughColor | $color | 删除线颜色
-underlineStyle | number | 下划线样式（0: 无 1: 细线 2: 细线 9: 双线）
+underlineStyle | number | 下划线样式 [Refer](https://developer.apple.com/documentation/uikit/nsunderlinestyle?language=objc)
 underlineColor | $color | 下划线颜色
 strokeWidth | number | 描边宽度
 strokeColor | $color | 描边颜色
@@ -239,6 +239,27 @@ baselineOffset | number | 基线偏移
 obliqueness | number | 字体倾斜
 
 使用 `styles` 默认不使用 markdown 语法，也可以通过 `markdown: true` 开启。
+
+关于下划线和删除线，请参考 Apple 提供的文档，在此做一个简单的举例：
+
+```js
+NSUnderlineStyleNone = 0x00,
+NSUnderlineStyleSingle = 0x01,
+NSUnderlineStyleThick = 0x02,
+NSUnderlineStyleDouble = 0x09,
+NSUnderlineStylePatternSolid = 0x0000,
+NSUnderlineStylePatternDot = 0x0100,
+NSUnderlineStylePatternDash = 0x0200,
+NSUnderlineStylePatternDashDot = 0x0300,
+NSUnderlineStylePatternDashDotDot = 0x0400,
+NSUnderlineStyleByWord = 0x8000,
+```
+
+如果想实现细的点状下划线，请使用 `NSUnderlineStyleSingle` 和 `NSUnderlineStylePatternDot` 的组合，也既：
+
+```js
+underlineStyle: 0x01 | 0x0100
+```
 
 # 自定义键盘工具栏
 
