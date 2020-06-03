@@ -75,6 +75,8 @@ Returns:
   }
 }
 
+```
+
 # $context.data
 
 Returns a binary data (user shared a file):
