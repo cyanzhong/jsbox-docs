@@ -8,7 +8,7 @@ Read a file:
 var file = $file.read("demo.txt")
 ```
 
-# $file.download(path)
+# $file.download(path) -> Promise
 
 This method ensures a iCloud drive file is downloaded before reading it:
 

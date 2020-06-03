@@ -8,7 +8,7 @@
 var file = $file.read("demo.txt")
 ```
 
-# $file.download(path)
+# $file.download(path) -> Promise
 
 当使用 `drive://` 路径时，这个方法先会保证文件被下载下来，然后返回其数据：
 
