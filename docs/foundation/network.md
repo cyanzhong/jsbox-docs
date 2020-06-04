@@ -283,6 +283,16 @@ console.log(ifa_data)
 }
 ```
 
+# $network.interfaces
+
+获取当前设备所有的网络接口：
+
+```js
+const interfaces = $network.interfaces;
+
+// E.g. { 'en0/ipv4': 'x.x.x.x' }
+```
+
 # $network.startPinging(object)
 
 开始 Ping:

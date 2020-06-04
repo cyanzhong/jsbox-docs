@@ -283,6 +283,16 @@ Example output:
 }
 ```
 
+# $network.interfaces
+
+Returns all network interfaces on the current device:
+
+```js
+const interfaces = $network.interfaces;
+
+// E.g. { 'en0/ipv4': 'x.x.x.x' }
+```
+
 # $network.startPinging(object)
 
 start pinging:
