@@ -135,8 +135,16 @@ willBeginDragging: function(sender) {
 `willEndDragging` 在将要结束拖拽时回调：
 
 ```js
-willEndDragging: function(sender, velocity) {
+willEndDragging: function(sender, velocity, target) {
 
+}
+```
+
+其中 `target` 为滚动停下来时候的位置，可以通过返回一个 `$point` 进行覆盖：
+
+```js
+willEndDragging: function(sender, velocity, target) {
+  return $point(0, 0);
 }
 ```
 
