@@ -26,12 +26,14 @@ $ui.alert({
     {
       title: "OK",
       disabled: false, // Optional
+      style: $alertActionType.default, // Optional
       handler: function() {
 
       }
     },
     {
       title: "Cancel",
+      style: $alertActionType.destructive, // Optional
       handler: function() {
 
       }
