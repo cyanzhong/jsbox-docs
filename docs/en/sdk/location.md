@@ -69,3 +69,29 @@ $location.select({
   }
 })
 ```
+
+# $location.get()
+
+Get the current location, similar to $location.fetch but uses async await.
+
+```js
+const location = await $location.get();
+```
+
+# $location.snapshot(object)
+
+Generate a snapshot image:
+
+```js
+const loc = await $location.get();
+const lat = loc.lat;
+const lng = loc.lng;
+const snapshot = await $location.snapshot({
+  region: {
+    lat,
+    lng,
+    // distance: 500
+  },
+  // size: $size(256, 256)
+});
+```
