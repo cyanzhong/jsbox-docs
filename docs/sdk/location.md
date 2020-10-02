@@ -90,8 +90,9 @@ const snapshot = await $location.snapshot({
   region: {
     lat,
     lng,
-    // distance: 500
+    // distance: 10000
   },
-  // size: $size(256, 256)
+  // size: $size(256, 256),
+  // showsPin: false
 });
 ```
