@@ -93,6 +93,7 @@ const snapshot = await $location.snapshot({
     // distance: 10000
   },
   // size: $size(256, 256),
-  // showsPin: false
+  // showsPin: false,
+  // style: 0 (0: unspecified, 1: light, 2: dark)
 });
 ```
