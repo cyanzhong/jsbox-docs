@@ -1,6 +1,6 @@
 # 2020.10.03
 
-- Add home widget related: [Refer](en/home-widget/intro.md)
+- Add home screen widget related: [Refer](en/home-widget/intro.md)
 
 # 2020.03.13
 

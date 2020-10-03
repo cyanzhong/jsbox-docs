@@ -1,6 +1,6 @@
 # Handy Methods
 
-We added some new methods and constants for home widgets to the `$widget` module for ease of use.
+We added some new methods and constants for home screen widgets to the `$widget` module for ease of use.
 
 # $widget.setTimeline(object)
 
@@ -96,7 +96,7 @@ const dateStyle = $widget.dateStyle;
 
 # $env.widget
 
-Check if it's running in a home widget environment:
+Check if it's running in a home screen widget environment:
 
 ```js
 if ($app.env == $env.widget) {

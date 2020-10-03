@@ -1,6 +1,6 @@
 # Timeline
 
-As we mentioned before, a home widget is a series of time-based snapshots. Timelines are the foundation of the entire way widgets work, and we'll spend a little time explaining that concept. But before we do, please read an article provided by Apple： https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date
+As we mentioned before, a home screen widget is a series of time-based snapshots. Timelines are the foundation of the entire way widgets work, and we'll spend a little time explaining that concept. But before we do, please read an article provided by Apple： https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date
 
 This article is extremely important for understanding how the timeline works, especially the following diagram:
 

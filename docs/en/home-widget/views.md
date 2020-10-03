@@ -116,7 +116,7 @@ Properties supported by the image view: [resizable](en/home-widget/modifiers?id=
 
 # type: "color"
 
-In home widgets, a color can be a view, or a property of other views, it can be constructed in the following ways:
+In home screen widgets, a color can be a view, or a property of other views, it can be constructed in the following ways:
 
 ```js
 {

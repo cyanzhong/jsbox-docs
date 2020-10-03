@@ -69,7 +69,7 @@
   - [Code View](en/component/code.md)
   - [Runtime](en/component/runtime.md)
 
-- Home Widget (iOS 14)
+- Home Screen Widget (iOS 14)
   - [Intro](en/home-widget/intro.md)
   - [Timeline](en/home-widget/timeline.md)
   - [Views](en/home-widget/views.md)
