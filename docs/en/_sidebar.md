@@ -69,7 +69,15 @@
   - [Code View](en/component/code.md)
   - [Runtime](en/component/runtime.md)
 
-- Today Widget
+- Home Widget (iOS 14)
+  - [Intro](en/home-widget/intro.md)
+  - [Timeline](en/home-widget/timeline.md)
+  - [Views](en/home-widget/views.md)
+  - [Layout](en/home-widget/layout.md)
+  - [Modifiers](en/home-widget/modifiers.md)
+  - [Method](en/home-widget/method.md)
+
+- Today Widget (Deprecated)
   - [Intro](en/widget/intro.md)
   - [Method](en/widget/method.md)
 

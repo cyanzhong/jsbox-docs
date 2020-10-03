@@ -69,7 +69,15 @@
   - [代码视图](component/code.md)
   - [Runtime](component/runtime.md)
 
-- Today 小组件
+- 桌面小组件（iOS 14）
+  - [前言](home-widget/intro.md)
+  - [时间线](home-widget/timeline.md)
+  - [视图](home-widget/views.md)
+  - [布局](home-widget/layout.md)
+  - [属性](home-widget/modifiers.md)
+  - [方法](home-widget/method.md)
+
+- Today 小组件（已过时）
   - [前言](widget/intro.md)
   - [方法](widget/method.md)
 
