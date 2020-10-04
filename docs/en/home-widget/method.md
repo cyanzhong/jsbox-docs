@@ -74,6 +74,8 @@ const alignment = $widget.alignment;
 // topLeading, topTrailing, bottomLeading, bottomTrailing
 ```
 
+You can also use string literals, such as "center", "leading"...
+
 # $widget.horizontalAlignment
 
 Return the `horizontalAlignment` constants for layout:
@@ -82,6 +84,8 @@ Return the `horizontalAlignment` constants for layout:
 const horizontalAlignment = $widget.horizontalAlignment;
 // leading, center, trailing
 ```
+
+You can also use string literals, such as "leading", "center"...
 
 # $widget.verticalAlignment
 
@@ -93,6 +97,8 @@ const verticalAlignment = $widget.verticalAlignment;
 // firstTextBaseline, lastTextBaseline
 ```
 
+You can also use string literals, such as "top", "center"...
+
 # $widget.dateStyle
 
 Return the `dateStyle` constants that is used when configure a `text` view using dates:
@@ -101,6 +107,8 @@ Return the `dateStyle` constants that is used when configure a `text` view using
 const dateStyle = $widget.dateStyle;
 // time, date, relative, offset, timer
 ```
+
+You can also use string literals, such as "time", "date"...
 
 # $env.widget
 

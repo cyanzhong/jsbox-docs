@@ -74,6 +74,8 @@ const alignment = $widget.alignment;
 // topLeading, topTrailing, bottomLeading, bottomTrailing
 ```
 
+也可以直接使用字符串常量，例如 "center", "leading"...
+
 # $widget.horizontalAlignment
 
 返回在视图里面会用到的 `horizontalAlignment` 常量：
@@ -82,6 +84,8 @@ const alignment = $widget.alignment;
 const horizontalAlignment = $widget.horizontalAlignment;
 // leading, center, trailing
 ```
+
+也可以直接使用字符串常量，例如 "leading", "center"...
 
 # $widget.verticalAlignment
 
@@ -93,6 +97,8 @@ const verticalAlignment = $widget.verticalAlignment;
 // firstTextBaseline, lastTextBaseline
 ```
 
+也可以直接使用字符串常量，例如 "top", "center"...
+
 # $widget.dateStyle
 
 返回在使用时间设置 `text` 组件时会用到的 `dateStyle` 常量：
@@ -101,6 +107,8 @@ const verticalAlignment = $widget.verticalAlignment;
 const dateStyle = $widget.dateStyle;
 // time, date, relative, offset, timer
 ```
+
+也可以直接使用字符串常量，例如 "time", "date"...
 
 # $env.widget
 
