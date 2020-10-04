@@ -38,3 +38,12 @@ JSBox 支持小组件的全部尺寸，添加步骤：
 ```js
 const inputValue = $widget.inputValue;
 ```
+
+# 样例代码
+
+为了让您可以更好地上手小组件的开发，我们创建了一些样例项目以供参考：
+
+- [AppleDevNews2](https://github.com/cyanzhong/jsbox-widgets/tree/master/AppleDevNews2)
+- [QRCode](https://github.com/cyanzhong/jsbox-widgets/blob/master/QRCode.js)
+
+我们会在之后完善这个仓库，以提供更多例子。

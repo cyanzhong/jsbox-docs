@@ -38,3 +38,12 @@ The parameter is a string value that can be retrieved like this:
 ```js
 const inputValue = $widget.inputValue;
 ```
+
+# Example Scripts
+
+To make your learning curve smoother, we have created some sample projects for reference:
+
+- [AppleDevNews2](https://github.com/cyanzhong/jsbox-widgets/tree/master/AppleDevNews2)
+- [QRCode](https://github.com/cyanzhong/jsbox-widgets/blob/master/QRCode.js)
+
+We will improve this repository later to provide more examples.
