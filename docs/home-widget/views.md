@@ -47,7 +47,7 @@
 }
 ```
 
-该方法使用 `date` 和 `style` 显示一个时间或日期，style 可以参考 [$widget.dateStyle](home-widget/method.md)。
+该方法使用 `date` 和 `style` 显示一个时间或日期，style 可以参考 [$widget.dateStyle](home-widget/method.md?id=widgetdatestyle)。
 
 ```js
 {
@@ -61,7 +61,7 @@
 
 该方法使用 `startDate` 和 `endDate` 来显示一个时间区间。
 
-文本组件支持的属性：[bold](home-widget/modifiers?id=props-bold), [font](home-widget/modifiers?id=props-font), [lineLimit](home-widget/modifiers?id=props-linelimit), [minimumScaleFactor](home-widget/modifiers?id=props-minimumscalefactor)。
+文本组件支持的属性：[bold](home-widget/modifiers.md?id=props-bold), [font](home-widget/modifiers.md?id=props-font), [lineLimit](home-widget/modifiers.md?id=props-linelimit), [minimumScaleFactor](home-widget/modifiers.md?id=props-minimumscalefactor)。
 
 # type: "image"
 
@@ -112,7 +112,7 @@
 
 该方式可以使用一个在线图片地址，或是一个 base64 格式的图片字符串。
 
-图片控件支持的属性：[resizable](home-widget/modifiers?id=props-resizable), [scaledToFill](home-widget/modifiers?id=props-scaledtofill), [scaledToFit](home-widget/modifiers?id=props-scaledtofit), [accessibilityHidden](home-widget/modifiers?id=props-accessibilityhidden), [accessibilityLabel](home-widget/modifiers?id=props-accessibilitylabel), [accessibilityHint](home-widget/modifiers?id=props-accessibilityhint)。
+图片控件支持的属性：[resizable](home-widget/modifiers.md?id=props-resizable), [scaledToFill](home-widget/modifiers.md?id=props-scaledtofill), [scaledToFit](home-widget/modifiers.md?id=props-scaledtofit), [accessibilityHidden](home-widget/modifiers.md?id=props-accessibilityhidden), [accessibilityLabel](home-widget/modifiers.md?id=props-accessibilitylabel), [accessibilityHint](home-widget/modifiers.md?id=props-accessibilityhint)。
 
 # type: "color"
 

@@ -37,7 +37,7 @@ $widget.setTimeline(ctx => {
 });
 ```
 
-其中 `spacing` 指定了控件间的间距，`alignment` 使用 [$widget.verticalAlignment](home-widget/method?id=widgetverticalalignment) 来指定控件的纵向对齐方式。
+其中 `spacing` 指定了控件间的间距，`alignment` 使用 [$widget.verticalAlignment](home-widget/method.md?id=widgetverticalalignment) 来指定控件的纵向对齐方式。
 
 # type: "vstack"
 
@@ -69,7 +69,7 @@ $widget.setTimeline(ctx => {
 });
 ```
 
-其中 `spacing` 指定了控件间的间距，`alignment` 使用 [$widget.horizontalAlignment](home-widget/method?id=widgethorizontalalignment) 来指定控件的横向对齐方式。
+其中 `spacing` 指定了控件间的间距，`alignment` 使用 [$widget.horizontalAlignment](home-widget/method.md?id=widgethorizontalalignment) 来指定控件的横向对齐方式。
 
 # type: "zstack"
 
@@ -95,7 +95,7 @@ $widget.setTimeline(ctx => {
 });
 ```
 
-其中 `alignment` 使用 [$widget.alignment](home-widget/method?id=widgetalignment) 来指定控件的对齐方式。
+其中 `alignment` 使用 [$widget.alignment](home-widget/method.md?id=widgetalignment) 来指定控件的对齐方式。
 
 # type: "spacer"
 

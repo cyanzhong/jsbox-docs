@@ -47,7 +47,7 @@ This method displays a piece of text directly using the `text` property.
 }
 ```
 
-This method uses `date` and `style` to display a time or date, style can be referred to [$widget.dateStyle](en/home-widget/method.md)。
+This method uses `date` and `style` to display a time or date, style can be referred to [$widget.dateStyle](en/home-widget/method.md?id=widgetdatestyle)。
 
 ```js
 {
@@ -61,7 +61,7 @@ This method uses `date` and `style` to display a time or date, style can be refe
 
 The method uses `startDate` and `endDate` to display a time interval.
 
-Properties supported by the text view: [bold](en/home-widget/modifiers?id=props-bold), [font](en/home-widget/modifiers?id=props-font), [lineLimit](en/home-widget/modifiers?id=props-linelimit), [minimumScaleFactor](en/home-widget/modifiers?id=props-minimumscalefactor)。
+Properties supported by the text view: [bold](en/home-widget/modifiers.md?id=props-bold), [font](en/home-widget/modifiers.md?id=props-font), [lineLimit](en/home-widget/modifiers.md?id=props-linelimit), [minimumScaleFactor](en/home-widget/modifiers.md?id=props-minimumscalefactor)。
 
 # type: "image"
 
@@ -112,7 +112,7 @@ This method uses the file path directly to set the image content.
 
 This method can use either an online image address, or an image string in base64 format.
 
-Properties supported by the image view: [resizable](en/home-widget/modifiers?id=props-resizable), [scaledToFill](en/home-widget/modifiers?id=props-scaledtofill), [scaledToFit](en/home-widget/modifiers?id=props-scaledtofit), [accessibilityHidden](en/home-widget/modifiers?id=props-accessibilityhidden), [accessibilityLabel](en/home-widget/modifiers?id=props-accessibilitylabel), [accessibilityHint](en/home-widget/modifiers?id=props-accessibilityhint)。
+Properties supported by the image view: [resizable](en/home-widget/modifiers.md?id=props-resizable), [scaledToFill](en/home-widget/modifiers.md?id=props-scaledtofill), [scaledToFit](en/home-widget/modifiers.md?id=props-scaledtofit), [accessibilityHidden](en/home-widget/modifiers.md?id=props-accessibilityhidden), [accessibilityLabel](en/home-widget/modifiers.md?id=props-accessibilitylabel), [accessibilityHint](en/home-widget/modifiers.md?id=props-accessibilityhint)。
 
 # type: "color"
 

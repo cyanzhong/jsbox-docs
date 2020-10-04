@@ -37,7 +37,7 @@ $widget.setTimeline(ctx => {
 });
 ```
 
-Where `spacing` specifies the spacing between views, and `alignment` uses [$widget.verticalAlignment](en/home-widget/method?id=widgetverticalalignment) to specify the vertical alignment of views.
+Where `spacing` specifies the spacing between views, and `alignment` uses [$widget.verticalAlignment](en/home-widget/method.md?id=widgetverticalalignment) to specify the vertical alignment of views.
 
 # type: "vstack"
 
@@ -69,7 +69,7 @@ $widget.setTimeline(ctx => {
 });
 ```
 
-Where `spacing` specifies the spacing between views, and `alignment` uses [$widget.horizontalAlignment](en/home-widget/method?id=widgethorizontalalignment) to specify the horizontal alignment of views.
+Where `spacing` specifies the spacing between views, and `alignment` uses [$widget.horizontalAlignment](en/home-widget/method.md?id=widgethorizontalalignment) to specify the horizontal alignment of views.
 
 # type: "zstack"
 
@@ -95,7 +95,7 @@ $widget.setTimeline(ctx => {
 });
 ```
 
-Where `alignment` uses [$widget.alignment](en/home-widget/method?id=widgetalignment) to specify the views's alignment.
+Where `alignment` uses [$widget.alignment](en/home-widget/method.md?id=widgetalignment) to specify the views's alignment.
 
 # type: "spacer"
 
