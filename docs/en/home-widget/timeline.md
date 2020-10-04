@@ -86,8 +86,6 @@ Note that, the above strategy is just "suggestions" to the system, the system do
 
 ## render
 
-When the system wants to display an entry
-
 Upon reaching the time specified in each entry, the system will call the above `render` function, where our code returns a JSON data to describe the view.
 
 ```js
