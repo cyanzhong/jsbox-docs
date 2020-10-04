@@ -399,3 +399,15 @@ var $blurStyle = {
 ```
 
 Please refer to Apple's documentation for details: https://developer.apple.com/documentation/uikit/uiblureffectstyle
+
+# $widgetFamily
+
+Check layout type of a home screen widget:
+
+```js
+var $widgetFamily = {
+  small: 0,
+  medium: 1,
+  large: 2,
+}
+```

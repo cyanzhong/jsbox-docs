@@ -399,3 +399,15 @@ var $blurStyle = {
 ```
 
 请参考 Apple 提供的文档以了解更多：https://developer.apple.com/documentation/uikit/uiblureffectstyle
+
+# $widgetFamily
+
+判断桌面小组件的布局类型：
+
+```js
+var $widgetFamily = {
+  small: 0,
+  medium: 1,
+  large: 2,
+}
+```
