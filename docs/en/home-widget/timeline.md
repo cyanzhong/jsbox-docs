@@ -4,7 +4,7 @@ As we mentioned before, a home screen widget is a series of time-based snapshots
 
 This article is extremely important for understanding how the timeline works, especially the following diagram:
 
-<img src='https://docs-assets.developer.apple.com/published/2971813b6a098a34d134a04e38a50b83/2550/WidgetKit-Timeline-At-End@2x.png' width=320px/>
+<img src='https://docs-assets.developer.apple.com/published/2971813b6a098a34d134a04e38a50b83/2550/WidgetKit-Timeline-At-End@2x.png' width=360px/>
 
 Our code plays the role of the timeline provider in the diagram, where the system fetches a timeline and reload policy from us at the appropriate time. The system then calls the method we provide to display the widget, and makes the next fetch when the policy is satisfied.
 

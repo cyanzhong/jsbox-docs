@@ -4,7 +4,7 @@
 
 这篇文章对理解时间线的工作原理极为重要，尤其是下面这个图：
 
-<img src='https://docs-assets.developer.apple.com/published/2971813b6a098a34d134a04e38a50b83/2550/WidgetKit-Timeline-At-End@2x.png' width=320px/>
+<img src='https://docs-assets.developer.apple.com/published/2971813b6a098a34d134a04e38a50b83/2550/WidgetKit-Timeline-At-End@2x.png' width=360px/>
 
 我们的代码扮演的是图中 Timeline Provider 的角色，系统在合适的时候向我们获取一个时间线和更新策略。然后系统会在合适的时间调用我们提供的方法显示小组件，并在策略满足的时候进行下一次获取。
 
