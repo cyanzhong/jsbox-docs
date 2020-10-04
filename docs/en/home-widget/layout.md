@@ -167,7 +167,7 @@ The above code creates a horizontal grid of 4 rows and 2 columns, the contents o
 }
 ```
 
-Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum/fixed(_:)
+Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum
 
 ```js
 {
@@ -178,7 +178,7 @@ Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enu
 }
 ```
 
-Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum/flexible(minimum:maximum:)
+Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum
 
 ```js
 {
@@ -189,7 +189,7 @@ Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enu
 }
 ```
 
-Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum/adaptive(minimum:maximum:)
+Refer: https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum
 
 # type: "vgrid"
 

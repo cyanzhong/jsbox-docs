@@ -167,7 +167,7 @@ $widget.setTimeline(ctx => {
 }
 ```
 
-参考：https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum/fixed(_:)
+参考：https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum
 
 ```js
 {
@@ -178,7 +178,7 @@ $widget.setTimeline(ctx => {
 }
 ```
 
-参考：https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum/flexible(minimum:maximum:)
+参考：https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum
 
 ```js
 {
@@ -189,7 +189,7 @@ $widget.setTimeline(ctx => {
 }
 ```
 
-参考：https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum/adaptive(minimum:maximum:)
+参考：https://developer.apple.com/documentation/swiftui/griditem/size-swift.enum
 
 # type: "vgrid"
 
