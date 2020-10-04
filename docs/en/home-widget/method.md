@@ -30,6 +30,14 @@ $widget.setTimeline({
 
 Please refer to [timeline](en/home-widget/timeline.md) for details.
 
+# $widget.inputValue
+
+Return the parameter set for the current widget:
+
+```js
+const inputValue = $widget.inputValue;
+```
+
 # $widget.family
 
 Return the layout of the current widget, 0 ~ 2 means small, medium and large respectively:

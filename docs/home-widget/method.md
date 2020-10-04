@@ -30,6 +30,14 @@ $widget.setTimeline({
 
 详情请参考[时间线](home-widget/timeline.md)。
 
+# $widget.inputValue
+
+返回当前小组件设置的参数：
+
+```js
+const inputValue = $widget.inputValue;
+```
+
 # $widget.family
 
 返回当前小组件的尺寸，0 ~ 2 分别表示小、中、大：

@@ -36,5 +36,5 @@ JSBox 支持小组件的全部尺寸，添加步骤：
 该参数是一个字符串，可以像这样获取：
 
 ```js
-const inputValue = $context.query.inputValue;
+const inputValue = $widget.inputValue;
 ```

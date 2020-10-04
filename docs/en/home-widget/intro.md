@@ -36,5 +36,5 @@ For each widget, you can set which script to run, and an additional parameter to
 The parameter is a string value that can be retrieved like this:
 
 ```js
-const inputValue = $context.query.inputValue;
+const inputValue = $widget.inputValue;
 ```
