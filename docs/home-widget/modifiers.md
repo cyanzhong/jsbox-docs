@@ -229,7 +229,8 @@ props: {
 props: {
   font: {
     name: "AmericanTypewriter",
-    size: 20
+    size: 20,
+    // monospaced: true
   }
 }
 ```
