@@ -248,7 +248,7 @@ props: {
 
 ## props: scaledToFill
 
-Similar to $contentMode.scaleToFill, this property determines whether the image fills the parent view in a way that stretches and is cropped.
+Similar to [$contentMode.scaleAspectFill](en/data/constant.md?id=contentmode), this property determines whether the image fills the parent view in a way that stretches and is cropped.
 
 ```js
 props: {
@@ -258,7 +258,7 @@ props: {
 
 ## props: scaledToFit
 
-Similar to $contentMode.scaleToFit, this property determines whether the image is placed in the parent view in a way that stretches and holds the content.
+Similar to [$contentMode.scaleAspectFit](en/data/constant.md?id=contentmode), this property determines whether the image is placed in the parent view in a way that stretches and holds the content.
 
 ```js
 props: {

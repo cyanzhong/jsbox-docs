@@ -248,7 +248,7 @@ props: {
 
 ## props: scaledToFill
 
-与 $contentMode.scaleToFill 类似，该属性决定图片是否以拉伸并被裁剪的方式填充满父视图：
+与 [$contentMode.scaleAspectFill](data/constant.md?id=contentmode) 类似，该属性决定图片是否以拉伸并被裁剪的方式填充满父视图：
 
 ```js
 props: {
@@ -258,7 +258,7 @@ props: {
 
 ## props: scaledToFit
 
-与 $contentMode.scaleToFit 类似，该属性决定图片是否以拉伸并保持内容的方式放入父视图内：
+与 [$contentMode.scaleAspectFit](data/constant.md?id=contentmode) 类似，该属性决定图片是否以拉伸并保持内容的方式放入父视图内：
 
 ```js
 props: {
