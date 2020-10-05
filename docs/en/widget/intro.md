@@ -16,7 +16,7 @@ $photo.pick | Pick photo
 $photo.prompt | Ask user to get a photo
 $share.sheet | Present share sheet
 $text.lookup | Lookup in dictionary
-$pick.* | Present pickers
+$picker.* | Present pickers
 $qrcode.scan | Scan QRCode
 $input.speech | Speech to text
 

@@ -12,7 +12,7 @@ $photo.pick | 选取图片
 $photo.prompt | 询问用户获得图片
 $share.sheet | 弹出 share sheet
 $text.lookup | 查询词典
-$pick.* | 选择器
+$picker.* | 选择器
 $qrcode.scan | 扫描二维码
 $input.speech | 语音识别
 

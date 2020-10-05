@@ -80,3 +80,15 @@ changed: function(sender) {
 # $picker.data(object)
 
 创建一个通用选择器的快捷方式，参数和上面的方式相同，picker 将会直接从屏幕底部弹出。
+
+以上两个方法的参数和之前提到的格式完全相同。
+
+# $picker.color(object)
+
+使用内建的颜色选择器来选择颜色：
+
+```js
+const color = await $picker.color({
+  // color: aColor
+});
+```
