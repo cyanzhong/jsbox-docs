@@ -147,7 +147,9 @@ $widget.setTimeline(ctx => {
         },
         // spacing: 10,
         // alignment: $widget.alignment.left
-      })
+      }),
+      // spacing: 10,
+      // alignment: $widget.verticalAlignment.center
     },
     views: Array(8).fill({
       type: "text",
@@ -207,7 +209,9 @@ $widget.setTimeline(ctx => {
         },
         // spacing: 10,
         // alignment: $widget.alignment.left
-      })
+      }),
+      // spacing: 10,
+      // alignment: $widget.horizontalAlignment.center
     },
     views: Array(8).fill({
       type: "text",
