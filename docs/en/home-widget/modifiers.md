@@ -73,6 +73,16 @@ props: {
 }
 ```
 
+## props: layoutPriority
+
+Sets the priority by which a parent layout should apportion space to this child (default: 0):
+
+```js
+props: {
+  layoutPriority: 1
+}
+```
+
 ## props: cornerRadius
 
 Apply corner radius:

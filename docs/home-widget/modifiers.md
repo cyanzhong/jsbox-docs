@@ -73,6 +73,16 @@ props: {
 }
 ```
 
+## props: layoutPriority
+
+指定布局流程中的优先级（默认为 0）：
+
+```js
+props: {
+  layoutPriority: 1
+}
+```
+
 ## props: cornerRadius
 
 圆角效果：
