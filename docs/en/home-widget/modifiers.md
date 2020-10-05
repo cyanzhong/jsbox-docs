@@ -107,6 +107,26 @@ props: {
 }
 ```
 
+## props: clipped
+
+Whether to clip any content that extends beyond the layout bounds of the shape:
+
+```js
+props: {
+  clipped: true
+}
+```
+
+You can also enable antialiasing with `antialiased`:
+
+```js
+props: {
+  clipped: {
+    antialiased: true
+  }
+}
+```
+
 ## props: opacity
 
 Change the opacity of the view:

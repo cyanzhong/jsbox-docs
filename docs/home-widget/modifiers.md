@@ -107,6 +107,26 @@ props: {
 }
 ```
 
+## props: clipped
+
+是否裁剪超出边框部分的内容：
+
+```js
+props: {
+  clipped: true
+}
+```
+
+也可以通过 `antialiased` 指定抗锯齿：
+
+```js
+props: {
+  clipped: {
+    antialiased: true
+  }
+}
+```
+
 ## props: opacity
 
 半透明效果：
