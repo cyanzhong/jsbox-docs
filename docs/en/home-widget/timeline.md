@@ -18,7 +18,7 @@ JSBox uses `$widget.setTimeline(...)` to provide timelines mentioned above, E.g.
 $widget.setTimeline({
   entries: [
     {
-      date: new Date()
+      date: new Date(),
       info: {}
     }
   ],

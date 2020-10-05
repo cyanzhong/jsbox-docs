@@ -18,7 +18,7 @@ JSBox 使用 `$widget.setTimeline(...)` 函数来提供上述的时间线，使�
 $widget.setTimeline({
   entries: [
     {
-      date: new Date()
+      date: new Date(),
       info: {}
     }
   ],

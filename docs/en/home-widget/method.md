@@ -10,7 +10,7 @@ Provide a timeline:
 $widget.setTimeline({
   entries: [
     {
-      date: new Date()
+      date: new Date(),
       info: {}
     }
   ],
