@@ -172,3 +172,16 @@
 ```
 
 使用 `startPoint` 和 `endPoint` 来指定起始和结束点，`colors` 和 `locations` 来决定每一段渐变的颜色和位置。注：`locations` 如果指定，数量必须和 `colors` 相等。
+
+# type: "divider"
+
+实现分割线效果：
+
+```js
+{
+  type: "divider",
+  props: {
+    background: $color("blue")
+  }
+}
+```

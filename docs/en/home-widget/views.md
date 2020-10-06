@@ -172,3 +172,16 @@ Create a linear gradient effect, E.g.:
 ```
 
 Use `startPoint` and `endPoint` to specify the start and end points, and `colors` and `locations` to determine the color and position of each gradient section. Note: if `locations` is specified, it must be equal in number to `colors`.
+
+# type: "divider"
+
+Create a divider, E.g.:
+
+```js
+{
+  type: "divider",
+  props: {
+    background: $color("blue")
+  }
+}
+```
