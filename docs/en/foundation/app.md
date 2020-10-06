@@ -74,6 +74,7 @@ $env.action | Action Extension
 $env.safari | Safari Extension
 $env.keyboard | Keyboard Extension
 $env.siri | Siri Extension
+$env.widget | Home Screen Widget
 $env.all | All (Default)
 
 We can check whether an addin runs on widget:

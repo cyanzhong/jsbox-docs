@@ -76,6 +76,7 @@ $env.action | Action 扩展
 $env.safari | Safari 扩展
 $env.keyboard | 键盘扩展
 $env.siri | Siri 环境
+$env.widget | 桌面小组件
 $env.all | 所有环境（默认值）
 
 我们可以如此来判断扩展是否运行在通知中心：
