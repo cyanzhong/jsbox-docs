@@ -38,6 +38,8 @@ Return the parameter set for the current widget:
 const inputValue = $widget.inputValue;
 ```
 
+> `inputValue` is undefined when the main app is running
+
 # $widget.family
 
 Return the layout of the current widget, 0 ~ 2 means small, medium and large respectively:
@@ -45,6 +47,14 @@ Return the layout of the current widget, 0 ~ 2 means small, medium and large res
 ```js
 const family = $widget.family;
 // 0, 1, 2
+```
+
+In most cases, you should rely on the `ctx` returned in the `render` function to retrieve `family`. Use this API only if you need to get it before calling `setTimeline`.
+
+By default, this value is 0 when the main app is running, and can be overridden by the test code:
+
+```js
+$widget.family = $widgetFamily.medium;
 ```
 
 # $widget.displaySize
@@ -56,6 +66,14 @@ const size = $widget.displaySize;
 // size.width, size.height
 ```
 
+In most cases, you should rely on the `ctx` returned in the `render` function to retrieve `displaySize`. Use this API only if you need to get it before calling `setTimeline`.
+
+By default, this value refers to small size when the main app is running, and can be tweaked by modifying the family:
+
+```js
+$widget.family = $widgetFamily.medium;
+```
+
 # $widget.isDarkMode
 
 Check if the current widget is running in dark mode:
@@ -63,6 +81,8 @@ Check if the current widget is running in dark mode:
 ```js
 const isDarkMode = $widget.isDarkMode;
 ```
+
+In most cases, you should rely on the `ctx` returned in the `render` function to retrieve `isDarkMode`. Use this API only if you need to get it before calling `setTimeline`.
 
 # $widget.alignment
 

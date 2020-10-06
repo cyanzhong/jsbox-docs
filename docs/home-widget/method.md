@@ -38,6 +38,8 @@ $widget.setTimeline({
 const inputValue = $widget.inputValue;
 ```
 
+> 在主应用运行时 `inputValue` 为空
+
 # $widget.family
 
 返回当前小组件的尺寸，0 ~ 2 分别表示小、中、大：
@@ -45,6 +47,14 @@ const inputValue = $widget.inputValue;
 ```js
 const family = $widget.family;
 // 0, 1, 2
+```
+
+绝大部分情况下，您应该依赖上述 `render` 函数中返回的 `ctx` 来获取 `family`。仅当您需要在调用 `setTimeline` 之前就获取才使用这个接口。
+
+在主应用运行时，这个值默认返回 0，可以被测试代码覆盖：
+
+```js
+$widget.family = $widgetFamily.medium;
 ```
 
 # $widget.displaySize
@@ -56,6 +66,14 @@ const size = $widget.displaySize;
 // size.width, size.height
 ```
 
+绝大部分情况下，您应该依赖上述 `render` 函数中返回的 `ctx` 来获取 `displaySize`。仅当您需要在调用 `setTimeline` 之前就获取才使用这个接口。
+
+在主应用运行时，这个值默认返回小尺寸的大小，测试代码可以通过覆盖 `family` 来模拟这个值：
+
+```js
+$widget.family = $widgetFamily.medium;
+```
+
 # $widget.isDarkMode
 
 当前小组件是否运行在深色模式下：
@@ -63,6 +81,8 @@ const size = $widget.displaySize;
 ```js
 const isDarkMode = $widget.isDarkMode;
 ```
+
+绝大部分情况下，您应该依赖上述 `render` 函数中返回的 `ctx` 来获取 `isDarkMode`。仅当您需要在调用 `setTimeline` 之前就获取才使用这个接口。
 
 # $widget.alignment
 
