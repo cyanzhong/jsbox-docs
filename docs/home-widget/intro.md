@@ -45,5 +45,7 @@ const inputValue = $widget.inputValue;
 
 - [AppleDevNews2](https://github.com/cyanzhong/jsbox-widgets/tree/master/AppleDevNews2)
 - [QRCode](https://github.com/cyanzhong/jsbox-widgets/blob/master/QRCode.js)
+- [xkcd](https://github.com/cyanzhong/jsbox-widgets/blob/master/xkcd.js)
+- [clock](https://github.com/cyanzhong/jsbox-widgets/blob/master/clock.js)
 
 我们会在之后完善这个仓库，以提供更多例子。

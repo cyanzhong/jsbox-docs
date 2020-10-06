@@ -45,5 +45,7 @@ To make your learning curve smoother, we have created some sample projects for r
 
 - [AppleDevNews2](https://github.com/cyanzhong/jsbox-widgets/tree/master/AppleDevNews2)
 - [QRCode](https://github.com/cyanzhong/jsbox-widgets/blob/master/QRCode.js)
+- [xkcd](https://github.com/cyanzhong/jsbox-widgets/blob/master/xkcd.js)
+- [clock](https://github.com/cyanzhong/jsbox-widgets/blob/master/clock.js)
 
 We will improve this repository later to provide more examples.
