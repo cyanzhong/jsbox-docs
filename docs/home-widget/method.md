@@ -38,7 +38,7 @@ $widget.setTimeline({
 const inputValue = $widget.inputValue;
 ```
 
-> 在主应用运行时 `inputValue` 为空
+> 在主应用运行时 `inputValue` 为空，请使用假数据作为测试目的
 
 # $widget.family
 

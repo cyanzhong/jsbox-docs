@@ -38,7 +38,7 @@ Return the parameter set for the current widget:
 const inputValue = $widget.inputValue;
 ```
 
-> `inputValue` is undefined when the main app is running
+> `inputValue` is undefined when the main app is running, use a mock value for testing purposes
 
 # $widget.family
 
