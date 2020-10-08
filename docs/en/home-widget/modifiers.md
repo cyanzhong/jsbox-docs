@@ -147,6 +147,16 @@ props: {
 }
 ```
 
+## props: blur
+
+Apply a Gaussian blur:
+
+```js
+props: {
+  blur: 10
+}
+```
+
 ## props: color
 
 Set the foreground color, such as text color:

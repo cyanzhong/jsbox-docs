@@ -147,6 +147,16 @@ props: {
 }
 ```
 
+## props: blur
+
+应用高斯模糊效果：
+
+```js
+props: {
+  blur: 10
+}
+```
+
 ## props: color
 
 视图的前景色，例如文字颜色：
