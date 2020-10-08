@@ -30,6 +30,14 @@ $widget.setTimeline({
 
 Please refer to [timeline](en/home-widget/timeline.md) for details.
 
+# $widget.reloadTimeline()
+
+Trigger timeline refresh manually, the system can decide whether to refresh or not:
+
+```js
+$widget.reloadTimeline();
+```
+
 # $widget.inputValue
 
 Return the parameter set for the current widget:

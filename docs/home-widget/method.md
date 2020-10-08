@@ -30,6 +30,14 @@ $widget.setTimeline({
 
 详情请参考[时间线](home-widget/timeline.md)。
 
+# $widget.reloadTimeline()
+
+手动触发时间线的刷新，是否刷新由系统决定：
+
+```js
+$widget.reloadTimeline();
+```
+
 # $widget.inputValue
 
 返回当前小组件设置的参数：
