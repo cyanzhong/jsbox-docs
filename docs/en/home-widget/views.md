@@ -11,12 +11,12 @@ For any kind of view, we define it using the following syntax:
 ```js
 {
   type: "",
-  props: {},
+  props: {}, // or modifiers: []
   views: []
 }
 ```
 
-This is similar to `$ui.render` in that `type` specifies the type, `props` specifies the properties, and `views` specifies its child views.
+This is similar to `$ui.render` in that `type` specifies the type, `props` or `modifiers` specifies the properties, and `views` specifies its child views.
 
 The difference is that in SwiftUI we no longer use a UIKit-like layout system, so we don't use `layout` anymore.
 

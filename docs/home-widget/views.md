@@ -11,12 +11,12 @@
 ```js
 {
   type: "",
-  props: {},
+  props: {}, // or modifiers: []
   views: []
 }
 ```
 
-这和 `$ui.render` 的方式是类似的，通过 `type` 指定类型，`props` 指定相关属性，`views` 制定其子视图。
+这和 `$ui.render` 的方式是类似的，通过 `type` 指定类型，`props` 或 `modifiers` 指定相关属性，`views` 制定其子视图。
 
 区别在于，在 SwiftUI 里面我们不再使用类似 UIKit 的布局方式，所以也就不再通过 `layout` 进行布局。
 

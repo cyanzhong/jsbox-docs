@@ -2,6 +2,42 @@
 
 The properties of a widget specify its display effects and behavior, some properties support all types of views, and some properties are unique to text or images.
 
+You can set multiple properties inside `props`, something like this:
+
+```js
+props: {
+  frame: {
+    width: 100,
+    height: 100
+  },
+  background: $color("red"),
+  padding: 15
+}
+```
+
+Note that this simplification differs from SwiftUI's native [View Modifier](https://developer.apple.com/documentation/swiftui/viewmodifier):
+
+- The same property can only be applied once.
+- Unable to specify the order in which properties are applied
+
+The way SwiftUI modifiers work dictates that different sequences produce different results, and each modifier produces a new view, so you can apply the same type of modifier over and over again.
+
+When you need to fully mimic the logic in SwiftUI, you can use the `modifiers` array.
+
+```js
+modifiers: [
+  {
+    frame: { width: 100, height: 100 },
+    background: $color("red")
+  },
+  { padding: 15 }
+]
+```
+
+In the above code, the order of `frame` and `background` is undefined, but `padding` will be applied later.
+
+The syntax is exactly the same as in `props` and the following examples will not be repeated.
+
 # Properties for All Views
 
 ## props: frame

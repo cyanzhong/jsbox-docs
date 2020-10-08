@@ -2,6 +2,42 @@
 
 小组件的属性指定了其展示效果和行为，部分属性支持所有类型的视图，部分属性是文本或图片独有的。
 
+您可以在 `props` 里面指定多个属性，类似这样：
+
+```js
+props: {
+  frame: {
+    width: 100,
+    height: 100
+  },
+  background: $color("red"),
+  padding: 15
+}
+```
+
+请注意，这种简化方式和 SwiftUI 原生的 [View Modifier](https://developer.apple.com/documentation/swiftui/viewmodifier) 有所差别：
+
+- 同一个属性只能被应用一次
+- 无法指定属性应用的顺序
+
+SwiftUI modifiers 的工作方式决定了不同的顺序会产生不同的结果，且每次应用都会产生新的视图，所以可以重复应用同类 modifier。
+
+当您需要完全实现 SwiftUI 中的逻辑时，可以使用 `modifiers` 数组：
+
+```js
+modifiers: [
+  {
+    frame: { width: 100, height: 100 },
+    background: $color("red")
+  },
+  { padding: 15 }
+]
+```
+
+上述代码中，`frame` 和 `background` 的顺序是未定义的，但 `padding` 会在之后应用。
+
+语法和 `props` 中完全相同，以下例子不再赘述。
+
 # 适用于所有视图
 
 ## props: frame
