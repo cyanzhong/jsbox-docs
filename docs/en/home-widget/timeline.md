@@ -137,3 +137,37 @@ As a result, JSBox will automatically create entries and set the policy to refre
 During development, when `$widget.setTimeline` is called from within the main app, a preview of the widget is opened. Three sizes are supported, and the first entry is fixed to be displayed in the timeline.
 
 To apply the script to your actual home screen, please refer to the aforementioned setup method.
+
+# Best Practice for Network Requests
+
+To read data asynchronously, you can send network requests before calling `setTimeline`. Due to limitations of the timeline mechanism, we may not be able to implement the classic caching logic of first showing the cache, then fetching new data, and then refreshing the UI.
+
+However, network requests are likely to fail, in that case, it is better to show cached content instead of an error. To achieve that, here is a suggested workflow we recommend:
+
+```js
+async function fetch() {
+  const cache = readCache();
+  const resp1 = await $http.get();
+  if (failed(resp1)) {
+    return cache;
+  }
+
+  const resp2 = await $http.download();
+  if (failed(resp2)) {
+    return cache;
+  }
+
+  const data = resp2.data;
+  if (data) {
+    writeCache(data);
+  }
+
+  return data;
+}
+
+const data = await fetch();
+```
+
+Then use `data` to build the timeline, so that there are always contents in the widget, even though it may not be up to date.
+
+For a complete example, please refer to: https://github.com/cyanzhong/jsbox-widgets/blob/master/xkcd.js

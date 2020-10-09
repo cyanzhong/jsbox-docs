@@ -137,3 +137,37 @@ $widget.setTimeline(ctx => {
 开发阶段，在主应用内调用 `$widget.setTimeline` 时，将打开预览小组件的模拟环境。同时支持三种尺寸，固定展示在时间线中的第一个 entry。
 
 如需将脚本应用到实际桌面，请参考前述的设置方法。
+
+# 网络请求最佳实践
+
+您可以在 `setTimeline` 之前请求网络，通过异步的方式获取数据。由于时间线工作机制的限制，我们可能无法实现先展示缓存，然后获取新数据，再刷新页面这样的经典缓存逻辑。
+
+但网络请求总是可能会失败的，在这种情况下展示缓存结果要好于显示出错信息，所以我们建议使用如下缓存策略：
+
+```js
+async function fetch() {
+  const cache = readCache();
+  const resp1 = await $http.get();
+  if (failed(resp1)) {
+    return cache;
+  }
+
+  const resp2 = await $http.download();
+  if (failed(resp2)) {
+    return cache;
+  }
+
+  const data = resp2.data;
+  if (data) {
+    writeCache(data);
+  }
+
+  return data;
+}
+
+const data = await fetch();
+```
+
+然后使用 `data` 构建时间线，这样小组件上会尽可能地显示内容，尽管内容可能不是最新。
+
+完整示例请参考：https://github.com/cyanzhong/jsbox-widgets/blob/master/xkcd.js
