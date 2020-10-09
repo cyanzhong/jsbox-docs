@@ -276,6 +276,7 @@ props: {
   font: {
     name: "AmericanTypewriter",
     size: 20,
+    // weight: "regular" (ultraLight, thin, light, regular, medium, semibold, bold, heavy, black)
     // monospaced: true
   }
 }
