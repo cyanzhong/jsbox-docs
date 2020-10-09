@@ -83,12 +83,29 @@ This method uses JSBox's existing APIs to provide `image` or `data` objects.
 {
   type: "image",
   props: {
-    symbol: "trash"
+    symbol: "trash",
+    resizable: true
   }
 }
 ```
 
 This method uses [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/) to display an icon.
+
+Since SF Symbols is essentially fonts, you can also specify font size and weight:
+
+```js
+{
+  type: "image",
+  props: {
+    symbol: {
+      glyph: "trash",
+      size: 64, // Default: 24
+      weight: "medium" // Default: "regular" Values: ultraLight, thin, light, regular, medium, semibold, bold, heavy, black
+    },
+    resizable: true
+  }
+}
+```
 
 ```js
 {

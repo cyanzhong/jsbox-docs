@@ -83,12 +83,29 @@
 {
   type: "image",
   props: {
-    symbol: "trash"
+    symbol: "trash",
+    resizable: true
   }
 }
 ```
 
 该方式使用 [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/) 显示一个图标。
+
+由于 SF Symbols 本质上是字体，所以也可以指定字号和字重：
+
+```js
+{
+  type: "image",
+  props: {
+    symbol: {
+      glyph: "trash",
+      size: 64, // Default: 24
+      weight: "medium" // Default: "regular" Values: ultraLight, thin, light, regular, medium, semibold, bold, heavy, black
+    },
+    resizable: true
+  }
+}
+```
 
 ```js
 {
