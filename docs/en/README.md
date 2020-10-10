@@ -16,7 +16,7 @@ JSBox 2.0 provides Node.js runtime, you can also use Node APIs. For details, ple
 
 - Get code through URL Scheme
 
-  > For example: jsbox://import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyanzhong%2FxTeko%2Fmaster%2Fextension-scripts%2Fapi.js&name=test&icon=icon_063.png
+  > For example: jsbox://import?url=url&name=name&icon=icon
   > - Parameters:
   >  - `url`: Code file url
   >  - `name`: The script name
