@@ -183,6 +183,16 @@ props: {
 }
 ```
 
+## props: rotationEffect
+
+Rotate the view with an angle in radians:
+
+```js
+props: {
+  rotationEffect: Math.PI * 0.5
+}
+```
+
 ## props: blur
 
 Apply a Gaussian blur:

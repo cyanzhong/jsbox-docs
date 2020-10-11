@@ -183,6 +183,16 @@ props: {
 }
 ```
 
+## props: rotationEffect
+
+以弧度角对视图进行旋转：
+
+```js
+props: {
+  rotationEffect: Math.PI * 0.5
+}
+```
+
 ## props: blur
 
 应用高斯模糊效果：
