@@ -43,6 +43,7 @@ const inputValue = $widget.inputValue;
 
 To make your learning curve smoother, we have created some sample projects for reference:
 
+- [WidgetDoodles](https://github.com/cyanzhong/jsbox-widgets/tree/master/WidgetDoodles)
 - [AppleDevNews2](https://github.com/cyanzhong/jsbox-widgets/tree/master/AppleDevNews2)
 - [QRCode](https://github.com/cyanzhong/jsbox-widgets/blob/master/QRCode.js)
 - [xkcd](https://github.com/cyanzhong/jsbox-widgets/blob/master/xkcd.js)

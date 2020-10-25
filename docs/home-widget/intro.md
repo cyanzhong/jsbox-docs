@@ -43,6 +43,7 @@ const inputValue = $widget.inputValue;
 
 为了让您可以更好地上手小组件的开发，我们创建了一些样例项目以供参考：
 
+- [WidgetDoodles](https://github.com/cyanzhong/jsbox-widgets/tree/master/WidgetDoodles)
 - [AppleDevNews2](https://github.com/cyanzhong/jsbox-widgets/tree/master/AppleDevNews2)
 - [QRCode](https://github.com/cyanzhong/jsbox-widgets/blob/master/QRCode.js)
 - [xkcd](https://github.com/cyanzhong/jsbox-widgets/blob/master/xkcd.js)
