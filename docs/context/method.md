@@ -15,6 +15,14 @@ var query = $context.query
 }
 ```
 
+若从其他第三方应用跳转至 JSBox，query 内可能包含来源应用的 Bundle ID:
+
+```js
+const sourceApp = $context.query.source_app;
+```
+
+您可以根据这个信息进行一些判断，但对 iOS 自带的应用无效。
+
 # $context.text
 
 返回一个文本（当用户选择文本进行分享时）：

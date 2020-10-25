@@ -15,6 +15,14 @@ If we use `jsbox://runjs?file=demo.js&text=test` to launch it, the query is:
 }
 ```
 
+If the source application is another third-party app, there might be its bundle identifier:
+
+```js
+const sourceApp = $context.query.source_app;
+```
+
+You can check it when needed, it doesn't work for iOS built-in apps.
+
 # $context.text
 
 Returns a text (user shared a text):
