@@ -1,1 +1,1 @@
-- [**EN** / CN](https://docs.xteko.com/#/)
+- [**EN** / CN](/)
