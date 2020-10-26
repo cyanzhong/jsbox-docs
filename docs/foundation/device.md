@@ -15,9 +15,20 @@
     "height": 320,
     "scale": 2.0,
     "orientation": 1,
-  }
+  },
+  "battery": {
+    "state": 1,
+    "level": 0.9399999976158142
+  },
 }
 ```
+$device.info.battery.state
+数值 | 说明
+---|---
+0 | 无法知道电池状态
+1 | 设备未在充电中
+2 | 设备在充电中，电量小于100%
+3 | 设备在充电中，电量等于100%
 
 # $device.ssid
 
