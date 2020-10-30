@@ -15,6 +15,10 @@
     "height": 320,
     "scale": 2.0,
     "orientation": 1,
+  },
+  "battery": {
+    "state": 1, // 0: unknown 1: normal 2: charging 3: charging & fully charged
+    "level": 0.9399999976158142
   }
 }
 ```
