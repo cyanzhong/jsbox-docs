@@ -72,6 +72,7 @@ $env.app | Main App
 $env.today | Today Widget
 $env.action | Action Extension
 $env.safari | Safari Extension
+$env.notification | Notification Extension
 $env.keyboard | Keyboard Extension
 $env.siri | Siri Extension
 $env.widget | Home Screen Widget
