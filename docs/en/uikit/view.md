@@ -200,6 +200,8 @@ existingView.moveToBack();
 
 Trigger layouting of a view, you can use this during animations.
 
+Layout process will not be done immediately after views are created, calling this can trigger an additional layout loop, to make frame and size available.
+
 # setNeedsLayout()
 
 Mark a view as needs layout, it will be applied in the next drawing cycle.
