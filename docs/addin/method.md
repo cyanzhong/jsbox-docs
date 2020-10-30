@@ -13,6 +13,7 @@ var addins = $addin.list
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
 name | string | 读写 | 名称
+category | string | 读写 | 分类
 url | string | 读写 | url
 data | $data | 读写 | 文件
 id | string | 读写 | id
@@ -24,6 +25,26 @@ author | string | 读写 | 作者
 website | string | 读写 | 网站
 
 以上字段 `name` 和 `data` 为必须，其余字段可选。
+
+你可以对取出的 `addins` 进行更改，例如重新排序，然后这样保存：
+
+```js
+$addin.list = addins;
+```
+
+# $addin.categories
+
+获取当前设备所有的脚本分类，返回 string 数组：
+
+```js
+const categories = $addin.categories;
+```
+
+你可以进行修改，例如重新排序或增加分类，然后这样保存：
+
+```js
+$addin.categories = categories;
+```
 
 # $addin.current
 

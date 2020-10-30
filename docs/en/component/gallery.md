@@ -46,6 +46,7 @@ Prop | Type | Read/Write | Description
 items | object | w | all items
 page | number | rw | current page index
 interval | number | rw | autoplay interval, 0 means off
+pageControl | $view | r | page control component
 
 # events
 
@@ -64,4 +65,12 @@ You can retrieve subviews with methods as below:
 ```js
 const views = $("gallery").itemViews; // All views
 const view = $("gallery").viewWithIndex(0); // The first view
+```
+
+# Scroll to a page
+
+If you want to scroll to a page with animation, do this:
+
+```js
+$("gallery").scrollToPage(index);
 ```

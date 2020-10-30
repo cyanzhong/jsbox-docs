@@ -137,8 +137,16 @@ willBeginDragging: function(sender) {
 `willEndDragging` will be called before dragging ends:
 
 ```js
-willEndDragging: function(sender, velocity) {
+willEndDragging: function(sender, velocity, target) {
 
+}
+```
+
+The `target` parameter tells us the target location, it can be overridden by returning a `$point`:
+
+```js
+willEndDragging: function(sender, velocity, target) {
+  return $point(0, 0);
 }
 ```
 

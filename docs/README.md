@@ -16,7 +16,7 @@ JSBox 从 2.0 开始，提供了对 Node.js 运行时的支持。关于这一部
 
 - 通过 URL Scheme 在线安装
 
-  > 例如通过在 iOS 设备上点击：jsbox://import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcyanzhong%2FxTeko%2Fmaster%2Fextension-scripts%2Fapi.js&name=%E6%B5%8B%E8%AF%95%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85&icon=icon_063.png
+  > 例如通过在 iOS 设备上点击：jsbox://import?url=url&name=name&icon=icon
   > 将会打开 JSBox 自动安装脚本，支持 `url`, `name`(可选), `icon`(可选) 3 个参数，均需要 URL Encode
   > icon 名称具体请参考：https://github.com/cyanzhong/xTeko/tree/master/extension-icons
   > 在线文件 URL 中请使用纯英文名

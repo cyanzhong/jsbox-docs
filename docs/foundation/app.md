@@ -1,5 +1,11 @@
 > 和 JSBox 本身相关或和正在运行的脚本相关的接口
 
+# $app.theme
+
+为脚本指定 `theme`，用于 [Dark Mode](uikit/dark-mode.md) 相关，可选值为 `light` / `dark` / `auto`。
+
+如果某个页面指定了 `theme`，则这个全局的值会被覆盖。
+
 # $app.minSDKVer
 
 指定此扩展可用的最低 SDK 版本（SDK 版本即 JSBox 的版本）：
@@ -68,8 +74,10 @@ $env.app | 主应用
 $env.today | 通知中心小组件
 $env.action | Action 扩展
 $env.safari | Safari 扩展
+$env.notification | 通知
 $env.keyboard | 键盘扩展
 $env.siri | Siri 环境
+$env.widget | 桌面小组件
 $env.all | 所有环境（默认值）
 
 我们可以如此来判断扩展是否运行在通知中心：

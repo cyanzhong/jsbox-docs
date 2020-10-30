@@ -96,6 +96,88 @@ purple | 紫色
 brown | 棕色
 clear | 透明
 
+以下颜色为语义化颜色，方便用于 Dark Mode 的适配，他们会在 Dark 和 Light 时展示不同的颜色：
+
+名称 | 颜色
+---|---
+tintColor | 主题色
+primarySurface | 一级背景
+secondarySurface | 二级背景
+tertiarySurface | 三级背景
+primaryText | 一级文字
+secondaryText | 二级文字
+backgroundColor | 背景颜色
+separatorColor | 分割线颜色
+groupedBackground | grouped 列表背景色
+insetGroupedBackground | insetGrouped 列表背景色
+
+以下颜色为系统默认颜色，参考 [UI Element Colors](https://developer.apple.com/documentation/uikit/uicolor/ui_element_colors)
+
+名称 | 颜色
+---|---
+systemGray2 | UIColor.systemGray2Color
+systemGray3 | UIColor.systemGray3Color
+systemGray4 | UIColor.systemGray4Color
+systemGray5 | UIColor.systemGray5Color
+systemGray6 | UIColor.systemGray6Color
+systemLabel | UIColor.labelColor
+systemSecondaryLabel | UIColor.secondaryLabelColor
+systemTertiaryLabel | UIColor.tertiaryLabelColor
+systemQuaternaryLabel | UIColor.quaternaryLabelColor
+systemLink | UIColor.linkColor
+systemPlaceholderText | UIColor.placeholderTextColor
+systemSeparator | UIColor.separatorColor
+systemOpaqueSeparator | UIColor.opaqueSeparatorColor
+systemBackground | UIColor.systemBackgroundColor
+systemSecondaryBackground | UIColor.secondarySystemBackgroundColor
+systemTertiaryBackground | UIColor.tertiarySystemBackgroundColor
+systemGroupedBackground | UIColor.systemGroupedBackgroundColor
+systemSecondaryGroupedBackground | UIColor.secondarySystemGroupedBackgroundColor
+systemTertiaryGroupedBackground | UIColor.tertiarySystemGroupedBackgroundColor
+systemFill | UIColor.systemFillColor
+systemSecondaryFill | UIColor.secondarySystemFillColor
+systemTertiaryFill | UIColor.tertiarySystemFillColor
+systemQuaternaryFill | UIColor.quaternarySystemFillColor
+
+这些颜色在分别在 Light 和 Dark 模式下使用不同的颜色，例如 `$color("tintColor")` 会在 Light 模式下使用主题色，在 Dark 模式下使用比较亮的蓝色。
+
+可以使用 `$color("namedColors")` 来获取颜色盘里面所有可用的颜色，返回一个字典：
+
+```js
+const colors = $color("namedColors");
+```
+
+同时，`$color(...)` 接口也可用于返回适配 Dark Mode 需要的动态颜色，像是这样：
+
+```js
+const dynamicColor = $color({
+  light: "#FFFFFF",
+  dark: "#000000"
+});
+```
+
+该颜色在两种模式下分别为黑色和白色，自动切换，也可以简写为：
+
+```js
+const dynamicColor = $color("#FFFFFF", "#000000");
+```
+
+写法支持嵌套，你可以用 `$rgba(...)` 接口生成颜色后，用 `$color(...)` 接口生成动态颜色：
+
+```js
+const dynamicColor = $color($rgba(0, 0, 0, 1), $rgba(255, 255, 255, 1));
+```
+
+另外，JSBox 的 Dark Mode 支持深灰或纯黑两种模式，如果需要对三种状态使用不同的颜色，可以使用：
+
+```js
+const dynamicColor = $color({
+  light: "#FFFFFF",
+  dark: "#141414",
+  black: "#000000"
+});
+```
+
 # $rgb(red, green, blue)
 
 同样是生成颜色，但这里用的是十进制 `0 ~ 255` 的数值：
@@ -191,6 +273,29 @@ const image = $image("data:image/png;base64,...");
 ```
 
 其中 `scale` 为可选参数，用于设置比例，默认为 1，设置成 0 的时候表示屏幕比例。
+
+在最新版里面，可以使用 `$image(...)` 函数来创建适用于 Dark Mode 的动态图片，例如：
+
+```js
+const dynamicImage = $image({
+  light: "light-image.png",
+  dark: "dark-image.png"
+});
+```
+
+该图片会分别在 Light 模式和 Dark 模式下使用不同的资源，自动完成切换，也可以简写成：
+
+```js
+const dynamicImage = $image("light-image.png", "dark-image.png");
+```
+
+除此之外，此接口还支持将图片嵌套，像是这样：
+
+```js
+const lightImage = $image("light-image.png");
+const darkImage = $image("dark-image.png");
+const dynamicImage = $image(lightImage, darkImage);
+```
 
 # $icon(code, color, size)
 

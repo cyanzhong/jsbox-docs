@@ -28,6 +28,7 @@ Other props:
 
 Prop | Type | Description
 ---|---|---
+theme | string | theme: light/dark/auto
 title | string | title
 titleColor | $color | title color
 barColor | $color | bar color

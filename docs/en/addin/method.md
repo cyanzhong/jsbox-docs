@@ -13,6 +13,7 @@ Data Structure:
 Prop | Type | Read/Write | Description
 ---|---|---|---
 name | string | rw | name
+category | string | rw | category
 url | string | rw | url
 data | $data | rw | file
 id | string | rw | id
@@ -24,6 +25,26 @@ author | string | rw | author name
 website | string | rw | author website
 
 Only `name` and `data` are necessary, other fields are optional.
+
+You can modify the `addins`, such as reordering, and save it like this:
+
+```js
+$addin.list = addins;
+```
+
+# $addin.categories
+
+Returns all categories as a string array:
+
+```js
+const categories = $addin.categories;
+```
+
+You can modify it, such as reordering or adding new category, and save it like this:
+
+```js
+$addin.categories = categories;
+```
 
 # $addin.current
 

@@ -32,10 +32,13 @@ Render a red rectangle on the screen.
 
 Prop | Type | Read/Write | Description
 ---|---|---|---
+theme | string | rw | light, dark, auto
 alpha | number | rw | alpha
 bgcolor | $color | rw | background color
-radius | number | w | corner radius
-smoothRadius | number | w | smooth corner radius
+cornerRadius | number | rw | corner radius
+smoothCorners | boolean | rw | use continuous curve for corners
+radius | number | w | corner radius (deprecated, use `cornerRadius`)
+smoothRadius | number | w | smooth corner radius (deprecated, use `smoothCorners`)
 frame | $rect | rw | frame
 size | $size | rw | size
 center | $point | rw | center
@@ -62,7 +65,7 @@ accessibilityLabel | string | rw | accessibility label
 accessibilityHint | string | rw | accessibility hint
 accessibilityValue | string | rw | accessibility value
 
-Note: you can't use `prev` or `next in layout functions, because the view hierarchy hasn't been generated.
+Note: you can't use `next` in layout functions, because the view hierarchy hasn't been generated.
 
 # navButtons
 
@@ -134,6 +137,8 @@ $("label").updateLayout(function(make) {
   make.size.equalTo($size(200, 200))
 })
 ```
+
+Note that, `updateLayout` can only be used for existing constraints, or it won't work.
 
 # remakeLayout(function)
 
@@ -276,6 +281,36 @@ Detect tap events from Apple Pencil:
 pencilTapped: function(info) {
   var action = info.action; // 0: Ignore, 1: Switch Eraser, 2: Switch Previous, 3: Show Color Palette
   var enabled = info.enabled; // whether the system reports double taps on Apple Pencil to your app
+}
+```
+
+# events: hoverEntered
+
+For iPadOS 13.4 (and above) with trackpad, this is called when pointer enters the view:
+
+```js
+hoverEntered: sender => {
+  sender.alpha = 0.5;
+}
+```
+
+# events: hoverExited
+
+For iPadOS 13.4 (and above) with trackpad, this is called when pointer exits the view:
+
+```js
+hoverExited: sender => {
+  sender.alpha = 1.0;
+}
+```
+
+# events: themeChanged
+
+Detect [dark mode](en/uikit/dark-mode.md) changes:
+
+```js
+themeChanged: (sender, isDarkMode) => {
+  
 }
 ```
 

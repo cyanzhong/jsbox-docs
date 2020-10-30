@@ -46,6 +46,7 @@
 items | object | 只写 | 每个分页项
 page | number | 读写 | 当前页数
 interval | number | 读写 | 自动播放间隔，为 0 表示不播放
+pageControl | $view | 只读 | 页面控制组件
 
 # events
 
@@ -64,4 +65,12 @@ changed: function(sender) {
 ```js
 const views = $("gallery").itemViews; // All views
 const view = $("gallery").viewWithIndex(0); // The first view
+```
+
+# 滚动到某一页
+
+设置 `page` 将直接切换到某一页，如果需要带着动画滚动过去，请使用：
+
+```js
+$("gallery").scrollToPage(index);
 ```

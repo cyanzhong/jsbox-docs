@@ -69,3 +69,31 @@ $location.select({
   }
 })
 ```
+
+# $location.get()
+
+获取当前位置，和 $location.fetch 类似但使用 async await 实现。
+
+```js
+const location = await $location.get();
+```
+
+# $location.snapshot(object)
+
+生成地图的一个截图：
+
+```js
+const loc = await $location.get();
+const lat = loc.lat;
+const lng = loc.lng;
+const snapshot = await $location.snapshot({
+  region: {
+    lat,
+    lng,
+    // distance: 10000
+  },
+  // size: $size(256, 256),
+  // showsPin: false,
+  // style: 0 (0: unspecified, 1: light, 2: dark)
+});
+```

@@ -34,10 +34,13 @@ PS: 关于各种属性的类型转换请参考：[数据转换](data/intro.md)
 
 属性 | 类型 | 读写 | 说明
 ---|---|---|---
+theme | string | 读写 | light, dark, auto
 alpha | number | 读写 | 透明度
 bgcolor | $color | 读写 | 背景色
-radius | number | 只写 | 圆角半径
-smoothRadius | number | 只写 | 平滑圆角半径
+cornerRadius | number | 读写 | 圆角半径
+smoothCorners | boolean | 读写 | 圆角是否使用平滑曲线
+radius | number | 只写 | 圆角半径（过时，请使用 `cornerRadius`）
+smoothRadius | number | 只写 | 平滑圆角半径（过时，请使用 `smoothCorners`）
 frame | $rect | 读写 | 位置和大小
 size | $size | 读写 | 大小
 center | $point | 读写 | 中心位置
@@ -64,7 +67,7 @@ accessibilityLabel | string | 读写 | accessibility label
 accessibilityHint | string | 读写 | accessibility hint
 accessibilityValue | string | 读写 | accessibility value
 
-注意：你不能在 layout 函数里面使用 `prev` 和 `next`，因为这个时候视图结构还没有被生成。
+注意：你不能在 layout 函数里面使用 `next`，因为这个时候视图结构还没有被生成。
 
 从 v1.36.0 版本开始，可以通过 $ui.render("main.ux") 来渲染一个通过可视化界面编辑器生成的页面。
 
@@ -138,6 +141,8 @@ $("label").updateLayout(function(make) {
   make.size.equalTo($size(200, 200))
 })
 ```
+
+请注意，`updateLayout` 只能对**已存在**的约束进行更新，否则的话将没有效果。
 
 # remakeLayout(function)
 
@@ -282,6 +287,36 @@ tapped(sender) {
 pencilTapped: function(info) {
   var action = info.action; // 0: Ignore, 1: Switch Eraser, 2: Switch Previous, 3: Show Color Palette
   var enabled = info.enabled; // whether the system reports double taps on Apple Pencil to your app
+}
+```
+
+# events: hoverEntered
+
+在 iPadOS 13.4 及以上使用 Trackpad，指针进入时调用：
+
+```js
+hoverEntered: sender => {
+  sender.alpha = 0.5;
+}
+```
+
+# events: hoverExited
+
+在 iPadOS 13.4 及以上使用 Trackpad，指针移出时调用：
+
+```js
+hoverExited: sender => {
+  sender.alpha = 1.0;
+}
+```
+
+# events: themeChanged
+
+用于监听 [Dark Mode](uikit/dark-mode.md) 的改变：
+
+```js
+themeChanged: (sender, isDarkMode) => {
+  
 }
 ```
 

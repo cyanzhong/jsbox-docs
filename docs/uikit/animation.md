@@ -40,3 +40,5 @@ $("label").animator.makeBackground($color("red")).easeIn.animate(0.5)
 是的，对 view 调用 `animator` 对象，会返回一个 animator 实例，可以用一个链式语句完成整个动画过程。
 
 具体细节请参考 `JHChainableAnimations` 的文档：https://github.com/jhurray/JHChainableAnimations
+
+> 鉴于该项目缺乏持续的维护，目前不推荐使用此方式实现动画

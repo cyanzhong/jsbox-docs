@@ -17,7 +17,8 @@ var $env = {
   notification: 1 << 4,
   keyboard: 1 << 5,
   siri: 1 << 6,
-  all: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3) | (1 << 4) | (1 << 5) | (1 << 6)
+  widget: 1 << 7,
+  all: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3) | (1 << 4) | (1 << 5) | (1 << 6) | (1 << 7)
 }
 ```
 
@@ -360,5 +361,53 @@ var $popoverDirection = {
 var $scrollDirection = {
   vertical: 0,
   horizontal: 1,
+}
+```
+
+# $blurStyle
+
+使用 `blur` 时的 `style` 常量：
+
+```js
+var $blurStyle = {
+  // Additional Styles
+  extraLight: 0,
+  light: 1,
+  dark: 2,
+  extraDark: 3,
+  regular: 4,
+  prominent: 5,
+  // Adaptable Styles (iOS 13)
+  ultraThinMaterial: 6,
+  thinMaterial: 7,
+  material: 8,
+  thickMaterial: 9,
+  chromeMaterial: 10,
+  // Light Styles (iOS 13)
+  ultraThinMaterialLight: 11,
+  thinMaterialLight: 12,
+  materialLight: 13,
+  thickMaterialLight: 14,
+  chromeMaterialLight: 15,
+  // Dark Styles (iOS 13)
+  ultraThinMaterialDark: 16,
+  thinMaterialDark: 17,
+  materialDark: 18,
+  thickMaterialDark: 19,
+  chromeMaterialDark: 20,
+}
+```
+
+请参考 Apple 提供的文档以了解更多：https://developer.apple.com/documentation/uikit/uiblureffectstyle
+
+# $widgetFamily
+
+判断桌面小组件的布局类型：
+
+```js
+var $widgetFamily = {
+  small: 0,
+  medium: 1,
+  large: 2,
 }
 ```

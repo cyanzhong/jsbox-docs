@@ -1,3 +1,11 @@
+# 2020.10.03
+
+- Add home screen widget related: [Refer](en/home-widget/intro.md)
+
+# 2020.03.13
+
+- Add dark mode related: [Refer](en/uikit/dark-mode.md)
+
 # 2020.03.04
 
 - Add styled text related: [Refer](en/component/text.md)

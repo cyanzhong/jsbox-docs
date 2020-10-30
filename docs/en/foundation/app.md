@@ -1,5 +1,11 @@
 > Offers APIs that relate to the application and addin itself
 
+# $app.theme
+
+Specify `theme` for the script, used for [Dark Mode](en/uikit/dark-mode.md) related stuff, possible values are `light` / `dark` / `auto`.
+
+It will be overridden if a screen has its own `theme` value.
+
 # $app.minSDKVer
 
 Set the minimal available version of JSBox:
@@ -66,8 +72,10 @@ $env.app | Main App
 $env.today | Today Widget
 $env.action | Action Extension
 $env.safari | Safari Extension
+$env.notification | Notification Extension
 $env.keyboard | Keyboard Extension
 $env.siri | Siri Extension
+$env.widget | Home Screen Widget
 $env.all | All (Default)
 
 We can check whether an addin runs on widget:

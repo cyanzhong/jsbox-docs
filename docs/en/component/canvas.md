@@ -150,6 +150,20 @@ Fille the path.
 
 Stroke the path.
 
+# drawPath(mode)
+
+Draw the context's path using drawing mode:
+
+```
+0: kCGPathFill,
+1: kCGPathEOFill,
+2: kCGPathStroke,
+3: kCGPathFillStroke,
+4: kCGPathEOFillStroke,
+```
+
+Reference: https://developer.apple.com/documentation/coregraphics/1455195-cgcontextdrawpath
+
 # drawImage(rect, image)
 
 Draw an image to rect.

@@ -26,12 +26,14 @@ $ui.alert({
     {
       title: "OK",
       disabled: false, // Optional
+      style: $alertActionType.default, // Optional
       handler: function() {
 
       }
     },
     {
       title: "Cancel",
+      style: $alertActionType.destructive, // Optional
       handler: function() {
 
       }
@@ -139,8 +141,31 @@ $ui.toast("Hey!", 10)
 
 此 Toast 将会显示持续 10 秒钟。
 
-> 将 `toast` 替换成 `error` 将显示红色的 toast，通常用于显示错误信息。
 > 你可以通过 $ui.clearToast() 来清除已经显示的 toast。
+
+# $ui.success(string)
+
+与 `toast` 类似，但背景色为绿色，以表示成功：
+
+```js
+$ui.success("Done");
+```
+
+# $ui.warning(string)
+
+与 `toast` 类似，但背景色为黄色，以表示警告：
+
+```js
+$ui.warning("Be careful!");
+```
+
+# $ui.error(string)
+
+与 `toast` 类似，但背景色为红色，以表示错误：
+
+```js
+$ui.error("Something went wrong!");
+```
 
 # $ui.loading(boolean)
 

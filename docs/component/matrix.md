@@ -55,6 +55,8 @@ direction | $scrollDirection | 只写 | .vertical: 纵向 .horizontal: 横向
 selectable | boolean | 读写 | 是否可被选中
 waterfall | boolean | 只写 | 是否瀑布流布局
 
+请使用有限的、确定的约束条件来实现方块大小，使用 `waterfall` 时必须指定 `columns`，布局冲突将会引起应用崩溃。
+
 # header & footer
 
 `header` 和 `footer` 是放在头部和尾部的自定义 view，是可选项（在 props 里）：
@@ -72,7 +74,23 @@ footer: {
 }
 ```
 
-请在 props 里面指定他的高度 `height`。
+如果高度是固定的，请在 `props` 里面指定他的高度 `height`。如需动态改变高度，可在 `events` 里指定一个 `height` 函数：
+
+```js
+footer: {
+  type: "label",
+  props: {
+    text: "Write the Code. Change the world."
+  },
+  events: {
+    height: sender => {
+      return _height;
+    }
+  }
+}
+```
+
+需要改变高度时，修改上述 `_height` 值，然后调用 `matrix.reload()` 进行更新。若创建的视图为横向滚动，则使用 `width` 代替上述 `height` 来指定宽度。
 
 # object($indexPath)
 

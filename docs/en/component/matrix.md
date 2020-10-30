@@ -53,6 +53,8 @@ direction | $scrollDirection | w | .vertical: vertically .horizontal: horizontal
 selectable | boolean | rw | is selectable
 waterfall | boolean | w | whether a waterfall layout (Pinterest-like)
 
+Please choose constraints wisely to implement item size, `columns` must be provided for `waterfall` layout, layout issues can lead to app crash.
+
 # header & footer
 
 `header` and `footer` are views, they are attached at the top/bottom of a matrix:
@@ -70,7 +72,23 @@ footer: {
 }
 ```
 
-Note: please specify the `height` manually in props.
+For fixed height, please specify the `height` manually in `props`. For dynamic height, provide a `height` function in its `events`:
+
+```js
+footer: {
+  type: "label",
+  props: {
+    text: "Write the Code. Change the world."
+  },
+  events: {
+    height: sender => {
+      return _height;
+    }
+  }
+}
+```
+
+When you want to change the height, update the `_height` value in the above example, then call `matrix.reload()` to trigger the update. For horizontal views, use `width` instead of `height` to specify its width.
 
 # object($indexPath)
 

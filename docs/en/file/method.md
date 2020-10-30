@@ -8,6 +8,14 @@ Read a file:
 var file = $file.read("demo.txt")
 ```
 
+# $file.download(path) -> Promise
+
+This method ensures a iCloud drive file is downloaded before reading it:
+
+```js
+const data = await $file.download("drive://.test.db.icloud");
+```
+
 # $file.write(object)
 
 Write a file:

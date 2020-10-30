@@ -148,6 +148,20 @@
 
 对闭合的路径进行描边。
 
+# drawPath(mode)
+
+使用指定模式绘制路径：
+
+```
+0: kCGPathFill,
+1: kCGPathEOFill,
+2: kCGPathStroke,
+3: kCGPathFillStroke,
+4: kCGPathEOFillStroke,
+```
+
+参考：https://developer.apple.com/documentation/coregraphics/1455195-cgcontextdrawpath
+
 # drawImage(rect, image)
 
 将 `image` 绘制到 `rect` 这个矩形上。

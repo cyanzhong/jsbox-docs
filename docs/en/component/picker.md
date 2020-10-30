@@ -82,3 +82,13 @@ We provided an easy way to popup a date picker with `$picker.date(object)`.
 We also provided an easy way to popup a general picker with `$picker.data(object)`.
 
 The parameter of these 2 methods are exactly same as we mentioned before.
+
+# $picker.color(object)
+
+Select a color using the built-in color picker:
+
+```js
+const color = await $picker.color({
+  // color: aColor
+});
+```
