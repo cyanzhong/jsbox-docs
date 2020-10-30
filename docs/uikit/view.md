@@ -67,7 +67,7 @@ accessibilityLabel | string | 读写 | accessibility label
 accessibilityHint | string | 读写 | accessibility hint
 accessibilityValue | string | 读写 | accessibility value
 
-注意：你不能在 layout 函数里面使用 `prev` 和 `next`，因为这个时候视图结构还没有被生成。
+注意：你不能在 layout 函数里面使用 `next`，因为这个时候视图结构还没有被生成。
 
 从 v1.36.0 版本开始，可以通过 $ui.render("main.ux") 来渲染一个通过可视化界面编辑器生成的页面。
 
