@@ -53,6 +53,8 @@ direction | $scrollDirection | w | .vertical: vertically .horizontal: horizontal
 selectable | boolean | rw | is selectable
 waterfall | boolean | w | whether a waterfall layout (Pinterest-like)
 
+Please choose constraints wisely to implement item size, `columns` must be provided for `waterfall` layout, layout issues can lead to app crash.
+
 # header & footer
 
 `header` and `footer` are views, they are attached at the top/bottom of a matrix:

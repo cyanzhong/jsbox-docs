@@ -55,6 +55,8 @@ direction | $scrollDirection | 只写 | .vertical: 纵向 .horizontal: 横向
 selectable | boolean | 读写 | 是否可被选中
 waterfall | boolean | 只写 | 是否瀑布流布局
 
+请使用有限的、确定的约束条件来实现方块大小，使用 `waterfall` 时必须指定 `columns`，布局冲突将会引起应用崩溃。
+
 # header & footer
 
 `header` 和 `footer` 是放在头部和尾部的自定义 view，是可选项（在 props 里）：
