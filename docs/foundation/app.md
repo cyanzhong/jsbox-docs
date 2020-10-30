@@ -74,6 +74,7 @@ $env.app | 主应用
 $env.today | 通知中心小组件
 $env.action | Action 扩展
 $env.safari | Safari 扩展
+$env.notification | 通知
 $env.keyboard | 键盘扩展
 $env.siri | Siri 环境
 $env.widget | 桌面小组件
