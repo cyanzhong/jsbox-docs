@@ -50,7 +50,13 @@
       EditOnGithubPlugin.create(
         'https://github.com/cyanzhong/jsbox-docs/blob/master/docs/',
         null,
-        'Edit on GitHub'
+        path => {
+          if (path.indexOf('en/') === 0) {
+            return 'Edit on GitHub';
+          } else {
+            return '在 GitHub 上编辑';
+          }
+        }
       )
     ]
   }
