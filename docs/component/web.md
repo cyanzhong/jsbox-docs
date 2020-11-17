@@ -14,6 +14,23 @@
 
 显示 Apple 首页。
 
+也可以使用 `request` 参数附带更多信息：
+
+```js
+{
+  type: "web",
+  props: {
+    request: {
+      url: "https://www.apple.com",
+      method: "GET",
+      header: {},
+      body: body // $data type
+    }
+  },
+  layout: $layout.fill
+}
+```
+
 # 加载本地文件
 
 可以将 html, js 和 css 等文件都放在本地，然后用 html 属性加载：

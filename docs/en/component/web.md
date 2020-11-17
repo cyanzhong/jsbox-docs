@@ -14,6 +14,23 @@
 
 It shows the home page of Apple.
 
+You can also use the `request` parameter to specify more information:
+
+```js
+{
+  type: "web",
+  props: {
+    request: {
+      url: "https://www.apple.com",
+      method: "GET",
+      header: {},
+      body: body // $data type
+    }
+  },
+  layout: $layout.fill
+}
+```
+
 # Load local resources
 
 You can load html, js and css files locally:
