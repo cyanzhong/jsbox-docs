@@ -39,6 +39,23 @@ The parameter is a string value that can be retrieved like this:
 const inputValue = $widget.inputValue;
 ```
 
+For script packages, widget parameters can be provided dynamically like:
+
+```json
+[
+  {
+    "name": "Option 1",
+    "value": "Value 1"
+  },
+  {
+    "name": "Option 2",
+    "value": "Value 2"
+  }
+]
+```
+
+`name` is the display string for user, `value` stands for the actual value as mentioned above. To let widget provide dynamic options, just place the configuration as `widget-options.json` under the root path for each package.
+
 # Example Scripts
 
 To make your learning curve smoother, we have created some sample projects for reference:

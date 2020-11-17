@@ -39,6 +39,23 @@ JSBox 支持小组件的全部尺寸，添加步骤：
 const inputValue = $widget.inputValue;
 ```
 
+对于安装包格式的脚本，小组件参数可以由脚本配置文件提供，例如：
+
+```json
+[
+  {
+    "name": "Option 1",
+    "value": "Value 1"
+  },
+  {
+    "name": "Option 2",
+    "value": "Value 2"
+  }
+]
+```
+
+其中 `name` 是显示给用户选择的标题，`value` 是上述接口实际会取得的值。将配置内容放置为脚本安装包根目录下的 `widget-options.json` 文件即可。
+
 # 样例代码
 
 为了让您可以更好地上手小组件的开发，我们创建了一些样例项目以供参考：
