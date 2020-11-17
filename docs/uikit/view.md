@@ -63,6 +63,7 @@ circular | bool | 读写 | 是否圆形
 animator | object | 只读 | 动画对象
 snapshot | object | 只读 | 生成截图
 info | object | 读写 | 用于绑定一些信息，例如上下文参数
+intrinsicSize | $size | 读写 | 固有内容尺寸
 accessibilityLabel | string | 读写 | accessibility label
 accessibilityHint | string | 读写 | accessibility hint
 accessibilityValue | string | 读写 | accessibility value

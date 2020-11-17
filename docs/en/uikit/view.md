@@ -61,6 +61,7 @@ circular | bool | rw | whether a circular shape
 animator | object | r | animator
 snapshot | object | r | create snapshot
 info | object | rw | bind extra info
+intrinsicSize | $size | rw | intrinsic content size
 accessibilityLabel | string | rw | accessibility label
 accessibilityHint | string | rw | accessibility hint
 accessibilityValue | string | rw | accessibility value
