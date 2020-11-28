@@ -74,6 +74,12 @@ input {
   .markdown-section {
     max-width: 95%;
   }
+  .markdown-section pre {
+    padding: 0 0.8rem;
+  }
+  .markdown-section pre > code {
+    padding: 1.5em 5px;
+  }
 }
 
 .token.comment,
