@@ -182,4 +182,5 @@ input {
 .markdown-section pre > code {
   background-color: #f5f7ff;
   color: #5e6687;
+  font-weight: normal;
 }
