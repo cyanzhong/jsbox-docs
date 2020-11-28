@@ -35,6 +35,7 @@ input {
   .sidebar-toggle span {
     width: 32px;
     margin-bottom: 8px;
+    height: 3px;
   }
   .markdown-section {
     max-width: 95%;
