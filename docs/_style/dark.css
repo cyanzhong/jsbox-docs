@@ -95,6 +95,10 @@ input {
   background-color: #1e1e1e;
 }
 
+.markdown-section blockquote {
+  background: #1e1e1e;
+}
+
 @media screen and (max-width: 768px) {
   .sidebar-toggle {
     background-color: transparent;
