@@ -23,6 +23,17 @@ input {
   font-size: 15px;
 }
 
+.sidebar-toggle {
+  margin-left: 0px;
+  margin-right: 0px;
+  bottom: -6px;
+}
+
+.sidebar-toggle span {
+  width: 24px;
+  margin-bottom: 6px;
+}
+
 .sidebar-toggle:hover .sidebar-toggle-button {
   opacity: 1;
 }
@@ -32,6 +43,9 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+  .sidebar-toggle {
+    bottom: -10px;
+  }
   .sidebar-toggle span {
     width: 32px;
     margin-bottom: 8px;
