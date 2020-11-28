@@ -46,6 +46,11 @@ input {
   border-radius: 4px;
 }
 
+.markdown-section code {
+  color: #ff9500;
+  font-weight: 600;
+}
+
 .markdown-section blockquote {
   background: #f8f8f8;
   padding-top: 2px;

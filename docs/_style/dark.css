@@ -88,10 +88,11 @@ input {
 }
 
 .markdown-section strong {
-  color: #95cafe;
+  color: #c5e2ff;
 }
 
 .markdown-section code {
+  color: #ff9f0a;
   background-color: #1e1e1e;
 }
 
