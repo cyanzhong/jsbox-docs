@@ -173,3 +173,7 @@ input {
   color: #34495e;
   font-weight: normal;
 }
+
+pre::after {
+  content: "";
+}
