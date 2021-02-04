@@ -7,7 +7,6 @@ Prop | Type | Read/Write | Description
 size | $size | r | size
 orientation | number | r | orientation
 info | object | r | metadata
-pixelColors | array | r | color for each pixel
 scale | number | r | scale
 png | data | r | png format data
 

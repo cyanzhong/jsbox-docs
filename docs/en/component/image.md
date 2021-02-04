@@ -47,7 +47,6 @@ data | $data | w | binary file
 size | $size | r | image size
 orientation | number | r | image orientation
 info | object | r | information, metadata
-pixelColors | array | r | color for each pixel
 scale | number | r | image scale
 
 # props: source

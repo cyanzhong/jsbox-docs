@@ -7,7 +7,6 @@
 size | $size | 只读 | 尺寸
 orientation | number | 只读 | 方向
 info | object | 只读 | metadata
-pixelColors | array | 只读 | 图片各点的颜色
 scale | number | 只读 | scale
 png | data | 只读 | png 表示的二进制数据
 

@@ -47,7 +47,6 @@ data | $data | 只写 | 二进制数据
 size | $size | 只读 | 图片大小
 orientation | number | 只读 | 图片方向
 info | object | 只读 | 图片信息
-pixelColors | array | 只读 | 图片各点的颜色
 scale | number | 只读 | 图片比例
 
 # props: source
