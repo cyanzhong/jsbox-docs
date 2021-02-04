@@ -48,6 +48,15 @@ const info = $imagekit.info(source);
 // width, height, orientation, scale, props
 ```
 
+# $imagekit.pixelColors(image)
+
+Get color for each pixel:
+
+```js
+const colors = $imagekit.pixelColors(image);
+// colors[0][0] -> {"red": ..., "green": ...}
+```
+
 # $imagekit.grayscale(image)
 
 Get grayscaled image:

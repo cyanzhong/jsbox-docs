@@ -48,6 +48,15 @@ const info = $imagekit.info(source);
 // width, height, orientation, scale, props
 ```
 
+# $imagekit.pixelColors(image)
+
+获取图片各个点的颜色值：
+
+```js
+const colors = $imagekit.pixelColors(image);
+// colors[0][0] -> {"red": ..., "green": ...}
+```
+
 # $imagekit.grayscale(image)
 
 转换成灰度图像：
