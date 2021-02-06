@@ -11,7 +11,7 @@ function sayHello() {
 }
 
 module.exports = {
-  sayHello: sayHello
+  sayHello
 }
 ```
 
@@ -20,7 +20,7 @@ sayHello 原本是不能被外部访问的，你可以通过配置 module.export
 所以引入的时候则可以使用：
 
 ```js
-var app = require('./scripts/app');
+const app = require('./scripts/app');
 
 app.sayHello();
 ```

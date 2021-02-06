@@ -7,7 +7,7 @@
 生成一个矩形，例如：
 
 ```js
-var rect = $rect(0, 0, 100, 100)
+const rect = $rect(0, 0, 100, 100);
 ```
 
 # $size(width, height)
@@ -15,7 +15,7 @@ var rect = $rect(0, 0, 100, 100)
 生成一个大小，例如：
 
 ```js
-var size = $size(100, 100)
+const size = $size(100, 100);
 ```
 
 # $point(x, y)
@@ -23,7 +23,7 @@ var size = $size(100, 100)
 生成一个位置，例如：
 
 ```js
-var point = $point(0, 0)
+const point = $point(0, 0);
 ```
 
 # $insets(top, left, bottom, right)
@@ -31,7 +31,7 @@ var point = $point(0, 0)
 返回一个边距，例如：
 
 ```js
-var insets = $insets(10, 10, 10, 10)
+const insets = $insets(10, 10, 10, 10);
 ```
 
 # $color(string)
@@ -39,13 +39,13 @@ var insets = $insets(10, 10, 10, 10)
 返回一个颜色，这里支持两种表达式，十六进制表达式：
 
 ```js
-var color = $color("#00EEEE")
+const color = $color("#00EEEE");
 ```
 
 常见颜色名称：
 
 ```js
-var blackColor = $color("black")
+const blackColor = $color("black");
 ```
 
 名称 | 颜色
@@ -154,14 +154,14 @@ const dynamicColor = $color({
 同样是生成颜色，但这里用的是十进制 `0 ~ 255` 的数值：
 
 ```js
-var color = $rgb(100, 100, 100)
+const color = $rgb(100, 100, 100);
 ```
 # $rgba(red, green, blue, alpha)
 
 同样是生成颜色，但这个支持 `alpha` 通道：
 
 ```js
-var color = $rgba(100, 100, 100, 0.5)
+const color = $rgba(100, 100, 100, 0.5);
 ```
 
 # $font(name, size)
@@ -169,8 +169,8 @@ var color = $rgba(100, 100, 100, 0.5)
 返回一个字体，`name` 字段是可选的：
 
 ```js
-var font1 = $font(15)
-var font2 = $font("bold", 15)
+const font1 = $font(15);
+const font2 = $font("bold", 15);
 ```
 
 其中 name 是 `"bold"` 和 `default` 时，分别会使用粗体和正常字体，否则根据 name 查找系统支持的字体。
@@ -182,7 +182,7 @@ var font2 = $font("bold", 15)
 返回一个范围，例如：
 
 ```js
-var range = $range(0, 10)
+const range = $range(0, 10);
 ```
 
 # $indexPath(section, row)
@@ -190,7 +190,7 @@ var range = $range(0, 10)
 返回一个 indexPath，表示区域和位置，这在 list 和 matrix 视图里面会很常用：
 
 ```js
-var indexPath = $indexPath(0, 10)
+const indexPath = $indexPath(0, 10);
 ```
 
 # $data(object)
@@ -199,31 +199,31 @@ var indexPath = $indexPath(0, 10)
 
 ```js
 // string
-var data = $data({
+const data = $data({
   string: "Hello, World!",
   encoding: 4 // default, refer: https://developer.apple.com/documentation/foundation/nsstringencoding
-})
+});
 ```
 
 ```js
 // path
-var data = $data({
+const data = $data({
   path: "demo.txt"
-})
+});
 ```
 
 ```js
 // url
-var data = $data({
+const data = $data({
   url: "https://images.apple.com/v/ios/what-is/b/images/performance_large.jpg"
-})
+});
 ```
 
 ```js
 // base64
-var data = $data({
+const data = $data({
   base64: "data:image/png;base64,..."
-})
+});
 ```
 
 ```js

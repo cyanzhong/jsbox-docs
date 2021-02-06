@@ -26,7 +26,7 @@ $safari.open({
 当你使用 Action Extension 时，可以使用这个方法获得 Safari 环境里的数据：
 
 ```js
-var items = $safari.items // JSON format
+const items = $safari.items; // JSON format
 ```
 
 # $safari.inject(script)

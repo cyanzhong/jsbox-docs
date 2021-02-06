@@ -42,7 +42,7 @@ $ui.render({
     {
       type: "web",
       props: {
-        html: html
+        html
       },
       layout: $layout.fill
     }
@@ -313,7 +313,7 @@ $ui.render({
       events: {
         share: function(object) {
           $http.download({
-            url: "http:" + object.url,
+            url: `http:${object.url}`,
             handler: function(resp) {
               $share.universal(resp.data)
             }
@@ -325,8 +325,8 @@ $ui.render({
 })
 
 function search() {
-  var keyword = $("input").text
-  var url = "https://www.doutula.com/search?keyword=" + encodeURIComponent(keyword)
+  const keyword = $("input").text;
+  const url = `https://www.doutula.com/search?keyword=${encodeURIComponent(keyword)}`;
   $("input").blur()
   $("web").url = url
 }
@@ -351,7 +351,7 @@ Of course, you can implement this by using JavaScript Injection, it's just an ea
 Native code could send message to web view as well, just use `notify(event, message)`:
 
 ```js
-var webView = $("webView");
+const webView = $("webView");
 webView.notify({
   "event": "foobar",
   "message": {"key": "value"}

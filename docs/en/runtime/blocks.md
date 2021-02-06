@@ -11,9 +11,9 @@ Let's see how to implement Blocks in JSBox.
 In JSBox you can use $block to declare a block, for example:
 
 ```js
-var handler = $block("void, UITableViewRowAction *, NSIndexPath *", function(action, indexPath) {
+const handler = $block("void, UITableViewRowAction *, NSIndexPath *", (action, indexPath) => {
   $ui.alert("Action")
-})
+});
 ```
 
 That means you need to declare all types (including return value and all parameters) with a string, and pass a function as the block body.
@@ -64,30 +64,30 @@ $define({
       return 5
     },
     "tableView:cellForRowAtIndexPath:": function(tableView, indexPath) {
-      var cell = tableView.invoke("dequeueReusableCellWithIdentifier:forIndexPath:", "identifier", indexPath)
-      cell.invoke("textLabel").invoke("setText", "Row: " + indexPath.invoke("row"))
+      const cell = tableView.invoke("dequeueReusableCellWithIdentifier:forIndexPath:", "identifier", indexPath);
+      cell.invoke("textLabel").invoke("setText", `Row: ${indexPath.invoke("row")}`)
       return cell
     },
     "tableView:didSelectRowAtIndexPath:": function(tableView, indexPath) {
       tableView.invoke("deselectRowAtIndexPath:animated:", indexPath, true)
-      var cell = tableView.invoke("cellForRowAtIndexPath:", indexPath)
-      var text = cell.invoke("textLabel.text").jsValue()
-      $ui.alert("Tapped: " + text)
+      const cell = tableView.invoke("cellForRowAtIndexPath:", indexPath);
+      const text = cell.invoke("textLabel.text").jsValue();
+      $ui.alert(`Tapped: ${text}`)
     },
     "tableView:editActionsForRowAtIndexPath:": function(tableView, indexPath) {
-      var handler = $block("void, UITableViewRowAction *, NSIndexPath *", function(action, indexPath) {
+      const handler = $block("void, UITableViewRowAction *, NSIndexPath *", (action, indexPath) => {
         $ui.alert("Action")
-      })
-      var action = $objc("UITableViewRowAction").invoke("rowActionWithStyle:title:handler:", 1, "Foobar", handler)
+      });
+      const action = $objc("UITableViewRowAction").invoke("rowActionWithStyle:title:handler:", 1, "Foobar", handler);
       return [action]
     }
   }
 })
 
-var window = $ui.window.ocValue()
-var manager = $objc("Manager").invoke("new")
+const window = $ui.window.ocValue();
+const manager = $objc("Manager").invoke("new");
 
-var table = $objc("TableView").invoke("new")
+const table = $objc("TableView").invoke("new");
 table.invoke("setFrame", window.invoke("bounds"))
 table.invoke("setDelegate", manager)
 table.invoke("setDataSource", manager)

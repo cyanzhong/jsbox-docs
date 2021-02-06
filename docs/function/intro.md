@@ -5,7 +5,7 @@
 例如：
 
 ```js
-var text = $l10n("MAIN_TITLE");
+const text = $l10n("MAIN_TITLE");
 ```
 
 可以获得一个本地化的字符串。

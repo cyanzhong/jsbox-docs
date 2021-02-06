@@ -168,7 +168,7 @@ sftp.contents({
 
 ```js
 sftp.write({
-  file: file,
+  file,
   path: "/home/user/notes.md",
   progress: function(sent) {
     // Optional: determine whether is finished here
@@ -186,7 +186,7 @@ sftp.write({
 
 ```js
 sftp.append({
-  file: file,
+  file,
   path: "/home/user/notes.md",
   handler: function(success) {
     

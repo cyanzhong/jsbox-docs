@@ -3,7 +3,7 @@
 Get all query items (URL Scheme launched script):
 
 ```js
-var query = $context.query
+const query = $context.query;
 ```
 
 If we use `jsbox://runjs?file=demo.js&text=test` to launch it, the query is:
@@ -28,7 +28,7 @@ You can check it when needed, it doesn't work for iOS built-in apps.
 Returns a text (user shared a text):
 
 ```js
-var text = $context.text
+const text = $context.text;
 ```
 
 # $context.textItems
@@ -40,7 +40,7 @@ Returns all text items.
 Returns a link (user shared a link):
 
 ```js
-var link = $context.link
+const link = $context.link;
 ```
 
 # $context.linkItems
@@ -52,7 +52,7 @@ Returns all link items.
 Returns an image (user shared an image):
 
 ```js
-var image = $context.image
+const image = $context.image;
 ```
 
 # $context.imageItems
@@ -64,7 +64,7 @@ Returns all image items.
 Returns all Safari items.
 
 ```js
-var items = $context.safari.items
+const items = $context.safari.items;
 ```
 
 Returns:
@@ -90,7 +90,7 @@ Returns:
 Returns a binary data (user shared a file):
 
 ```js
-var data = $context.data
+const data = $context.data;
 ```
 
 # $context.dataItems

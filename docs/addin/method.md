@@ -5,7 +5,7 @@
 获得已安装的全部脚本：
 
 ```js
-var addins = $addin.list
+const addins = $addin.list;
 ```
 
 数据结构：
@@ -51,7 +51,7 @@ $addin.categories = categories;
 获取当前正在运行的脚本，结构如上述所示：
 
 ```js
-var current = $addin.current
+const current = $addin.current;
 ```
 
 # $addin.save(object)
@@ -112,7 +112,7 @@ $addin.run({
 将 script 转换成 JSBox 可用的语法：
 
 ```js
-var result = $addin.compile("$ui.alert('Hey')");
+const result = $addin.compile("$ui.alert('Hey')");
 
 // result => JSBox.ui.alert('Hey')
 ```

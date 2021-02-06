@@ -8,7 +8,7 @@ Of course you can use Promise in JSBox, but previously APIs that we provided don
 $http.get({
   url: 'https://docs.xteko.com',
   handler: function(resp) {
-    var data = resp.data
+    const data = resp.data;
   }
 })
 ```
@@ -16,8 +16,8 @@ $http.get({
 You have to specify a handler to take next action, but since v1.15.0, you have better solution:
 
 ```js
-$http.get({ url: 'https://docs.xteko.com' }).then(function(resp) {
-  var data = resp.data
+$http.get({ url: 'https://docs.xteko.com' }).then(resp => {
+  const data = resp.data;
 })
 ```
 

@@ -9,7 +9,7 @@
 获取或设置编辑器内的全部文本：
 
 ```js
-var text = $editor.text;
+const text = $editor.text;
 
 $editor.text = "Hey!";
 ```
@@ -28,7 +28,7 @@ editorView.alpha = 0.5;
 获取或设置编辑器内选中的范围：
 
 ```js
-var range = $editor.selectedRange;
+const range = $editor.selectedRange;
 
 $editor.selectedRange = $(0, 10);
 ```
@@ -38,7 +38,7 @@ $editor.selectedRange = $(0, 10);
 获取或设置编辑器内选中的文本：
 
 ```js
-var text = $editor.selectedText;
+const text = $editor.selectedText;
 
 $editor.selectedText = "Hey!";
 ```
@@ -48,7 +48,7 @@ $editor.selectedText = "Hey!";
 获取编辑器当前是否处于激活状态：
 
 ```js
-var isActive = $editor.isActive;
+const isActive = $editor.isActive;
 ```
 
 # $editor.canUndo
@@ -56,7 +56,7 @@ var isActive = $editor.isActive;
 判断当前的编辑器是否可以执行撤销操作：
 
 ```js
-var canUndo = $editor.canUndo;
+const canUndo = $editor.canUndo;
 ```
 
 # $editor.canRedo
@@ -64,7 +64,7 @@ var canUndo = $editor.canUndo;
 判断当前的编辑器是否可以执行重做操作：
 
 ```js
-var canRedo = $editor.canRedo;
+const canRedo = $editor.canRedo;
 ```
 
 # $editor.save()
@@ -112,7 +112,7 @@ $editor.deactivate()
 获取当前编辑器里某个范围内的文本：
 
 ```js
-var text = $editor.textInRange($range(0, 10));
+const text = $editor.textInRange($range(0, 10));
 ```
 
 # $editor.setTextInRange(text, range)

@@ -35,7 +35,7 @@ It's similar to `alwaysTemplate`, but it returns an image with the `original` re
 Returns a resized image:
 
 ```js
-var resized = image.resized($size(100, 100))
+const resized = image.resized($size(100, 100));
 ```
 
 # jpg(number)
@@ -43,7 +43,7 @@ var resized = image.resized($size(100, 100))
 Returns a data with jpeg format, the number means compress quality (0 ~ 1):
 
 ```js
-var jpg = image.jpg(0.8)
+const jpg = image.jpg(0.8);
 ```
 
 # colorAtPixel($point)
@@ -51,8 +51,8 @@ var jpg = image.jpg(0.8)
 Get color at a pixel:
 
 ```js
-var color = image.colorAtPixel($point(0, 0));
-var hexCode = color.hexCode;
+const color = image.colorAtPixel($point(0, 0));
+const hexCode = color.hexCode;
 ```
 
 # averageColor
@@ -60,7 +60,7 @@ var hexCode = color.hexCode;
 Get average color of image:
 
 ```js
-var avgColor = image.averageColor;
+const avgColor = image.averageColor;
 ```
 
 # orientationFixedImage
@@ -68,5 +68,5 @@ var avgColor = image.averageColor;
 Get orientation fixed image:
 
 ```js
-var fixedImage = image.orientationFixedImage
+const fixedImage = image.orientationFixedImage;
 ```

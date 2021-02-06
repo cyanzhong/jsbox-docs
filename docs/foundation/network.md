@@ -17,7 +17,7 @@ $http.request({
     k2: "v2"
   },
   handler: function(resp) {
-    var data = resp.data
+    const data = resp.data;
   }
 })
 ```
@@ -83,7 +83,7 @@ error | error | [请参考](object/error.md)
 $http.get({
   url: "https://apple.com",
   handler: function(resp) {
-    var data = resp.data
+    const data = resp.data;
   }
 })
 ```
@@ -98,7 +98,7 @@ $http.get({
 $http.post({
   url: "https://apple.com",
   handler: function(resp) {
-    var data = resp.data
+    const data = resp.data;
   }
 })
 ```
@@ -115,7 +115,7 @@ $http.download({
   showsProgress: true, // Optional, default is true
   backgroundFetch: true, // Optional, default is false
   progress: function(bytesWritten, totalBytes) {
-    var percentage = bytesWritten * 1.0 / totalBytes
+    const percentage = bytesWritten * 1.0 / totalBytes;
   },
   handler: function(resp) {
     $share.sheet(resp.data)
@@ -130,7 +130,7 @@ $http.download({
 ```js
 $photo.pick({
   handler: function(resp) {
-    var image = resp.image
+    const image = resp.image;
     if (image) {
       $http.upload({
         url: "http://upload.qiniu.com/",
@@ -179,7 +179,7 @@ $http.startServer({
   port: 5588, // port number
   path: "", // script root path
   handler: function(result) {
-    var url = result.url
+    const url = result.url;
   }
 })
 ```
@@ -236,7 +236,7 @@ $http.lengthen({
 获得网卡`接收/发送`数据：
 
 ```js
-var ifa_data = $network.ifa_data
+const ifa_data = $network.ifa_data;
 console.log(ifa_data)
 ```
 

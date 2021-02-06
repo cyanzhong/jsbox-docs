@@ -44,7 +44,7 @@ $thread.main(() => {
 一种更简单的执行延时任务的方法：
 
 ```js
-$delay(3, function() {
+$delay(3, () => {
   $ui.alert("Hey!")
 })
 ```
@@ -54,9 +54,9 @@ $delay(3, function() {
 你可以通过这个方式取消执行：
 
 ```js
-var task = $delay(10, function() {
+const task = $delay(10, () => {
 
-})
+});
 
 // Cancel it
 task.cancel();
@@ -77,12 +77,12 @@ alert("Hey!");
 用于执行一个重复的任务：
 
 ```js
-var timer = $timer.schedule({
+const timer = $timer.schedule({
   interval: 3,
   handler: function() {
     $ui.toast("Hey!")
   }
-})
+});
 ```
 
 上述代码每隔三秒显示一次 `Hey!`，已经设置的任务可以取消：

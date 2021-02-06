@@ -58,7 +58,7 @@ Starting from v1.36.0, you can push a page with $ui.push("detail.ux") which is g
 Get a view with id:
 
 ```js
-var label = $("label")
+const label = $("label");
 ```
 
 If id is not provided, will search with type.

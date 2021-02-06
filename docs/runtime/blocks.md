@@ -11,9 +11,9 @@ Block 是 Objective-C 里面一种特殊的类型，虽然不完全相同但也�
 JSBox 里面使用 $block 来定义一个 block，例如：
 
 ```js
-var handler = $block("void, UITableViewRowAction *, NSIndexPath *", function(action, indexPath) {
+const handler = $block("void, UITableViewRowAction *, NSIndexPath *", (action, indexPath) => {
   $ui.alert("Action")
-})
+});
 ```
 
 即使用一个字符串来按顺序声明函数的返回值和参数数据类型，然后使用一个函数来定义 Block 的函数体，这个 Block 在 Objective-C 实现的时候长这样：
@@ -62,30 +62,30 @@ $define({
       return 5
     },
     "tableView:cellForRowAtIndexPath:": function(tableView, indexPath) {
-      var cell = tableView.invoke("dequeueReusableCellWithIdentifier:forIndexPath:", "identifier", indexPath)
-      cell.invoke("textLabel").invoke("setText", "Row: " + indexPath.invoke("row"))
+      const cell = tableView.invoke("dequeueReusableCellWithIdentifier:forIndexPath:", "identifier", indexPath);
+      cell.invoke("textLabel").invoke("setText", `Row: ${indexPath.invoke("row")}`)
       return cell
     },
     "tableView:didSelectRowAtIndexPath:": function(tableView, indexPath) {
       tableView.invoke("deselectRowAtIndexPath:animated:", indexPath, true)
-      var cell = tableView.invoke("cellForRowAtIndexPath:", indexPath)
-      var text = cell.invoke("textLabel.text").jsValue()
-      $ui.alert("Tapped: " + text)
+      const cell = tableView.invoke("cellForRowAtIndexPath:", indexPath);
+      const text = cell.invoke("textLabel.text").jsValue();
+      $ui.alert(`Tapped: ${text}`)
     },
     "tableView:editActionsForRowAtIndexPath:": function(tableView, indexPath) {
-      var handler = $block("void, UITableViewRowAction *, NSIndexPath *", function(action, indexPath) {
+      const handler = $block("void, UITableViewRowAction *, NSIndexPath *", (action, indexPath) => {
         $ui.alert("Action")
-      })
-      var action = $objc("UITableViewRowAction").invoke("rowActionWithStyle:title:handler:", 1, "Foobar", handler)
+      });
+      const action = $objc("UITableViewRowAction").invoke("rowActionWithStyle:title:handler:", 1, "Foobar", handler);
       return [action]
     }
   }
 })
 
-var window = $ui.window.ocValue()
-var manager = $objc("Manager").invoke("new")
+const window = $ui.window.ocValue();
+const manager = $objc("Manager").invoke("new");
 
-var table = $objc("TableView").invoke("new")
+const table = $objc("TableView").invoke("new");
 table.invoke("setFrame", window.invoke("bounds"))
 table.invoke("setDelegate", manager)
 table.invoke("setDataSource", manager)

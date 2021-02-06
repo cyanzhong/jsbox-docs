@@ -10,7 +10,7 @@ $push.schedule({
   body: "content",
   delay: 5,
   handler: function(result) {
-    var id = result.id
+    const id = result.id;
   }
 })
 ```
@@ -34,15 +34,15 @@ renew | bool | whether renew
 Above case is how to schedule a push with delay, you can also setup a date:
 
 ```js
-var date = new Date()
+const date = new Date();
 date.setSeconds(date.getSeconds() + 10)
 
 $push.schedule({
   title: "title",
   body: "content",
-  date: date,
+  date,
   handler: function(result) {
-    var id = result.id
+    const id = result.id;
   }
 })
 ```

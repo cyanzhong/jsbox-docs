@@ -5,7 +5,7 @@
 Get all installed addins (scripts):
 
 ```js
-var addins = $addin.list
+const addins = $addin.list;
 ```
 
 Data Structure:
@@ -51,7 +51,7 @@ $addin.categories = categories;
 Get current running addin:
 
 ```js
-var current = $addin.current
+const current = $addin.current;
 ```
 
 # $addin.save(object)
@@ -112,7 +112,7 @@ Restart current running script.
 Convert scripts to JSBox syntax:
 
 ```js
-var result = $addin.compile("$ui.alert('Hey')");
+const result = $addin.compile("$ui.alert('Hey')");
 
 // result => JSBox.ui.alert('Hey')
 ```

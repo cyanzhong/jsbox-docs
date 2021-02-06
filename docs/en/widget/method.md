@@ -8,7 +8,7 @@ Get or set the height of widget:
 
 ```js
 // Get
-var height = $widget.height;
+const height = $widget.height;
 // Set
 $widget.height = 400;
 ```
@@ -18,7 +18,7 @@ $widget.height = 400;
 Get current display mode (show less/show more):
 
 ```js
-var mode = $widget.mode; // 0: less 1: more
+const mode = $widget.mode; // 0: less 1: more
 ```
 
 # $widget.modeChanged
@@ -26,7 +26,7 @@ var mode = $widget.mode; // 0: less 1: more
 Observe mode changes:
 
 ```js
-$widget.modeChanged = function(mode) {
+$widget.modeChanged = mode => {
   
 }
 ```

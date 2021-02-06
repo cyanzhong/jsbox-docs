@@ -35,7 +35,7 @@ png | data | 只读 | png 表示的二进制数据
 返回调整尺寸的图片：
 
 ```js
-var resized = image.resized($size(100, 100))
+const resized = image.resized($size(100, 100));
 ```
 
 # jpg(number)
@@ -43,7 +43,7 @@ var resized = image.resized($size(100, 100))
 返回 jpg 表示的二进制数据，number 表示压缩质量(0 ~ 1)：
 
 ```js
-var jpg = image.jpg(0.8)
+const jpg = image.jpg(0.8);
 ```
 
 # colorAtPixel($point)
@@ -51,8 +51,8 @@ var jpg = image.jpg(0.8)
 获得某个点的颜色值：
 
 ```js
-var color = image.colorAtPixel($point(0, 0));
-var hexCode = color.hexCode;
+const color = image.colorAtPixel($point(0, 0));
+const hexCode = color.hexCode;
 ```
 
 # averageColor
@@ -60,7 +60,7 @@ var hexCode = color.hexCode;
 获得整张图片的平均颜色：
 
 ```js
-var avgColor = image.averageColor;
+const avgColor = image.averageColor;
 ```
 
 # orientationFixedImage
@@ -68,5 +68,5 @@ var avgColor = image.averageColor;
 获得旋转方向修正了的图片：
 
 ```js
-var fixedImage = image.orientationFixedImage
+const fixedImage = image.orientationFixedImage;
 ```

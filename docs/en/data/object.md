@@ -34,25 +34,25 @@ To understand iOS native objects, we provided a table: [Object Properties](en/ob
 `$props` helps you get all properties of an object:
 
 ```js
-var props = $props("string")
+const props = $props("string");
 ```
 
 $props is just a simple JavaScript function, it implemented like:
 
 ```js
-var $props = function(object) {
-  var result = []
+const $props = object => {
+  const result = [];
   for (; object != null; object = Object.getPrototypeOf(object)) {
-    var names = Object.getOwnPropertyNames(object)
-    for (var idx=0; idx<names.length; idx++) {
-      var name = names[idx]
-      if (result.indexOf(name) === -1) {
+    const names = Object.getOwnPropertyNames(object);
+    for (let idx=0; idx<names.length; idx++) {
+      const name = names[idx];
+      if (!result.includes(name)) {
         result.push(name)
       }
     }
   }
   return result
-}
+};
 ```
 
 # $desc

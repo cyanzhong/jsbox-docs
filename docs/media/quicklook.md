@@ -18,7 +18,7 @@ $quicklook.open({
 ```js
 $quicklook.open({
   type: "jpg",
-  data: data
+  data
 })
 ```
 
@@ -26,7 +26,7 @@ $quicklook.open({
 
 ```js
 $quicklook.open({
-  image: image
+  image
 })
 ```
 

@@ -45,7 +45,7 @@ $drive.save({
 此接口效果与 `$file.read` 完全相同：
 
 ```js
-var file = $drive.read("demo.txt")
+const file = $drive.read("demo.txt");
 ```
 
 不同之处是在于这个接口会从 JSBox 的 iCloud Drive 文件夹读取相应的子目录。
@@ -53,7 +53,7 @@ var file = $drive.read("demo.txt")
 另外，此操作等价于：
 
 ```js
-var file = $file.read("drive://demo.txt")
+const file = $file.read("drive://demo.txt");
 ```
 
 # $drive.xxx

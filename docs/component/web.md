@@ -42,7 +42,7 @@ $ui.render({
     {
       type: "web",
       props: {
-        html: html
+        html
       },
       layout: $layout.fill
     }
@@ -311,7 +311,7 @@ $ui.render({
       events: {
         share: function(object) {
           $http.download({
-            url: "http:" + object.url,
+            url: `http:${object.url}`,
             handler: function(resp) {
               $share.universal(resp.data)
             }
@@ -323,8 +323,8 @@ $ui.render({
 })
 
 function search() {
-  var keyword = $("input").text
-  var url = "https://www.doutula.com/search?keyword=" + encodeURIComponent(keyword)
+  const keyword = $("input").text;
+  const url = `https://www.doutula.com/search?keyword=${encodeURIComponent(keyword)}`;
   $("input").blur()
   $("web").url = url
 }
@@ -349,7 +349,7 @@ props: {
 Native 代码可以通过 `notify(event, message)` 给 web 组件发送消息：
 
 ```js
-var webView = $("webView");
+const webView = $("webView");
 webView.notify({
   "event": "foobar",
   "message": {"key": "value"}

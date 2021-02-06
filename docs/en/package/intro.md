@@ -68,7 +68,7 @@ We will add more settings here in near future.
 main.js is the main entrance of an app, we can load other scripts here:
 
 ```js
-var app = require('./scripts/app');
+const app = require('./scripts/app');
 
 app.sayHello();
 ```

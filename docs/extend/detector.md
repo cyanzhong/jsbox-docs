@@ -9,7 +9,7 @@
 将文本中所有的日期提取出来：
 
 ```js
-var dates = $detector.date("2017年10月10日")
+const dates = $detector.date("2017年10月10日");
 ```
 
 # $detector.address(string)
@@ -17,7 +17,7 @@ var dates = $detector.date("2017年10月10日")
 将文本中所有的地址提取出来：
 
 ```js
-var addresses = $detector.address("")
+const addresses = $detector.address("");
 ```
 
 # $detector.link(string)
@@ -25,7 +25,7 @@ var addresses = $detector.address("")
 将文本中所有的链接提取出来：
 
 ```js
-var links = $detector.link("http://apple.com hello http://xteko.com")
+const links = $detector.link("http://apple.com hello http://xteko.com");
 ```
 
 # $detector.phoneNumber(string)
@@ -33,5 +33,5 @@ var links = $detector.link("http://apple.com hello http://xteko.com")
 将文本中所有的电话号码提取出来：
 
 ```js
-var phoneNumbers = $detector.phoneNumber("18666666666 hello 18777777777")
+const phoneNumbers = $detector.phoneNumber("18666666666 hello 18777777777");
 ```

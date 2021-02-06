@@ -34,7 +34,7 @@ $contact.fetch({
 
 ```js
 $contact.fetch({
-  group: group,
+  group,
   handler: function(contacts) {
 
   }
@@ -68,7 +68,7 @@ $contact.create({
 
 ```js
 $contact.save({
-  contact: contact,
+  contact,
   handler: function(resp) {
 
   }
@@ -133,8 +133,8 @@ $contact.updateGroup(group);
 
 ```js
 $contact.addToGroup({
-  contact: contact,
-  group: group
+  contact,
+  group
 });
 ```
 
@@ -144,7 +144,7 @@ $contact.addToGroup({
 
 ```js
 $contact.removeFromGroup({
-  contact: contact,
-  group: group
+  contact,
+  group
 });
 ```

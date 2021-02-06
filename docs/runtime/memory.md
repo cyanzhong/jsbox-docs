@@ -3,7 +3,7 @@
 在有些时候通过 Runtime 声明的对象会被系统释放掉，如果你想要长期持有一个对象，可以使用这个方法：
 
 ```js
-var manager = $objc("Manager").invoke("new")
+const manager = $objc("Manager").invoke("new");
 $objc_retain(manager)
 ```
 

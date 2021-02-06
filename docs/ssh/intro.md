@@ -26,9 +26,9 @@ $ssh.connect({
   // password: "",
   script: "ls -l /var/lib/",
   handler: function(session, response) {
-    console.log("connect: " + session.connected)
-    console.log("authorized: " + session.authorized)
-    console.log("response: " + response)
+    console.log(`connect: ${session.connected}`)
+    console.log(`authorized: ${session.authorized}`)
+    console.log(`response: ${response}`)
   }
 })
 ```

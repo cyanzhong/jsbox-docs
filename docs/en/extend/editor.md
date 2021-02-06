@@ -9,7 +9,7 @@ Many useful features can be made with these APIs, such as custom indentation, or
 Get or set all text in the code editor:
 
 ```js
-var text = $editor.text;
+const text = $editor.text;
 
 $editor.text = "Hey!";
 ```
@@ -28,7 +28,7 @@ editorView.alpha = 0.5;
 Get or set selected range in the code editor:
 
 ```js
-var range = $editor.selectedRange;
+const range = $editor.selectedRange;
 
 $editor.selectedRange = $(0, 10);
 ```
@@ -38,7 +38,7 @@ $editor.selectedRange = $(0, 10);
 Get or set selected text in the code editor:
 
 ```js
-var text = $editor.selectedText;
+const text = $editor.selectedText;
 
 $editor.selectedText = "Hey!";
 ```
@@ -48,7 +48,7 @@ $editor.selectedText = "Hey!";
 Check whether the code editor is active:
 
 ```js
-var isActive = $editor.isActive;
+const isActive = $editor.isActive;
 ```
 
 # $editor.canUndo
@@ -56,7 +56,7 @@ var isActive = $editor.isActive;
 Check whether undo action can be taken:
 
 ```js
-var canUndo = $editor.canUndo;
+const canUndo = $editor.canUndo;
 ```
 
 # $editor.canRedo
@@ -64,7 +64,7 @@ var canUndo = $editor.canUndo;
 Check whether redo action can be taken:
 
 ```js
-var canRedo = $editor.canRedo;
+const canRedo = $editor.canRedo;
 ```
 
 # $editor.save()
@@ -112,7 +112,7 @@ $editor.deactivate()
 Get text in a range:
 
 ```js
-var text = $editor.textInRange($range(0, 10));
+const text = $editor.textInRange($range(0, 10));
 ```
 
 # $editor.setTextInRange(text, range)

@@ -220,14 +220,14 @@ text | string | text content
 Create a view manually, the object should be a view like $ui.render:
 
 ```js
-var canvas = $ui.create({
+const canvas = $ui.create({
   type: "image",
   props: {
     bgcolor: $color("clear"),
     tintColor: $color("gray"),
     frame: $rect(0, 0, 100, 100)
   }
-})
+});
 ```
 
 Note that, since there's no super view yet, you cannot use `layout` method at that moment.

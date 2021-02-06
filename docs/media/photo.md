@@ -7,7 +7,7 @@
 ```js
 $photo.take({
   handler: function(resp) {
-    var image = resp.image
+    const image = resp.image;
   }
 })
 ```
@@ -32,7 +32,7 @@ flashMode | number | 闪光灯模式
 ```js
 $photo.pick({
   handler: function(resp) {
-    var image = resp.image
+    const image = resp.image;
   }
 })
 ```
@@ -67,7 +67,7 @@ metadata | object | 元数据
 ```js
 $photo.prompt({
   handler: function(resp) {
-    var image = resp.image
+    const image = resp.image;
   }
 })
 ```
@@ -79,10 +79,10 @@ $photo.prompt({
 ```js
 $photo.pick({
   handler: function(resp) {
-    var metadata = resp.metadata
+    const metadata = resp.metadata;
     if (metadata) {
-      var gps = metadata["{GPS}"]
-      var url = "https://maps.apple.com/?ll=" + gps.Latitude + "," + gps.Longitude
+      const gps = metadata["{GPS}"];
+      const url = `https://maps.apple.com/?ll=${gps.Latitude},${gps.Longitude}`;
       $app.openURL(url)
     }
   }
@@ -107,7 +107,7 @@ const response = await $photo.scan();
 ```js
 // data
 $photo.save({
-  data: data,
+  data,
   handler: function(success) {
 
   }
@@ -117,7 +117,7 @@ $photo.save({
 ```js
 // image
 $photo.save({
-  image: image,
+  image,
   handler: function(success) {
 
   }
@@ -168,9 +168,9 @@ $photo.delete({
 
 ```js
 // PNG
-var png = image.png
+const png = image.png;
 // JPEG
-var jpg = image.jpg(0.8)
+const jpg = image.jpg(0.8);
 ```
 
 jpg 格式使用 `0.0 ~ 1.0` 来表示质量。

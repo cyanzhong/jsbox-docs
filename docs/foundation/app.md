@@ -65,7 +65,7 @@ $app.idleTimerDisabled = true
 获得此扩展当前运行的环境：
 
 ```js
-var env = $app.env
+const env = $app.env;
 ```
 
 参数 | 说明
@@ -93,7 +93,7 @@ if ($app.env == $env.today) {
 因为 JSBox 支持多个小组件，你可以通过这个值判断哪个小组件正在被使用：
 
 ```js
-var index = $app.widgetIndex;
+const index = $app.widgetIndex;
 
 // 0 ~ 2，其他值表示不是小组件
 ```

@@ -66,7 +66,7 @@ PS: 如果你同时使用了 strings 文件和 $app.strings，将以后者为准
 当一个应用被执行的时候，main.js 将是入口，在这里我们可以加载 scripts 文件夹里面的脚本，例如：
 
 ```js
-var app = require('./scripts/app');
+const app = require('./scripts/app');
 
 app.sayHello();
 ```

@@ -4,7 +4,7 @@
 
 ```js
 // 获取剪贴板文本
-var text = $clipboard.text
+const text = $clipboard.text;
 // 设置剪贴板文本
 $clipboard.text = "Hello, World!"
 ```
@@ -13,7 +13,7 @@ $clipboard.text = "Hello, World!"
 
 ```js
 // 获取剪贴板图片，请注意返回的是二进制数据
-var data = $clipboard.image
+const data = $clipboard.image;
 // 设置剪贴板图片
 $clipboard.image = data
 ```
@@ -22,7 +22,7 @@ $clipboard.image = data
 
 ```js
 // 获取剪贴板中的所有项目
-var items = $clipboard.items
+const items = $clipboard.items;
 // 设置剪贴板中的所有项目
 $clipboard.items = items
 ```

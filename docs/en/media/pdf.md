@@ -8,7 +8,7 @@ Here is an example:
 $pdf.make({
   html: "<p>Hello, World!</p><h1 style='background-color: red;'>xTeko</h1>",
   handler: function(resp) {
-    var data = resp.data
+    const data = resp.data;
     if (data) {
       $share.sheet(["sample.pdf", data])
     }
@@ -29,7 +29,7 @@ $pdf.make({
   url: "https://github.com",
   pageSize: $pageSize.A5,
   handler: function(resp) {
-    var data = resp.data
+    const data = resp.data;
     if (data) {
       $share.sheet(["sample.pdf", data])
     }

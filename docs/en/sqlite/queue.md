@@ -3,21 +3,21 @@
 Don't use a SQLite connection in multiple threads, if necessary, use Queue instead:
 
 ```js
-var queue = $sqlite.dbQueue("test.db");
+const queue = $sqlite.dbQueue("test.db");
 
 // Operations
-queue.operations(function(db) {
+queue.operations(db => {
   db.update();
   db.query();
   //...
 });
 
 // Transaction
-queue.transaction(function(db) {
+queue.transaction(db => {
   db.update();
   db.query();
   //...
-  var rollback = errorOccured;
+  const rollback = errorOccured;
   return rollback;
 });
 

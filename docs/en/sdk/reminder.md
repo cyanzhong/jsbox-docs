@@ -9,7 +9,7 @@ $reminder.fetch({
   startDate: new Date(),
   hours: 2 * 24,
   handler: function(resp) {
-    var events = resp.events
+    const events = resp.events;
   }
 })
 ```
@@ -54,7 +54,7 @@ Similar to `$calendar.save`:
 
 ```js
 $reminder.save({
-  event: event,
+  event,
   handler: function(resp) {
 
   }
@@ -67,7 +67,7 @@ Delete a calendar item:
 
 ```js
 $reminder.delete({
-  event: event,
+  event,
   handler: function(resp) {
     
   }

@@ -5,7 +5,7 @@
 Encode a string to QRCode image:
 
 ```js
-var image = $qrcode.encode("https://apple.com")
+const image = $qrcode.encode("https://apple.com");
 ```
 
 # $qrcode.decode(image)
@@ -13,7 +13,7 @@ var image = $qrcode.encode("https://apple.com")
 Decode a string from QRCode image:
 
 ```js
-var text = $qrcode.decode(image)
+const text = $qrcode.decode(image);
 ```
 
 # $qrcode.scan(function)
@@ -21,7 +21,7 @@ var text = $qrcode.decode(image)
 Scan QRCode with camera:
 
 ```js
-$qrcode.scan(function(text) {
+$qrcode.scan(text => {
   
 })
 ```

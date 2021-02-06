@@ -17,7 +17,7 @@ Therefore, there are 2 methods provided to convert them:
 This is a JavaScript value:
 
 ```js
-var color1 = $color("red")
+const color1 = $color("red");
 ```
 
 If we want to use this in runtime APIs, we need to concert it first: `color1.ocValue()`.
@@ -25,7 +25,7 @@ If we want to use this in runtime APIs, we need to concert it first: `color1.ocV
 And this is a Objective-C value:
 
 ```js
-var color2 = $objc("UIColor").invoke("grayColor")
+const color2 = $objc("UIColor").invoke("grayColor");
 ```
 
 If we want to use this in JSBox APIs, we also need to convert it:

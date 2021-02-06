@@ -5,7 +5,7 @@ Besides functions that provided by JavaScript, JSBox offers many extra functions
 For instance:
 
 ```js
-var text = $l10n("MAIN_TITLE");
+const text = $l10n("MAIN_TITLE");
 ```
 
 This function gives you a localized string.

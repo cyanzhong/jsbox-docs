@@ -5,7 +5,7 @@
 读取文件：
 
 ```js
-var file = $file.read("demo.txt")
+const file = $file.read("demo.txt");
 ```
 
 # $file.download(path) -> Promise
@@ -21,10 +21,10 @@ const data = await $file.download("drive://.test.db.icloud");
 写入文件：
 
 ```js
-var success = $file.write({
+const success = $file.write({
   data: $data({string: "Hello, World!"}),
   path: "demo.txt"
-})
+});
 ```
 
 # $file.delete(path)
@@ -32,7 +32,7 @@ var success = $file.write({
 删除文件：
 
 ```js
-var success = $file.delete("demo.txt")
+const success = $file.delete("demo.txt");
 ```
 
 # $file.list(path)
@@ -40,7 +40,7 @@ var success = $file.delete("demo.txt")
 获取目录下所有文件名：
 
 ```js
-var contents = $file.list("download")
+const contents = $file.list("download");
 ```
 
 # $file.copy(object)
@@ -48,10 +48,10 @@ var contents = $file.list("download")
 复制文件：
 
 ```js
-var success = $file.copy({
+const success = $file.copy({
   src: "demo.txt",
   dst: "download/demo.txt"
-})
+});
 ```
 
 # $file.move(object)
@@ -59,10 +59,10 @@ var success = $file.copy({
 移动文件：
 
 ```js
-var success = $file.move({
+const success = $file.move({
   src: "demo.txt",
   dst: "download/demo.txt"
-})
+});
 ```
 
 # $file.mkdir(path)
@@ -70,7 +70,7 @@ var success = $file.move({
 创建文件夹：
 
 ```js
-var success = $file.mkdir("download")
+const success = $file.mkdir("download");
 ```
 
 # $file.exists(path)
@@ -78,7 +78,7 @@ var success = $file.mkdir("download")
 判断文件/目录是否存在：
 
 ```js
-var exists = $file.exists("demo.txt")
+const exists = $file.exists("demo.txt");
 ```
 
 # $file.isDirectory(path)
@@ -86,7 +86,7 @@ var exists = $file.exists("demo.txt")
 判断某个路径是否是目录：
 
 ```js
-var isDirectory = $file.isDirectory("download")
+const isDirectory = $file.isDirectory("download");
 ```
 
 # $file.merge(args)
@@ -125,7 +125,7 @@ const absolutePath = $file.absolutePath(path);
 返回所有安装的 JavaScript extension 文件名：
 
 ```js
-var extensions = $file.extensions
+const extensions = $file.extensions;
 ```
 
 # shared://
@@ -133,7 +133,7 @@ var extensions = $file.extensions
 上述示例操作都是在扩展各自的目录下进行文件读写，如果目录以 `shared://` 开头，则读写操作都发生在共享目录，可以被别的扩展读取和覆盖：
 
 ```js
-var file = $file.read("shared://demo.txt")
+const file = $file.read("shared://demo.txt");
 ```
 
 # drive://
@@ -141,5 +141,5 @@ var file = $file.read("shared://demo.txt")
 用于读写在 iCloud Drive 目录下的文件和子目录：
 
 ```js
-var file = $file.read("drive://demo.txt")
+const file = $file.read("drive://demo.txt");
 ```

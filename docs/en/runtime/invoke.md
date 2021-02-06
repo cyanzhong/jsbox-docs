@@ -5,7 +5,7 @@
 We could get an Objective-C object, and call its method:
 
 ```js
-var label = $objc("UILabel").invoke("alloc.init")
+const label = $objc("UILabel").invoke("alloc.init");
 label.invoke("setText", "Runtime")
 ```
 
@@ -33,7 +33,7 @@ NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 In JSBox runtime, we could do:
 
 ```js
-var indexPath = $objc("NSIndexPath").invoke("indexPathForRow:inSection:", 0, 0)
+const indexPath = $objc("NSIndexPath").invoke("indexPathForRow:inSection:", 0, 0);
 ```
 
 `indexPathForRow:inSection:` is a selector (function) in Objective-C, the following are parameters.

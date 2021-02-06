@@ -10,7 +10,7 @@ function sayHello() {
 }
 
 module.exports = {
-  sayHello: sayHello
+  sayHello
 }
 ```
 
@@ -19,7 +19,7 @@ With the name `sayHello`, the function sayHello will be accessible to other scri
 Here's how to require:
 
 ```js
-var app = require('./scripts/app');
+const app = require('./scripts/app');
 
 app.sayHello();
 ```

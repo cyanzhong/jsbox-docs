@@ -120,7 +120,7 @@ $ui.render({
 返回一个重新调整大小后的图片：
 
 ```js
-var resizedImage = image.resized($size(60, 60))
+const resizedImage = image.resized($size(60, 60));
 ```
 
 # resizableImage(args)

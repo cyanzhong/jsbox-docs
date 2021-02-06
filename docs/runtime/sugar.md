@@ -3,16 +3,16 @@
 Runtime 的本质是在一门语言里面写另一门语言，也就是通过字符串的方式来反射调用，类似这样的做法写起来极为繁琐：
 
 ```js
-var app = $objc("UIApplication").invoke("sharedApplication");
-var url = $objc("NSURL").invoke("URLWithString", "https://sspai.com");
+const app = $objc("UIApplication").invoke("sharedApplication");
+const url = $objc("NSURL").invoke("URLWithString", "https://sspai.com");
 app.invoke("openURL", url);
 ```
 
 所以我们需要一种语法糖来缓解这种复杂，在 v1.24.0 以后，我们引入了一种新的语法结构：
 
 ```js
-var app = $objc("UIApplication").$sharedApplication();
-var url = $objc("NSURL").$URLWithString("https://sspai.com");
+const app = $objc("UIApplication").$sharedApplication();
+const url = $objc("NSURL").$URLWithString("https://sspai.com");
 app.$openURL(url);
 ```
 
@@ -29,7 +29,7 @@ app.$openURL(url);
 例如：
 
 ```js
-var app = $objc("UIApplication").$sharedApplication();
+const app = $objc("UIApplication").$sharedApplication();
 app.$sendAction_to_from_forEvent(action, target, null, null);
 ```
 
@@ -65,13 +65,13 @@ NSEnumerator | https://developer.apple.com/documentation/foundation/nsenumerator
 这些你可以直接使用，就像是这样：
 
 ```js
-var url = NSURL.$URLWithString("https://sspai.com");
+const url = NSURL.$URLWithString("https://sspai.com");
 ```
 
 其他的类你需要通过 $objc 定义，你可以使用它的返回值，但同时他也会生成一个同名的对象：
 
 ```js
-var appClass = $objc("UIApplication");
+const appClass = $objc("UIApplication");
 
 var app = appClass.$sharedApplication();
 

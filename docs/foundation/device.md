@@ -28,7 +28,7 @@
 获取当前 Wi-Fi 的 SSID 信息：
 
 ```js
-var ssid = $device.ssid
+const ssid = $device.ssid;
 ```
 
 返回数据样例：
@@ -48,7 +48,7 @@ var ssid = $device.ssid
 获取当前设备的网络类型：
 
 ```js
-var networkType = $device.networkType
+const networkType = $device.networkType;
 ```
 
 数值 | 说明
@@ -62,7 +62,7 @@ var networkType = $device.networkType
 获取设备的内存/磁盘空间：
 
 ```js
-var space = $device.space
+const space = $device.space;
 ```
 
 返回数据样例：
@@ -109,7 +109,7 @@ level | number | 0 ~ 2 表示振动等级
 获得局域网 IP 地址：
 
 ```js
-var address = $device.wlanAddress
+const address = $device.wlanAddress;
 ```
 
 # $device.isDarkMode
@@ -127,10 +127,10 @@ if ($device.isDarkMode) {
 快速检查设备屏幕类型：
 
 ```js
-var isIphoneX = $device.isIphoneX;
-var isIphonePlus = $device.isIphonePlus;
-var isIpad = $device.isIpad;
-var isIpadPro = $device.isIpadPro;
+const isIphoneX = $device.isIphoneX;
+const isIphonePlus = $device.isIphonePlus;
+const isIpad = $device.isIpad;
+const isIpadPro = $device.isIpadPro;
 ```
 
 # $device.hasTouchID

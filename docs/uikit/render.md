@@ -56,7 +56,7 @@ keyCommands | array | 快捷键
 该方法用于通过 `id` 在画布中查找一个 view，例如：
 
 ```js
-var label = $("label")
+const label = $("label");
 ```
 
 当 id 没有被指定的时候，会通过 type 进行查找，如果画布中只有一个该类型的 view，也会被正确返回。

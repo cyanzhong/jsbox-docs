@@ -5,8 +5,8 @@
 ```js
 $browser.exec({
   script: function() {
-    var parser = new DOMParser();
-    var doc = parser.parseFromString("<a>hey</a>", "application/xml");
+    const parser = new DOMParser();
+    const doc = parser.parseFromString("<a>hey</a>", "application/xml");
     // $notify("customEvent", {"key": "value"})
     return doc.children[0].innerHTML;
   },
@@ -32,7 +32,7 @@ var result = await $browser.exec("return 1 + 1;");
 你可以通过类似这样的方式动态创建：
 
 ```js
-var name = "JSBox"
+const name = "JSBox";
 $browser.exec({
   script: `
   var parser = new DOMParser();

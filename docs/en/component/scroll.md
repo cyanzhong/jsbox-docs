@@ -38,7 +38,7 @@ $ui.render({
     views: [{
       type: "label",
       props: {
-        text: text,
+        text,
         lines: 0
       },
       layout: function(make, view) {

@@ -7,7 +7,7 @@ Take a photo with camera:
 ```js
 $photo.take({
   handler: function(resp) {
-    var image = resp.image
+    const image = resp.image;
   }
 })
 ```
@@ -32,7 +32,7 @@ Pick a photo from photo library:
 ```js
 $photo.pick({
   handler: function(resp) {
-    var image = resp.image
+    const image = resp.image;
   }
 })
 ```
@@ -67,7 +67,7 @@ Ask user take a photo or pick a photo:
 ```js
 $photo.prompt({
   handler: function(resp) {
-    var image = resp.image
+    const image = resp.image;
   }
 })
 ```
@@ -79,10 +79,10 @@ We can retrieve metadata from a photo:
 ```js
 $photo.pick({
   handler: function(resp) {
-    var metadata = resp.metadata
+    const metadata = resp.metadata;
     if (metadata) {
-      var gps = metadata["{GPS}"]
-      var url = "https://maps.apple.com/?ll=" + gps.Latitude + "," + gps.Longitude
+      const gps = metadata["{GPS}"];
+      const url = `https://maps.apple.com/?ll=${gps.Latitude},${gps.Longitude}`;
       $app.openURL(url)
     }
   }
@@ -107,7 +107,7 @@ Save a photo to photo library:
 ```js
 // data
 $photo.save({
-  data: data,
+  data,
   handler: function(success) {
 
   }
@@ -117,7 +117,7 @@ $photo.save({
 ```js
 // image
 $photo.save({
-  image: image,
+  image,
   handler: function(success) {
 
   }
@@ -168,9 +168,9 @@ We could convert image object to PNG or JPEG data:
 
 ```js
 // PNG
-var png = image.png
+const png = image.png;
 // JPEG
-var jpg = image.jpg(0.8)
+const jpg = image.jpg(0.8);
 ```
 
 There is a number (0.0 ~ 1.0) means jpeg compress quality.

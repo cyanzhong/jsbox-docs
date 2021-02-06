@@ -220,14 +220,14 @@ text | string | 文本
 手动创建一个 view，object 参数和 $ui.render 一致：
 
 ```js
-var canvas = $ui.create({
+const canvas = $ui.create({
   type: "image",
   props: {
     bgcolor: $color("clear"),
     tintColor: $color("gray"),
     frame: $rect(0, 0, 100, 100)
   }
-})
+});
 ```
 
 请注意，这个时候 view 还没有父 view，所以在这个时候不能使用他的 `layout` 方法。

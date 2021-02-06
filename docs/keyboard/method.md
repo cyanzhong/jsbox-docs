@@ -51,7 +51,7 @@ $keyboard.playInputClick()
 判断当前输入区域是否有文字：
 
 ```js
-var hasText = $keyboard.hasText
+const hasText = $keyboard.hasText;
 ```
 
 # $keyboard.selectedText
@@ -59,7 +59,7 @@ var hasText = $keyboard.hasText
 获取当前选中的文字（iOS 11 以上）：
 
 ```js
-var selectedText = $keyboard.selectedText
+const selectedText = $keyboard.selectedText;
 ```
 
 # $keyboard.textBeforeInput
@@ -83,7 +83,7 @@ const textAfterInput = $keyboard.textAfterInput;
 获取当前的全部文字（iOS 11 以上）：
 
 ```js
-$keyboard.getAllText(function(text) {
+$keyboard.getAllText(text => {
   
 })
 ```

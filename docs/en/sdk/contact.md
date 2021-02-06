@@ -34,7 +34,7 @@ You can also query all contacts that in a group:
 
 ```js
 $contact.fetch({
-  group: group,
+  group,
   handler: function(contacts) {
 
   }
@@ -68,7 +68,7 @@ Save modified contact item:
 
 ```js
 $contact.save({
-  contact: contact,
+  contact,
   handler: function(resp) {
 
   }
@@ -133,8 +133,8 @@ Add a contact to a group:
 
 ```js
 $contact.addToGroup({
-  contact: contact,
-  group: group
+  contact,
+  group
 });
 ```
 
@@ -144,7 +144,7 @@ Remove a contact from a group:
 
 ```js
 $contact.removeFromGroup({
-  contact: contact,
-  group: group
+  contact,
+  group
 });
 ```

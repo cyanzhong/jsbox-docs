@@ -28,7 +28,7 @@ Above 3 parameters are optional.
 Get items in Safari when you are using Action Extension:
 
 ```js
-var items = $safari.items // JSON format
+const items = $safari.items; // JSON format
 ```
 
 # $safari.inject(script)

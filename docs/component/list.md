@@ -206,7 +206,7 @@ swipeEnabled: function(sender, indexPath) {
 返回在 indexPath 位置的数据：
 
 ```js
-var data = tableView.object($indexPath(0, 0))
+const data = tableView.object($indexPath(0, 0));
 ```
 
 # insert(object)
@@ -235,7 +235,7 @@ tableView.delete(0)
 返回在 indexPath 位置的视图：
 
 ```js
-var cell = tableView.cell($indexPath(0, 0))
+const cell = tableView.cell($indexPath(0, 0));
 ```
 
 # events: rowHeight
@@ -433,19 +433,19 @@ canMoveItem: function(sender, indexPath) {
 先看一个例子：
 
 ```js
-var data = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
+let data = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"];
 $ui.render({
   views: [
     {
       type: "list",
-      props: { data: data },
+      props: { data },
       layout: $layout.fill,
       events: {
         didReachBottom: function(sender) {
           $ui.toast("fetching...")
-          $delay(1.5, function() {
+          $delay(1.5, () => {
             sender.endFetchingMore()
-            data = data.concat(data.map(function(item) {
+            data = data.concat(data.map(item => {
               return (parseInt(item) + 15).toString()
             }))
             $("list").data = data

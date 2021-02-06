@@ -43,7 +43,7 @@ $archiver.zip({
 
 ```js
 $archiver.unzip({
-  file: file,
+  file,
   dest: "folder",
   handler: function(success) {
 

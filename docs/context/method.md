@@ -3,7 +3,7 @@
 获取通过 URL Scheme 启动扩展时的所有参数：
 
 ```js
-var query = $context.query
+const query = $context.query;
 ```
 
 用 `jsbox://runjs?file=demo.js&text=test` 启动时，query 值为：
@@ -28,7 +28,7 @@ const sourceApp = $context.query.source_app;
 返回一个文本（当用户选择文本进行分享时）：
 
 ```js
-var text = $context.text
+const text = $context.text;
 ```
 
 # $context.textItems
@@ -40,7 +40,7 @@ var text = $context.text
 返回一个链接（当用户选择链接进行分享时）：
 
 ```js
-var link = $context.link
+const link = $context.link;
 ```
 
 # $context.linkItems
@@ -52,7 +52,7 @@ var link = $context.link
 返回一个图片（当用户选择图片进行分享时）：
 
 ```js
-var image = $context.image
+const image = $context.image;
 ```
 
 # $context.imageItems
@@ -64,7 +64,7 @@ var image = $context.image
 当用户在 Safari 上启动扩展时，通过此方法拿到浏览器中的对象：
 
 ```js
-var items = $context.safari.items
+const items = $context.safari.items;
 ```
 
 对象结构：
@@ -89,7 +89,7 @@ var items = $context.safari.items
 返回一个二进制文件（当用户选择文件进行分享时）：
 
 ```js
-var data = $context.data
+const data = $context.data;
 ```
 
 # $context.dataItems

@@ -5,7 +5,7 @@
 例如：
 
 ```js
-var app = require('./scripts/app')
+const app = require('./scripts/app');
 ```
 
 `scripts/` 则是应用根目录 -> scripts 目录下的 app.js 文件，其中 `.js` 可以省略。
@@ -17,7 +17,7 @@ var app = require('./scripts/app')
 可以这样读取一个文件：
 
 ```js
-var file = $file.read('strings/zh-Hans.strings')
+const file = $file.read('strings/zh-Hans.strings');
 ```
 
 这会打开 strings 目录下的 zh-Hans.strings 文件。

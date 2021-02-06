@@ -6,7 +6,7 @@
 $http.get({
   url: "",
   handler: function(resp) {
-    var response = resp.response
+    const response = resp.response;
   }
 })
 ```

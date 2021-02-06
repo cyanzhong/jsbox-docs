@@ -21,8 +21,8 @@ channel.execute({
   script: "ls -l /var/lib/",
   timeout: 0,
   handler: function(result) {
-    console.log("response: " + result.response)
-    console.log("error: " + result.error)
+    console.log(`response: ${result.response}`)
+    console.log(`error: ${result.error}`)
   }
 })
 ```
@@ -36,8 +36,8 @@ channel.write({
   command: "",
   timeout: 0,
   handler: function(result) {
-    console.log("success: " + result.success)
-    console.log("error: " + result.error)
+    console.log(`success: ${result.success}`)
+    console.log(`error: ${result.error}`)
   }
 })
 ```
@@ -51,7 +51,7 @@ channel.upload({
   path: "resources/notes.md",
   dest: "/home/user/notes.md",
   handler: function(success) {
-    console.log("success: " + success)
+    console.log(`success: ${success}`)
   }
 })
 ```
@@ -65,7 +65,7 @@ channel.download({
   path: "/home/user/notes.md",
   dest: "resources/notes.md",
   handler: function(success) {
-    console.log("success: " + success)
+    console.log(`success: ${success}`)
   }
 })
 ```

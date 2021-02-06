@@ -38,7 +38,7 @@ $define({
   type: "MyHelper",
   classEvents: {
     open: function(scheme) {
-      var url = $objc("NSURL").invoke("URLWithString", scheme)
+      const url = $objc("NSURL").invoke("URLWithString", scheme);
       $objc("UIApplication").invoke("sharedApplication.openURL", url)
     }
   }
@@ -66,8 +66,8 @@ $ui.render({
   ]
 })
 
-var window = $ui.window.ocValue()
-var label = $objc("UILabel").invoke("alloc.init")
+const window = $ui.window.ocValue();
+const label = $objc("UILabel").invoke("alloc.init");
 label.invoke("setTextAlignment", 1)
 label.invoke("setText", "Runtime")
 label.invoke("setFrame", { x: $device.info.screen.width * 0.5 - 50, y: 240, width: 100, height: 32 })

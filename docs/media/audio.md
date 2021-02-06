@@ -49,18 +49,18 @@ $audio.seek(60)
 
 ```js
 // 获得当前的状态
-var status = $audio.status
+const status = $audio.status;
 // 0: 已停止, 1: 等待播放, 2: 正在播放
 ```
 
 ```js
 // 获取时长
-var duration = $audio.duration
+const duration = $audio.duration;
 ```
 
 ```js
 // 获取当前的播放时间
-var offset = $audio.offset
+const offset = $audio.offset;
 ```
 
 # 事件消息

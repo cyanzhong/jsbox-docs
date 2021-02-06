@@ -3,7 +3,7 @@
 Open a SQLite connection with file path:
 
 ```js
-var db = $sqlite.open("test.db");
+const db = $sqlite.open("test.db");
 ```
 
 # $sqlite.close(db)
@@ -11,7 +11,7 @@ var db = $sqlite.open("test.db");
 Close a SQLite connection:
 
 ```js
-var db = $sqlite.open("test.db");
+const db = $sqlite.open("test.db");
 
 //...
 $sqlite.close(db); // Or db.close();

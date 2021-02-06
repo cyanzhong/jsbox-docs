@@ -5,7 +5,7 @@
 Read a file:
 
 ```js
-var file = $file.read("demo.txt")
+const file = $file.read("demo.txt");
 ```
 
 # $file.download(path) -> Promise
@@ -21,10 +21,10 @@ const data = await $file.download("drive://.test.db.icloud");
 Write a file:
 
 ```js
-var success = $file.write({
+const success = $file.write({
   data: $data({string: "Hello, World!"}),
   path: "demo.txt"
-})
+});
 ```
 
 # $file.delete(path)
@@ -32,7 +32,7 @@ var success = $file.write({
 Delete a file:
 
 ```js
-var success = $file.delete("demo.txt")
+const success = $file.delete("demo.txt");
 ```
 
 # $file.list(path)
@@ -40,7 +40,7 @@ var success = $file.delete("demo.txt")
 Get all file names in a folder:
 
 ```js
-var contents = $file.list("download")
+const contents = $file.list("download");
 ```
 
 # $file.copy(object)
@@ -48,10 +48,10 @@ var contents = $file.list("download")
 Copy a file:
 
 ```js
-var success = $file.copy({
+const success = $file.copy({
   src: "demo.txt",
   dst: "download/demo.txt"
-})
+});
 ```
 
 # $file.move(object)
@@ -59,10 +59,10 @@ var success = $file.copy({
 Move a file:
 
 ```js
-var success = $file.move({
+const success = $file.move({
   src: "demo.txt",
   dst: "download/demo.txt"
-})
+});
 ```
 
 # $file.mkdir(path)
@@ -70,7 +70,7 @@ var success = $file.move({
 Make a directory (folder):
 
 ```js
-var success = $file.mkdir("download")
+const success = $file.mkdir("download");
 ```
 
 # $file.exists(path)
@@ -78,7 +78,7 @@ var success = $file.mkdir("download")
 Check if a file exists:
 
 ```js
-var exists = $file.exists("demo.txt")
+const exists = $file.exists("demo.txt");
 ```
 
 # $file.isDirectory(path)
@@ -86,7 +86,7 @@ var exists = $file.exists("demo.txt")
 Checkc if a path is directory:
 
 ```js
-var isDirectory = $file.isDirectory("download")
+const isDirectory = $file.isDirectory("download");
 ```
 
 # $file.merge(args)
@@ -125,7 +125,7 @@ const absolutePath = $file.absolutePath(path);
 Returns all installed scripts:
 
 ```js
-var extensions = $file.extensions
+const extensions = $file.extensions;
 ```
 
 # shared://
@@ -133,7 +133,7 @@ var extensions = $file.extensions
 Access shared folder like we mentioned before:
 
 ```js
-var file = $file.read("shared://demo.txt")
+const file = $file.read("shared://demo.txt");
 ```
 
 # drive://
@@ -141,5 +141,5 @@ var file = $file.read("shared://demo.txt")
 Access iCloud Drive container like we mentioned before:
 
 ```js
-var file = $file.read("drive://demo.txt")
+const file = $file.read("drive://demo.txt");
 ```

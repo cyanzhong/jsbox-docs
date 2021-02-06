@@ -14,7 +14,7 @@
 例如 JSBox 提供的 `$color` 生成的是一个 JavaScript 值：
 
 ```js
-var color1 = $color("red")
+const color1 = $color("red");
 ```
 
 这种值被应用在 invoke 方法时需要：`color1.ocValue()` 才行。
@@ -22,7 +22,7 @@ var color1 = $color("red")
 而 invoke 生成的都是 ocValue:
 
 ```js
-var color2 = $objc("UIColor").invoke("grayColor")
+const color2 = $objc("UIColor").invoke("grayColor");
 ```
 
 这种值在应用在 JSBox 接口时需要调用 `color2.jsValue()` 才行，例如：

@@ -3,9 +3,9 @@
 你可以使用 $http.startServer 来创建一个简单的 Web 服务器，可以将文件放到上面，然后通过 HTTP 链接下载。当你需要自定义 Request Handler 时，可以使用 $server 相关的接口：
 
 ```js
-var server = $server.new();
+const server = $server.new();
 
-var options = {
+const options = {
   port: 6060, // Required
   bonjourName: "", // Optional
   bonjourType: "", // Optional
@@ -56,20 +56,20 @@ server.listen({
 注册一个 Request Handler:
 
 ```js
-var handler = {};
+const handler = {};
 
 // Handler filter
 handler.filter = rules => {
-  var method = rules.method;
-  var url = rules.url;
+  const method = rules.method;
+  const url = rules.url;
   // rules.headers, rules.path, rules.query;
   return "data"; // default, data, file, multipart, urlencoded
 }
 
 // Handler response
 handler.response = request => {
-  var method = request.method;
-  var url = request.url;
+  const method = request.method;
+  const url = request.url;
   return {
     type: "data", // default, data, file, error
     props: {
@@ -84,8 +84,8 @@ handler.response = request => {
 
 // Handler async response
 handler.asyncResponse = (request, completion) => {
-var method = request.method;
-  var url = request.url;
+const method = request.method;
+  const url = request.url;
   completion({
     type: "data", // default, data, file, error
     props: {

@@ -54,7 +54,7 @@ var success = await $photo.delete({
 同时，请注意不是所有的接口都能异步，有些接口完全是同步接口，例如：
 
 ```js
-var success = $file.delete("sample.txt")
+const success = $file.delete("sample.txt");
 ```
 
 这样的接口没有必要（也无法）Promise 调用，我们之后将会有一个表来详细说明各个接口的支持情况。

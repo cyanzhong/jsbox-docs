@@ -40,7 +40,7 @@ $text.speech({
 你可以将此过程暂停/继续或停止：
 
 ```js
-var speaker = $text.speech({})
+const speaker = $text.speech({});
 speaker.pause()
 speaker.continue()
 speaker.stop()
@@ -194,10 +194,10 @@ var markdown = await $text.htmlToMarkdown("<p>Hey</p>");
 将 data 转换成字符串：
 
 ```js
-var string = $text.decodeData({
+const string = $text.decodeData({
   data: file,
   encoding: 4 // default, refer: https://developer.apple.com/documentation/foundation/nsstringencoding
-})
+});
 ```
 
 # $text.sizeThatFits(object)
@@ -205,10 +205,10 @@ var string = $text.decodeData({
 动态计算文字的高度：
 
 ```js
-var size = $text.sizeThatFits({
+const size = $text.sizeThatFits({
   text: "Hello, World",
   width: 320,
   font: $font(20),
   lineSpacing: 15, // Optional
-})
+});
 ```

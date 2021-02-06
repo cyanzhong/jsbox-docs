@@ -5,7 +5,7 @@
 将字符串转换成一个二维码图片：
 
 ```js
-var image = $qrcode.encode("https://apple.com")
+const image = $qrcode.encode("https://apple.com");
 ```
 
 # $qrcode.decode(image)
@@ -13,7 +13,7 @@ var image = $qrcode.encode("https://apple.com")
 将二维码图片解码成字符串：
 
 ```js
-var text = $qrcode.decode(image)
+const text = $qrcode.decode(image);
 ```
 
 # $qrcode.scan(function)
@@ -21,7 +21,7 @@ var text = $qrcode.decode(image)
 开始扫描二维码，用户完成扫描之后返回字符串：
 
 ```js
-$qrcode.scan(function(text) {
+$qrcode.scan(text => {
   
 })
 ```

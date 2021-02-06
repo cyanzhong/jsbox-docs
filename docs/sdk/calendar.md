@@ -9,7 +9,7 @@ $calendar.fetch({
   startDate: new Date(),
   hours: 3 * 24,
   handler: function(resp) {
-    var events = resp.events
+    const events = resp.events;
   }
 })
 ```
@@ -57,10 +57,10 @@ $calendar.fetch({
   startDate: new Date(),
   hours: 3 * 24,
   handler: function(resp) {
-    var event = resp.events[0]
+    const event = resp.events[0];
     event.title = "Modified"
     $calendar.save({
-      event: event
+      event
     })
   }
 })
@@ -74,7 +74,7 @@ $calendar.fetch({
 
 ```js
 $calendar.delete({
-  event: event,
+  event,
   handler: function(resp) {
     
   }

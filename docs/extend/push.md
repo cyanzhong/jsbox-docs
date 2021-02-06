@@ -10,7 +10,7 @@ $push.schedule({
   body: "内容",
   delay: 5,
   handler: function(result) {
-    var id = result.id
+    const id = result.id;
   }
 })
 ```
@@ -34,15 +34,15 @@ renew | bool | 是否重复创建（固定通知）
 上述样例代码是通过 delay 来触发一个通知，你也可以通过 date 来触发：
 
 ```js
-var date = new Date()
+const date = new Date();
 date.setSeconds(date.getSeconds() + 10)
 
 $push.schedule({
   title: "标题",
   body: "内容",
-  date: date,
+  date,
   handler: function(result) {
-    var id = result.id
+    const id = result.id;
   }
 })
 ```

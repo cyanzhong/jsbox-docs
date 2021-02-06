@@ -159,7 +159,7 @@ $ui.render({
       type: "text",
       props: {
         styledText: {
-          text: text,
+          text,
           font: $font(17),
           color: $color("black"),
           markdown: false, // whether to use markdown syntax

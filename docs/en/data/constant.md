@@ -9,7 +9,7 @@ For example `$align.left` is actually `0`, but it's no way to remember that, so 
 JSBox environment:
 
 ```js
-var $env = {
+const $env = {
   app: 1 << 0,
   today: 1 << 1,
   action: 1 << 2,
@@ -19,7 +19,7 @@ var $env = {
   siri: 1 << 6,
   widget: 1 << 7,
   all: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3) | (1 << 4) | (1 << 5) | (1 << 6) | (1 << 7)
-}
+};
 ```
 
 # $align
@@ -27,13 +27,13 @@ var $env = {
 iOS text alignment type:
 
 ```js
-var $align = {
+const $align = {
   left: 0,
   center: 1,
   right: 2,
   justified: 3,
   natural: 4
-}
+};
 ```
 
 # $contentMode
@@ -41,7 +41,7 @@ var $align = {
 iOS view content mode:
 
 ```js
-var $contentMode = {
+const $contentMode = {
   scaleToFill: 0,
   scaleAspectFit: 1,
   scaleAspectFill: 2,
@@ -51,7 +51,7 @@ var $contentMode = {
   bottom: 6,
   left: 7,
   right: 8,
-}
+};
 ```
 
 # $btnType
@@ -59,14 +59,14 @@ var $contentMode = {
 iOS button type:
 
 ```js
-var $btnType = {
+const $btnType = {
   custom: 0,
   system: 1,
   disclosure: 2,
   infoLight: 3,
   infoDark: 4,
   contactAdd: 5,
-}
+};
 ```
 
 # $alertActionType
@@ -74,9 +74,9 @@ var $btnType = {
 Alert item style:
 
 ```js
-var $alertActionType = {
+const $alertActionType = {
   default: 0, cancel: 1, destructive: 2
-}
+};
 ```
 
 # $zero
@@ -84,12 +84,12 @@ var $alertActionType = {
 Zero values:
 
 ```js
-var $zero = {
+const $zero = {
   point: $point(0, 0),
   size: $size(0, 0),
   rect: $rect(0, 0, 0, 0),
   insets: $insets(0, 0, 0, 0)
-}
+};
 ```
 
 # $layout
@@ -97,7 +97,7 @@ var $zero = {
 Common layout functions:
 
 ```js
-var $layout = {
+const $layout = {
   fill: function(make, view) {
     make.edges.equalTo(view.super)
   },
@@ -107,7 +107,7 @@ var $layout = {
   center: function(make, view) {
     make.center.equalTo(view.super)
   }
-}
+};
 ```
 
 # $lineCap
@@ -115,11 +115,11 @@ var $layout = {
 iOS line cap:
 
 ```js
-var $lineCap = {
+const $lineCap = {
   butt: 0,
   round: 1,
   square: 2
-}
+};
 ```
 
 # $lineJoin
@@ -127,11 +127,11 @@ var $lineCap = {
 iOS line join:
 
 ```js
-var $lineJoin = {
+const $lineJoin = {
   miter: 0,
   round: 1,
   bevel: 2
-}
+};
 ```
 
 # $mediaType
@@ -139,7 +139,7 @@ var $lineJoin = {
 [UTI Types](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html):
 
 ```js
-var $mediaType = {
+const $mediaType = {
   image: "public.image",
   jpeg: "public.jpeg",
   jpeg2000: "public.jpeg-2000",
@@ -163,7 +163,7 @@ var $mediaType = {
   avi: "public.avi",
   wav: "com.microsoft.waveform-audio",
   midi: "public.midi-audio"
-}
+};
 ```
 
 # $imgPicker
@@ -171,7 +171,7 @@ var $mediaType = {
 iOS image picker constants:
 
 ```js
-var $imgPicker = {
+const $imgPicker = {
   quality: {
     high: 0,
     medium: 1,
@@ -193,7 +193,7 @@ var $imgPicker = {
     auto: 0,
     on: 1
   }
-}
+};
 ```
 
 # $kbType
@@ -201,7 +201,7 @@ var $imgPicker = {
 iOS keyboard types:
 
 ```js
-var $kbType =  {
+const $kbType =  {
   default: 0,
   ascii: 1,
   nap: 2,
@@ -214,7 +214,7 @@ var $kbType =  {
   twitter: 9,
   search: 10,
   asciiPhone: 11
-}
+};
 ```
 
 # $assetMedia
@@ -222,7 +222,7 @@ var $kbType =  {
 iOS asset media constants:
 
 ```js
-var $assetMedia = {
+const $assetMedia = {
   type: {
     unknown: 0,
     image: 1,
@@ -240,7 +240,7 @@ var $assetMedia = {
     highFrameRate: 1 << 17,
     timelapse: 1 << 18
   }
-}
+};
 ```
 
 # $pageSize
@@ -248,13 +248,13 @@ var $assetMedia = {
 $pdf page sizes:
 
 ```js
-var $pageSize = {
+const $pageSize = {
   letter: 0, governmentLetter: 1, legal: 2, juniorLegal: 3, ledger: 4, tabloid: 5,
   A0: 6, A1: 7, A2: 8, A3: 9, A4: 10, A5: 11, A6: 12, A7: 13, A8: 14, A9: 15, A10: 16,
   B0: 17, B1: 18, B2: 19, B3: 20, B4: 21, B5: 22, B6: 23, B7: 24, B8: 25, B9: 26, B10: 27,
   C0: 28, C1: 29, C2: 30, C3: 31, C4: 32, C5: 33, C6: 34, C7: 35, C8: 36, C9: 37, C10: 38,
   custom: 52
-}
+};
 ```
 
 # $UIEvent
@@ -262,7 +262,7 @@ var $pageSize = {
 Event types which are used in `addEventHandler` function:
 
 ```js
-var $UIEvent = {
+const $UIEvent = {
   touchDown: 1 << 0,
   touchDownRepeat: 1 << 1,
   touchDragInside: 1 << 2,
@@ -283,7 +283,7 @@ var $UIEvent = {
   applicationReserved: 0x0F000000,
   systemReserved: 0xF0000000,
   allEvents: 0xFFFFFFFF,
-}
+};
 ```
 
 # $stackViewAxis
@@ -291,10 +291,10 @@ var $UIEvent = {
 Axis values for stack view:
 
 ```js
-var $stackViewAxis = {
+const $stackViewAxis = {
   horizontal: 0,
   vertical: 1,
-}
+};
 ```
 
 # $stackViewDistribution
@@ -302,13 +302,13 @@ var $stackViewAxis = {
 Distribution values for stack view:
 
 ```js
-var $stackViewDistribution = {
+const $stackViewDistribution = {
   fill: 0,
   fillEqually: 1,
   fillProportionally: 2,
   equalSpacing: 3,
   equalCentering: 4,
-}
+};
 ```
 
 # $stackViewAlignment
@@ -316,7 +316,7 @@ var $stackViewDistribution = {
 Alignment values for stack view:
 
 ```js
-var $stackViewAlignment = {
+const $stackViewAlignment = {
   fill: 0,
   leading: 1,
   top: 1,
@@ -325,7 +325,7 @@ var $stackViewAlignment = {
   trailing: 4,
   bottom: 4,
   lastBaseline: 5,
-}
+};
 ```
 
 # $stackViewSpacing
@@ -333,10 +333,10 @@ var $stackViewAlignment = {
 Spacing values for stack view:
 
 ```js
-var $stackViewSpacing = {
+const $stackViewSpacing = {
   useDefault: UIStackViewSpacingUseDefault,
   useSystem: UIStackViewSpacingUseSystem,
-}
+};
 ```
 
 # $popoverDirection
@@ -344,13 +344,13 @@ var $stackViewSpacing = {
 Popover arrow directions for `$ui.popover(...)` method:
 
 ```js
-var $popoverDirection = {
+const $popoverDirection = {
   up: 1 << 0,
   down: 1 << 1,
   left: 1 << 2,
   right: 1 << 3,
   any: (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3),
-}
+};
 ```
 
 # $scrollDirection
@@ -358,10 +358,10 @@ var $popoverDirection = {
 Scroll directions for `matrix` views:
 
 ```js
-var $scrollDirection = {
+const $scrollDirection = {
   vertical: 0,
   horizontal: 1,
-}
+};
 ```
 
 # $blurStyle
@@ -369,7 +369,7 @@ var $scrollDirection = {
 Style constants for `blur` views:
 
 ```js
-var $blurStyle = {
+const $blurStyle = {
   // Additional Styles
   extraLight: 0,
   light: 1,
@@ -395,7 +395,7 @@ var $blurStyle = {
   materialDark: 18,
   thickMaterialDark: 19,
   chromeMaterialDark: 20,
-}
+};
 ```
 
 Please refer to Apple's documentation for details: https://developer.apple.com/documentation/uikit/uiblureffectstyle
@@ -405,9 +405,9 @@ Please refer to Apple's documentation for details: https://developer.apple.com/d
 Check layout type of a home screen widget:
 
 ```js
-var $widgetFamily = {
+const $widgetFamily = {
   small: 0,
   medium: 1,
   large: 2,
-}
+};
 ```

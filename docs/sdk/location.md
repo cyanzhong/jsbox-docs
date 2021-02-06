@@ -15,9 +15,9 @@ let available = $location.available;
 ```js
 $location.fetch({
   handler: function(resp) {
-    var lat = resp.lat
-    var lng = resp.lng
-    var alt = resp.alt
+    const lat = resp.lat;
+    const lng = resp.lng;
+    const alt = resp.alt;
   }
 })
 ```
@@ -29,9 +29,9 @@ $location.fetch({
 ```js
 $location.startUpdates({
   handler: function(resp) {
-    var lat = resp.lat
-    var lng = resp.lng
-    var alt = resp.alt
+    const lat = resp.lat;
+    const lng = resp.lng;
+    const alt = resp.alt;
   }
 })
 ```
@@ -43,12 +43,12 @@ $location.startUpdates({
 ```js
 $location.trackHeading({
   handler: function(resp) {
-    var magneticHeading = resp.magneticHeading
-    var trueHeading = resp.trueHeading
-    var headingAccuracy = resp.headingAccuracy
-    var x = resp.x
-    var y = resp.y
-    var z = resp.z
+    const magneticHeading = resp.magneticHeading;
+    const trueHeading = resp.trueHeading;
+    const headingAccuracy = resp.headingAccuracy;
+    const x = resp.x;
+    const y = resp.y;
+    const z = resp.z;
   }
 })
 ```
@@ -64,8 +64,8 @@ $location.trackHeading({
 ```js
 $location.select({
   handler: function(result) {
-    var lat = result.lat
-    var lng = result.lng
+    const lat = result.lat;
+    const lng = result.lng;
   }
 })
 ```

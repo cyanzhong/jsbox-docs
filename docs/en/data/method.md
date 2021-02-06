@@ -7,7 +7,7 @@ As we mentioned before, we provided a series of methods.
 Create a rectangle:
 
 ```js
-var rect = $rect(0, 0, 100, 100)
+const rect = $rect(0, 0, 100, 100);
 ```
 
 # $size(width, height)
@@ -15,7 +15,7 @@ var rect = $rect(0, 0, 100, 100)
 Create a size:
 
 ```js
-var size = $size(100, 100)
+const size = $size(100, 100);
 ```
 
 # $point(x, y)
@@ -23,7 +23,7 @@ var size = $size(100, 100)
 Create a point:
 
 ```js
-var point = $point(0, 0)
+const point = $point(0, 0);
 ```
 
 # $insets(top, left, bottom, right)
@@ -31,7 +31,7 @@ var point = $point(0, 0)
 Create an edge insets:
 
 ```js
-var insets = $insets(10, 10, 10, 10)
+const insets = $insets(10, 10, 10, 10);
 ```
 
 # $color(string)
@@ -39,13 +39,13 @@ var insets = $insets(10, 10, 10, 10)
 Create a color with hex string:
 
 ```js
-var color = $color("#00EEEE")
+const color = $color("#00EEEE");
 ```
 
 Create a color with name:
 
 ```js
-var blackColor = $color("black")
+const blackColor = $color("black");
 ```
 
 Available color names:
@@ -158,14 +158,14 @@ Create a color with red, green, blue values.
 The range of each number is 0 ~ 255:
 
 ```js
-var color = $rgb(100, 100, 100)
+const color = $rgb(100, 100, 100);
 ```
 # $rgba(red, green, blue, alpha)
 
 Create a color with red, green, blue and alpha channel:
 
 ```js
-var color = $rgba(100, 100, 100, 0.5)
+const color = $rgba(100, 100, 100, 0.5);
 ```
 
 # $font(name, size)
@@ -173,8 +173,8 @@ var color = $rgba(100, 100, 100, 0.5)
 Create a font, name is an optional parameter:
 
 ```js
-var font1 = $font(15)
-var font2 = $font("bold", 15)
+const font1 = $font(15);
+const font2 = $font("bold", 15);
 ```
 
 You can specify `"bold"` to use system font with bold weight, otherwise it will search fonts with the name.
@@ -186,7 +186,7 @@ Learn more: http://iosfonts.com/
 Create a range:
 
 ```js
-var range = $range(0, 10)
+const range = $range(0, 10);
 ```
 
 # $indexPath(section, row)
@@ -194,7 +194,7 @@ var range = $range(0, 10)
 Create an indexPath, to indicates the section and row:
 
 ```js
-var indexPath = $indexPath(0, 10)
+const indexPath = $indexPath(0, 10);
 ```
 
 # $data(object)
@@ -203,31 +203,31 @@ Create a binary data:
 
 ```js
 // string
-var data = $data({
+const data = $data({
   string: "Hello, World!",
   encoding: 4 // default, refer: https://developer.apple.com/documentation/foundation/nsstringencoding
-})
+});
 ```
 
 ```js
 // path
-var data = $data({
+const data = $data({
   path: "demo.txt"
-})
+});
 ```
 
 ```js
 // url
-var data = $data({
+const data = $data({
   url: "https://images.apple.com/v/ios/what-is/b/images/performance_large.jpg"
-})
+});
 ```
 
 ```js
 // base64
-var data = $data({
+const data = $data({
   base64: "data:image/png;base64,..."
-})
+});
 ```
 
 ```js

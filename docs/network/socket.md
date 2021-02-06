@@ -7,13 +7,13 @@ JSBox 支持类似 [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/
 创建一个新的 socket 对象：
 
 ```js
-var socket = $socket.new("wss://echo.websocket.org");
+const socket = $socket.new("wss://echo.websocket.org");
 ```
 
 你也可以指定一些参数：
 
 ```js
-var socket = $socket.new({
+const socket = $socket.new({
   url: "wss://echo.websocket.org",
   protocols: [],
   allowsUntrustedSSLCertificates: true
@@ -70,16 +70,16 @@ socket.close({
 发送内容，例如：
 
 ```js
-var object = socket.send("Message");
-var result = object.result;
-var error = object.error;
+const object = socket.send("Message");
+const result = object.result;
+const error = object.error;
 ```
 
 也可以通过 data 发送：
 
 ```js
 socket.send({
-  data: data,
+  data,
   noCopy: true, // Optional
 });
 ```
@@ -87,9 +87,9 @@ socket.send({
 # socket.ping(data)
 
 ```js
-var object = socket.ping(data);
-var result = object.result;
-var error = object.error;
+const object = socket.ping(data);
+const result = object.result;
+const error = object.error;
 ```
 
 # socket.readyState
@@ -97,7 +97,7 @@ var error = object.error;
 获取状态：
 
 ```js
-var readyState = socket.readyState;
+const readyState = socket.readyState;
 // 0: connecting, 1: open, 2: closing, 3: closed
 ```
 

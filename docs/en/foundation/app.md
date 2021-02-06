@@ -63,7 +63,7 @@ Close the addin that user current uses, `delay` is an optional parameter to spec
 Get current environment:
 
 ```js
-var env = $app.env
+const env = $app.env;
 ```
 
 Value | Description
@@ -91,7 +91,7 @@ if ($app.env == $env.today) {
 Since JSBox supports multiple widgets, you can check which widget is being used:
 
 ```js
-var index = $app.widgetIndex;
+const index = $app.widgetIndex;
 
 // 0 ~ 2, other value means not a widget
 ```

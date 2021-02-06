@@ -49,18 +49,18 @@ $audio.seek(60)
 
 ```js
 // Get current status
-var status = $audio.status
+const status = $audio.status;
 // 0: paused, 1: waiting, 2: playing
 ```
 
 ```js
 // Get duration
-var duration = $audio.duration
+const duration = $audio.duration;
 ```
 
 ```js
 // Get current time
-var offset = $audio.offset
+const offset = $audio.offset;
 ```
 
 # Events

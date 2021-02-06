@@ -20,7 +20,7 @@ Binary data:
 ```js
 $quicklook.open({
   type: "jpg",
-  data: data
+  data
 })
 ```
 
@@ -28,7 +28,7 @@ Image object:
 
 ```js
 $quicklook.open({
-  image: image
+  image
 })
 ```
 

@@ -13,9 +13,9 @@ JSBox 还能为捷径应用增加运行 JavaScript 的功能，当你需要在�
 同样的，异步任务需要通过 $intents.finish 来告诉捷径应用已经执行完成：
 
 ```js
-var a = "Hello";
-var b = "World";
-var result = [a, b].join(", ");
+const a = "Hello";
+const b = "World";
+const result = [a, b].join(", ");
 
 $intents.finish(result);
 ```

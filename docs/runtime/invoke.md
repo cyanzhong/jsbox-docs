@@ -5,7 +5,7 @@
 当我们通过 `$objc("")` 拿到 Objective-C 类时，可以通过 `invoke` 方法动态的执行他的方法：
 
 ```js
-var label = $objc("UILabel").invoke("alloc.init")
+const label = $objc("UILabel").invoke("alloc.init");
 label.invoke("setText", "Runtime")
 ```
 
@@ -33,7 +33,7 @@ NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 在 JSBox Runtime 中这么实现：
 
 ```js
-var indexPath = $objc("NSIndexPath").invoke("indexPathForRow:inSection:", 0, 0)
+const indexPath = $objc("NSIndexPath").invoke("indexPathForRow:inSection:", 0, 0);
 ```
 
 `indexPathForRow:inSection:` 就是这个方法的 selector，而后面的就是参数列表。

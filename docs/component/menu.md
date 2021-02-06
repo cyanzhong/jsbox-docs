@@ -17,9 +17,9 @@ $ui.render({
       },
       events: {
         changed: function(sender) {
-          var items = sender.items
-          var index = sender.index
-          $ui.toast(index + ": " + items[index])
+          const items = sender.items;
+          const index = sender.index;
+          $ui.toast(`${index}: ${items[index]}`)
         }
       }
     }

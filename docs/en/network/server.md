@@ -5,9 +5,9 @@ You can create a simple web server with $http.startServer, it creates a http ser
 If you want to create a server with custom request handlers, you can use $server APIs:
 
 ```js
-var server = $server.new();
+const server = $server.new();
 
-var options = {
+const options = {
   port: 6060, // Required
   bonjourName: "", // Optional
   bonjourType: "", // Optional
@@ -58,20 +58,20 @@ server.listen({
 Register a request handler:
 
 ```js
-var handler = {};
+const handler = {};
 
 // Handler filter
 handler.filter = rules => {
-  var method = rules.method;
-  var url = rules.url;
+  const method = rules.method;
+  const url = rules.url;
   // rules.headers, rules.path, rules.query;
   return "data"; // default, data, file, multipart, urlencoded
 }
 
 // Handler response
 handler.response = request => {
-  var method = request.method;
-  var url = request.url;
+  const method = request.method;
+  const url = request.url;
   return {
     type: "data", // default, data, file, error
     props: {
@@ -86,8 +86,8 @@ handler.response = request => {
 
 // Handler async response
 handler.asyncResponse = (request, completion) => {
-var method = request.method;
-  var url = request.url;
+const method = request.method;
+  const url = request.url;
   completion({
     type: "data", // default, data, file, error
     props: {

@@ -51,7 +51,7 @@ $keyboard.playInputClick()
 Check whether current input context has text:
 
 ```js
-var hasText = $keyboard.hasText
+const hasText = $keyboard.hasText;
 ```
 
 # $keyboard.selectedText
@@ -59,7 +59,7 @@ var hasText = $keyboard.hasText
 Get current selected text (iOS 11 only):
 
 ```js
-var selectedText = $keyboard.selectedText
+const selectedText = $keyboard.selectedText;
 ```
 
 # $keyboard.textBeforeInput
@@ -83,7 +83,7 @@ const textAfterInput = $keyboard.textAfterInput;
 Get all text (iOS 11 only):
 
 ```js
-$keyboard.getAllText(function(text) {
+$keyboard.getAllText(text => {
 
 });
 ```

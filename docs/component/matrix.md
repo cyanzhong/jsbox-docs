@@ -97,7 +97,7 @@ footer: {
 返回在 indexPath 位置的数据：
 
 ```js
-var data = matrix.object($indexPath(0, 0))
+const data = matrix.object($indexPath(0, 0));
 ```
 
 # insert(object)
@@ -128,7 +128,7 @@ matrix.delete($indexPath(0, 0))
 返回在 indexPath 位置的元素：
 
 ```js
-var cell = matrix.cell($indexPath(0, 0))
+const cell = matrix.cell($indexPath(0, 0));
 ```
 
 # events: didSelect

@@ -3,7 +3,7 @@
 Initiate a view with Runtime APIs:
 
 ```js
-var label = $objc("UILabel").$new();
+const label = $objc("UILabel").$new();
 label.$setText("Hey!");
 
 $ui.render({

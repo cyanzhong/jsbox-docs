@@ -12,7 +12,7 @@ $define({
       $ui.alert("instance")
     },
     "indexPathForRow:inSection:": function(row, section) {
-      $ui.alert("row: " + row + ", section: " + section)
+      $ui.alert(`row: ${row}, section: ${section}`)
     }
   },
   classEvents: {

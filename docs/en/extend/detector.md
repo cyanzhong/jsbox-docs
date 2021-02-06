@@ -7,7 +7,7 @@
 Retrieve all dates from a string:
 
 ```js
-var dates = $detector.date("2017.10.10")
+const dates = $detector.date("2017.10.10");
 ```
 
 # $detector.address(string)
@@ -15,7 +15,7 @@ var dates = $detector.date("2017.10.10")
 Retrieve all addresses from a string:
 
 ```js
-var addresses = $detector.address("")
+const addresses = $detector.address("");
 ```
 
 # $detector.link(string)
@@ -23,7 +23,7 @@ var addresses = $detector.address("")
 Retrieve all links from a string:
 
 ```js
-var links = $detector.link("http://apple.com hello http://xteko.com")
+const links = $detector.link("http://apple.com hello http://xteko.com");
 ```
 
 # $detector.phoneNumber(string)
@@ -31,5 +31,5 @@ var links = $detector.link("http://apple.com hello http://xteko.com")
 Retrieve all phone numbers from a string:
 
 ```js
-var phoneNumbers = $detector.phoneNumber("18666666666 hello 18777777777")
+const phoneNumbers = $detector.phoneNumber("18666666666 hello 18777777777");
 ```

@@ -3,16 +3,16 @@
 Runtime is running code in another language, it's kind of like reflection, so you will feel tired to write code like:
 
 ```js
-var app = $objc("UIApplication").invoke("sharedApplication");
-var url = $objc("NSURL").invoke("URLWithString", "https://sspai.com");
+const app = $objc("UIApplication").invoke("sharedApplication");
+const url = $objc("NSURL").invoke("URLWithString", "https://sspai.com");
 app.invoke("openURL", url);
 ```
 
 So we need a syntactic sugar to avoid this complex, since v1.24.0, we have new syntax:
 
 ```js
-var app = $objc("UIApplication").$sharedApplication();
-var url = $objc("NSURL").$URLWithString("https://sspai.com");
+const app = $objc("UIApplication").$sharedApplication();
+const url = $objc("NSURL").$URLWithString("https://sspai.com");
 app.$openURL(url);
 ```
 
@@ -29,7 +29,7 @@ This syntax has very simple rules:
 For instance:
 
 ```js
-var app = $objc("UIApplication").$sharedApplication();
+const app = $objc("UIApplication").$sharedApplication();
 app.$sendAction_to_from_forEvent(action, target, null, null);
 ```
 
@@ -65,13 +65,13 @@ NSEnumerator | https://developer.apple.com/documentation/foundation/nsenumerator
 These classes can be used directly without declare:
 
 ```js
-var url = NSURL.$URLWithString("https://sspai.com");
+const url = NSURL.$URLWithString("https://sspai.com");
 ```
 
 Other classes you need to declare with $objc, you can use the return value:
 
 ```js
-var appClass = $objc("UIApplication");
+const appClass = $objc("UIApplication");
 
 var app = appClass.$sharedApplication();
 

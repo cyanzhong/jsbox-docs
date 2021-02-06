@@ -28,7 +28,7 @@ Returns the basic info of device:
 Get the SSID of current Wi-Fi:
 
 ```js
-var ssid = $device.ssid
+const ssid = $device.ssid;
 ```
 
 Example:
@@ -48,7 +48,7 @@ Note: In iOS 13 and above, this API needs location access, you can use `$locatio
 Returns the network type:
 
 ```js
-var networkType = $device.networkType
+const networkType = $device.networkType;
 ```
 
 Value | Type
@@ -62,7 +62,7 @@ Value | Type
 Returns memory usage and disk usage of the device:
 
 ```js
-var space = $device.space
+const space = $device.space;
 ```
 
 Example:
@@ -109,7 +109,7 @@ level | number | 0 ~ 2
 Get WLAN address:
 
 ```js
-var address = $device.wlanAddress
+const address = $device.wlanAddress;
 ```
 
 # $device.isDarkMode
@@ -127,10 +127,10 @@ if ($device.isDarkMode) {
 Check screen type quickly:
 
 ```js
-var isIphoneX = $device.isIphoneX;
-var isIphonePlus = $device.isIphonePlus;
-var isIpad = $device.isIpad;
-var isIpadPro = $device.isIpadPro;
+const isIphoneX = $device.isIphoneX;
+const isIphonePlus = $device.isIphonePlus;
+const isIpad = $device.isIpad;
+const isIpadPro = $device.isIpadPro;
 ```
 
 # $device.hasTouchID

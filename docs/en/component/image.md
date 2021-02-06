@@ -120,7 +120,7 @@ It's similar to `alwaysTemplate`, but it returns an image with the `original` re
 Get a resized image:
 
 ```js
-var resizedImage = image.resized($size(60, 60))
+const resizedImage = image.resized($size(60, 60));
 ```
 
 # resizableImage(args)

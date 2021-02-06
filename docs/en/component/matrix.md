@@ -95,7 +95,7 @@ When you want to change the height, update the `_height` value in the above exam
 Returns the item data at indexPath:
 
 ```js
-var data = matrix.object($indexPath(0, 0))
+const data = matrix.object($indexPath(0, 0));
 ```
 
 # insert(object)
@@ -126,7 +126,7 @@ matrix.delete($indexPath(0, 0))
 Returns the cell at indexPath:
 
 ```js
-var cell = matrix.cell($indexPath(0, 0))
+const cell = matrix.cell($indexPath(0, 0));
 ```
 
 # events: didSelect

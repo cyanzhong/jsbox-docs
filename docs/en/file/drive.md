@@ -45,7 +45,7 @@ $drive.save({
 This API looks similar to $file.read:
 
 ```js
-var file = $drive.read("demo.txt")
+const file = $drive.read("demo.txt");
 ```
 
 The only difference is we are reading file in iCloud Drive container.
@@ -53,7 +53,7 @@ The only difference is we are reading file in iCloud Drive container.
 It equals to:
 
 ```js
-var file = $file.read("drive://demo.txt")
+const file = $file.read("drive://demo.txt");
 ```
 
 # $drive.xxx

@@ -82,7 +82,7 @@ $ui.render({
     navButtons: [
       {
         title: "Title",
-        image: image, // Optional
+        image, // Optional
         icon: "024", // Or you can use icon name
         symbol: "checkmark.seal", // SF symbols are supported
         handler: sender => {
@@ -138,7 +138,7 @@ view.layout((make, view) => {
 `updateLayout` 方法可以更新一个控件的 layout：
 
 ```js
-$("label").updateLayout(function(make) {
+$("label").updateLayout(make => {
   make.size.equalTo($size(200, 200))
 })
 ```

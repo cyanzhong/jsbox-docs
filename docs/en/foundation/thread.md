@@ -44,7 +44,7 @@ $thread.main(() => {
 Run after delay easily:
 
 ```js
-$delay(3, function() {
+$delay(3, () => {
   $ui.alert("Hey!")
 })
 ```
@@ -54,9 +54,9 @@ Present an alert after 3 seconds.
 You can cancel the task by:
 
 ```js
-var task = $delay(10, function() {
+const task = $delay(10, () => {
 
-})
+});
 
 // Cancel it
 task.cancel();
@@ -77,12 +77,12 @@ alert("Hey!");
 Schedule a timer:
 
 ```js
-var timer = $timer.schedule({
+const timer = $timer.schedule({
   interval: 3,
   handler: function() {
     $ui.toast("Hey!")
   }
-})
+});
 ```
 
 Show a toast "Hey!" in every 3 seconds, cancel it by:

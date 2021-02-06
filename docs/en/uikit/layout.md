@@ -28,7 +28,7 @@ $ui.render({
       layout: $layout.fill,
       events: {
         layoutSubviews: function(view) {
-          console.log("frame: " + JSON.stringify(view.frame))
+          console.log(`frame: ${JSON.stringify(view.frame)}`)
         }
       }
     }

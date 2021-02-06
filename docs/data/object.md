@@ -36,25 +36,25 @@ didSelect: function(tableView, indexPath) {
 `$props` 方法可以获取一个对象所有的属性名：
 
 ```js
-var props = $props("string")
+const props = $props("string");
 ```
 
 $props 是一个简单的 js 方法，实现如下：
 
 ```js
-var $props = function(object) {
-  var result = []
+const $props = object => {
+  const result = [];
   for (; object != null; object = Object.getPrototypeOf(object)) {
-    var names = Object.getOwnPropertyNames(object)
-    for (var idx=0; idx<names.length; idx++) {
-      var name = names[idx]
-      if (result.indexOf(name) === -1) {
+    const names = Object.getOwnPropertyNames(object);
+    for (let idx=0; idx<names.length; idx++) {
+      const name = names[idx];
+      if (!result.includes(name)) {
         result.push(name)
       }
     }
   }
   return result
-}
+};
 ```
 
 # $desc

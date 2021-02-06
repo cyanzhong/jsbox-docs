@@ -3,7 +3,7 @@
 可以使用 Runtime 来初始化一个 view:
 
 ```js
-var label = $objc("UILabel").$new();
+const label = $objc("UILabel").$new();
 label.$setText("Hey!");
 
 $ui.render({

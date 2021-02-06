@@ -3,7 +3,7 @@
 使用文件路径来创建一个 SQLite 实例：
 
 ```js
-var db = $sqlite.open("test.db");
+const db = $sqlite.open("test.db");
 ```
 
 # $sqlite.close(db)
@@ -11,7 +11,7 @@ var db = $sqlite.open("test.db");
 关闭一个 SQLite 实例：
 
 ```js
-var db = $sqlite.open("test.db");
+const db = $sqlite.open("test.db");
 
 //...
 $sqlite.close(db); // Or db.close();

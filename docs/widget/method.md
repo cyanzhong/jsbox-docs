@@ -8,7 +8,7 @@ $widget 接口提供对 Widget 的相关操作。
 
 ```js
 // Get
-var height = $widget.height;
+const height = $widget.height;
 // Set
 $widget.height = 400;
 ```
@@ -18,7 +18,7 @@ $widget.height = 400;
 获取 widget 当前状态（展开/折叠）：
 
 ```js
-var mode = $widget.mode; // 0: 折叠 1: 展开
+const mode = $widget.mode; // 0: 折叠 1: 展开
 ```
 
 # $widget.modeChanged
@@ -26,7 +26,7 @@ var mode = $widget.mode; // 0: 折叠 1: 展开
 观察 widget 折叠展开状态的变化：
 
 ```js
-$widget.modeChanged = function(mode) {
+$widget.modeChanged = mode => {
   
 }
 ```

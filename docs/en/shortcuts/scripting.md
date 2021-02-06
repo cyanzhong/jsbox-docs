@@ -13,9 +13,9 @@ In short, JSBox reads JavaScript code from clipboard, evaluate it and set the re
 For async task, we need to finish actions with `$intents.finish` like:
 
 ```js
-var a = "Hello";
-var b = "World";
-var result = [a, b].join(", ");
+const a = "Hello";
+const b = "World";
+const result = [a, b].join(", ");
 
 $intents.finish(result);
 ```

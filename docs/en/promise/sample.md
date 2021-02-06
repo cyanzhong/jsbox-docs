@@ -52,7 +52,7 @@ If you don't do that, we will treat this as a normal call instead of Promise.
 Also, not all APIs are async calls, some APIs are total sync call, for example:
 
 ```js
-var success = $file.delete("sample.txt")
+const success = $file.delete("sample.txt");
 ```
 
 There's no need (and can't) to provide Promise API for that, we will have a checklist for each API soon.

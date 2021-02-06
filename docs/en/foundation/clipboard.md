@@ -4,7 +4,7 @@
 
 ```js
 // Get clipboard text
-var text = $clipboard.text
+const text = $clipboard.text;
 // Set clipboard text
 $clipboard.text = "Hello, World!"
 ```
@@ -13,7 +13,7 @@ $clipboard.text = "Hello, World!"
 
 ```js
 // Get clipboard image data
-var data = $clipboard.image
+const data = $clipboard.image;
 // Set clipboard image data
 $clipboard.image = data
 ```
@@ -22,7 +22,7 @@ $clipboard.image = data
 
 ```js
 // Get all items from clipboard
-var items = $clipboard.items
+const items = $clipboard.items;
 // Set items to clipboard
 $clipboard.items = items
 ```
