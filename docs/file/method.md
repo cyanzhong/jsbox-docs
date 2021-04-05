@@ -120,6 +120,14 @@ $file.split({
 const absolutePath = $file.absolutePath(path);
 ```
 
+# $file.rootPath
+
+返回文档根目录的文件路径（以绝对路径的形式）：
+
+```js
+const rootPath = $file.rootPath;
+```
+
 # $file.extensions
 
 返回所有安装的 JavaScript extension 文件名：

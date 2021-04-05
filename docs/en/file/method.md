@@ -120,6 +120,14 @@ Returns the absolute path of a relative path:
 const absolutePath = $file.absolutePath(path);
 ```
 
+# $file.rootPath
+
+Returns the root path of the documents folder (in absolute path style):
+
+```js
+const rootPath = $file.rootPath;
+```
+
 # $file.extensions
 
 Returns all installed scripts:
