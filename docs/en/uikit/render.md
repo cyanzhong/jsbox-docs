@@ -37,6 +37,7 @@ debugging | bool | shows view debugging tool
 navBarHidden | bool | whether hide navigation bar
 statusBarHidden | bool | whether hide status bar
 statusBarStyle | number | 0 for black, 1 for white
+fullScreen | bool | whether present as full screen mode
 formSheet | bool | whether present as form sheet (iPad only)
 pageSheet | bool | whether present as page sheet (iOS 13)
 homeIndicatorHidden | bool | whether hide home indicator for iPhone X series

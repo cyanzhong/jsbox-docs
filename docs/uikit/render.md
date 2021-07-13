@@ -39,6 +39,7 @@ debugging | bool | 显示界面调试工具
 navBarHidden | bool | 隐藏导航栏
 statusBarHidden | bool | 隐藏状态栏
 statusBarStyle | number | 0 为黑色，1 为白色
+fullScreen | bool | 是否显示成全屏模式
 formSheet | bool | 是否显示成 form sheet（仅 iPad）
 pageSheet | bool | 是否显示成 page sheet（iOS 13）
 homeIndicatorHidden | bool | 是否为 iPhone X 系列隐藏 Home Indicator
