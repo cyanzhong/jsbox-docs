@@ -409,5 +409,6 @@ const $widgetFamily = {
   small: 0,
   medium: 1,
   large: 2,
+  xLarge: 3, // iPadOS 15
 };
 ```

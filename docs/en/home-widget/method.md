@@ -50,11 +50,11 @@ const inputValue = $widget.inputValue;
 
 # $widget.family
 
-Return the layout of the current widget, 0 ~ 2 means small, medium and large respectively:
+Return the layout of the current widget, 0 ~ 3 means small, medium, large, and extra large (iPadOS 15) respectively:
 
 ```js
 const family = $widget.family;
-// 0, 1, 2
+// 0, 1, 2, 3
 ```
 
 In most cases, you should rely on the `ctx` returned in the `render` function to retrieve `family`. Use this API only if you need to get it before calling `setTimeline`.

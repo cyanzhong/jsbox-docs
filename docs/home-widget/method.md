@@ -50,11 +50,11 @@ const inputValue = $widget.inputValue;
 
 # $widget.family
 
-返回当前小组件的尺寸，0 ~ 2 分别表示小、中、大：
+返回当前小组件的尺寸，0 ~ 3 分别表示小、中、大、超大（iPadOS 15）：
 
 ```js
 const family = $widget.family;
-// 0, 1, 2
+// 0, 1, 2, 3
 ```
 
 绝大部分情况下，您应该依赖上述 `render` 函数中返回的 `ctx` 来获取 `family`。仅当您需要在调用 `setTimeline` 之前就获取才使用这个接口。
