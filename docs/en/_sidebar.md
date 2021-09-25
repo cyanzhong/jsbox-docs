@@ -69,6 +69,9 @@
   - [Code View](en/component/code.md)
   - [Runtime](en/component/runtime.md)
 
+- Safari Extension
+  - [Intro](en/safari-extension/intro.md)
+
 - Home Screen Widget (iOS 14)
   - [Intro](en/home-widget/intro.md)
   - [Timeline](en/home-widget/timeline.md)
