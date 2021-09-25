@@ -31,6 +31,8 @@ const items = $safari.items; // JSON format
 
 # $safari.inject(script)
 
+> 在 iOS 15 上已过时，请使用更好的 [Safari 浏览器扩展](safari-extension/intro.md)。
+
 当你使用 Action Extension 时，可以使用这个方法向 Safari 注入 JavaScript:
 
 ```js

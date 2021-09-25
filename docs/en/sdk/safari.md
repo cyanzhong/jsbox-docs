@@ -33,6 +33,8 @@ const items = $safari.items; // JSON format
 
 # $safari.inject(script)
 
+> Deprecated on iOS 15, use [Safari Extension](en/safari-extension/intro.md) instead.
+
 Inject JavaScript code to Safari when you are using Action Extension:
 
 ```js
