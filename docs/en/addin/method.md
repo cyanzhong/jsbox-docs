@@ -107,6 +107,10 @@ It will be passed to `$context.query`.
 
 Restart current running script.
 
+# $addin.replay()
+
+Replay the current running UI script.
+
 # $addin.compile(script)
 
 Convert scripts to JSBox syntax:

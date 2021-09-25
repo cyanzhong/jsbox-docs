@@ -107,6 +107,10 @@ $addin.run({
 
 重新运行当前的脚本。
 
+# $addin.replay()
+
+重新渲染当前有界面的脚本。
+
 # $addin.compile(script)
 
 将 script 转换成 JSBox 可用的语法：
