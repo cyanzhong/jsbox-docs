@@ -40,6 +40,7 @@ statusBarStyle | number | 0 for black, 1 for white
 fullScreen | bool | whether present as full screen mode
 formSheet | bool | whether present as form sheet (iPad only)
 pageSheet | bool | whether present as page sheet (iOS 13)
+bottomSheet | bool | whether present as bottom sheet (iOS 15)
 homeIndicatorHidden | bool | whether hide home indicator for iPhone X series
 clipsToSafeArea | bool | whether clips to safe area
 keyCommands | array | external keyboard commands

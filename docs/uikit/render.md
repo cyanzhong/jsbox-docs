@@ -42,6 +42,7 @@ statusBarStyle | number | 0 为黑色，1 为白色
 fullScreen | bool | 是否显示成全屏模式
 formSheet | bool | 是否显示成 form sheet（仅 iPad）
 pageSheet | bool | 是否显示成 page sheet（iOS 13）
+bottomSheet | bool | 是否显示成 bottom sheet（iOS 15）
 homeIndicatorHidden | bool | 是否为 iPhone X 系列隐藏 Home Indicator
 clipsToSafeArea | bool | 是否以 Safe Area 为边界裁剪视图
 keyCommands | array | 快捷键
