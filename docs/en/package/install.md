@@ -2,7 +2,6 @@
 
 There are tons of ways to install scripts:
 
-- Redirect from xteko website, e.g. https://jsboxbbs.com/d/9
 - Share files to JSBox app
 - Open file in Safari, launch action extension
 - Use web server at the same Wi-Fi

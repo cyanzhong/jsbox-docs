@@ -2,7 +2,6 @@
 
 从 `v1.9.0` 开始，JSBox 安装脚本的方式得到了空前的提高，支持各种方式：
 
-- 从 xteko 网站完成跳转，例如：https://jsboxbbs.com/d/9
 - 把文件分享到 JSBox 应用内安装
 - 通过 Safari 打开一个文件链接完成安装，例如直接打开：https://raw.githubusercontent.com/cyanzhong/xTeko/master/extension-scripts/api.js
 - 通过 Web 服务器传输文件
