@@ -43,6 +43,14 @@ const text = $editor.selectedText;
 $editor.selectedText = "Hey!";
 ```
 
+# $editor.hasText
+
+检查编辑器是否有内容：
+
+```js
+const hasText = $editor.hasText;
+```
+
 # $editor.isActive
 
 获取编辑器当前是否处于激活状态：
@@ -105,6 +113,22 @@ $editor.activate()
 
 ```js
 $editor.deactivate()
+```
+
+# $editor.insertText(text)
+
+插入文本到当前选中区域：
+
+```js
+$editor.insertText("Hello");
+```
+
+# $editor.deleteBackward()
+
+删除光标前的字符：
+
+```js
+$editor.deleteBackward();
 ```
 
 # $editor.textInRange(range)

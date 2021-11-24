@@ -43,6 +43,14 @@ const text = $editor.selectedText;
 $editor.selectedText = "Hey!";
 ```
 
+# $editor.hasText
+
+Returns true when the editor has text:
+
+```js
+const hasText = $editor.hasText;
+```
+
 # $editor.isActive
 
 Check whether the code editor is active:
@@ -105,6 +113,22 @@ Deactivate the current editor:
 
 ```js
 $editor.deactivate()
+```
+
+# $editor.insertText(text)
+
+Insert text into the selected range:
+
+```js
+$editor.insertText("Hello");
+```
+
+# $editor.deleteBackward()
+
+Remove the character just before the cursor:
+
+```js
+$editor.deleteBackward();
 ```
 
 # $editor.textInRange(range)
