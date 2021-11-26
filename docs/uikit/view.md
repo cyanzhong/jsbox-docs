@@ -87,14 +87,23 @@ $ui.render({
         symbol: "checkmark.seal", // SF symbols are supported
         handler: sender => {
           $ui.alert("Tapped!")
-        }
+        },
+        menu: {
+          title: "Context Menu",
+          items: [
+            {
+              title: "Title",
+              handler: sender => {}
+            }
+          ]
+        } // Pull-Down menu
       }
     ]
   }
 })
 ```
 
-最多可以配置两个按钮，并且在调试模式下只会显示一个。
+了解关于 Pull-Down menu 的更多信息，请参考 [Pull-Down 菜单](uikit/context-menu?id=pull-down-菜单)。
 
 # titleView
 

@@ -83,14 +83,23 @@ $ui.render({
         symbol: "checkmark.seal", // SF symbols are supported
         handler: sender => {
           $ui.alert("Tapped!")
-        }
+        },
+        menu: {
+          title: "Context Menu",
+          items: [
+            {
+              title: "Title",
+              handler: sender => {}
+            }
+          ]
+        } // Pull-Down menu
       }
     ]
   }
 })
 ```
 
-You can create 2 buttons at most, on debug mode there will be only 1 button.
+Learn more about Pull-Down menus, refer to [Pull-Down Menus](en/uikit/context-menu?id=pull-down-menus).
 
 # titleView
 

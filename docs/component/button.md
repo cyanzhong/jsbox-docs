@@ -33,6 +33,7 @@ symbol | string | 读写 | SF symbols 名称
 image | image | 读写 | 图片对象
 icon | $icon | 只写 | 内置图标
 type | $btnType | 只读 | 类型
+menu | object | 只写 | Pull-Down 菜单
 contentEdgeInsets | $insets | 读写 | 内容边距
 titleEdgeInsets | $insets | 读写 | 标题边距
 imageEdgeInsets | $insets | 读写 | 图片边距
@@ -63,3 +64,7 @@ events: {
   }
 }
 ```
+
+# Pull-Down 菜单
+
+`button` 视图支持 Pull-Down 菜单，请参考 [Pull-Down 菜单](uikit/context-menu?id=pull-down-菜单) 了解更多。

@@ -33,6 +33,7 @@ symbol | string | rw | SF symbols id
 image | image | rw | icon image
 icon | $icon | w | builtin icon
 type | $btnType | r | button type
+menu | object | w | Pull-Down menu
 contentEdgeInsets | $insets | rw | content edge insets
 titleEdgeInsets | $insets | rw | title edge insets
 imageEdgeInsets | $insets | rw | image edge insets
@@ -63,3 +64,7 @@ events: {
   }
 }
 ```
+
+# Pull-Down Menus
+
+`button` supports Pull-Down Menus, refer to [Pull-Down Menus](en/uikit/context-menu?id=pull-down-menus) for usage.

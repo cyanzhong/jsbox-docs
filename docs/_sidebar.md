@@ -34,8 +34,8 @@
   - [布局](uikit/layout.md)
   - [手势](uikit/gesture.md)
   - [事件处理](uikit/event.md)
+  - [系统菜单](uikit/context-menu.md)
   - [动画](uikit/animation.md)
-  - [长按菜单](uikit/context-menu.md)
   - [接口](uikit/method.md)
   - [Dark Mode](uikit/dark-mode.md)
 

@@ -1,6 +1,6 @@
 # 长按菜单
 
-在 iOS 13 上，你可以为任意的 view 提供长按菜单（[Context Menus](https://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/)），支持子菜单和 [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/)。
+你可以为任意的 view 提供长按菜单（[Context Menus](https://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/)），支持子菜单和 [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/)。
 
 下面是一个最简单的样例：
 
@@ -123,3 +123,64 @@ $ui.render({
 ```
 
 这种场景类似于其 `event: didSelect`，只是触发方式是通过长按某一个元素。
+
+# Pull-Down 菜单
+
+作为 iOS 14 的主要改进之一，您可以为 `button` 和 `navButtons` 提供更现代化的 [Pull-Down](https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/) 菜单选项。`Pull-Down` 菜单不会将背景模糊，并可以作为主要菜单触发，无需长按。
+
+为 `button` 类型支持 Pull-Down 菜单，仅需在上述配置中增加 `pullDown: true` 参数：
+
+```js
+$ui.render({
+  views: [
+    {
+      type: "button",
+      props: {
+        title: "Long Press!",
+        menu: {
+          title: "Context Menu",
+          pullDown: true,
+          asPrimary: true,
+          items: [
+            {
+              title: "Title",
+              handler: sender => {}
+            }
+          ]
+        }
+      },
+      layout: (make, view) => {
+        make.center.equalTo(view.super);
+        make.size.equalTo($size(120, 36));
+      }
+    }
+  ]
+});
+```
+
+为 `navButtons` 支持 Pull-Down 菜单也类似，仅需使用 `menu` 参数：
+
+```js
+$ui.render({
+  props: {
+    navButtons: [
+      {
+        title: "Title",
+        symbol: "checkmark.seal",
+        menu: {
+          title: "Context Menu",
+          asPrimary: true,
+          items: [
+            {
+              title: "Title",
+              handler: sender => {}
+            }
+          ]
+        }
+      }
+    ]
+  }
+});
+```
+
+上述参数中，`asPrimary` 表示是否作为一级操作，也即短按触发。
