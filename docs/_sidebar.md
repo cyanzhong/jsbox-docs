@@ -12,6 +12,7 @@
   - [系统](foundation/system.md)
   - [网络](foundation/network.md)
   - [缓存](foundation/cache.md)
+  - [钥匙串](foundation/keychain.md)
   - [线程](foundation/thread.md)
   - [剪贴板](foundation/clipboard.md)
   - [本地化](foundation/l10n.md)

@@ -1,3 +1,7 @@
+# 2021.11.26
+
+- 增加钥匙串相关接口：[详情](foundation/keychain.md)
+
 # 2020.10.03
 
 - 增加桌面小组件相关：[详情](home-widget/intro.md)

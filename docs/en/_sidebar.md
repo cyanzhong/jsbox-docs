@@ -12,6 +12,7 @@
   - [System](en/foundation/system.md)
   - [Network](en/foundation/network.md)
   - [Cache](en/foundation/cache.md)
+  - [Keychain](en/foundation/keychain.md)
   - [Thread](en/foundation/thread.md)
   - [Clipboard](en/foundation/clipboard.md)
   - [Localization](en/foundation/l10n.md)
