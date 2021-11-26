@@ -71,7 +71,7 @@
   - [Runtime](en/component/runtime.md)
 
 - Safari Extension
-  - [Intro](en/safari-extension/intro.md)
+  - [Introduction](en/safari-extension/intro.md)
 
 - Home Screen Widget (iOS 14)
   - [Intro](en/home-widget/intro.md)

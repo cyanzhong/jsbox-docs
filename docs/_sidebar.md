@@ -71,7 +71,7 @@
   - [Runtime](component/runtime.md)
 
 - Safari 浏览器扩展
-  - [前言](safari-extension/intro.md)
+  - [介绍](safari-extension/intro.md)
 
 - 桌面小组件（iOS 14）
   - [前言](home-widget/intro.md)
