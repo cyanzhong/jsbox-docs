@@ -1,5 +1,13 @@
 > 提供了大量的用于文字处理的接口
 
+# $text.uuid
+
+生成一个 UUID 字符串：
+
+```js
+const uuid = $text.uuid;
+```
+
 # $text.tokenize(object)
 
 对文本进行分词处理：

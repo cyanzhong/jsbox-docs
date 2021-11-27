@@ -1,5 +1,13 @@
 > Provides a lot of utility functions to handle text
 
+# $text.uuid
+
+Generates a UUID string:
+
+```js
+const uuid = $text.uuid;
+```
+
 # $text.tokenize(object)
 
 Text tokenize:
