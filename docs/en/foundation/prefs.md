@@ -78,6 +78,7 @@ A setting item contains the following attributes:
 - `type`: value type, such as "string" or "boolean"
 - `key`: the key that will be used to persistent settings
 - `value`: default value for the current setting, can be null
+- `placeholder`: placeholder shown when input is empty
 - `inline`: whether to edit text inline
 
 # title
@@ -184,3 +185,29 @@ const prefs = $prefs.all();
 ```
 
 Obviously, `$prefs` cannot cover all scenarios, but for most common used ones, it's good enough, and easy to use. Here is an example: https://github.com/cyanzhong/xTeko/tree/master/extension-demos/prefs
+
+# $prefs.edit(node)
+
+Other than using the default `prefs.json` file, you can also edit any JSON preference objects, with formats mentioned above:
+
+```js
+const edited = await $prefs.edit({
+  "title": "SETTINGS",
+  "groups": [
+    {
+      "title": "GENERAL",
+      "items": [
+        {
+          "title": "USER_NAME",
+          "type": "string",
+          "key": "user.name",
+          "value": "default user name"
+        }
+        // ...
+      ]
+    }
+  ]
+});
+```
+
+The returned object is edited preferences, you can make user preferences more flexible that way.

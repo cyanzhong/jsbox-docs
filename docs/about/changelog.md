@@ -1,5 +1,6 @@
 # 2021.11.26
 
+- 改进配置项相关接口：[详情](foundation/prefs.md)
 - 改进菜单相关接口：[详情](uikit/context-menu.md)
 - 增加 Safari 扩展文档：[详情](safari-extension/intro.md)
 - 增加钥匙串相关接口：[详情](foundation/keychain.md)

@@ -78,6 +78,7 @@ $prefs.open(() => {
 - `type`: 类型，比如字符串或是布尔值，下面会详细介绍
 - `key`: 存储以及获取设置用的键，需要保证脚本内全局无冲突
 - `value`: 在用户没有设置的时候，提供的缺省值，可以不提供
+- `placeholder`: 没有输入时显示的提示
 - `inline`: 文本框是否行内编辑
 
 # title
@@ -184,3 +185,29 @@ const prefs = $prefs.all();
 ```
 
 `$prefs` 显然并不能够应对任何设置项，但对于大部分的需求来说以及完全能够满足，并且使用极为简单。这里有一个完整的例子：https://github.com/cyanzhong/xTeko/tree/master/extension-demos/prefs
+
+# $prefs.edit(node)
+
+除了为默认的 `prefs.json` 配置文件提供可视化的编辑，您也可以使用 `$prefs.edit` 函数来编辑任意符合上述格式的 JSON 配置：
+
+```js
+const edited = await $prefs.edit({
+  "title": "SETTINGS",
+  "groups": [
+    {
+      "title": "GENERAL",
+      "items": [
+        {
+          "title": "USER_NAME",
+          "type": "string",
+          "key": "user.name",
+          "value": "default user name"
+        }
+        // ...
+      ]
+    }
+  ]
+});
+```
+
+返回的数据即为用户编辑后的配置文件，通过这样的方法可以为脚本提供更灵活的配置。
