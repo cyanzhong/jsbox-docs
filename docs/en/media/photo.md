@@ -52,6 +52,7 @@ Prop | Type | Description
 ---|---|---
 image | image | image object
 metadata | object | metadata
+filename | string | file name
 
 The structure of an object in result (when format is `data`):
 
@@ -59,6 +60,7 @@ Prop | Type | Description
 ---|---|---
 data | data | image file
 metadata | object | metadata
+filename | string | file name
 
 # $photo.prompt(object)
 

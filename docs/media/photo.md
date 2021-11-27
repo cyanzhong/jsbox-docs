@@ -52,6 +52,7 @@ results 里面的某一项，当 format 为 `image` 时结构为：
 ---|---|---
 image | image | 图片对象
 metadata | object | 元数据
+filename | string | 文件名
 
 当 format 为 `data` 时结构为：
 
@@ -59,6 +60,7 @@ metadata | object | 元数据
 ---|---|---
 data | data | 图片二进制数据
 metadata | object | 元数据
+filename | string | 文件名
 
 # $photo.prompt(object)
 
