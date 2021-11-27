@@ -65,7 +65,8 @@ $prefs.open(() => {
       "title": "USER_NAME",
       "type": "string",
       "key": "user.name",
-      "value": "default user name"
+      "value": "default user name",
+      "inline": true // inline edit, default is false
     }
   ]
 }
@@ -77,6 +78,7 @@ $prefs.open(() => {
 - `type`: 类型，比如字符串或是布尔值，下面会详细介绍
 - `key`: 存储以及获取设置用的键，需要保证脚本内全局无冲突
 - `value`: 在用户没有设置的时候，提供的缺省值，可以不提供
+- `inline`: 文本框是否行内编辑
 
 # title
 
@@ -86,7 +88,8 @@ $prefs.open(() => {
 
 目前配置文件支持下面的类型：
 
-- `string`: 字符串类型，支持多行
+- `string`: 字符串类型，默认多行
+- `password`: 密码类型，输入后显示为圆点
 - `number`: 浮点数类型
 - `integer`: 整数类型
 - `boolean`: 布尔值，在页面中显示为一个开关
@@ -98,6 +101,10 @@ $prefs.open(() => {
 - `child`: 子设置项，点击之后打开一个新的设置页面
 
 对于 `string`, `number` 以及 `integer` 等较为简单的类型，尝试一下即可了解，下面会介绍比较不同的几个。
+
+# type: "password"
+
+与 `type: "string"` 参数相同，用于输入密码等敏感信息。
 
 # type: "slider"
 

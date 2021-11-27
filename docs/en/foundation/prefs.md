@@ -65,7 +65,8 @@ If there is only one group, you can also simplify the configuration as:
       "title": "USER_NAME",
       "type": "string",
       "key": "user.name",
-      "value": "default user name"
+      "value": "default user name",
+      "inline": true // inline edit, default is false
     }
   ]
 }
@@ -77,6 +78,7 @@ A setting item contains the following attributes:
 - `type`: value type, such as "string" or "boolean"
 - `key`: the key that will be used to persistent settings
 - `value`: default value for the current setting, can be null
+- `inline`: whether to edit text inline
 
 # title
 
@@ -86,7 +88,8 @@ In order to make localization easier, a title will be used as the localization k
 
 Currently, below types are supported:
 
-- `string`: normal text
+- `string`: normal text, edits multi-line text by default
+- `password`: secure text entry, renders characters as dots
 - `number`: decimal numbers
 - `integer`: integer numbers
 - `boolean`: boolean value, shows a switch
@@ -98,6 +101,10 @@ Currently, below types are supported:
 - `child`: child node, tap it to open a new settings view
 
 Types like `string`, `number` or `integer` are relatively easy to use, I'm going to show you some exceptions.
+
+# type: "password"
+
+Works the same as `type: "string"`, used for sensitive data like passwords.
 
 # type: "slider"
 
