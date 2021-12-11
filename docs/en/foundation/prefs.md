@@ -79,6 +79,7 @@ A setting item contains the following attributes:
 - `key`: the key that will be used to persistent settings
 - `value`: default value for the current setting, can be null
 - `placeholder`: placeholder shown when input is empty
+- `insetGrouped`: whether to use insetGrouped style list
 - `inline`: whether to edit text inline
 
 # title

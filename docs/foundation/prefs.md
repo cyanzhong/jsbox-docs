@@ -79,6 +79,7 @@ $prefs.open(() => {
 - `key`: 存储以及获取设置用的键，需要保证脚本内全局无冲突
 - `value`: 在用户没有设置的时候，提供的缺省值，可以不提供
 - `placeholder`: 没有输入时显示的提示
+- `insetGrouped`: 是否使用 insetGrouped 样式的列表
 - `inline`: 文本框是否行内编辑
 
 # title
