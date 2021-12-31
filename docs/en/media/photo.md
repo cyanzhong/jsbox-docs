@@ -14,7 +14,6 @@ $photo.take({
 
 Param | Type | Description
 ---|---|---
-format | string | "image" or "data", default is "image"
 edit | boolean | edit image after picked
 mediaTypes | array | media types
 maxDuration | number | max duration of video
@@ -38,6 +37,12 @@ $photo.pick({
 ```
 
 All parameters are same as `$photo.take`, they are just have different source type.
+
+Unlike the `take` method, `pick` allows you to choose the return data type:
+
+Param | Type | Description
+---|---|---
+format | string | "image" or "data", default is "image"
 
 Besides, we can set `multi: true` to pick multiple photos, the result list is like:
 

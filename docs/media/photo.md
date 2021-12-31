@@ -16,7 +16,6 @@ $photo.take({
 
 参数 | 类型 | 说明
 ---|---|---
-format | string | 可选 "image" 和 "data"，默认 "image"
 edit | boolean | 是否编辑
 mediaTypes | array | 媒体类型
 maxDuration | number | 视频最大时长
@@ -38,6 +37,12 @@ $photo.pick({
 ```
 
 所支持的参数与 `$photo.take` 完全一致，你可以认为他们只是数据来源不同。
+
+与 `take` 方法不同的是，`pick` 可以指定返回数据的类型：
+
+参数 | 类型 | 说明
+---|---|---
+format | string | 可选 "image" 和 "data"，默认 "image"
 
 此外，`$photo.pick` 支持通过 `multi: true` 来设置选择多个结果，多选时返回的结果结构如下：
 
