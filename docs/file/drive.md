@@ -26,6 +26,14 @@ $drive.open({
 types: ["public.png"]
 ```
 
+也可以通过指定 `multi` 来允许多选：
+
+```js
+const files = await $drive.open({ multi: true });
+```
+
+在这种情况下，返回的 `files` 是一个 data 的数组。
+
 # $drive.save
 
 打开 iOS 文件选择器让用户把文件存储到 iCloud Drive:

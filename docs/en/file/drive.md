@@ -26,6 +26,14 @@ We can set the UTI types to make it more accurate:
 types: ["public.png"]
 ```
 
+You can also specify `multi` to allow multiple selection:
+
+```js
+const files = await $drive.open({ multi: true });
+```
+
+In this case, the returned `files` is an array of data.
+
 # $drive.save
 
 Save a file using Document Picker:
