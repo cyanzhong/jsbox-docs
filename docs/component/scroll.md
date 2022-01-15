@@ -71,6 +71,7 @@ pagingEnabled | boolean | 读写 | 是否分页
 scrollEnabled | boolean | 读写 | 是否可以滚动
 showsHorizontalIndicator | boolean | 读写 | 显示横向滚动条
 showsVerticalIndicator | boolean | 读写 | 显示纵向滚动条
+contentInset | $insets | 读写 | 内容边距
 indicatorInsets | $insets | 读写 | 滚动条边距
 tracking | boolean | 只读 | 用户是否在触摸
 dragging | boolean | 只读 | 用户是否在拖动

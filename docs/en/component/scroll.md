@@ -73,6 +73,7 @@ pagingEnabled | boolean | rw | is paging enabled
 scrollEnabled | boolean | rw | is scroll enabled
 showsHorizontalIndicator | boolean | rw | shows horizontal indicator 
 showsVerticalIndicator | boolean | rw | shows vertical indicator
+contentInset | $insets | rw | content insets
 indicatorInsets | $insets | rw | indicator insets
 tracking | boolean | r | is tracking
 dragging | boolean | r | is dragging
