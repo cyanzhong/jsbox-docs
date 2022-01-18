@@ -44,7 +44,7 @@ Param | Type | Description
 ---|---|---
 format | string | "image" or "data", default is "image"
 
-Besides, we can set `multi: true` to pick multiple photos, the result list is like:
+Besides, we can set `multi: true` to pick multiple photos, and `selectionLimit` for maximum number of selections, the result list is like:
 
 Prop | Type | Description
 ---|---|---

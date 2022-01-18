@@ -44,7 +44,7 @@ $photo.pick({
 ---|---|---
 format | string | 可选 "image" 和 "data"，默认 "image"
 
-此外，`$photo.pick` 支持通过 `multi: true` 来设置选择多个结果，多选时返回的结果结构如下：
+此外，`$photo.pick` 支持通过 `multi: true` 来设置选择多个结果，通过 `selectionLimit` 来限制最多选择的张数，多选时返回的结果结构如下：
 
 参数 | 类型 | 说明
 ---|---|---
