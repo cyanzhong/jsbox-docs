@@ -92,6 +92,21 @@ footer: {
 
 需要改变高度时，修改上述 `_height` 值，然后调用 `matrix.reload()` 进行更新。若创建的视图为横向滚动，则使用 `width` 代替上述 `height` 来指定宽度。
 
+# 动态 header 和 footer
+
+由于 header 和 footer 在 iOS 系统是可复用的视图，仅静态设置会有一些局限性。如果您的 header 或 footer 需要实时更新数据，可以使用以下懒加载的方式：
+
+```js
+footer: sender => {
+  return {
+    type: "view",
+    props: {}
+  }
+}
+```
+
+简单来说，系统会调用这个函数生成新的 header 或 footer 以更新显示。
+
 # object($indexPath)
 
 返回在 indexPath 位置的数据：

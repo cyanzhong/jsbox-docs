@@ -90,6 +90,21 @@ footer: {
 
 When you want to change the height, update the `_height` value in the above example, then call `matrix.reload()` to trigger the update. For horizontal views, use `width` instead of `height` to specify its width.
 
+# Dynamic header and footer
+
+Since headers and footers on iOS are reusable, it's sometimes hard to update data dynamically. If you'd like to update your header or footer at runtime, you can use lazy rendering like this:
+
+```js
+footer: sender => {
+  return {
+    type: "view",
+    props: {}
+  }
+}
+```
+
+In short, iOS calls this function at runtime to re-generate a heade or footer.
+
 # object($indexPath)
 
 Returns the item data at indexPath:
