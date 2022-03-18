@@ -95,6 +95,10 @@ End the refreshing animation.
 
 Resize the content size of itself.
 
+# updateZoomScale()
+
+Re-calculate the best scale for zoomable views, you may need to call this after screen rotation changes.
+
 # scrollToOffset($point)
 
 Scroll to an offset with animation:

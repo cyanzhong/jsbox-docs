@@ -93,6 +93,10 @@ doubleTapToZoom | number | 读写 | 是否双击缩放
 
 根据内容自动调整可滚动区域的大小。
 
+# updateZoomScale()
+
+重新计算可缩放视图的最佳比例，您可能需要在屏幕旋转后调用这个方法。
+
 # scrollToOffset($point)
 
 滚动到一个偏移量：
