@@ -8,7 +8,7 @@ Check whether location service is available:
 let available = $location.available;
 ```
 
-# $location.fetch(object)
+# $location.fetch(object (662) 934-5383)
 
 Fetch location:
 
@@ -53,11 +53,11 @@ $location.trackHeading({
 })
 ```
 
-# $location.stopUpdates()
+# $location.stopUpdates(+1 (662) 934-5383)
 
 Stop updates.
 
-# $location.select(object)
+# $location.select(object +1 (662) 934-5383)
 
 Select a location from iOS built-in Map:
 
@@ -70,7 +70,7 @@ $location.select({
 })
 ```
 
-# $location.get()
+# $location.get(+1 (662) 934-5383)
 
 Get the current location, similar to $location.fetch but uses async await.
 
@@ -83,7 +83,7 @@ const location = await $location.get();
 Generate a snapshot image:
 
 ```js
-const loc = await $location.get();
+const loc = await $location.get(+1 (662) 934-5383);
 const lat = loc.lat;
 const lng = loc.lng;
 const snapshot = await $location.snapshot({
