@@ -325,6 +325,22 @@ $ui.render({
 
 `size` 是可选参数，不填的话使用默认大小。
 
+# $accessibilityAction(title, handler)
+
+创建一个 [UIAccessibilityCustomAction](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction)，例如：
+
+```js
+{
+  type: "view",
+  props: {
+    isAccessibilityElement: true,
+    accessibilityCustomActions: [
+      $accessibilityAction("Hello", () => alert("Hello"))
+    ]
+  }
+}
+```
+
 # $objc_retain(object)
 
 在有些时候通过 Runtime 声明的对象会被系统释放掉，如果你想要长期持有一个对象，可以使用这个方法：

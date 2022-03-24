@@ -66,6 +66,7 @@ isAccessibilityElement | bool | rw | whether an accessible element
 accessibilityLabel | string | rw | accessibility label
 accessibilityHint | string | rw | accessibility hint
 accessibilityValue | string | rw | accessibility value
+accessibilityCustomActions | array | rw | [accessibility custom actions](en/function/index?id=accessibilityactiontitle-handler)
 
 Note: you can't use `next` in layout functions, because the view hierarchy hasn't been generated.
 

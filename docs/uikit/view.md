@@ -68,6 +68,7 @@ isAccessibilityElement | bool | 读写 | 是否支持无障碍
 accessibilityLabel | string | 读写 | accessibility label
 accessibilityHint | string | 读写 | accessibility hint
 accessibilityValue | string | 读写 | accessibility value
+accessibilityCustomActions | array | 读写 | [accessibility custom actions](function/index?id=accessibilityactiontitle-handler)
 
 注意：你不能在 layout 函数里面使用 `next`，因为这个时候视图结构还没有被生成。
 
