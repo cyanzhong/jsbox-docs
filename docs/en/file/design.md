@@ -31,3 +31,9 @@ One more thing, all files imported by share sheet or AirDrop will be placed in a
 To use this folder, just use file path starts with `inbox://`.
 
 Please note all contents in this folder could be modified by all scripts.
+
+# Absolute Paths
+
+When absolute paths need to be handled, you can indicate that the current path is an absolute path by starting it with `absolute://`.
+
+For example `$file.copy(...) `, when the target path is an absolute path, the above protocol is needed to provide information for this method.
