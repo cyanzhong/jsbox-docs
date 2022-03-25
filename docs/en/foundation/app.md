@@ -58,6 +58,16 @@ Close the addin that user current uses, `delay` is an optional parameter to spec
 
 > PS: It's better to call this manually if your addin doesn't have a user interface
 
+# $app.isDebugging
+
+Check whether it is debugging:
+
+```js
+if ($app.isDebugging) {
+  
+}
+```
+
 # $app.env
 
 Get current environment:

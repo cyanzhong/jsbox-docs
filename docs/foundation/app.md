@@ -60,6 +60,16 @@ $app.idleTimerDisabled = true
 
 > 注：当一个扩展没有界面时，建议在逻辑完成之后手动调用 $app.close()，这样可以把引擎关闭。
 
+# $app.isDebugging
+
+检查当前是否在调试状态：
+
+```js
+if ($app.isDebugging) {
+  
+}
+```
+
 # $app.env
 
 获得此扩展当前运行的环境：
