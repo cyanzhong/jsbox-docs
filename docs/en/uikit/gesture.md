@@ -67,3 +67,13 @@ touchesEnded: function(sender, location, locations) {
 
 }
 ```
+
+# events: touchesCancelled
+
+When touch event cancelled:
+
+```js
+touchesCancelled: function(sender, location, locations) {
+
+}
+```

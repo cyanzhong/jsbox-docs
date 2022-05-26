@@ -57,10 +57,20 @@ touchesMoved: function(sender, location, locations) {
 
 # events: touchesEnded
 
-当点击事件结束时调用
+当点击事件结束时调用：
 
 ```js
 touchesEnded: function(sender, location, locations) {
+
+}
+```
+
+# events: touchesCancelled
+
+当点击事件取消时调用：
+
+```js
+touchesCancelled: function(sender, location, locations) {
 
 }
 ```
