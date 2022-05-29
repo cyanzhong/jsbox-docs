@@ -88,6 +88,18 @@ events: {
 
 As you can imagine, these will be called when page is appeared, disappeared and removed.
 
+# Keyboard Height Changes
+
+You can observe keyboard height changes with:
+
+```js
+events: {
+  keyboardHeightChanged: height => {
+
+  }
+}
+```
+
 # Shake event
 
 You can detect shake event with:
