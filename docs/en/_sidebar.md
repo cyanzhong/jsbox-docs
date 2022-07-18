@@ -80,6 +80,7 @@
   - [Layout](en/home-widget/layout.md)
   - [Modifiers](en/home-widget/modifiers.md)
   - [Method](en/home-widget/method.md)
+  - [Lock Screen Widgets](en/home-widget/lock-screen.md)
 
 - Today Widget (Deprecated)
   - [Intro](en/widget/intro.md)

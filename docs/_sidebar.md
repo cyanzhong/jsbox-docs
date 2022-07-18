@@ -80,6 +80,7 @@
   - [布局](home-widget/layout.md)
   - [属性](home-widget/modifiers.md)
   - [方法](home-widget/method.md)
+  - [锁屏小组件](home-widget/lock-screen.md)
 
 - Today 小组件（已过时）
   - [前言](widget/intro.md)
