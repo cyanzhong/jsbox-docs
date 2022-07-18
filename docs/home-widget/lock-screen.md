@@ -19,9 +19,9 @@
 ```js
 const $widgetFamily = {
   // small, medium, large, xLarge
-  accessoryCircular: 4,
-  accessoryRectangular: 5,
-  accessoryInline: 6,
+  accessoryCircular: 5,
+  accessoryRectangular: 6,
+  accessoryInline: 7,
 }
 ```
 

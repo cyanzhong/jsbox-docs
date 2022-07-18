@@ -412,8 +412,8 @@ const $widgetFamily = {
   xLarge: 3, // iPadOS 15
   
   // iOS 16 lock screen sizes
-  accessoryCircular: 4,
-  accessoryRectangular: 5,
-  accessoryInline: 6,
+  accessoryCircular: 5,
+  accessoryRectangular: 6,
+  accessoryInline: 7,
 };
 ```
