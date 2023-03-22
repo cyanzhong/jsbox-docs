@@ -193,6 +193,7 @@
 
 - 调试工具
   - [控制台](debug/console.md)
+  - [检查器](debug/inspector.md)
 
 - 关于
   - [如何使用](about/guide.md)

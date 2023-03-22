@@ -193,6 +193,7 @@
 
 - Debug
   - [Console](en/debug/console.md)
+  - [Inspector](en/debug/inspector.md)
 
 - About
   - [User Guide](en/about/guide.md)
