@@ -1,4 +1,4 @@
-*This website is based on [Docsify](https://docsify.js.org), hosted on the [GitHub](https://github.com/cyanzhong/jsbox-docs), pull requests are welcome.*
+aí*This website is based on [Docsify](https://docsify.js.org), hosted on the [GitHub](https://github.com/cyanzhong/jsbox-docs), pull requests are welcome.*
 
 # JSBox APIs
 
