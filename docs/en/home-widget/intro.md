@@ -4,7 +4,7 @@ Apple has introduced home screen widgets in iOS 14, and JSBox `v2.12.0` provides
 
 Home screen widgets are very different from today widgets, so it's worth taking a moment to understand some of the basic concepts.
 
-# Basic Concepts
+## Basic Concepts
 
 Home screen widgets are essentially a series of **snapshot** based on a timeline, rather than dynamically built interfaces. So when a user sees a widget, iOS doesn't run the code contained in the widget directly. Instead, the system calls the widget's code at some point (the "timeline" mechanism, we will discuss later), and our code can provide a snapshot. The system then shows these snapshots at the appropriate time, and repeat this based on some policies.
 
